@@ -8,9 +8,15 @@
       <h2 class="subtitle">
         Nuxt blog test @Bivwak!
       </h2>
-      <div class="flex justify-around">
-        <p>{{ article.Title }}</p>
-        <p>{{ article.id }}</p>
+      <div>
+        <div
+          v-for="article in articles"
+          :key="article.id"
+          class="flex justify-around"
+        >
+          <p>{{ article.title }}</p>
+          <p>{{ article.id }}</p>
+        </div>
       </div>
       <div class="links">
         <a href="https://nuxtjs.org/" target="_blank" class="button--green">
@@ -36,8 +42,8 @@ export default {
     Logo
   },
   async asyncData({ $axios }) {
-    const data = await $axios.$get('http://localhost:1337/articles/1/')
-    return { article: data }
+    const articles = await $axios.$get('http://localhost:1337/articles/')
+    return { articles }
   }
 }
 </script>
