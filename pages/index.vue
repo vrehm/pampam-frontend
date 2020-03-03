@@ -1,24 +1,43 @@
 <template>
   <div class="container mx-auto">
-    <div>
-      <logo />
-      <h1 class="title">
-        test-blog
-      </h1>
-      <h2 class="subtitle">
+    <div class="flex flex-wrap">
+      <h2 class="subtitle w-full">
         Nuxt blog test @Bivwak!
       </h2>
-      <div>
-        <div
-          v-for="article in articles"
-          :key="article.id"
-          class="flex justify-around"
-        >
-          <p>{{ article.title }}</p>
-          <p>{{ article.id }}</p>
+
+      <div
+        v-for="article in articles"
+        :key="article.id"
+        class="max-w-xs rounded overflow-hidden shadow-lg mx-4"
+      >
+        <img
+          class="w-full h-56"
+          :src="'http://localhost:1337/' + article.image.url"
+          alt="Sunset in the mountains"
+        />
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2">{{ article.title }}</div>
+          <p class="text-gray-700 text-base truncate">
+            {{ article.content }}
+          </p>
+        </div>
+        <div class="px-6 py-4">
+          <span
+            class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2"
+            >#photography</span
+          >
+          <span
+            class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2"
+            >#travel</span
+          >
+          <span
+            class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700"
+            >#winter</span
+          >
         </div>
       </div>
-      <div class="links">
+
+      <!-- <div class="links">
         <a href="https://nuxtjs.org/" target="_blank" class="button--green">
           Documentation
         </a>
@@ -29,18 +48,13 @@
         >
           GitHub
         </a>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-
 export default {
-  components: {
-    Logo
-  },
   async asyncData({ $axios }) {
     const {
       defaults: { baseURL }
