@@ -1,6 +1,6 @@
 <template>
   <div class="container mx-auto">
-    <div class="flex flex-wrap">
+    <div class="flex flex-wrap justify-start mt-4 mb-16">
       <h2 class="subtitle w-full">
         Nuxt blog test @Bivwak!
       </h2>
@@ -8,12 +8,12 @@
       <div
         v-for="article in articles"
         :key="article.id"
-        class="max-w-xs rounded overflow-hidden shadow-lg mx-4"
+        class="max-w-xs rounded overflow-hidden shadow-lg m-2"
       >
         <img
           class="w-full h-56"
-          :src="'http://localhost:1337/' + article.image.url"
-          alt="Sunset in the mountains"
+          :src="'http://localhost:1337' + article.image.url"
+          :alt="article.title"
         />
         <div class="px-6 py-4">
           <div class="font-bold text-xl mb-2">{{ article.title }}</div>
