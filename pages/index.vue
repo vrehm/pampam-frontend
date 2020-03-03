@@ -42,7 +42,10 @@ export default {
     Logo
   },
   async asyncData({ $axios }) {
-    const articles = await $axios.$get('http://localhost:1337/articles/')
+    const {
+      defaults: { baseURL }
+    } = $axios
+    const articles = await $axios.$get(baseURL + 'articles/')
     return { articles }
   }
 }

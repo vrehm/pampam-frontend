@@ -54,7 +54,7 @@ export default {
    ** See https://axios.nuxtjs.org/options
    */
   axios: {
-    baseUrl: process.env.BACKEND_URL || 'http://localhost:1337/'
+    baseURL: process.env.BACKEND_URL || 'http://localhost:1337/'
   },
   /*
    ** Build configuration
