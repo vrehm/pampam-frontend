@@ -12,7 +12,7 @@
       >
         <img
           class="w-full h-56"
-          :src="baseURL + article.image.url"
+          :src="assetsBaseUrl + article.image.url"
           :alt="article.title"
         />
         <div class="px-6 py-4">
@@ -55,7 +55,8 @@ export default {
       defaults: { baseURL }
     } = $axios
     const articles = await $axios.$get(baseURL + '/articles/')
-    return { articles, baseURL }
+    const assetsBaseUrl = process.env.assetsBaseUrl
+    return { articles, baseURL, assetsBaseUrl }
   }
 }
 </script>

@@ -1,6 +1,12 @@
 require('dotenv').config()
 
 export default {
+  env: {
+    assetsBaseUrl:
+      process.env.MODE === 'production' || process.env.NODE_ENV === 'production'
+        ? ''
+        : 'http://localhost:1337'
+  },
   mode: 'universal',
   /*
    ** Headers of the page
