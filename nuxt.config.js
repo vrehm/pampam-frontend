@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 export default {
   mode: 'universal',
   /*
@@ -37,7 +39,8 @@ export default {
     // Doc: https://github.com/nuxt-community/stylelint-module
     '@nuxtjs/stylelint-module',
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/tailwindcss',
+    '@nuxtjs/dotenv'
   ],
   /*
    ** Nuxt.js modules
@@ -54,7 +57,10 @@ export default {
    ** See https://axios.nuxtjs.org/options
    */
   axios: {
-    baseURL: process.env.BACKEND_URL || 'http://localhost:1337/'
+    baseURL:
+      process.env.MODE === 'production'
+        ? process.env.BACKEND_URL
+        : 'http://localhost:1337'
   },
   /*
    ** Build configuration

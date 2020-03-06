@@ -12,7 +12,7 @@
       >
         <img
           class="w-full h-56"
-          :src="'http://localhost:1337' + article.image.url"
+          :src="baseURL + article.image.url"
           :alt="article.title"
         />
         <div class="px-6 py-4">
@@ -54,8 +54,8 @@ export default {
     const {
       defaults: { baseURL }
     } = $axios
-    const articles = await $axios.$get(baseURL + 'articles/')
-    return { articles }
+    const articles = await $axios.$get(baseURL + '/articles/')
+    return { articles, baseURL }
   }
 }
 </script>
