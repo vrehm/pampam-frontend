@@ -58,7 +58,7 @@ export default {
    */
   axios: {
     baseURL:
-      process.env.MODE === 'production'
+      process.env.MODE === 'production' || process.env.NODE_ENV === 'production'
         ? process.env.BACKEND_URL
         : 'http://localhost:1337'
   },
