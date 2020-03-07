@@ -19,10 +19,10 @@
         class="w-full flex flex-wrap justify-start m-2"
       >
         <span class="text-2xl w-full my-2">{{ category.name }}</span> -->
-      <div v-for="article in category.articles" :key="article.id">
+      <div v-for="article in category.articles" :key="article.id" class="flex">
         <article-card
           :article="articles[article.id - 1]"
-          class="max-w-xs rounded overflow-hidden shadow-lg m-2"
+          class="max-w-xs rounded overflow-hidden shadow-lg m-2 flex-1"
         />
       </div>
       <!-- </div> -->
@@ -42,8 +42,8 @@ export default {
     const {
       defaults: { baseURL }
     } = $axios
-    const articles = await $axios.$get(baseURL + '/articles/')
-    const categories = await $axios.$get(baseURL + '/categories/')
+    const articles = await $axios.$get(baseURL + '/articles?_sort=id:ASC')
+    const categories = await $axios.$get(baseURL + '/categories?_sort=id:ASC')
     const categoryFilter = await $axios.$get(
       baseURL + '/categories?slug=' + slug
     )

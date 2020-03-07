@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="flex flex-col">
     <nuxt-link :to="'/articles/' + article.id">
       <img
         class="w-full h-56"
@@ -13,7 +13,7 @@
         </p>
       </div>
     </nuxt-link>
-    <div class="flex justify-center items-end my-4">
+    <div class="flex-1 flex flex-wrap justify-center items-start my-4">
       <span
         v-for="category in article.categories"
         :key="category.id"
