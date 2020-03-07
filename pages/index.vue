@@ -6,57 +6,36 @@
       </h2>
 
       <div
-        v-for="article in articles"
-        :key="article.id"
-        class="max-w-xs rounded overflow-hidden shadow-lg m-2"
+        v-for="category in categories"
+        :key="category.id"
+        class="w-full flex flex-wrap justify-start m-2"
       >
-        <img
-          class="w-full h-56"
-          :src="assetsBaseUrl + article.image.url"
-          :alt="article.title"
-        />
-        <div class="px-6 py-4">
-          <div class="font-bold text-xl mb-2">{{ article.title }}</div>
-          <p class="text-gray-700 text-base truncate">
-            {{ article.content }}
-          </p>
-        </div>
-        <div class="flex justify-center items-end my-4">
-          <span
-            v-for="category in article.categories"
-            :key="category.id"
-            class="inline-block bg-gray-200 rounded-full text-sm font-semibold text-gray-700 m-1 py-1 px-2"
-          >
-            {{ category.name }}
-          </span>
+        <span class="text-2xl w-full my-2">{{ category.name }}</span>
+        <div v-for="article in category.articles" :key="article.id">
+          <article-card
+            :article="articles[article.id - 1]"
+            class="max-w-xs rounded overflow-hidden shadow-lg m-2"
+          />
         </div>
       </div>
-
-      <!-- <div class="links">
-        <a href="https://nuxtjs.org/" target="_blank" class="button--green">
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div> -->
     </div>
   </div>
 </template>
 
 <script>
+import ArticleCard from '~/components/ArticleCard.vue'
+
 export default {
+  components: {
+    ArticleCard
+  },
   async asyncData({ $axios }) {
     const {
       defaults: { baseURL }
     } = $axios
     const articles = await $axios.$get(baseURL + '/articles/')
-    const assetsBaseUrl = process.env.assetsBaseUrl
-    return { articles, baseURL, assetsBaseUrl }
+    const categories = await $axios.$get(baseURL + '/categories/')
+    return { articles, categories }
   }
 }
 </script>
