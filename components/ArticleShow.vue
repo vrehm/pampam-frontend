@@ -1,18 +1,9 @@
 <template>
-  <div>
-    <nuxt-link :to="'/articles/' + article.id">
-      <img
-        class="w-full h-56"
-        :src="assetsBaseUrl + article.image.url"
-        :alt="article.title"
-      />
-      <div class="px-6 py-4">
-        <div class="font-bold text-xl mb-2">{{ article.title }}</div>
-        <p class="text-gray-700 text-base truncate">
-          {{ article.content }}
-        </p>
-      </div>
-    </nuxt-link>
+  <div class="my-4">
+    <img :src="assetsBaseUrl + article.image.url" :alt="article.title" />
+    <div class="text-gray-700 text-base break-normal my-4 leading-loose">
+      {{ article.content }}
+    </div>
     <div class="flex justify-center items-end my-4">
       <span
         v-for="category in article.categories"
