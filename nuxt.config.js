@@ -7,8 +7,7 @@ export default {
     },
     env: {
         assetsBaseUrl: process.env.MODE === 'production' || process.env.NODE_ENV === 'production' ?
-            '' :
-            'http://localhost:1337'
+            '' : 'http://localhost:1337'
     },
     mode: 'universal',
     /*
@@ -65,7 +64,8 @@ export default {
     ],
     passwordProtect: {
         formPath: '/password',
-        password: 'hello-world',
+        password: process.env.MODE === 'production' || process.env.NODE_ENV === 'production' ?
+            process.env.PASSWORD : 'hello-world',
         tokenSeed: 101010,
         queryString: '_pw',
         cookieName: '_password',
@@ -80,8 +80,7 @@ export default {
      */
     axios: {
         baseURL: process.env.MODE === 'production' || process.env.NODE_ENV === 'production' ?
-            process.env.BACKEND_URL :
-            'http://localhost:1337'
+            process.env.BACKEND_URL : 'http://localhost:1337'
     },
     /*
      ** Build configuration
