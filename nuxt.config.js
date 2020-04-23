@@ -7,6 +7,7 @@ export default {
     },
     server: {
         port: 3000, // par défaut: 3000
+        host: '0.0.0.0' // par défaut: localhost
     },
     env: {
         assetsBaseUrl: process.env.MODE === 'production' || process.env.NODE_ENV === 'production' ?
