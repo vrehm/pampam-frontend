@@ -5,6 +5,10 @@ export default {
     router: {
         middleware: ['password-protect']
     },
+    server: {
+        port: 3000, // par défaut: 3000
+        host: '0.0.0.0' // par défaut: localhost
+    },
     env: {
         assetsBaseUrl: process.env.MODE === 'production' || process.env.NODE_ENV === 'production' ?
             '' : 'http://localhost:1337'
