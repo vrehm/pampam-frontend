@@ -1,7 +1,7 @@
 {
-    "name": "test-blog",
+    "name": "pampam-blog",
     "version": "1.0.0",
-    "description": "Nuxt blog test @Bivwak!",
+    "description": "Blog Nuxt atelierpampam",
     "author": "Vincent Rehm",
     "private": true,
     "scripts": {

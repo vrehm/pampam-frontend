@@ -1,8 +1,20 @@
-# test-blog
+# pampam-blog
 
-> Nuxt blog test @Bivwak!
+> Blog Nuxt pour atelierpampam
 
 ## Build Setup
+
+Checklist
+- être sur github avec son setup ssh
+- forker ce repository
+- touch .env
+- mettre le contenu du .env récupéré auparavant
+- avoir node js et npm d'installés
+- visual studio code installé
+- git checkout -b feature-name
+- git add .
+- git commit -m 'commit message'
+- git push
 
 ``` bash
 # install dependencies
