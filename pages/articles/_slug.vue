@@ -26,8 +26,10 @@ export default {
     const {
       defaults: { baseURL }
     } = $axios
-    const id = params.id
-    const article = await $axios.$get(baseURL + '/articles/' + id)
+    const slug = params.slug
+    let article = await $axios.$get(baseURL + '/articles/?slug=' + slug)
+    const slugifiedArticle = article[0]
+    article = slugifiedArticle
     return { article }
   }
 }

@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col">
-    <nuxt-link :to="'/articles/' + article.id">
+    <nuxt-link :to="'/articles/' + article.slug">
       <img
         class="w-full h-56"
         :src="assetsBaseUrl + article.image.url"
