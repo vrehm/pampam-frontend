@@ -114,8 +114,16 @@ export default {
         ],
         styleExtensions: ['.css'],
         whitelist: ['body', 'html', 'nuxt-progress'],
-        extractors: [{
-            extractor: content => content.match(/[\w-/.:]+(?<!:)/g) || [],
+        // extractors: () => [{
+        //     extractor: class {
+        //         static extract(content) {
+        //             return (content.match(/[\w-/.:]+(?<!:)/g || []).concat(content.match(/[\w-/.:]+(?<!:)/g) || []))
+        //         }
+        //     },
+        //     extensions: ['html', 'vue', 'js']
+        // }],
+        extractors: () => [{
+            extractor: content => (content || '').match(/[\w-/.:]+(?<!:)/g) || [],
             extensions: ['html', 'vue', 'js']
         }]
     },
