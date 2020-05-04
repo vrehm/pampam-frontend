@@ -13,8 +13,7 @@ export default {
     },
     env: {
         assetsBaseUrl: process.env.MODE === 'production' || process.env.NODE_ENV === 'production' ?
-            '' :
-            'http://localhost:1337'
+            '' : 'http://localhost:1337'
     },
     mode: 'universal',
     /*
@@ -68,8 +67,7 @@ export default {
     passwordProtect: {
         formPath: '/password',
         password: process.env.MODE === 'production' || process.env.NODE_ENV === 'production' ?
-            process.env.PASSWORD :
-            'hello-world',
+            process.env.PASSWORD : 'hello-world',
         tokenSeed: 101010,
         queryString: '_pw',
         cookieName: '_password',
@@ -84,8 +82,7 @@ export default {
      */
     axios: {
         baseURL: process.env.MODE === 'production' || process.env.NODE_ENV === 'production' ?
-            process.env.BACKEND_URL :
-            'http://localhost:1337'
+            process.env.BACKEND_URL : 'http://localhost:1337'
     },
     /*
      * See https://github.com/nuxt-community/tailwindcss-module#configuration
@@ -105,7 +102,14 @@ export default {
      * Modified based on tailwindUI settings: https://tailwindui.com/documentation#update-your-purgecss-configuration
      */
     purgeCSS: {
-        whitelistPatterns: [/[\w-/.:]+(?<!:)/g]
+        mode: 'postcss',
+        enabled: true,
+        extractors: () => [{
+            extractor(content) {
+                return content.match(/[\w-/.:]+(?<!:)/g)
+            },
+            extensions: ['html', 'vue', 'js']
+        }]
     },
     /*
      ** Build configuration
