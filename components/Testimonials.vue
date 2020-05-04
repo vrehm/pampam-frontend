@@ -61,7 +61,7 @@
               >
                 <img
                   class="h-12 w-12 rounded-full"
-                  src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                  src="/img/avatars/photo-1494790108377-be9c29b29330.jpeg"
                   alt=""
                 />
               </div>
@@ -148,7 +148,7 @@
               >
                 <img
                   class="h-12 w-12 rounded-full"
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                  src="/img/avatars/photo-1507003211169-0a1dd7228f2d.jpeg"
                   alt=""
                 />
               </div>
