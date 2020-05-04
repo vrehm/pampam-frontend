@@ -1,11 +1,17 @@
 <template>
   <div class="container mx-auto">
     <div>Index Page</div>
+    <testimonials />
   </div>
 </template>
 
 <script>
-export default {}
+import Testimonials from '~/components/Testimonials.vue'
+export default {
+  components: {
+    Testimonials
+  }
+}
 </script>
 
 <style></style>
