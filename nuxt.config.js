@@ -4,9 +4,6 @@ if (process.env.MODE === 'development' || process.env.NODE_ENV === 'development'
     require('dotenv').config()
 }
 
-// eslint-disable-next-line nuxt/no-cjs-in-config
-const purgecss = require('@fullhuman/postcss-purgecss')
-
 export default {
     router: {
         middleware: ['password-protect']
@@ -108,7 +105,7 @@ export default {
      */
     purgeCSS: {
         mode: 'postcss',
-        enabled: !!(process.env.MODE === 'production' || process.env.NODE_ENV === 'production'),
+        enabled: !!(process.env.NODE_ENV === 'production'),
         paths: [
             'components/**/*.vue',
             'layouts/**/*.vue',
@@ -127,17 +124,6 @@ export default {
      */
     build: {
         postcss: {
-            plugins: [
-                purgecss({
-                    content: [
-                        './pages/**/*.vue',
-                        './layouts/**/*.vue',
-                        './components/**/*.vue'
-                    ],
-                    whitelist: ['html', 'body'],
-                    whitelistPatterns: [/nuxt-/]
-                })
-            ],
             preset: {
                 features: {
                     // Fixes: https://github.com/tailwindcss/tailwindcss/issues/1190#issuecomment-546621554
