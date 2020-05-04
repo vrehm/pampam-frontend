@@ -3,6 +3,9 @@ if (process.env.MODE === 'development' || process.env.NODE_ENV === 'development'
     require('dotenv').config()
 }
 
+// eslint-disable-next-line nuxt/no-cjs-in-config
+const purgecss = require('@fullhuman/postcss-purgecss')
+
 export default {
     router: {
         middleware: ['password-protect']
@@ -90,7 +93,8 @@ export default {
     tailwindcss: {
         configPath: '~/tailwind.config.js',
         cssPath: '~/assets/css/tailwind.css',
-        exposeConfig: false
+        exposeConfig: false,
+
     },
     webfontloader: {
         google: {
@@ -102,9 +106,9 @@ export default {
      * Modified based on tailwindUI settings: https://tailwindui.com/documentation#update-your-purgecss-configuration
      */
     purgeCSS: {
-        // mode: "postcss",
-        enabled: true,
-        // enabled: ({ isDev, isClient }) => (!isDev && isClient), // or `false` when in dev/debug mode
+        mode: 'postcss',
+        // enabled: true,
+        enabled: ({ isDev, isClient }) => (!isDev && isClient), // or `false` when in dev/debug mode
         paths: [
             'components/**/*.vue',
             'layouts/**/*.vue',
@@ -123,6 +127,17 @@ export default {
      */
     build: {
         postcss: {
+            plugins: [
+                purgecss({
+                    content: [
+                        './pages/**/*.vue',
+                        './layouts/**/*.vue',
+                        './components/**/*.vue'
+                    ],
+                    whitelist: ['html', 'body'],
+                    whitelistPatterns: [/nuxt-/]
+                })
+            ],
             preset: {
                 features: {
                     // Fixes: https://github.com/tailwindcss/tailwindcss/issues/1190#issuecomment-546621554

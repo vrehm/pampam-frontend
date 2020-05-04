@@ -26,6 +26,7 @@
         "nuxt": "^2.0.0"
     },
     "devDependencies": {
+        "@fullhuman/postcss-purgecss": "^2.1.2",
         "@nuxtjs/dotenv": "^1.4.1",
         "@nuxtjs/eslint-config": "^2.0.0",
         "@nuxtjs/eslint-module": "^1.0.0",
