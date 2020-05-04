@@ -1,15 +1,14 @@
 <template>
-  <div class="container mx-auto">
-    <div>Index Page</div>
-    <testimonials />
+  <div>
+    <hero-section />
   </div>
 </template>
 
 <script>
-import Testimonials from '~/components/Testimonials.vue'
+import HeroSection from '~/components/HeroSection.vue'
 export default {
   components: {
-    Testimonials
+    HeroSection
   }
 }
 </script>
