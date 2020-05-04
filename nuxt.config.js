@@ -1,4 +1,5 @@
 /* eslint-disable prettier/prettier */
+
 if (process.env.MODE === 'development' || process.env.NODE_ENV === 'development') {
     require('dotenv').config()
 }
@@ -107,8 +108,7 @@ export default {
      */
     purgeCSS: {
         mode: 'postcss',
-        // enabled: true,
-        enabled: ({ isDev, isClient }) => (!isDev && isClient), // or `false` when in dev/debug mode
+        enabled: !!(process.env.MODE === 'production' || process.env.NODE_ENV === 'production'),
         paths: [
             'components/**/*.vue',
             'layouts/**/*.vue',
