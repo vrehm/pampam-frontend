@@ -54,7 +54,9 @@ export default {
         // Doc: https://github.com/stephenkr/nuxt-password-protect
         'nuxt-password-protect',
         // Doc: https://github.com/Developmint/nuxt-purgecss
-        'nuxt-purgecss'
+        'nuxt-purgecss',
+        // Doc: https://github.com/nuxt-community/svg-module
+        '@nuxtjs/svg'
     ],
     /*
      ** Nuxt.js modules
