@@ -9,8 +9,8 @@ export default {
         middleware: ['password-protect']
     },
     server: {
-        port: 3000, // default: 3000
-        host: '0.0.0.0' // default: localhost
+        // host: '0.0.0.0', // default: localhost
+        port: 3000 // default: 3000
     },
     env: {
         assetsBaseUrl: process.env.MODE === 'production' || process.env.NODE_ENV === 'production' ?
