@@ -102,12 +102,19 @@ export default {
      * Modified based on tailwindUI settings: https://tailwindui.com/documentation#update-your-purgecss-configuration
      */
     purgeCSS: {
-        mode: 'postcss',
+        // mode: "postcss",
         enabled: true,
-        extractors: () => [{
-            extractor(content) {
-                return content.match(/[\w-/.:]+(?<!:)/g)
-            },
+        // enabled: ({ isDev, isClient }) => (!isDev && isClient), // or `false` when in dev/debug mode
+        paths: [
+            'components/**/*.vue',
+            'layouts/**/*.vue',
+            'pages/**/*.vue',
+            'plugins/**/*.js'
+        ],
+        styleExtensions: ['.css'],
+        whitelist: ['body', 'html', 'nuxt-progress'],
+        extractors: [{
+            extractor: content => content.match(/[\w-/.:]+(?<!:)/g) || [],
             extensions: ['html', 'vue', 'js']
         }]
     },
