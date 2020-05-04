@@ -1,13 +1,17 @@
 /* eslint-disable prettier/prettier */
-require('dotenv').config()
+
+if (process.env.MODE === 'development' || process.env.NODE_ENV === 'development') {
+    require('dotenv').config()
+}
 
 export default {
     router: {
         middleware: ['password-protect']
     },
     server: {
-        port: 3000, // par défaut: 3000
-        host: '0.0.0.0' // par défaut: localhost
+        host: process.env.NODE_ENV === 'production' ?
+            '0.0.0.0' : 'localhost', // default: localhost
+        port: 3000 // default: 3000
     },
     env: {
         assetsBaseUrl: process.env.MODE === 'production' || process.env.NODE_ENV === 'production' ?
@@ -35,14 +39,6 @@ export default {
      */
     loading: { color: '#fff' },
     /*
-     ** Global CSS
-     */
-    css: [],
-    /*
-     ** Plugins to load before mounting the App
-     */
-    plugins: [],
-    /*
      ** Nuxt.js dev-modules
      */
     buildModules: [
@@ -52,8 +48,16 @@ export default {
         '@nuxtjs/stylelint-module',
         // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
         '@nuxtjs/tailwindcss',
+        // Doc: https://github.com/Developmint/nuxt-webfontloader
+        'nuxt-webfontloader',
+        // Doc: https://github.com/nuxt-community/dotenv-module
         '@nuxtjs/dotenv',
-        'nuxt-password-protect'
+        // Doc: https://github.com/stephenkr/nuxt-password-protect
+        'nuxt-password-protect',
+        // Doc: https://github.com/Developmint/nuxt-purgecss
+        'nuxt-purgecss',
+        // Doc: https://github.com/nuxt-community/svg-module
+        '@nuxtjs/svg'
     ],
     /*
      ** Nuxt.js modules
@@ -61,10 +65,8 @@ export default {
     modules: [
         // Doc: https://axios.nuxtjs.org/usage
         '@nuxtjs/axios',
-        '@nuxtjs/pwa',
-        // Doc: https://github.com/nuxt-community/dotenv-module
-        '@nuxtjs/dotenv',
-        'nuxt-password-protect'
+        // Doc: https://pwa.nuxtjs.org/setup.html
+        '@nuxtjs/pwa'
     ],
     passwordProtect: {
         formPath: '/password',
@@ -87,12 +89,58 @@ export default {
             process.env.BACKEND_URL : 'http://localhost:1337'
     },
     /*
+     * See https://github.com/nuxt-community/tailwindcss-module#configuration
+     */
+    tailwindcss: {
+        configPath: '~/tailwind.config.js',
+        cssPath: '~/assets/css/tailwind.css',
+        exposeConfig: false,
+
+    },
+    webfontloader: {
+        google: {
+            families: ['Inter']
+        }
+    },
+    /*
+     * See https://purgecss.com/guides/nuxt.html#nuxt-js-plugin
+     * Modified based on tailwindUI settings: https://tailwindui.com/documentation#update-your-purgecss-configuration
+     */
+    purgeCSS: {
+        mode: 'postcss',
+        enabled: !!(process.env.NODE_ENV === 'production'),
+        paths: [
+            'components/**/*.vue',
+            'layouts/**/*.vue',
+            'pages/**/*.vue',
+            'plugins/**/*.js'
+        ],
+        styleExtensions: ['.css'],
+        whitelist: ['body', 'html', 'nuxt-progress'],
+        // extractors: () => [{
+        //     extractor: class {
+        //         static extract(content) {
+        //             return (content.match(/[\w-/.:]+(?<!:)/g || []).concat(content.match(/[\w-/.:]+(?<!:)/g) || []))
+        //         }
+        //     },
+        //     extensions: ['html', 'vue', 'js']
+        // }],
+        extractors: () => [{
+            extractor: content => (content || '').match(/[\w-/.:]+(?<!:)/g) || [],
+            extensions: ['html', 'vue', 'js']
+        }]
+    },
+    /*
      ** Build configuration
      */
     build: {
-        /*
-         ** You can extend webpack config here
-         */
-        extend(config, ctx) {}
+        postcss: {
+            preset: {
+                features: {
+                    // Fixes: https://github.com/tailwindcss/tailwindcss/issues/1190#issuecomment-546621554
+                    'focus-within-pseudo-class': false
+                }
+            }
+        }
     }
 }
