@@ -87,6 +87,39 @@ export default {
             process.env.BACKEND_URL : 'http://localhost:1337'
     },
     /*
+     * See https://github.com/nuxt-community/tailwindcss-module#configuration
+    */
+    tailwindcss: {
+        configPath: '~/tailwind.config.js',
+        cssPath: '~/assets/css/tailwind.css',
+        purgeCSSInDev: true,
+        exposeConfig: false
+    },
+    /*
+     * See https://purgecss.com/guides/nuxt.html#nuxt-js-plugin
+     * Modified based on tailwindUI settings: https://tailwindui.com/documentation#update-your-purgecss-configuration
+    */
+    purgeCSS: {
+        mode: "postcss",
+        enabled: ({ isDev, isClient }) => (!isDev && isClient), // or `false` when in dev/debug mode
+        paths: [
+        'components/**/*.vue',
+        'layouts/**/*.vue',
+        'pages/**/*.vue',
+        'plugins/**/*.js'
+        ],
+        styleExtensions: ['.css'],
+        whitelist: ['body', 'html', 'nuxt-progress'],
+        extractors: [
+        {
+            // replace original config with that required by tailwindUI
+            // extractor: content => content.match(/[A-z0-9-:\\/]+/g) || [],
+            extractor: content => content.match(/[\w-/.:]+(?<!:)/g) || [],
+            extensions: ['html', 'vue', 'js']
+        }
+        ]
+    },
+    /*
      ** Build configuration
      */
     build: {
