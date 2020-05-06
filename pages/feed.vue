@@ -4,7 +4,7 @@
     :user-id="userId"
     fields="media_url,media_type,caption,children"
     :mediatypes="['IMAGE', 'CAROUSEL_ALBUM']"
-    :count="50"
+    :count="2"
   >
     <template v-slot:loading="props">
       <h1 v-if="props.loading" class="fancy-loading">
@@ -13,7 +13,7 @@
     </template>
 
     <template v-slot:feeds="props">
-      <div>
+      <div v-if="props.feed.id != 'reserved'">
         <img :src="props.feed.media_url" />
         <div :text="props.feed.caption" />
         <div v-if="props.feed.children">

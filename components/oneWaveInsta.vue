@@ -82,9 +82,14 @@ export default {
           if (response.status === 200) {
             for (const n in response.data.data) {
               if (this.mediatypes.includes(response.data.data[n].media_type)) {
+                if (this.feeds.length >= this.count) {
+                  return
+                }
+
                 const data = response.data.data[n]
 
                 if (data.children) {
+                  this.feeds.push({ id: 'reserved' })
                   const caption = data.caption
                   const children = data.children.data
                   delete data.children
@@ -100,17 +105,15 @@ export default {
                         }
                       })
                       .then((response) => {
-                        const igChild = response
-                        igChild.caption = caption
-                        this.feeds.push(igChild)
+                        const igChild = response.data
+                        if (igChild.media_type === 'IMAGE') {
+                          igChild.caption = caption
+                          this.feeds.push(igChild)
+                        }
                       })
                   }
-                }
-
-                this.feeds.push(data)
-
-                if (this.feeds.length >= this.count) {
-                  return
+                } else {
+                  this.feeds.push(data)
                 }
               }
             }
