@@ -4,7 +4,7 @@
     :user-id="userId"
     fields="media_url,media_type,caption,children"
     :mediatypes="['IMAGE', 'CAROUSEL_ALBUM']"
-    :count="2"
+    :count="16"
   >
     <template v-slot:loading="props">
       <h1 v-if="props.loading" class="fancy-loading">
