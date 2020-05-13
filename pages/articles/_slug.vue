@@ -1,9 +1,6 @@
 <template>
   <div class="container mx-auto my-4">
-    <nuxt-link
-      to="/"
-      class="bg-transparent hover:bg-gray-500 text-gray-700 font-semibold hover:text-white py-2 px-4 border border-gray-500 hover:border-transparent rounded"
-    >
+    <nuxt-link to="/" class="bg-transparent hover:bg-gray-500 text-gray-700 font-semibold hover:text-white py-2 px-4 border border-gray-500 hover:border-transparent rounded">
       Back to homepage
     </nuxt-link>
     <div class="flex flex-wrap justify-center mt-4 mb-16">

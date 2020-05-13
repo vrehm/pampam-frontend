@@ -2,13 +2,8 @@
   <div class="container mx-auto">
     <div class="flex flex-wrap justify-start mt-4 mb-16">
       <div class="w-full flex justify-between items-center">
-        <h2 class="text-4xl m-2 flex-1">
-          {{ category.name }} index - Nuxt blog test @Bivwak!
-        </h2>
-        <nuxt-link
-          to="/"
-          class="bg-transparent hover:bg-gray-500 text-gray-700 font-semibold hover:text-white py-2 px-4 border border-gray-500 hover:border-transparent rounded"
-        >
+        <h2 class="text-4xl m-2 flex-1">{{ category.name }} index - Nuxt blog test @Bivwak!</h2>
+        <nuxt-link to="/" class="bg-transparent hover:bg-gray-500 text-gray-700 font-semibold hover:text-white py-2 px-4 border border-gray-500 hover:border-transparent rounded">
           Back to homepage
         </nuxt-link>
       </div>
@@ -20,10 +15,7 @@
       >
         <span class="text-2xl w-full my-2">{{ category.name }}</span> -->
       <div v-for="article in category.articles" :key="article.id" class="flex">
-        <article-card
-          :article="articles[article.id - 1]"
-          class="max-w-xs rounded overflow-hidden shadow-lg m-2 flex-1"
-        />
+        <article-card :article="articles[article.id - 1]" class="max-w-xs rounded overflow-hidden shadow-lg m-2 flex-1" />
       </div>
       <!-- </div> -->
     </div>
@@ -44,9 +36,7 @@ export default {
     } = $axios
     const articles = await $axios.$get(baseURL + '/articles?_sort=id:ASC')
     const categories = await $axios.$get(baseURL + '/categories?_sort=id:ASC')
-    const categoryFilter = await $axios.$get(
-      baseURL + '/categories?slug=' + slug
-    )
+    const categoryFilter = await $axios.$get(baseURL + '/categories?slug=' + slug)
     const category = categoryFilter[0]
     return { articles, categories, category }
   }
