@@ -1,18 +1,14 @@
 <template>
   <div class="relative bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
-      <div
-        class="flex justify-between items-center border-b-2 border-gray-100 py-6 md:space-x-10"
-      >
-        <div class="lg:w-0 lg:flex-1">
-          <a href="#" class="flex">
-            <img
-              class="h-8 w-auto sm:h-10"
-              src="/img/logos/workflow-mark-on-white.svg"
-              alt="Workflow"
-            />
-          </a>
-        </div>
+      <div class="flex justify-between items-start py-6 md:space-x-10">
+        <a href="#">
+          <img
+            class="w-20 md:w-32 lg:w-48"
+            src="/img/logos/pampam-logo.svg"
+            alt="Logo"
+          />
+        </a>
         <div class="-mr-2 -my-2 md:hidden">
           <button
             type="button"
@@ -33,30 +29,30 @@
             </svg>
           </button>
         </div>
-        <nav class="hidden md:flex space-x-10">
+        <nav class="hidden md:flex md:space-x-5 lg:space-x-10">
           <a
             href="#"
-            class="text-base leading-6 font-medium text-gray-900 hover:text-gray-500 focus:outline-none focus:text-gray-500 transition ease-in-out duration-150"
+            class="md:text-sm lg:text-base leading-6 font-medium text-gray-900 hover:text-gray-500 focus:outline-none focus:text-gray-500 transition ease-in-out duration-150"
             >Who is Pam Pam?</a
           >
           <a
             href="#"
-            class="text-base leading-6 font-medium text-gray-900 hover:text-gray-500 focus:outline-none focus:text-gray-500 transition ease-in-out duration-150"
+            class="md:text-sm lg:text-base leading-6 font-medium text-gray-900 hover:text-gray-500 focus:outline-none focus:text-gray-500 transition ease-in-out duration-150"
             >La Boutique</a
           >
           <a
             href="#"
-            class="text-base leading-6 font-medium text-gray-900 hover:text-gray-500 focus:outline-none focus:text-gray-500 transition ease-in-out duration-150"
+            class="md:text-sm lg:text-base leading-6 font-medium text-gray-900 hover:text-gray-500 focus:outline-none focus:text-gray-500 transition ease-in-out duration-150"
             >L'Atelier</a
           >
           <a
             href="#"
-            class="text-base leading-6 font-medium text-gray-900 hover:text-gray-500 focus:outline-none focus:text-gray-500 transition ease-in-out duration-150"
+            class="md:text-sm lg:text-base leading-6 font-medium text-gray-900 hover:text-gray-500 focus:outline-none focus:text-gray-500 transition ease-in-out duration-150"
             >Côté Pro</a
           >
           <a
             href="#"
-            class="text-base leading-6 font-medium text-gray-900 hover:text-gray-500 focus:outline-none focus:text-gray-500 transition ease-in-out duration-150"
+            class="md:text-sm lg:text-base leading-6 font-medium text-gray-900 hover:text-gray-500 focus:outline-none focus:text-gray-500 transition ease-in-out duration-150"
             >Journal</a
           >
         </nav>
@@ -80,13 +76,7 @@
         <div class="rounded-lg shadow-xs bg-white">
           <div class="pt-5 pb-6 px-5 space-y-6">
             <div class="flex items-center justify-between">
-              <div>
-                <img
-                  class="h-8 w-auto"
-                  src="/img/logos/workflow-mark-on-white.svg"
-                  alt="Workflow"
-                />
-              </div>
+              <img class="w-20" src="/img/logos/pampam-logo.svg" alt="Logo" />
               <div class="-mr-2">
                 <button
                   type="button"
@@ -115,7 +105,7 @@
                   class="-m-3 p-3 rounded-md hover:bg-gray-50 transition ease-in-out duration-150"
                 >
                   <div class="text-base leading-6 font-medium text-gray-900">
-                    Analytics
+                    Who is Pam Pam?
                   </div>
                 </a>
                 <a
@@ -123,7 +113,7 @@
                   class="-m-3 p-3 rounded-md hover:bg-gray-50 transition ease-in-out duration-150"
                 >
                   <div class="text-base leading-6 font-medium text-gray-900">
-                    Engagement
+                    La Boutique
                   </div>
                 </a>
                 <a
@@ -131,7 +121,7 @@
                   class="-m-3 p-3 rounded-md hover:bg-gray-50 transition ease-in-out duration-150"
                 >
                   <div class="text-base leading-6 font-medium text-gray-900">
-                    Security
+                    L'Atelier
                   </div>
                 </a>
                 <a
@@ -139,7 +129,7 @@
                   class="-m-3 p-3 rounded-md hover:bg-gray-50 transition ease-in-out duration-150"
                 >
                   <div class="text-base leading-6 font-medium text-gray-900">
-                    Integrations
+                    Côté Pro
                   </div>
                 </a>
                 <a
@@ -147,7 +137,7 @@
                   class="-m-3 p-3 rounded-md hover:bg-gray-50 transition ease-in-out duration-150"
                 >
                   <div class="text-base leading-6 font-medium text-gray-900">
-                    Automations
+                    Journal
                   </div>
                 </a>
               </nav>
