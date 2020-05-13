@@ -29,7 +29,9 @@
     </template>
 
     <template v-slot:error="props">
-      <div class="fancy-alert">{{ props.error }}</div>
+      <div class="fancy-alert">
+        {{ props.error }}
+      </div>
     </template>
   </oneWaveInsta>
 </template>

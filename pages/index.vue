@@ -1,6 +1,7 @@
 <template>
   <div>
-    <hero-section />
+    <navbar />
+    <!-- <hero-section /> -->
     <newsletter-section />
     <feature-section />
     <testimonials />
@@ -10,7 +11,8 @@
 </template>
 
 <script>
-import HeroSection from '~/components/HeroSection.vue'
+import Navbar from '~/components/Navbar.vue'
+// import HeroSection from '~/components/HeroSection.vue'
 import NewsletterSection from '~/components/NewsletterSection.vue'
 import FooterSection from '~/components/FooterSection.vue'
 import FeatureSection from '~/components/FeatureSection.vue'
@@ -18,7 +20,8 @@ import Testimonials from '~/components/Testimonials.vue'
 import LogoClouds from '~/components/LogoClouds.vue'
 export default {
   components: {
-    HeroSection,
+    Navbar,
+    // HeroSection,
     NewsletterSection,
     FooterSection,
     FeatureSection,
