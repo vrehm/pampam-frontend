@@ -1,6 +1,18 @@
 <template>
-  <nuxt class="flex-1" />
+  <div class="flex-1">
+    <nuxt />
+    <the-footer />
+  </div>
 </template>
+
+<script>
+import TheFooter from '~/components/TheFooter.vue'
+export default {
+  components: {
+    TheFooter
+  }
+}
+</script>
 
 <style>
 html {
