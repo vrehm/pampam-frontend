@@ -1,7 +1,7 @@
 <template>
   <div class="relative bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
-      <div class="flex justify-between items-start py-6 md:space-x-10">
+      <div class="flex justify-between items-center md:items-start py-6 md:space-x-10">
         <a href="#">
           <img class="w-20 md:w-32 lg:w-48" src="/img/logos/pampam-logo.svg" alt="Logo" />
         </a>
@@ -13,21 +13,11 @@
           </button>
         </div>
         <nav class="hidden md:flex md:space-x-5 lg:space-x-10">
-          <a href="#" class="md:text-sm lg:text-base leading-6 font-medium text-gray-900 hover:text-gray-500 focus:outline-none focus:text-gray-500 transition ease-in-out duration-150">
-            Who is Pam Pam?
-          </a>
-          <a href="#" class="md:text-sm lg:text-base leading-6 font-medium text-gray-900 hover:text-gray-500 focus:outline-none focus:text-gray-500 transition ease-in-out duration-150">
-            La Boutique
-          </a>
-          <a href="#" class="md:text-sm lg:text-base leading-6 font-medium text-gray-900 hover:text-gray-500 focus:outline-none focus:text-gray-500 transition ease-in-out duration-150">
-            L'Atelier
-          </a>
-          <a href="#" class="md:text-sm lg:text-base leading-6 font-medium text-gray-900 hover:text-gray-500 focus:outline-none focus:text-gray-500 transition ease-in-out duration-150">
-            Côté Pro
-          </a>
-          <a href="#" class="md:text-sm lg:text-base leading-6 font-medium text-gray-900 hover:text-gray-500 focus:outline-none focus:text-gray-500 transition ease-in-out duration-150">
-            Journal
-          </a>
+          <a href="#" class="md:text-sm lg:text-base leading-6 font-medium text-gray-900 hover:text-gray-500 focus:outline-none focus:text-gray-500 transition ease-in-out duration-150">Who is Pam Pam?</a>
+          <a href="#" class="md:text-sm lg:text-base leading-6 font-medium text-gray-900 hover:text-gray-500 focus:outline-none focus:text-gray-500 transition ease-in-out duration-150">La Boutique</a>
+          <a href="#" class="md:text-sm lg:text-base leading-6 font-medium text-gray-900 hover:text-gray-500 focus:outline-none focus:text-gray-500 transition ease-in-out duration-150">L'Atelier</a>
+          <a href="#" class="md:text-sm lg:text-base leading-6 font-medium text-gray-900 hover:text-gray-500 focus:outline-none focus:text-gray-500 transition ease-in-out duration-150">Côté Pro</a>
+          <a href="#" class="md:text-sm lg:text-base leading-6 font-medium text-gray-900 hover:text-gray-500 focus:outline-none focus:text-gray-500 transition ease-in-out duration-150">Journal</a>
         </nav>
       </div>
     </div>
@@ -59,29 +49,19 @@
             <div>
               <nav class="grid row-gap-8">
                 <a href="#" class="-m-3 p-3 rounded-md hover:bg-gray-50 transition ease-in-out duration-150">
-                  <div class="text-base leading-6 font-medium text-gray-900">
-                    Who is Pam Pam?
-                  </div>
+                  <div class="text-base leading-6 font-medium text-gray-900">Who is Pam Pam?</div>
                 </a>
                 <a href="#" class="-m-3 p-3 rounded-md hover:bg-gray-50 transition ease-in-out duration-150">
-                  <div class="text-base leading-6 font-medium text-gray-900">
-                    La Boutique
-                  </div>
+                  <div class="text-base leading-6 font-medium text-gray-900">La Boutique</div>
                 </a>
                 <a href="#" class="-m-3 p-3 rounded-md hover:bg-gray-50 transition ease-in-out duration-150">
-                  <div class="text-base leading-6 font-medium text-gray-900">
-                    L'Atelier
-                  </div>
+                  <div class="text-base leading-6 font-medium text-gray-900">L'Atelier</div>
                 </a>
                 <a href="#" class="-m-3 p-3 rounded-md hover:bg-gray-50 transition ease-in-out duration-150">
-                  <div class="text-base leading-6 font-medium text-gray-900">
-                    Côté Pro
-                  </div>
+                  <div class="text-base leading-6 font-medium text-gray-900">Côté Pro</div>
                 </a>
                 <a href="#" class="-m-3 p-3 rounded-md hover:bg-gray-50 transition ease-in-out duration-150">
-                  <div class="text-base leading-6 font-medium text-gray-900">
-                    Journal
-                  </div>
+                  <div class="text-base leading-6 font-medium text-gray-900">Journal</div>
                 </a>
               </nav>
             </div>

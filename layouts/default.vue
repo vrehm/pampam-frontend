@@ -1,5 +1,5 @@
 <template>
-  <div class="flex-1">
+  <div class="max-w-full">
     <nuxt />
     <the-footer />
   </div>
