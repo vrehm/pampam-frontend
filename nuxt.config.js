@@ -9,7 +9,7 @@ export default {
         middleware: ['password-protect']
     },
     server: {
-        host: process.env.NODE_ENV === 'production' ?
+        host: process.env.MODE === 'production' ?
             '0.0.0.0' : 'localhost', // default: localhost
         port: 3000 // default: 3000
     },

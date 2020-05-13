@@ -1,5 +1,5 @@
 <template>
-  <div class="relative bg-white">
+  <div class="bg-white shadow">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
       <div class="flex justify-between items-start py-6 md:space-x-10">
         <a href="#">
