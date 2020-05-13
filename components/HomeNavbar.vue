@@ -1,5 +1,5 @@
 <template>
-  <div class="relative bg-white">
+  <div class="bg-white shadow">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
       <div class="flex justify-between items-center md:items-start py-6 md:space-x-10">
         <a href="#">
@@ -32,7 +32,7 @@
       From: "opacity-100 scale-100"
       To: "opacity-0 scale-95"
     -->
-    <div class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
+    <div class="hidden absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
       <div class="rounded-lg shadow-lg">
         <div class="rounded-lg shadow-xs bg-white">
           <div class="pt-5 pb-6 px-5 space-y-6">

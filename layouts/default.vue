@@ -17,12 +17,10 @@ export default {
 <style>
 html {
   @apply h-full;
-  min-width: 700px;
 }
 
 body {
   @apply h-full;
-  min-width: 700px;
 }
 
 #__nuxt {

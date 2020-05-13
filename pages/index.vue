@@ -1,7 +1,7 @@
 <template>
   <div>
     <home-navbar />
-    <home-hero-section />
+    <!-- <home-hero-section /> -->
     <newsletter-section />
     <feature-section />
     <testimonials />
@@ -11,15 +11,16 @@
 
 <script>
 import HomeNavbar from '~/components/HomeNavbar.vue'
-import HomeHeroSection from '~/components/HomeHeroSection.vue'
+// import HomeHeroSection from '~/components/HomeHeroSection.vue'
 import NewsletterSection from '~/components/NewsletterSection.vue'
 import FeatureSection from '~/components/FeatureSection.vue'
 import Testimonials from '~/components/Testimonials.vue'
 import LogoClouds from '~/components/LogoClouds.vue'
+
 export default {
   components: {
     HomeNavbar,
-    HomeHeroSection,
+    // HomeHeroSection,
     NewsletterSection,
     FeatureSection,
     Testimonials,

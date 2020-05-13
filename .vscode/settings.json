@@ -1,0 +1,9 @@
+{
+  "prettier.printWidth": 1000,
+  "prettier.proseWrap": "never",
+  "editor.formatOnSave": true,
+  "vetur.validation.template": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
+}
