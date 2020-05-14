@@ -1,6 +1,6 @@
 <template>
-  <div class="max-w-full">
-    <nuxt />
+  <div class="max-w-full h-full flex-1">
+    <nuxt id="content" />
     <the-footer />
   </div>
 </template>
@@ -29,5 +29,9 @@ body {
 
 #__layout {
   @apply h-full flex flex-col;
+}
+
+#content {
+  min-height: 60vh;
 }
 </style>
