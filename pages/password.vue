@@ -7,12 +7,8 @@
         Either logout or go to the password protected area
       </p>
       <div class="flex justify-between">
-        <a class="text-gray-500 underline" href="/" @click="removeAuthorisation"
-          >Log out</a
-        >
-        <a class="text-gray-500 underline" href="/"
-          >Go to password protected area</a
-        >
+        <a class="text-gray-500 underline" href="/" @click="removeAuthorisation">Log out</a>
+        <a class="text-gray-500 underline" href="/">Go to password protected area</a>
       </div>
     </div>
     <div v-else>
@@ -23,16 +19,9 @@
 
       <div>
         <form class="flex justify-between">
-          <input
-            v-model="methodLoginValue"
-            class="w-2/3"
-            type="password"
-            placeholder="Your password for the method login approach"
-          />
+          <input v-model="methodLoginValue" class="w-2/3" type="password" placeholder="Your password for the method login approach" />
 
-          <a class="text-gray-500 underline" href="/" @click="loginUser()"
-            >Login</a
-          >
+          <a class="text-gray-500 underline" href="/" @click="loginUser()">Login</a>
         </form>
       </div>
     </div>

@@ -5,11 +5,7 @@
       {{ article.content }}
     </div>
     <div class="flex justify-center items-end my-4">
-      <span
-        v-for="category in article.categories"
-        :key="category.id"
-        class="inline-block bg-gray-200 rounded-full text-sm font-semibold text-gray-700 m-1 py-1 px-2"
-      >
+      <span v-for="category in article.categories" :key="category.id" class="inline-block bg-gray-200 rounded-full text-sm font-semibold text-gray-700 m-1 py-1 px-2">
         <article-category-pill :name="category.name" :slug="category.slug" />
       </span>
     </div>

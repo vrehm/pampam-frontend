@@ -1,12 +1,7 @@
 <template>
   <div :class="containerClass">
     <slot name="loading" :loading="loading" />
-    <slot
-      v-for="(feed, index) in feeds"
-      :index="index"
-      :feed="feed"
-      name="feeds"
-    />
+    <slot v-for="(feed, index) in feeds" :index="index" :feed="feed" name="feeds" />
     <slot name="error" :error="error" />
   </div>
 </template>

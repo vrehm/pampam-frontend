@@ -5,10 +5,7 @@
         <h2 class="text-4xl m-2 flex-1">
           Articles index - Nuxt blog test @Bivwak!
         </h2>
-        <nuxt-link
-          to="/"
-          class="bg-transparent hover:bg-gray-500 text-gray-700 font-semibold hover:text-white py-2 px-4 border border-gray-500 hover:border-transparent rounded"
-        >
+        <nuxt-link to="/" class="bg-transparent hover:bg-gray-500 text-gray-700 font-semibold hover:text-white py-2 px-4 border border-gray-500 hover:border-transparent rounded">
           Back to homepage
         </nuxt-link>
       </div>
@@ -20,10 +17,7 @@
       >
         <span class="text-2xl w-full my-2">{{ category.name }}</span> -->
       <div v-for="article in articles" :key="article.id" class="flex">
-        <article-card
-          :article="article"
-          class="max-w-xs rounded overflow-hidden shadow-lg m-2 flex-1"
-        />
+        <article-card :article="article" class="max-w-xs rounded overflow-hidden shadow-lg m-2 flex-1" />
       </div>
       <!-- </div> -->
     </div>

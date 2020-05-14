@@ -1,11 +1,5 @@
 <template>
-  <oneWaveInsta
-    :token="token"
-    :user-id="userId"
-    fields="media_url,media_type,caption,children"
-    :mediatypes="['IMAGE', 'CAROUSEL_ALBUM']"
-    :count="16"
-  >
+  <oneWaveInsta :token="token" :user-id="userId" fields="media_url,media_type,caption,children" :mediatypes="['IMAGE', 'CAROUSEL_ALBUM']" :count="16">
     <template v-slot:loading="props">
       <h1 v-if="props.loading" class="fancy-loading">
         Loading, please wait...
@@ -17,11 +11,7 @@
         <img :src="props.feed.media_url" />
         <div :text="props.feed.caption" />
         <div v-if="props.feed.children">
-          <div
-            v-for="(child, index) in props.feed.children.data"
-            :key="index"
-            :child="child"
-          >
+          <div v-for="(child, index) in props.feed.children.data" :key="index" :child="child">
             <span>{{ child.id }}</span>
           </div>
         </div>
@@ -29,7 +19,9 @@
     </template>
 
     <template v-slot:error="props">
-      <div class="fancy-alert">{{ props.error }}</div>
+      <div class="fancy-alert">
+        {{ props.error }}
+      </div>
     </template>
   </oneWaveInsta>
 </template>

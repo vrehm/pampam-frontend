@@ -1,26 +1,27 @@
 <template>
   <div>
-    <hero-section />
+    <home-navbar />
+    <home-hero-section />
     <newsletter-section />
     <feature-section />
     <testimonials />
     <logo-clouds />
-    <footer-section />
   </div>
 </template>
 
 <script>
-import HeroSection from '~/components/HeroSection.vue'
+import HomeNavbar from '~/components/HomeNavbar.vue'
+import HomeHeroSection from '~/components/HomeHeroSection.vue'
 import NewsletterSection from '~/components/NewsletterSection.vue'
-import FooterSection from '~/components/FooterSection.vue'
 import FeatureSection from '~/components/FeatureSection.vue'
 import Testimonials from '~/components/Testimonials.vue'
 import LogoClouds from '~/components/LogoClouds.vue'
+
 export default {
   components: {
-    HeroSection,
+    HomeNavbar,
+    HomeHeroSection,
     NewsletterSection,
-    FooterSection,
     FeatureSection,
     Testimonials,
     LogoClouds
