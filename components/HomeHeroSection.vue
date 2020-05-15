@@ -1,8 +1,8 @@
 <template>
-  <section class="background-custom h-screen overflow-hidden">
-    <div class="pt-48 pb-12 sm:pb-16 md:pb-20 lg:pb-28 xl:pb-28">
-      <div class="mt-10 mx-auto max-w-screen-xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 xl:mt-64">
-        <h1 class="text-4xl tracking-tight leading-10 font-extrabold text-gray-100 sm:text-5xl sm:leading-tight md:text-6xl">
+  <section class="background-hero-custom h-screen flex items-end overflow-hidden">
+    <div class="h-auto w-full mb-40 px-4 landscape-hero-title-custom sm:mb-28 sm:px-6 xl:mb-40">
+      <div class="flex justify-start max-w-7xl mx-auto xl:px-6">
+        <h1 class="text-4xl tracking-tight leading-10 font-extrabold text-gray-100 sm:text-5xl sm:leading-tight md:text-5xl lg:text-6xl">
           Brocante poétique
           <br />
           <span class="text-yellow-500">pour intérieurs singuliers</span>
@@ -17,10 +17,26 @@ export default {}
 </script>
 
 <style>
-.background-custom {
+.background-hero-custom {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5) 10%, rgba(0, 0, 0, 0.3) 90%), url('/img/home/hero-home2000x1500.jpg');
   background-position: center, center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-size: cover, cover;
+  background-repeat: no-repeat, no-repeat;
 }
+
+/* For mobile landscape orientation */
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (orientation: landscape) {
+  .landscape-hero-title-custom {
+    margin-bottom: 2rem;
+  }
+}
+
+/* For tablet landscape orientation (create conflicts) */
+/* 
+@media only screen and (min-device-width: 768px) and (max-device-width: 1023px) and (orientation: landscape) {
+  .landscape-hero-title-custom {
+    margin-bottom: 2rem;
+  }
+}
+*/
 </style>
