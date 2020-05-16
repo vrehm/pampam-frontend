@@ -33,7 +33,7 @@ export default {
   data() {
     return {
       methodLoginValue: '',
-      isAuthorised: false,
+      isAuthorised: false
     }
   },
   mounted() {
@@ -49,8 +49,8 @@ export default {
     removeAuthorisation() {
       this.$passwordProtect.removeAuthorisation()
       this.isAuthorised = this.$passwordProtect.isAuthorised()
-    },
-  },
+    }
+  }
 }
 </script>
 

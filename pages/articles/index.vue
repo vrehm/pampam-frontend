@@ -29,16 +29,16 @@ import ArticleCard from '~/components/ArticleCard.vue'
 
 export default {
   components: {
-    ArticleCard,
+    ArticleCard
   },
   async asyncData({ $axios }) {
     const {
-      defaults: { baseURL },
+      defaults: { baseURL }
     } = $axios
     const articles = await $axios.$get(baseURL + '/articles?_sort=id:ASC')
     const categories = await $axios.$get(baseURL + '/categories?_sort=id:ASC')
     return { articles, categories }
-  },
+  }
 }
 </script>
 

@@ -24,19 +24,19 @@ import ArticleCategoryPill from '~/components/ArticleCategoryPill.vue'
 
 export default {
   components: {
-    ArticleCategoryPill,
+    ArticleCategoryPill
   },
   props: {
     article: {
       type: Object,
-      required: true,
-    },
+      required: true
+    }
   },
   data() {
     return {
-      assetsBaseUrl: process.env.assetsBaseUrl,
+      assetsBaseUrl: process.env.assetsBaseUrl
     }
-  },
+  }
 }
 </script>
 

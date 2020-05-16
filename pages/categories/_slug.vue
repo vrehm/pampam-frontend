@@ -27,19 +27,19 @@ import ArticleCard from '~/components/ArticleCard.vue'
 
 export default {
   components: {
-    ArticleCard,
+    ArticleCard
   },
   async asyncData({ $axios, params }) {
     const slug = params.slug
     const {
-      defaults: { baseURL },
+      defaults: { baseURL }
     } = $axios
     const articles = await $axios.$get(baseURL + '/articles?_sort=id:ASC')
     const categories = await $axios.$get(baseURL + '/categories?_sort=id:ASC')
     const categoryFilter = await $axios.$get(baseURL + '/categories?slug=' + slug)
     const category = categoryFilter[0]
     return { articles, categories, category }
-  },
+  }
 }
 </script>
 
