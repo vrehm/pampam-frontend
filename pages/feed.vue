@@ -31,12 +31,12 @@ import oneWaveInsta from '~/components/oneWaveInsta.vue'
 
 export default {
   components: {
-    oneWaveInsta
+    oneWaveInsta,
   },
   data: () => ({
     token: process.env.IG_TOKEN,
-    userId: process.env.IG_USER_ID
-  })
+    userId: process.env.IG_USER_ID,
+  }),
 }
 </script>
 

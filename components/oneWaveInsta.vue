@@ -15,47 +15,47 @@ export default {
      */
     token: {
       type: String,
-      required: true
+      required: true,
     },
     /*
      * Instagram user id.
      */
     userId: {
       type: String,
-      required: true
+      required: true,
     },
     /*
      * Media Fields (see https://developers.facebook.com/docs/instagram-basic-display-api/reference/media#fields)
      */
     fields: {
       type: String,
-      required: true
+      required: true,
     },
     /*
      * Number of posts rendered.
      */
     count: {
       type: Number,
-      default: 50
+      default: 50,
     },
     /*
      * Kinds of media to filter (Can be IMAGE, VIDEO, or CAROUSEL_ALBUM.).
      */
     mediatypes: {
       type: Array,
-      required: true
+      required: true,
     },
     // Class for container div
     containerClass: {
       type: String,
       default: '',
-      required: false
-    }
+      required: false,
+    },
   },
   data: () => ({
     error: null,
     loading: false,
-    feeds: []
+    feeds: [],
   }),
   mounted() {
     this.getUserFeed()
@@ -67,7 +67,7 @@ export default {
 
       axios
         .get(endpoint, {
-          params: { access_token: this.token, fields: this.fields }
+          params: { access_token: this.token, fields: this.fields },
         })
         .then((response) => {
           this.loading = false
@@ -96,8 +96,8 @@ export default {
                       .get(endpoint, {
                         params: {
                           access_token: this.token,
-                          fields: 'media_url,media_type'
-                        }
+                          fields: 'media_url,media_type',
+                        },
                       })
                       .then((response) => {
                         const igChild = response.data
@@ -117,7 +117,7 @@ export default {
         .catch((error) => {
           throw error
         })
-    }
-  }
+    },
+  },
 }
 </script>

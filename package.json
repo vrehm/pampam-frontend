@@ -1,51 +1,53 @@
 {
-    "name": "pampam-blog",
-    "version": "1.0.0",
-    "description": "Blog Nuxt atelierpampam",
-    "author": "Vincent Rehm",
-    "private": true,
-    "scripts": {
-        "dev": "nuxt",
-        "build": "nuxt build",
-        "start": "nuxt start",
-        "generate": "nuxt generate",
-        "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
-    },
-    "lint-staged": {
-        "*.{js,vue}": "npm run lint",
-        "*.{css,vue}": "stylelint"
-    },
-    "husky": {
-        "hooks": {
-            "pre-commit": "lint-staged"
-        }
-    },
-    "dependencies": {
-        "@nuxtjs/axios": "^5.10.3",
-        "@nuxtjs/pwa": "^3.0.0-0",
-        "nuxt": "^2.12.2"
-    },
-    "devDependencies": {
-        "@fullhuman/postcss-purgecss": "^2.2.0",
-        "@nuxtjs/dotenv": "^1.4.1",
-        "@nuxtjs/eslint-config": "^2.0.0",
-        "@nuxtjs/eslint-module": "^1.2.0",
-        "@nuxtjs/stylelint-module": "^3.1.0",
-        "@nuxtjs/svg": "^0.1.11",
-        "@nuxtjs/tailwindcss": "^2.0.0",
-        "@tailwindcss/ui": "^0.3.0",
-        "babel-eslint": "^10.0.1",
-        "eslint": "^6.1.0",
-        "eslint-config-prettier": "^6.10.0",
-        "eslint-plugin-nuxt": "^1.0.0",
-        "eslint-plugin-prettier": "^3.1.2",
-        "husky": "^4.2.5",
-        "lint-staged": "^10.2.2",
-        "nan": "^2.14.1",
-        "nuxt-password-protect": "^1.0.5",
-        "nuxt-purgecss": "^1.0.0",
-        "nuxt-webfontloader": "^1.1.0",
-        "prettier": "^1.19.1",
-        "stylelint": "^10.1.0"
+  "name": "pampam-blog",
+  "version": "1.0.0",
+  "description": "Blog Nuxt atelierpampam",
+  "author": "Vincent Rehm",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "update:packages": "node wipe-dependencies.js && rm -rf node_modules && npm update --save-dev && npm update --save"
+  },
+  "lint-staged": {
+    "*.{js,vue}": "npm run lint",
+    "*.{css,vue}": "stylelint"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
     }
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "*",
+    "@nuxtjs/pwa": "^2.6.0",
+    "nuxt": "*"
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "*",
+    "@nuxtjs/dotenv": "*",
+    "@nuxtjs/eslint-config": "*",
+    "@nuxtjs/eslint-module": "*",
+    "@nuxtjs/stylelint-module": "*",
+    "@nuxtjs/svg": "*",
+    "@nuxtjs/tailwindcss": "*",
+    "@tailwindcss/ui": "*",
+    "babel-eslint": "*",
+    "eslint": "*",
+    "eslint-config-prettier": "*",
+    "eslint-plugin-nuxt": "*",
+    "eslint-plugin-prettier": "*",
+    "husky": "*",
+    "lint-staged": "*",
+    "nan": "*",
+    "nuxt-password-protect": "*",
+    "nuxt-purgecss": "*",
+    "nuxt-webfontloader": "*",
+    "prettier": "*",
+    "stylelint": "*",
+    "typescript": "*"
+  }
 }

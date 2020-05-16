@@ -9,13 +9,13 @@ export default {
   props: {
     name: {
       type: String,
-      required: true
+      required: true,
     },
     slug: {
       type: String,
-      required: true
-    }
-  }
+      required: true,
+    },
+  },
 }
 </script>
 
