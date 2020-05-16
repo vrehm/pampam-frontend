@@ -16,8 +16,12 @@
         "update:packages": "node wipe-dependencies.js && rm -rf node_modules && npm update --save-dev && npm update --save"
     },
     "lint-staged": {
-        "*.{js,vue}": "npm run lint",
-        "*.{css,vue}": "stylelint"
+        "*.{js,vue}": [
+            "npm run lint",
+            "eslint --cache --fix"
+        ],
+        "*.{css,vue}": "stylelint",
+        "*.css": "stylelint --fix"
     },
     "husky": {
         "hooks": {
