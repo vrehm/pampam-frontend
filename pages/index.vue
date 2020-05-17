@@ -1,30 +1,30 @@
 <template>
   <div>
     <home-navbar />
-    <home-hero-section />
-    <home-newsletter-section />
-    <feature-section />
-    <testimonials />
+    <home-hero />
+    <home-newsletter />
+    <home-presentation />
     <logo-clouds />
+    <testimonials />
   </div>
 </template>
 
 <script>
 import HomeNavbar from '~/components/HomeNavbar.vue'
-import HomeHeroSection from '~/components/HomeHeroSection.vue'
-import HomeNewsletterSection from '~/components/HomeNewsletterSection.vue'
-import FeatureSection from '~/components/FeatureSection.vue'
-import Testimonials from '~/components/Testimonials.vue'
+import HomeHero from '~/components/HomeHero.vue'
+import HomeNewsletter from '~/components/HomeNewsletter.vue'
+import HomePresentation from '~/components/HomePresentation.vue'
 import LogoClouds from '~/components/LogoClouds.vue'
+import Testimonials from '~/components/Testimonials.vue'
 
 export default {
   components: {
     HomeNavbar,
-    HomeHeroSection,
-    HomeNewsletterSection,
-    FeatureSection,
-    Testimonials,
-    LogoClouds
+    HomeHero,
+    HomeNewsletter,
+    HomePresentation,
+    LogoClouds,
+    Testimonials
   }
 }
 </script>
