@@ -25,7 +25,7 @@
       </div>
 
       <!-- svg from zondicons.com -->
-      <div class="w-full md:w-6/12 md:pl-4 border-presentation-custom">
+      <div class="w-full md:w-6/12 md:pl-4 md:border-l-2 border-dashed border-gray-900">
         <div class="mt-28 md:mt-0">
           <h2 class="text-center text-2xl leading-8 font-extrabold tracking-tight sm:text-3xl sm:leading-9text-lg text-gray-900">
             Mes valeurs
@@ -106,10 +106,4 @@
 export default {}
 </script>
 
-<style>
-@media screen and (min-width: 768px) {
-  .border-presentation-custom {
-    border-left: dashed 2px #1a202c;
-  }
-}
-</style>
+<style></style>
