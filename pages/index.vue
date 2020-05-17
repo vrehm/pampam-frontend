@@ -4,8 +4,8 @@
     <home-hero />
     <home-newsletter />
     <home-presentation />
-    <testimonials />
     <logo-clouds />
+    <testimonials />
   </div>
 </template>
 
@@ -14,8 +14,8 @@ import HomeNavbar from '~/components/HomeNavbar.vue'
 import HomeHero from '~/components/HomeHero.vue'
 import HomeNewsletter from '~/components/HomeNewsletter.vue'
 import HomePresentation from '~/components/HomePresentation.vue'
-import Testimonials from '~/components/Testimonials.vue'
 import LogoClouds from '~/components/LogoClouds.vue'
+import Testimonials from '~/components/Testimonials.vue'
 
 export default {
   components: {
@@ -23,8 +23,8 @@ export default {
     HomeHero,
     HomeNewsletter,
     HomePresentation,
-    Testimonials,
-    LogoClouds
+    LogoClouds,
+    Testimonials
   }
 }
 </script>
