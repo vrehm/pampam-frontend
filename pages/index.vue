@@ -4,7 +4,7 @@
     <home-hero />
     <home-newsletter />
     <home-presentation />
-    <logo-clouds />
+    <home-insta-grid />
     <testimonials />
   </div>
 </template>
@@ -14,7 +14,7 @@ import HomeNavbar from '~/components/HomeNavbar.vue'
 import HomeHero from '~/components/HomeHero.vue'
 import HomeNewsletter from '~/components/HomeNewsletter.vue'
 import HomePresentation from '~/components/HomePresentation.vue'
-import LogoClouds from '~/components/LogoClouds.vue'
+import HomeInstaGrid from '~/components/HomeInstaGrid.vue'
 import Testimonials from '~/components/Testimonials.vue'
 
 export default {
@@ -23,7 +23,7 @@ export default {
     HomeHero,
     HomeNewsletter,
     HomePresentation,
-    LogoClouds,
+    HomeInstaGrid,
     Testimonials
   }
 }
