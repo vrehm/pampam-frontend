@@ -2,7 +2,7 @@
   <section class="pt-6 pb-10 sm:pb-8 md:pt-12 md:pb-12 bg-white">
     <div class="md:flex md:justify-center max-w-screen-xl mt-10 mx-auto px-4 sm:px-6 lg:px-8">
       <div class="w-full md:w-6/12 md:pr-4">
-        <h2 class="text-center text-2xl leading-8 font-extrabold tracking-tight sm:text-3xl sm:leading-9text-lg text-gray-900">
+        <h2 class="text-center text-2xl leading-8 font-extrabold tracking-tight sm:text-3xl sm:leading-9 text-gray-900">
           Who is Pam Pam?
         </h2>
 
@@ -27,7 +27,7 @@
       <!-- svg from zondicons.com -->
       <div class="w-full md:w-6/12 md:pl-4 md:border-l-2 border-dashed border-gray-900">
         <div class="mt-28 md:mt-0">
-          <h2 class="text-center text-2xl leading-8 font-extrabold tracking-tight sm:text-3xl sm:leading-9text-lg text-gray-900">
+          <h2 class="text-center text-2xl leading-8 font-extrabold tracking-tight sm:text-3xl sm:leading-9 text-gray-900">
             Mes valeurs
           </h2>
         </div>

@@ -5,6 +5,7 @@
     <home-newsletter />
     <home-presentation />
     <home-insta-grid />
+    <home-atelier />
     <testimonials />
   </div>
 </template>
@@ -15,6 +16,7 @@ import HomeHero from '~/components/HomeHero.vue'
 import HomeNewsletter from '~/components/HomeNewsletter.vue'
 import HomePresentation from '~/components/HomePresentation.vue'
 import HomeInstaGrid from '~/components/HomeInstaGrid.vue'
+import HomeAtelier from '~/components/HomeAtelier.vue'
 import Testimonials from '~/components/Testimonials.vue'
 
 export default {
@@ -24,6 +26,7 @@ export default {
     HomeNewsletter,
     HomePresentation,
     HomeInstaGrid,
+    HomeAtelier,
     Testimonials
   }
 }
