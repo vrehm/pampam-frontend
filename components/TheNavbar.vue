@@ -7,26 +7,26 @@
             <img class="w-24 md:w-32 lg:w-48" src="/img/logos/pampam-logo.svg" alt="Logo" />
           </a>
           <div class="-mr-2 -my-2 md:hidden">
-            <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-200 hover:text-gray-400 focus:outline-none focus:text-gray-400 transition duration-150 ease-in-out" @click="mobileNavOpen = !mobileNavOpen">
+            <button type="button" class="inline-flex items-center justify-center p-2 rounded-md rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out" @click="mobileNavOpen = !mobileNavOpen">
               <svg class="h-8 w-8" stroke="currentColor" fill="none" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
               </svg>
             </button>
           </div>
           <nav class="hidden md:flex md:space-x-5 lg:space-x-10">
-            <a href="#" class="md:text-sm lg:text-base leading-6 font-medium text-gray-100 hover:text-gray-300 focus:outline-none focus:text-gray-300 transition ease-in-out duration-150">
+            <nuxt-link :to="{ path: '/', hash: 'whoispampam' }" class="md:text-sm lg:text-base leading-6 font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150">
               Who is Pam Pam?
-            </a>
-            <a href="#" class="md:text-sm lg:text-base leading-6 font-medium text-gray-100 hover:text-gray-300 focus:outline-none focus:text-gray-300 transition ease-in-out duration-150">
+            </nuxt-link>
+            <a href="#" class="md:text-sm lg:text-base leading-6 font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150">
               La Boutique
             </a>
-            <a href="#" class="md:text-sm lg:text-base leading-6 font-medium text-gray-100 hover:text-gray-300 focus:outline-none focus:text-gray-300 transition ease-in-out duration-150">
+            <a href="#" class="md:text-sm lg:text-base leading-6 font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150">
               L'Atelier
             </a>
-            <a href="#" class="md:text-sm lg:text-base leading-6 font-medium text-gray-100 hover:text-gray-300 focus:outline-none focus:text-gray-300 transition ease-in-out duration-150">
+            <a href="#" class="md:text-sm lg:text-base leading-6 font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150">
               Côté Pro
             </a>
-            <a href="#" class="md:text-sm lg:text-base leading-6 font-medium text-gray-100 hover:text-gray-300 focus:outline-none focus:text-gray-300 transition ease-in-out duration-150">
+            <a href="#" class="md:text-sm lg:text-base leading-6 font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150">
               Journal
             </a>
           </nav>
@@ -47,7 +47,7 @@
     <transition name="fade" enter-active-class="duration-200 ease-out" enter-class="opacity-0 scale-95" enter-to-class="opacity-100 scale-100" leave-active-class="duration-100 ease-in" leave-class="opacity-100 scale-100" leave-to-class="opacity-0 scale-95">
       <div v-show="mobileNavOpen" v-click-outside="closeMobileNavbar" class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
         <div class="rounded-lg shadow-lg">
-          <div class="rounded-lg shadow-xs bg-gray-200">
+          <div class="rounded-lg shadow-xs bg-white">
             <div class="pt-5 pb-6 px-5 space-y-8">
               <div class="flex items-center justify-between">
                 <img class="w-24" src="/img/logos/pampam-logo.svg" alt="Logo" />

@@ -14,36 +14,14 @@
             </button>
           </div>
           <nav class="hidden md:flex md:space-x-5 lg:space-x-10">
-            <a href="#" class="md:text-sm lg:text-base leading-6 font-medium text-gray-100 hover:text-gray-300 focus:outline-none focus:text-gray-300 transition ease-in-out duration-150">
-              Who is Pam Pam?
-            </a>
-            <a href="#" class="md:text-sm lg:text-base leading-6 font-medium text-gray-100 hover:text-gray-300 focus:outline-none focus:text-gray-300 transition ease-in-out duration-150">
-              La Boutique
-            </a>
-            <a href="#" class="md:text-sm lg:text-base leading-6 font-medium text-gray-100 hover:text-gray-300 focus:outline-none focus:text-gray-300 transition ease-in-out duration-150">
-              L'Atelier
-            </a>
-            <a href="#" class="md:text-sm lg:text-base leading-6 font-medium text-gray-100 hover:text-gray-300 focus:outline-none focus:text-gray-300 transition ease-in-out duration-150">
-              Côté Pro
-            </a>
-            <a href="#" class="md:text-sm lg:text-base leading-6 font-medium text-gray-100 hover:text-gray-300 focus:outline-none focus:text-gray-300 transition ease-in-out duration-150">
-              Journal
-            </a>
+            <nuxt-link v-for="item in menuItems" :key="item.name" :to="{ path: '/', hash: item.hash }" class="md:text-sm lg:text-base leading-6 font-medium text-gray-100 hover:text-gray-300 focus:outline-none focus:text-gray-300 transition ease-in-out duration-150">
+              {{ item.name }}
+            </nuxt-link>
           </nav>
         </div>
       </div>
     </div>
 
-    <!--
-    Mobile menu, show/hide based on mobile menu state.
-
-    Entering: "duration-200 ease-out"
-      From: "opacity-0 scale-95"
-      To: "opacity-100 scale-100"
-    Leaving: "duration-100 ease-in"
-      From: "opacity-100 scale-100"
-      To: "opacity-0 scale-95"
-    -->
     <transition name="fade" enter-active-class="duration-200 ease-out" enter-class="opacity-0 scale-95" enter-to-class="opacity-100 scale-100" leave-active-class="duration-100 ease-in" leave-class="opacity-100 scale-100" leave-to-class="opacity-0 scale-95">
       <div v-show="mobileNavOpen" v-click-outside="closeMobileNavbar" class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
         <div class="rounded-lg shadow-lg">
@@ -61,7 +39,12 @@
               </div>
 
               <nav class="grid row-gap-8">
-                <a href="#" class="-m-3 p-3 rounded-md hover:bg-gray-50 transition ease-in-out duration-150">
+                <nuxt-link v-for="item in menuItems" :key="item.name" :to="{ path: '/', hash: item.hash }" class="-m-3 p-3 rounded-md hover:bg-gray-50 transition ease-in-out duration-150">
+                  <div class="text-base leading-6 font-medium text-yellow-600">
+                    {{ item.name }}
+                  </div>
+                </nuxt-link>
+                <!-- <a href="#" class="-m-3 p-3 rounded-md hover:bg-gray-50 transition ease-in-out duration-150">
                   <div class="text-base leading-6 font-medium text-yellow-600">
                     Who is Pam Pam?
                   </div>
@@ -85,7 +68,7 @@
                   <div class="text-base leading-6 font-medium text-yellow-600">
                     Journal
                   </div>
-                </a>
+                </a> -->
               </nav>
             </div>
           </div>
@@ -99,6 +82,33 @@
 export default {
   data() {
     return {
+      menuItems: [
+        {
+          name: 'Who is Pam Pam',
+          hash: 'who-is-pampam',
+          path: '/'
+        },
+        {
+          name: 'La Boutique',
+          hash: 'la-boutique',
+          path: '/'
+        },
+        {
+          name: " L'Atelier",
+          hash: 'l-atelier',
+          path: '/'
+        },
+        {
+          name: 'Côté Pro',
+          hash: '',
+          path: '/cote-pro'
+        },
+        {
+          name: 'Journal',
+          hash: '',
+          path: '/journal'
+        }
+      ],
       mobileNavOpen: false
     }
   },

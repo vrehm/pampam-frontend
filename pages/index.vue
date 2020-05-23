@@ -3,8 +3,8 @@
     <home-navbar />
     <home-hero />
     <home-newsletter />
-    <home-presentation />
-    <home-insta-grid />
+    <home-presentation id="who-is-pampam" />
+    <home-insta-grid id="la-boutique" />
     <testimonials />
   </div>
 </template>
