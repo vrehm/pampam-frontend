@@ -1,6 +1,6 @@
 <template>
   <div class="max-w-full h-full flex-1">
-    <the-nav-bar v-if="['index'].indexOf($route.name)" />
+    <the-nav-bar :use-homepage-theme="isHomepage" />
     <nuxt id="content" />
     <the-footer />
   </div>
@@ -13,6 +13,15 @@ export default {
   components: {
     TheNavBar,
     TheFooter
+  },
+  computed: {
+    isHomepage() {
+      if (this.$route.name === 'index') {
+        return true
+      } else {
+        return false
+      }
+    }
   }
 }
 </script>
