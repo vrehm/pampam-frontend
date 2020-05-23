@@ -1,6 +1,6 @@
 <template>
-  <section class="background-hero-custom h-screen flex items-end overflow-hidden">
-    <div class="h-auto w-full mb-40 px-4 landscape-hero-title-custom sm:mb-28 sm:px-6 xl:mb-40 min-h-550">
+  <section class="background-hero-custom h-screen flex items-end overflow-hidden min-h-550">
+    <div class="h-auto w-full mb-40 px-4 landscape-hero-title-custom sm:mb-28 sm:px-6 xl:mb-40">
       <div class="flex justify-start max-w-7xl mx-auto xl:px-6">
         <h1 class="text-4xl tracking-tight leading-10 font-extrabold text-gray-100 sm:text-5xl sm:leading-tight md:text-5xl lg:text-6xl">
           Brocante poétique
