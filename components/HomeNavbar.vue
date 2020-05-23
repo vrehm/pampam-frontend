@@ -100,9 +100,23 @@ export default {
       mobileNavOpen: false
     }
   },
+  beforeMount() {
+    window.addEventListener('scroll', this.handleScroll)
+    window.addEventListener('touchmove', this.handleScroll)
+  },
+  beforeDestroy() {
+    window.removeEventListener('scroll', this.handleScroll)
+    window.removeEventListener('touchmove', this.handleScroll)
+  },
   methods: {
     closeMobileNavbar() {
       this.mobileNavOpen = false
+    },
+    handleScroll() {
+      // actions on scroll or touchmove events
+      if (window.scrollY > 200) {
+        this.closeMobileNavbar()
+      }
     }
   }
 }
