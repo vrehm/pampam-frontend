@@ -98,6 +98,12 @@ export default {
     }
   },
   /*
+  ** Plugins to load before mounting the App
+  */
+  plugins: [
+    { src: "@/plugins/vClickOutside", ssr: false }
+  ],
+  /*
    * See https://purgecss.com/guides/nuxt.html#nuxt-js-plugin
    * Modified based on tailwindUI settings: https://tailwindui.com/documentation#update-your-purgecss-configuration
    */

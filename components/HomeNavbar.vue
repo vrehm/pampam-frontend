@@ -44,7 +44,7 @@
       From: "opacity-100 scale-100"
       To: "opacity-0 scale-95"
     -->
-    <div class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden" :class="{ hidden: !mobileNavOpen }">
+    <div v-click-outside="closeMobileNavbar" class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden" :class="{ hidden: !mobileNavOpen }">
       <div class="rounded-lg shadow-lg">
         <div class="rounded-lg shadow-xs bg-gray-200">
           <div class="pt-5 pb-6 px-5 space-y-8">
@@ -98,6 +98,11 @@ export default {
   data() {
     return {
       mobileNavOpen: false
+    }
+  },
+  methods: {
+    closeMobileNavbar() {
+      this.mobileNavOpen = false
     }
   }
 }

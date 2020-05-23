@@ -31,7 +31,8 @@
     "dependencies": {
         "@nuxtjs/axios": "*",
         "@nuxtjs/pwa": "^3.0.0-beta.20",
-        "nuxt": "*"
+        "nuxt": "*",
+        "v-click-outside": "^3.0.1"
     },
     "devDependencies": {
         "@fullhuman/postcss-purgecss": "*",
