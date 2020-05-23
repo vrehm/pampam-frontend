@@ -7,7 +7,7 @@
             <img class="w-24 md:w-32 lg:w-48" src="/img/logos/pampam-logo.svg" alt="Logo" />
           </a>
           <div class="-mr-2 -my-2 md:hidden">
-            <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-200 hover:text-gray-400 focus:outline-none focus:text-gray-400 transition duration-150 ease-in-out">
+            <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-200 hover:text-gray-400 focus:outline-none focus:text-gray-400 transition duration-150 ease-in-out" @click="mobileNavOpen = !mobileNavOpen">
               <svg class="h-8 w-8" stroke="currentColor" fill="none" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
               </svg>
@@ -44,14 +44,14 @@
       From: "opacity-100 scale-100"
       To: "opacity-0 scale-95"
     -->
-    <div class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
+    <div class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden" :class="{ hidden: !mobileNavOpen }">
       <div class="rounded-lg shadow-lg">
         <div class="rounded-lg shadow-xs bg-gray-200">
           <div class="pt-5 pb-6 px-5 space-y-8">
             <div class="flex items-center justify-between">
               <img class="w-24" src="/img/logos/pampam-logo.svg" alt="Logo" />
               <div class="-mr-2">
-                <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-300 focus:outline-none focus:text-gray-300 transition duration-150 ease-in-out">
+                <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-300 focus:outline-none focus:text-gray-300 transition duration-150 ease-in-out" @click="mobileNavOpen = !mobileNavOpen">
                   <svg class="h-8 w-8" stroke="currentColor" fill="none" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                   </svg>
@@ -94,7 +94,13 @@
 </template>
 
 <script>
-export default {}
+export default {
+  data() {
+    return {
+      mobileNavOpen: false
+    }
+  }
+}
 </script>
 
 <style></style>
