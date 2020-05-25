@@ -4,7 +4,7 @@
     <home-newsletter />
     <home-presentation id="who-is-pampam" />
     <home-insta-grid id="la-boutique" />
-    <home-atelier id="atelier" />
+    <home-atelier id="l-atelier" />
     <testimonials />
   </div>
 </template>
