@@ -62,6 +62,7 @@
         "prettier": "*",
         "stylelint": "*",
         "typescript": "*",
+        "v-click-outside": "^3.0.1",
         "webpack-cli": "^3.3.11"
     }
 }
