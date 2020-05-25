@@ -19,8 +19,11 @@ module.exports = {
         extend: {
             fontFamily: {
                 sans: ['Inter', ...defaultTheme.fontFamily.sans]
+            },
+            minHeight: {
+                '550': '550px',
             }
-        }
+        },
     },
     variants: {},
     plugins: [require('@tailwindcss/ui')]
