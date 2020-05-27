@@ -16,11 +16,7 @@ export default {
   },
   computed: {
     isHomepage() {
-      if (this.$route.name === 'index') {
-        return true
-      } else {
-        return false
-      }
+      return this.$route.name === 'index' || this.$route.name === 'cote-pro'
     }
   }
 }
