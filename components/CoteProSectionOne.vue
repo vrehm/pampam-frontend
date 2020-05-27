@@ -11,14 +11,14 @@
         </p>
       </div> -->
 
-      <!-- Right version -->
+      <!-- Right version - Section 1 -->
       <div class="relative mt-12 sm:mt-16 lg:mt-24">
         <div class="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-8 lg:items-center">
           <div class="lg:col-start-2">
-            <h4 class="text-2xl leading-8 font-extrabold text-gray-900 tracking-tight sm:text-3xl sm:leading-9">
+            <h3 class="text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
               COTE PRO
-            </h4>
-            <p class="mt-3 text-lg leading-7 text-gray-500">
+            </h3>
+            <p class="mt-4 max-w-3xl mx-auto text-xl leading-7 text-gray-500">
               L’Atelier Pam Pam propose des prestations spéciales pour les pros !
             </p>
           </div>
@@ -33,6 +33,33 @@
               <rect width="784" height="404" fill="url(#e80155a9-dfde-425a-b5ea-1f6fadd20131)" />
             </svg>
             <img class="relative mx-auto" width="490" src="/img/cote-pro/dessin-pro.jpg" alt="dessin de l'activité pro de PamPam" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Right version - Section 2 -->
+      <div class="relative mt-12 sm:mt-16 lg:mt-24">
+        <div class="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-8 lg:items-center">
+          <div class="lg:col-start-2">
+            <h4 class="text-2xl leading-8 font-extrabold text-gray-900 tracking-tight sm:text-3xl sm:leading-9">
+              Vous avez besoin de louer du mobilier de manière ponctuelle?
+            </h4>
+            <p class="mt-4 max-w-3xl text-xl leading-7 text-gray-500">Je propose un service de location de mobilier pour vos shooting photo, événements, tournages etc, et des installations de décors éphémères, scénographies. <br /></p>
+            <p class="mt-4 max-w-3xl text-xl leading-7 text-gray-700">
+              Tarif sur devis.
+            </p>
+          </div>
+
+          <div class="mt-10 -mx-4 relative lg:mt-0 lg:col-start-1">
+            <svg class="absolute left-1/2 transform -translate-x-1/2 translate-y-16 lg:hidden" width="784" height="404" fill="none" viewBox="0 0 784 404">
+              <defs>
+                <pattern id="e80155a9-dfde-425a-b5ea-1f6fadd20131" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                  <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+                </pattern>
+              </defs>
+              <rect width="784" height="404" fill="url(#e80155a9-dfde-425a-b5ea-1f6fadd20131)" />
+            </svg>
+            <img class="relative mx-auto rounded-sm" width="490" src="/img/cote-pro/photo-location.jpg" alt="Photo du service pro de location de l'atelier Pampam" />
           </div>
         </div>
       </div>
