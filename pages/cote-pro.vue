@@ -1,6 +1,6 @@
 <template>
   <div>
-    <cote-pro-hero-section />
+    <cote-pro-hero-section class="lg:pt-16" />
     <cote-pro-location-section />
     <cote-pro-decoration-section />
     <cote-pro-espace-section />

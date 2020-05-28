@@ -2,8 +2,8 @@
   <section class="w-full bg-transparent">
     <!-- desktop version -->
 
-    <!-- homepage version -->
-    <div v-if="useHomepageTheme" class="absolute top-0 left-0 right-0">
+    <!-- Version with position absolute, over the background -->
+    <div v-if="useAbsoluteVersion" class="absolute top-0 left-0 right-0">
       <div class="max-w-7xl mx-auto px-4 sm:px-6">
         <div class="flex justify-between items-center md:items-start py-6 md:space-x-10">
           <a href="#">
@@ -24,12 +24,12 @@
         </div>
       </div>
     </div>
-    <!-- other than homepage version -->
+    <!-- Version with position relative -->
 
     <div v-else class="max-w-7xl mx-auto px-4 sm:px-6">
-      <div class="flex justify-between items-center md:items-start py-6 md:space-x-10">
+      <div class="flex justify-between items-center md:items-start py-6 md:space-x-10 border-b-2 border-gray-100">
         <a href="#">
-          <img class="w-24 md:w-32 lg:w-48" src="/img/logos/pampam-logo.svg" alt="Logo" />
+          <img class="w-24 md:w-32 lg:w-48 absolute z-10" src="/img/logos/pampam-logo.svg" alt="Logo" />
         </a>
         <div class="-mr-2 -my-2 md:hidden">
           <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-200 hover:text-gray-400 focus:outline-none focus:text-gray-400 transition duration-150 ease-in-out" @click="mobileNavOpen = !mobileNavOpen">
@@ -82,14 +82,13 @@
 <script>
 export default {
   props: {
-    useHomepageTheme: {
+    useAbsoluteVersion: {
       type: Boolean,
       default: false
     }
   },
   data() {
     return {
-      theme: 'absolute top-0 left-0 right-0',
       menuItems: [
         {
           name: 'Who is Pam Pam',
@@ -118,14 +117,6 @@ export default {
         }
       ],
       mobileNavOpen: false
-    }
-  },
-  computed: {
-    classObject() {
-      return {
-        'bg-transparent': this.isActive && !this.error,
-        'text-danger': this.error && this.error.type === 'fatal'
-      }
     }
   },
   beforeMount() {

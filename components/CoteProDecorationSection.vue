@@ -14,7 +14,7 @@
 
               <div class="mt-8">
                 <div class="flex items-center">
-                  <h4 class="flex-shrink-0 pr-4 bg-white text-sm leading-5 tracking-wider font-semibold uppercase text-indigo-600">
+                  <h4 class="flex-shrink-0 pr-4 bg-white text-sm leading-5 tracking-wider font-semibold uppercase text-yellow-500">
                     RDV sur les lieux (~3h)
                   </h4>
                   <div class="flex-1 border-t-2 border-gray-200"></div>
