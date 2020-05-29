@@ -108,7 +108,7 @@ export default {
             quality: 85, // 85 is default. Tweak this if you need to
             placeholder: true
         },
-        inlineImageLimit: -1,
+        inlineImageLimit: 1000,
         handleImages: ['jpeg', 'png', 'svg', 'webp', 'gif'],
         optimizeImages: true,
         optimizeImagesInDev: false,

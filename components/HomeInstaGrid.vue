@@ -48,7 +48,7 @@
             <picture>
               <source class="lazyload" data-srcset="~/assets/img/home/insta-example-1.jpg?webp" type="image/webp" />
               <source class="lazyload" :data-srcset="require('~/assets/img/home/insta-example-1.jpg?resize').srcSet" type="image/jpg" />
-              <img class="max-h-custom w-full object-cover lazyload" data-src="~/assets/img/home/insta-example-1.jpg?resize" alt="Insta example" />
+              <img class="max-h-custom w-full object-cover lazyload" data-src="~/assets/img/home/insta-example-1.jpg?sqip" alt="Insta example" />
             </picture>
           </figure>
         </a>
@@ -57,7 +57,7 @@
             <picture>
               <source class="lazyload" data-srcset="~/assets/img/home/insta-example-2.jpg?webp" type="image/webp" />
               <source class="lazyload" :data-srcset="require('~/assets/img/home/insta-example-2.jpg?resize').srcSet" type="image/jpg" />
-              <img class="w-full object-cover lazyload" data-src="~/assets/img/home/insta-example-2.jpg?resize" alt="Insta example" />
+              <img class="w-full object-cover lazyload" data-src="~/assets/img/home/insta-example-2.jpg?sqip" alt="Insta example" />
             </picture>
           </figure>
         </a>
@@ -66,7 +66,7 @@
             <picture>
               <source class="lazyload" data-srcset="~/assets/img/home/insta-example-3.jpg?webp" type="image/webp" />
               <source class="lazyload" :data-srcset="require('~/assets/img/home/insta-example-3.jpg?resize').srcSet" type="image/jpg" />
-              <img class="w-full object-cover lazyload" data-src="~/assets/img/home/insta-example-3.jpg?resize" alt="Insta example" />
+              <img class="w-full object-cover lazyload" data-src="~/assets/img/home/insta-example-3.jpg?sqip" alt="Insta example" />
             </picture>
           </figure>
         </a>
@@ -75,7 +75,7 @@
             <picture>
               <source class="lazyload" data-srcset="~/assets/img/home/insta-example-4.jpg?webp" type="image/webp" />
               <source class="lazyload" :data-srcset="require('~/assets/img/home/insta-example-4.jpg?resize').srcSet" type="image/jpg" />
-              <img class="max-h-custom w-full object-cover lazyload" data-src="~/assets/img/home/insta-example-4.jpg?resize" alt="Insta example" />
+              <img class="max-h-custom w-full object-cover lazyload" data-src="~/assets/img/home/insta-example-4.jpg?sqip" alt="Insta example" />
             </picture>
           </figure>
         </a>
@@ -84,7 +84,7 @@
             <picture>
               <source class="lazyload" data-srcset="~/assets/img/home/insta-example-5.jpg?webp" type="image/webp" />
               <source class="lazyload" :data-srcset="require('~/assets/img/home/insta-example-5.jpg?resize').srcSet" type="image/jpg" />
-              <img class="w-full object-cover lazyload" data-src="~/assets/img/home/insta-example-5.jpg?resize" alt="Insta example" />
+              <img class="w-full object-cover lazyload" data-src="~/assets/img/home/insta-example-5.jpg?sqip" alt="Insta example" />
             </picture>
           </figure>
         </a>
@@ -93,7 +93,7 @@
             <picture>
               <source class="lazyload" data-srcset="~/assets/img/home/insta-example-6.jpg?webp" type="image/webp" />
               <source class="lazyload" :data-srcset="require('~/assets/img/home/insta-example-6.jpg?resize').srcSet" type="image/jpg" />
-              <img class="w-full object-cover lazyload" data-src="~/assets/img/home/insta-example-6.jpg?resize" alt="Insta example" />
+              <img class="w-full object-cover lazyload" data-src="~/assets/img/home/insta-example-6.jpg?sqip" alt="Insta example" />
             </picture>
           </figure>
         </a>
@@ -102,7 +102,7 @@
             <picture>
               <source class="lazyload" data-srcset="~/assets/img/home/insta-example-7.jpg?webp" type="image/webp" />
               <source class="lazyload" :data-srcset="require('~/assets/img/home/insta-example-7.jpg?resize').srcSet" type="image/jpg" />
-              <img class="max-h-custom w-full object-cover lazyload" data-src="~/assets/img/home/insta-example-7.jpg?resize" alt="Insta example" />
+              <img class="max-h-custom w-full object-cover lazyload" data-src="~/assets/img/home/insta-example-7.jpg?sqip" alt="Insta example" />
             </picture>
           </figure>
         </a>
@@ -111,7 +111,7 @@
             <picture>
               <source class="lazyload" data-srcset="~/assets/img/home/insta-example-8.jpg?webp" type="image/webp" />
               <source class="lazyload" :data-srcset="require('~/assets/img/home/insta-example-8.jpg?resize').srcSet" type="image/jpg" />
-              <img class="w-full object-cover lazyload" data-src="~/assets/img/home/insta-example-8.jpg?resize" alt="Insta example" />
+              <img class="w-full object-cover lazyload" data-src="~/assets/img/home/insta-example-8.jpg?sqip" alt="Insta example" />
             </picture>
           </figure>
         </a>
@@ -120,7 +120,7 @@
             <picture>
               <source class="lazyload" data-srcset="~/assets/img/home/insta-example-9.jpg?webp" type="image/webp" />
               <source class="lazyload" :data-srcset="require('~/assets/img/home/insta-example-9.jpg?resize').srcSet" type="image/jpg" />
-              <img class="w-full object-cover lazyload" data-src="~/assets/img/home/insta-example-9.jpg?resize" alt="Insta example" />
+              <img class="w-full object-cover lazyload" data-src="~/assets/img/home/insta-example-9.jpg?sqip" alt="Insta example" />
             </picture>
           </figure>
         </a>
