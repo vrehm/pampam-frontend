@@ -1,6 +1,6 @@
 <template>
   <!-- Header version hero section -->
-  <div class="relative bg-white">
+  <div class="relative bg-white ">
     <div class="h-56 sm:h-72 lg:absolute lg:left-0 lg:h-full lg:w-1/2">
       <img class="w-full h-full object-cover" src="img/cote-pro/dessin-pro.jpg" alt="Support team" />
     </div>
@@ -21,8 +21,8 @@
           Décoration, conseil, location. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore nihil ea rerum ipsa. Nostrum consectetur sequi culpa doloribus omnis, molestiae esse placeat, exercitationem magnam quod.
         </p>
         <div class="mt-8 overflow-hidden">
-          <dl class="-mx-8 -mt-8 flex flex-wrap">
-            <div class="flex flex-col px-8 pt-8 items-center">
+          <dl class="lg:-mx-8 -mt-8 flex flex-wrap">
+            <div class="flex flex-col px-3 lg:px-8 pt-8 items-center">
               <dt class="order-2 text-base leading-6 font-medium text-gray-500">
                 Chantiers
               </dt>
@@ -30,7 +30,7 @@
                 +20
               </dd>
             </div>
-            <div class="flex flex-col px-8 pt-8 items-center">
+            <div class="flex flex-col px-3 lg:px-8 pt-8 items-center">
               <dt class="order-2 text-base leading-6 font-medium text-gray-500">
                 Studio Photo
               </dt>
@@ -38,7 +38,7 @@
                 60m2
               </dd>
             </div>
-            <div class="flex items-center flex-col px-8 pt-8">
+            <div class="flex items-center flex-col px-3 lg:px-8 pt-8">
               <dt class="order-2 text-base leading-6 font-medium text-gray-500">
                 Meubles
               </dt>

@@ -27,7 +27,7 @@
               Vous avez une liste définie de meubles, objets, luminaires que vous recherchez?
             </h4>
             <p class="mt-6 text-base leading-6 text-gray-500">Missionnez moi pour vous trouver ce qu’il vous faut!</p>
-            <p class="mt-4 max-w-3xl text-xl leading-7 text-gray-700">
+            <p class="mt-4 ont-medium text-gray-900">
               Tarif sur devis.
             </p>
           </div>

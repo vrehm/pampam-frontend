@@ -8,7 +8,7 @@
               Vous avez besoin de louer du mobilier de manière ponctuelle?
             </h4>
             <p class="mt-6 text-base leading-6 text-gray-500">Je propose un service de location de mobilier pour vos shooting photo, événements, tournages etc, et des installations de décors éphémères, scénographies. <br /></p>
-            <p class="mt-4 max-w-3xl text-xl leading-7 text-gray-700">
+            <p class="mt-4 ont-medium text-gray-900">
               Tarif sur devis.
             </p>
           </div>
