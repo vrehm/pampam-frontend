@@ -123,14 +123,15 @@ export default {
     },
     webfontloader: {
         google: {
-            families: ['Inter']
+            families: ['Inter&display=swap']
         }
     },
     /*
      ** Plugins to load before mounting the App
      */
     plugins: [
-        { src: "~/plugins/vClickOutside", ssr: false }
+        { src: "~/plugins/vClickOutside", ssr: false },
+        '~/plugins/vue-lazysizes.client.js'
     ],
     /*
      * See https://purgecss.com/guides/nuxt.html#nuxt-js-plugin
@@ -159,6 +160,20 @@ export default {
      ** Build configuration
      */
     build: {
+        // extend(config, { isDev, isClient, loaders: { vue } }) {
+        //     if (isClient) {
+        //         vue.transformAssetUrls.img = ['data-src', 'src']
+        //         vue.transformAssetUrls.source = ['data-srcset', 'srcset']
+        //     }
+        // },
+        loaders: {
+            vue: {
+                transformAssetUrls: {
+                    img: ['data-src', 'src'],
+                    source: ['data-srcset', 'srcset']
+                }
+            }
+        },
         postcss: {
             preset: {
                 features: {

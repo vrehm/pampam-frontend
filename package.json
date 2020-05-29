@@ -31,6 +31,7 @@
     "dependencies": {
         "@nuxtjs/axios": "*",
         "@nuxtjs/pwa": "^3.0.0-beta.20",
+        "lazysizes": "^5.2.2",
         "nuxt": "*"
     },
     "devDependencies": {

@@ -44,31 +44,31 @@
 
       <div class="mt-12 grid grid-cols-1 gap-2 sm:grid-cols-2 md:mt-14 md:grid-cols-3 overflow-hidden">
         <a href="#" class="col-span-1 bg-gray-50">
-          <img class="max-h-custom w-full object-cover" src="/img/home/insta-example-1.jpg" alt="Insta example" />
+          <img class="max-h-custom w-full object-cover lazyload" data-src="~/assets/img/home/insta-example-1.jpg" alt="Insta example" />
         </a>
         <a href="#" class="col-span-1 bg-gray-50">
-          <img class="w-full object-cover" src="/img/home/insta-example-2.jpg" alt="Insta example" />
+          <img class="w-full object-cover lazyload" data-src="~/assets/img/home/insta-example-2.jpg" alt="Insta example" />
         </a>
         <a href="#" class="col-span-1 bg-gray-50">
-          <img class="w-full object-cover" src="/img/home/insta-example-3.jpg" alt="Insta example" />
+          <img class="w-full object-cover lazyload" data-src="~/assets/img/home/insta-example-3.jpg" alt="Insta example" />
         </a>
         <a href="#" class="col-span-1 bg-gray-50">
-          <img class="max-h-custom w-full object-cover" src="/img/home/insta-example-4.jpg" alt="Insta example" />
+          <img class="max-h-custom w-full object-cover lazyload" data-src="~/assets/img/home/insta-example-4.jpg" alt="Insta example" />
         </a>
         <a href="#" class="col-span-1 bg-gray-50">
-          <img class="w-full object-cover" src="/img/home/insta-example-5.jpg" alt="Insta example" />
+          <img class="w-full object-cover lazyload" data-src="~/assets/img/home/insta-example-5.jpg" alt="Insta example" />
         </a>
         <a href="#" class="col-span-1 bg-gray-50">
-          <img class="w-full object-cover" src="/img/home/insta-example-6.jpg" alt="Insta example" />
+          <img class="w-full object-cover lazyload" data-src="~/assets/img/home/insta-example-6.jpg" alt="Insta example" />
         </a>
         <a href="#" class="col-span-1 bg-gray-50">
-          <img class="max-h-custom w-full object-cover" src="/img/home/insta-example-7.jpg" alt="Insta example" />
+          <img class="max-h-custom w-full object-cover lazyload" data-src="~/assets/img/home/insta-example-7.jpg" alt="Insta example" />
         </a>
         <a href="#" class="col-span-1 bg-gray-50">
-          <img class="w-full object-cover" src="/img/home/insta-example-8.jpg" alt="Insta example" />
+          <img class="w-full object-cover lazyload" data-src="~/assets/img/home/insta-example-8.jpg" alt="Insta example" />
         </a>
         <a href="#" class="col-span-1 bg-gray-50">
-          <img class="w-full object-cover" src="/img/home/insta-example-9.jpg" alt="Insta example" />
+          <img class="w-full object-cover lazyload" data-src="~/assets/img/home/insta-example-9.jpg" alt="Insta example" />
         </a>
       </div>
     </div>
