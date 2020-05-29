@@ -31,6 +31,7 @@
     "dependencies": {
         "@nuxtjs/axios": "*",
         "@nuxtjs/pwa": "^3.0.0-beta.20",
+        "animate.css": "^4.1.0",
         "nuxt": "*"
     },
     "devDependencies": {
