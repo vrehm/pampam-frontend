@@ -137,7 +137,6 @@ export default {
       // actions on scroll or touchmove events
       if (window.scrollY > 200) {
         this.closeMobileNavbar()
-        console.log('test')
       }
     }
   }
