@@ -35,6 +35,7 @@
         "nuxt": "*"
     },
     "devDependencies": {
+        "@aceforth/nuxt-optimized-images": "^1.0.1",
         "@fullhuman/postcss-purgecss": "*",
         "@nuxtjs/dotenv": "*",
         "@nuxtjs/eslint-config": "*",
@@ -55,15 +56,24 @@
         "eslint-plugin-standard": "^4.0.1",
         "eslint-plugin-vue": "^6.2.2",
         "husky": "*",
+        "imagemin-gifsicle": "^7.0.0",
+        "imagemin-mozjpeg": "^9.0.0",
+        "imagemin-pngquant": "^8.0.0",
+        "imagemin-svgo": "^8.0.0",
         "lint-staged": "*",
+        "lqip-loader": "^2.2.0",
         "nan": "*",
         "nuxt-password-protect": "*",
         "nuxt-purgecss": "*",
         "nuxt-webfontloader": "*",
         "prettier": "*",
+        "responsive-loader": "^1.2.0",
+        "sharp": "^0.25.3",
+        "sqip-loader": "^1.0.0",
         "stylelint": "*",
         "typescript": "*",
         "v-click-outside": "^3.0.1",
+        "webp-loader": "^0.6.0",
         "webpack-cli": "^3.3.11"
     }
 }

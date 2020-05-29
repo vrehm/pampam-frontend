@@ -84,7 +84,9 @@ export default {
         // Doc: https://github.com/Developmint/nuxt-purgecss
         'nuxt-purgecss',
         // Doc: https://github.com/nuxt-community/svg-module
-        '@nuxtjs/svg'
+        '@nuxtjs/svg',
+        // Doc: https://github.com/aceforth/nuxt-optimized-images
+        '@aceforth/nuxt-optimized-images'
     ],
     /*
      ** Nuxt.js modules
@@ -95,6 +97,19 @@ export default {
         // Doc: https://pwa.nuxtjs.org/setup.html
         '@nuxtjs/pwa'
     ],
+    optimizedImages: {
+        mozjpeg: {
+            quality: 85
+        },
+        optipng: false,
+        pngquant: {
+            speed: 7,
+            quality: [0.65, 0.8]
+        },
+        webp: {
+            quality: 85
+        }
+    },
     passwordProtect: {
         formPath: '/password',
         password: process.env.MODE === 'production' || process.env.NODE_ENV === 'production' ? process.env.PASSWORD : 'hello-world',
@@ -160,12 +175,6 @@ export default {
      ** Build configuration
      */
     build: {
-        // extend(config, { isDev, isClient, loaders: { vue } }) {
-        //     if (isClient) {
-        //         vue.transformAssetUrls.img = ['data-src', 'src']
-        //         vue.transformAssetUrls.source = ['data-srcset', 'srcset']
-        //     }
-        // },
         loaders: {
             vue: {
                 transformAssetUrls: {
