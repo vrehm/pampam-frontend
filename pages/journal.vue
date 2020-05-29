@@ -1,6 +1,5 @@
 <template>
-  <div>
-    <the-navbar />
+  <div class="pt-16 lg:pt-32">
     <div class="container mx-auto">
       <div class="flex flex-wrap justify-start mt-4 mb-16">
         <div class="w-full flex justify-between items-center">
@@ -29,12 +28,10 @@
 
 <script>
 import ArticleCard from '~/components/ArticleCard.vue'
-import TheNavbar from '~/components/TheNavbar.vue'
 
 export default {
   components: {
-    ArticleCard,
-    TheNavbar
+    ArticleCard
   },
   async asyncData({ $axios }) {
     const {
