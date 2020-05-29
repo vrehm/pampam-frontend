@@ -57,6 +57,7 @@
                 <nuxt-link to="/">
                   <img class="w-24" src="/img/logos/pampam-logo.svg" alt="Logo" />
                 </nuxt-link>
+
                 <div class="-mr-2">
                   <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-300 focus:outline-none focus:text-gray-300 transition duration-150 ease-in-out" @click="mobileNavOpen = !mobileNavOpen">
                     <svg class="h-8 w-8" stroke="currentColor" fill="none" viewBox="0 0 24 24">

@@ -44,31 +44,85 @@
 
       <div class="mt-12 grid grid-cols-1 gap-2 sm:grid-cols-2 md:mt-14 md:grid-cols-3 overflow-hidden">
         <a href="#" class="col-span-1 bg-gray-50">
-          <img class="max-h-custom w-full object-cover" src="/img/home/insta-example-1.jpg" alt="Insta example" />
+          <figure class="picture">
+            <picture>
+              <source class="lazyload" data-srcset="~/assets/img/home/insta-example-1.jpg?webp" type="image/webp" />
+              <source class="lazyload" :data-srcset="require('~/assets/img/home/insta-example-1.jpg?resize').srcSet" type="image/jpg" />
+              <img class="max-h-custom w-full object-cover lazyload" data-src="~/assets/img/home/insta-example-1.jpg?sqip" alt="Insta example" />
+            </picture>
+          </figure>
         </a>
         <a href="#" class="col-span-1 bg-gray-50">
-          <img class="w-full object-cover" src="/img/home/insta-example-2.jpg" alt="Insta example" />
+          <figure class="picture">
+            <picture>
+              <source class="lazyload" data-srcset="~/assets/img/home/insta-example-2.jpg?webp" type="image/webp" />
+              <source class="lazyload" :data-srcset="require('~/assets/img/home/insta-example-2.jpg?resize').srcSet" type="image/jpg" />
+              <img class="w-full object-cover lazyload" data-src="~/assets/img/home/insta-example-2.jpg?sqip" alt="Insta example" />
+            </picture>
+          </figure>
         </a>
         <a href="#" class="col-span-1 bg-gray-50">
-          <img class="w-full object-cover" src="/img/home/insta-example-3.jpg" alt="Insta example" />
+          <figure class="picture">
+            <picture>
+              <source class="lazyload" data-srcset="~/assets/img/home/insta-example-3.jpg?webp" type="image/webp" />
+              <source class="lazyload" :data-srcset="require('~/assets/img/home/insta-example-3.jpg?resize').srcSet" type="image/jpg" />
+              <img class="w-full object-cover lazyload" data-src="~/assets/img/home/insta-example-3.jpg?sqip" alt="Insta example" />
+            </picture>
+          </figure>
         </a>
         <a href="#" class="col-span-1 bg-gray-50">
-          <img class="max-h-custom w-full object-cover" src="/img/home/insta-example-4.jpg" alt="Insta example" />
+          <figure class="picture">
+            <picture>
+              <source class="lazyload" data-srcset="~/assets/img/home/insta-example-4.jpg?webp" type="image/webp" />
+              <source class="lazyload" :data-srcset="require('~/assets/img/home/insta-example-4.jpg?resize').srcSet" type="image/jpg" />
+              <img class="max-h-custom w-full object-cover lazyload" data-src="~/assets/img/home/insta-example-4.jpg?sqip" alt="Insta example" />
+            </picture>
+          </figure>
         </a>
         <a href="#" class="col-span-1 bg-gray-50">
-          <img class="w-full object-cover" src="/img/home/insta-example-5.jpg" alt="Insta example" />
+          <figure class="picture">
+            <picture>
+              <source class="lazyload" data-srcset="~/assets/img/home/insta-example-5.jpg?webp" type="image/webp" />
+              <source class="lazyload" :data-srcset="require('~/assets/img/home/insta-example-5.jpg?resize').srcSet" type="image/jpg" />
+              <img class="w-full object-cover lazyload" data-src="~/assets/img/home/insta-example-5.jpg?sqip" alt="Insta example" />
+            </picture>
+          </figure>
         </a>
         <a href="#" class="col-span-1 bg-gray-50">
-          <img class="w-full object-cover" src="/img/home/insta-example-6.jpg" alt="Insta example" />
+          <figure class="picture">
+            <picture>
+              <source class="lazyload" data-srcset="~/assets/img/home/insta-example-6.jpg?webp" type="image/webp" />
+              <source class="lazyload" :data-srcset="require('~/assets/img/home/insta-example-6.jpg?resize').srcSet" type="image/jpg" />
+              <img class="w-full object-cover lazyload" data-src="~/assets/img/home/insta-example-6.jpg?sqip" alt="Insta example" />
+            </picture>
+          </figure>
         </a>
         <a href="#" class="col-span-1 bg-gray-50">
-          <img class="max-h-custom w-full object-cover" src="/img/home/insta-example-7.jpg" alt="Insta example" />
+          <figure class="picture">
+            <picture>
+              <source class="lazyload" data-srcset="~/assets/img/home/insta-example-7.jpg?webp" type="image/webp" />
+              <source class="lazyload" :data-srcset="require('~/assets/img/home/insta-example-7.jpg?resize').srcSet" type="image/jpg" />
+              <img class="max-h-custom w-full object-cover lazyload" data-src="~/assets/img/home/insta-example-7.jpg?sqip" alt="Insta example" />
+            </picture>
+          </figure>
         </a>
         <a href="#" class="col-span-1 bg-gray-50">
-          <img class="w-full object-cover" src="/img/home/insta-example-8.jpg" alt="Insta example" />
+          <figure class="picture">
+            <picture>
+              <source class="lazyload" data-srcset="~/assets/img/home/insta-example-8.jpg?webp" type="image/webp" />
+              <source class="lazyload" :data-srcset="require('~/assets/img/home/insta-example-8.jpg?resize').srcSet" type="image/jpg" />
+              <img class="w-full object-cover lazyload" data-src="~/assets/img/home/insta-example-8.jpg?sqip" alt="Insta example" />
+            </picture>
+          </figure>
         </a>
         <a href="#" class="col-span-1 bg-gray-50">
-          <img class="w-full object-cover" src="/img/home/insta-example-9.jpg" alt="Insta example" />
+          <figure class="picture">
+            <picture>
+              <source class="lazyload" data-srcset="~/assets/img/home/insta-example-9.jpg?webp" type="image/webp" />
+              <source class="lazyload" :data-srcset="require('~/assets/img/home/insta-example-9.jpg?resize').srcSet" type="image/jpg" />
+              <img class="w-full object-cover lazyload" data-src="~/assets/img/home/insta-example-9.jpg?sqip" alt="Insta example" />
+            </picture>
+          </figure>
         </a>
       </div>
     </div>

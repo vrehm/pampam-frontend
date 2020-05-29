@@ -10,11 +10,24 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
-    purge: [
-        './.nuxt/**/*.html',
-        './.nuxt/**/*.vue',
-        './.nuxt/**/*.js',
-    ],
+    purge: {
+        content: [
+            'components/**/*.vue',
+            'layouts/**/*.vue',
+            'pages/**/*.vue',
+            'plugins/**/*.js',
+            // Server output
+            '.nuxt/**/*.html',
+            '.nuxt/**/*.vue',
+            '.nuxt/**/*.js',
+            // SPA output
+            'dist/**/*.html',
+            'dist/**/*.js'
+        ],
+        options: {
+            whitelist: ['lazyload', 'lazyloaded', 'body', 'html', 'nuxt-progress'],
+        }
+    },
     theme: {
         extend: {
             fontFamily: {

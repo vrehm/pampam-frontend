@@ -84,7 +84,10 @@ export default {
         // Doc: https://github.com/Developmint/nuxt-purgecss
         'nuxt-purgecss',
         // Doc: https://github.com/nuxt-community/svg-module
-        '@nuxtjs/svg'
+        // Incompatible with nuxt optimized images
+        // '@nuxtjs/svg',
+        // Doc: https://github.com/aceforth/nuxt-optimized-images
+        '@aceforth/nuxt-optimized-images'
     ],
     /*
      ** Nuxt.js modules
@@ -94,7 +97,34 @@ export default {
         '@nuxtjs/axios',
         // Doc: https://pwa.nuxtjs.org/setup.html
         '@nuxtjs/pwa'
+        // // Doc: https://github.com/geeogi/nuxt-responsive-loader#readme
+        // 'nuxt-responsive-loader'
     ],
+    optimizedImages: {
+        responsive: {
+            adapter: require('responsive-loader/sharp'),
+            name: 'img/[name]-[width].[ext]', // use [name] to keep the original filename
+            sizes: [320, 640, 768, 1024, 1280], // array of image sizes - adjust to your layout needs
+            quality: 85, // 85 is default. Tweak this if you need to
+            placeholder: true
+        },
+        inlineImageLimit: 1000,
+        handleImages: ['jpeg', 'png', 'svg', 'webp', 'gif'],
+        optimizeImages: true,
+        optimizeImagesInDev: false,
+        defaultImageLoader: 'img-loader',
+        mozjpeg: {
+            quality: 85
+        },
+        optipng: false,
+        pngquant: {
+            speed: 7,
+            quality: [0.65, 0.8]
+        },
+        webp: {
+            quality: 85
+        }
+    },
     passwordProtect: {
         formPath: '/password',
         password: process.env.MODE === 'production' || process.env.NODE_ENV === 'production' ? process.env.PASSWORD : 'hello-world',
@@ -123,14 +153,15 @@ export default {
     },
     webfontloader: {
         google: {
-            families: ['Inter']
+            families: ['Inter&display=swap']
         }
     },
     /*
      ** Plugins to load before mounting the App
      */
     plugins: [
-        { src: "~/plugins/vClickOutside", ssr: false }
+        { src: "~/plugins/vClickOutside", ssr: false },
+        '~/plugins/vue-lazysizes.client.js'
     ],
     /*
      * See https://purgecss.com/guides/nuxt.html#nuxt-js-plugin
@@ -141,7 +172,7 @@ export default {
         enabled: !!(process.env.NODE_ENV === 'production'),
         paths: ['components/**/*.vue', 'layouts/**/*.vue', 'pages/**/*.vue', 'plugins/**/*.js'],
         styleExtensions: ['.css'],
-        whitelist: ['body', 'html', 'nuxt-progress'],
+        whitelist: ['lazyload', 'lazyloaded', 'body', 'html', 'nuxt-progress'],
         // extractors: () => [{
         //     extractor: class {
         //         static extract(content) {
@@ -159,6 +190,14 @@ export default {
      ** Build configuration
      */
     build: {
+        loaders: {
+            vue: {
+                transformAssetUrls: {
+                    img: ['data-src', 'src'],
+                    source: ['data-srcset', 'srcset']
+                }
+            }
+        },
         postcss: {
             preset: {
                 features: {

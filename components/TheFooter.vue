@@ -4,7 +4,7 @@
       <div class="md:grid md:grid-cols-3 md:gap-8">
         <div class="flex flex-col items-center">
           <a href="#">
-            <img class="h-20" src="/img/logos/pampam-logo.svg" alt="Company name" />
+            <img class="h-20 lazyload" data-src="~/assets/img/logos/pampam-logo.svg" alt="Company name" />
           </a>
           <ul class="flex flex-col items-center mt-6">
             <li>
