@@ -1,6 +1,6 @@
 <template>
   <div class="max-w-full h-full flex-1">
-    <the-nav-bar :use-homepage-theme="isHomepage" />
+    <the-nav-bar :use-absolute-version="isAbsolute" />
     <nuxt id="content" />
     <the-footer />
   </div>
@@ -15,12 +15,8 @@ export default {
     TheFooter
   },
   computed: {
-    isHomepage() {
-      if (this.$route.name === 'index') {
-        return true
-      } else {
-        return false
-      }
+    isAbsolute() {
+      return this.$route.name === 'index'
     }
   }
 }
