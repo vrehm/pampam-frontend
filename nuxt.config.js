@@ -116,6 +116,13 @@ export default {
             quality: 85
         }
     },
+    responsiveLoader: {
+        adapter: require('responsive-loader/sharp'),
+        name: 'img/[name]-[width].[ext]', // use [name] to keep the original filename
+        sizes: [320, 640, 768, 1024, 1280], // array of image sizes - adjust to your layout needs
+        quality: 85, // 85 is default. Tweak this if you need to
+        placeholder: true
+    },
     passwordProtect: {
         formPath: '/password',
         password: process.env.MODE === 'production' || process.env.NODE_ENV === 'production' ? process.env.PASSWORD : 'hello-world',
