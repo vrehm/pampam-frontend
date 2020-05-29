@@ -6,7 +6,7 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6">
         <div class="flex justify-between items-center md:items-start py-6 md:space-x-10">
           <a href="#">
-            <img class="w-24 md:w-32 lg:w-48" src="/img/logos/pampam-logo.svg" alt="Logo" />
+            <img class="w-24 md:w-32 lg:w-48 lazyload" src="~/assets/img/logos/pampam-logo.svg" alt="Logo" />
           </a>
           <div class="-mr-2 -my-2 md:hidden">
             <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-200 hover:text-gray-400 focus:outline-none focus:text-gray-400 transition duration-150 ease-in-out" @click="mobileNavOpen = !mobileNavOpen">
@@ -31,7 +31,7 @@
           <div class="rounded-lg shadow-xs bg-white">
             <div class="pt-5 pb-6 px-5 space-y-8">
               <div class="flex items-center justify-between">
-                <img class="w-24" src="/img/logos/pampam-logo.svg" alt="Logo" />
+                <img class="w-24 lazyload" src="~/assets/img/logos/pampam-logo.svg" alt="Logo" />
                 <div class="-mr-2">
                   <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-300 focus:outline-none focus:text-gray-300 transition duration-150 ease-in-out" @click="mobileNavOpen = !mobileNavOpen">
                     <svg class="h-8 w-8" stroke="currentColor" fill="none" viewBox="0 0 24 24">

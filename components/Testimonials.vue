@@ -23,7 +23,7 @@
           <footer class="mt-8">
             <div class="flex">
               <div class="flex-shrink-0 inline-flex rounded-full border-2 border-white">
-                <img class="h-12 w-12 rounded-full" src="/img/avatars/photo-1494790108377-be9c29b29330.jpeg" alt="" />
+                <img class="h-12 w-12 rounded-full lazyload" data-src="~/assets/img/avatars/photo-1494790108377-be9c29b29330.jpeg" alt="" />
               </div>
               <div class="ml-4">
                 <div class="text-base leading-6 font-medium text-white">
@@ -61,7 +61,7 @@
           <footer class="mt-8">
             <div class="flex">
               <div class="flex-shrink-0 inline-flex rounded-full border-2 border-white">
-                <img class="h-12 w-12 rounded-full" src="/img/avatars/photo-1507003211169-0a1dd7228f2d.jpeg" alt="" />
+                <img class="h-12 w-12 rounded-full lazyload" data-src="~/assets/img/avatars/photo-1507003211169-0a1dd7228f2d.jpeg" alt="" />
               </div>
               <div class="ml-4">
                 <div class="text-base leading-6 font-medium text-white">

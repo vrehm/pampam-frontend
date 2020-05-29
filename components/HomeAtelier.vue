@@ -48,7 +48,7 @@
         <!-- Right block -->
         <div class="mt-12 w-full md:flex md:mt-0 md:w-6/12 md:pl-8">
           <div class="w-11/12 mx-auto lg:w-7/12">
-            <img class="w-full rounded-md" src="/img/home/luminaire1-700x729.jpg" alt="portrait" />
+            <img class="w-full rounded-md lazyload" data-src="~/assets/img/home/luminaire1-700x729.jpg" alt="portrait" />
           </div>
 
           <div class="hidden lg:block lg:w-5/12 lg:mx-auto">
@@ -64,7 +64,7 @@
         <!-- Left block -->
         <div class="order-2 mt-12 w-full md:order-1 md:flex md:mt-0 md:w-6/12 md:pr-8">
           <div class="w-11/12 mx-auto lg:w-7/12">
-            <img class="w-full rounded-md" src="/img/home/textile1-700x733.jpg" alt="portrait" />
+            <img class="w-full rounded-md lazyload" data-src="~/assets/img/home/textile1-700x733.jpg" alt="portrait" />
           </div>
 
           <div class="flex justify-center items-center mt-12 md:hidden">
