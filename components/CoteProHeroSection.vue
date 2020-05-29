@@ -1,7 +1,7 @@
 <template>
   <!-- Header version hero section -->
   <div class="relative bg-white">
-    <div class="h-56 bg-indigo-600 sm:h-72 lg:absolute lg:left-0 lg:h-full lg:w-1/2">
+    <div class="h-56 sm:h-72 lg:absolute lg:left-0 lg:h-full lg:w-1/2">
       <img class="w-full h-full object-cover" src="img/cote-pro/dessin-pro.jpg" alt="Support team" />
     </div>
     <div class="relative max-w-screen-xl mx-auto px-4 py-8 sm:py-12 sm:px-6 lg:py-16">
@@ -22,7 +22,7 @@
         </p>
         <div class="mt-8 overflow-hidden">
           <dl class="-mx-8 -mt-8 flex flex-wrap">
-            <div class="flex flex-col px-8 pt-8">
+            <div class="flex flex-col px-8 pt-8 items-center">
               <dt class="order-2 text-base leading-6 font-medium text-gray-500">
                 Chantiers
               </dt>
@@ -30,7 +30,7 @@
                 +20
               </dd>
             </div>
-            <div class="flex flex-col px-8 pt-8">
+            <div class="flex flex-col px-8 pt-8 items-center">
               <dt class="order-2 text-base leading-6 font-medium text-gray-500">
                 Studio Photo
               </dt>
@@ -38,12 +38,12 @@
                 60m2
               </dd>
             </div>
-            <div class="flex flex-col px-8 pt-8">
+            <div class="flex items-center flex-col px-8 pt-8">
               <dt class="order-2 text-base leading-6 font-medium text-gray-500">
                 Meubles
               </dt>
               <dd class="order-1 text-2xl leading-8 font-extrabold text-yellow-500 sm:text-3xl sm:leading-9">
-                200
+                +200
               </dd>
             </div>
           </dl>
