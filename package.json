@@ -32,7 +32,8 @@
         "@nuxtjs/axios": "*",
         "@nuxtjs/pwa": "^3.0.0-beta.20",
         "lazysizes": "^5.2.2",
-        "nuxt": "*"
+        "nuxt": "*",
+        "nuxt-responsive-loader": "^2.0.1"
     },
     "devDependencies": {
         "@aceforth/nuxt-optimized-images": "^1.0.1",

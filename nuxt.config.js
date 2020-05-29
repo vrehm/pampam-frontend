@@ -97,8 +97,17 @@ export default {
         '@nuxtjs/axios',
         // Doc: https://pwa.nuxtjs.org/setup.html
         '@nuxtjs/pwa'
+        // // Doc: https://github.com/geeogi/nuxt-responsive-loader#readme
+        // 'nuxt-responsive-loader'
     ],
     optimizedImages: {
+        responsive: {
+            adapter: require('responsive-loader/sharp'),
+            name: 'img/[name]-[width].[ext]', // use [name] to keep the original filename
+            sizes: [320, 640, 768, 1024, 1280], // array of image sizes - adjust to your layout needs
+            quality: 85, // 85 is default. Tweak this if you need to
+            placeholder: true
+        },
         inlineImageLimit: -1,
         handleImages: ['jpeg', 'png', 'svg', 'webp', 'gif'],
         optimizeImages: true,
@@ -115,13 +124,6 @@ export default {
         webp: {
             quality: 85
         }
-    },
-    responsiveLoader: {
-        adapter: require('responsive-loader/sharp'),
-        name: 'img/[name]-[width].[ext]', // use [name] to keep the original filename
-        sizes: [320, 640, 768, 1024, 1280], // array of image sizes - adjust to your layout needs
-        quality: 85, // 85 is default. Tweak this if you need to
-        placeholder: true
     },
     passwordProtect: {
         formPath: '/password',
@@ -170,7 +172,7 @@ export default {
         enabled: !!(process.env.NODE_ENV === 'production'),
         paths: ['components/**/*.vue', 'layouts/**/*.vue', 'pages/**/*.vue', 'plugins/**/*.js'],
         styleExtensions: ['.css'],
-        whitelist: ['body', 'html', 'nuxt-progress'],
+        whitelist: ['lazyload', 'lazyloaded', 'body', 'html', 'nuxt-progress'],
         // extractors: () => [{
         //     extractor: class {
         //         static extract(content) {
