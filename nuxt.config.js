@@ -84,7 +84,8 @@ export default {
         // Doc: https://github.com/Developmint/nuxt-purgecss
         'nuxt-purgecss',
         // Doc: https://github.com/nuxt-community/svg-module
-        '@nuxtjs/svg',
+        // Incompatible with nuxt optimized images
+        // '@nuxtjs/svg',
         // Doc: https://github.com/aceforth/nuxt-optimized-images
         '@aceforth/nuxt-optimized-images'
     ],
@@ -98,6 +99,11 @@ export default {
         '@nuxtjs/pwa'
     ],
     optimizedImages: {
+        inlineImageLimit: -1,
+        handleImages: ['jpeg', 'png', 'svg', 'webp', 'gif'],
+        optimizeImages: true,
+        optimizeImagesInDev: false,
+        defaultImageLoader: 'img-loader',
         mozjpeg: {
             quality: 85
         },

@@ -46,8 +46,8 @@
         <a href="#" class="col-span-1 bg-gray-50">
           <figure class="picture">
             <picture>
-              <source data-srcset="~/assets/img/home/insta-example-1.jpg?webp" type="image/webp" />
-              <source data-srcset="~/assets/img/home/insta-example-1.jpg" type="image/jpg" />
+              <source class="lazyload" data-srcset="~/assets/img/home/insta-example-1.jpg?webp" type="image/webp" />
+              <source class="lazyload" data-srcset="~/assets/img/home/insta-example-1.jpg" type="image/jpg" />
               <img class="max-h-custom w-full object-cover lazyload" data-src="~/assets/img/home/insta-example-1.jpg" alt="Insta example" />
             </picture>
           </figure>
@@ -55,8 +55,8 @@
         <a href="#" class="col-span-1 bg-gray-50">
           <figure class="picture">
             <picture>
-              <source data-srcset="~/assets/img/home/insta-example-2.jpg?webp" type="image/webp" />
-              <source data-srcset="~/assets/img/home/insta-example-2.jpg" type="image/jpg" />
+              <source class="lazyload" data-srcset="~/assets/img/home/insta-example-2.jpg?webp" type="image/webp" />
+              <source class="lazyload" data-srcset="~/assets/img/home/insta-example-2.jpg" type="image/jpg" />
               <img class="w-full object-cover lazyload" data-src="~/assets/img/home/insta-example-2.jpg" alt="Insta example" />
             </picture>
           </figure>
@@ -64,8 +64,8 @@
         <a href="#" class="col-span-1 bg-gray-50">
           <figure class="picture">
             <picture>
-              <source data-srcset="~/assets/img/home/insta-example-3.jpg?webp" type="image/webp" />
-              <source data-srcset="~/assets/img/home/insta-example-3.jpg" type="image/jpg" />
+              <source class="lazyload" data-srcset="~/assets/img/home/insta-example-3.jpg?webp" type="image/webp" />
+              <source class="lazyload" data-srcset="~/assets/img/home/insta-example-3.jpg" type="image/jpg" />
               <img class="w-full object-cover lazyload" data-src="~/assets/img/home/insta-example-3.jpg" alt="Insta example" />
             </picture>
           </figure>
@@ -73,8 +73,8 @@
         <a href="#" class="col-span-1 bg-gray-50">
           <figure class="picture">
             <picture>
-              <source data-srcset="~/assets/img/home/insta-example-4.jpg?webp" type="image/webp" />
-              <source data-srcset="~/assets/img/home/insta-example-4.jpg" type="image/jpg" />
+              <source class="lazyload" data-srcset="~/assets/img/home/insta-example-4.jpg?webp" type="image/webp" />
+              <source class="lazyload" data-srcset="~/assets/img/home/insta-example-4.jpg" type="image/jpg" />
               <img class="max-h-custom w-full object-cover lazyload" data-src="~/assets/img/home/insta-example-4.jpg" alt="Insta example" />
             </picture>
           </figure>
@@ -82,8 +82,8 @@
         <a href="#" class="col-span-1 bg-gray-50">
           <figure class="picture">
             <picture>
-              <source data-srcset="~/assets/img/home/insta-example-5.jpg?webp" type="image/webp" />
-              <source data-srcset="~/assets/img/home/insta-example-5.jpg" type="image/jpg" />
+              <source class="lazyload" data-srcset="~/assets/img/home/insta-example-5.jpg?webp" type="image/webp" />
+              <source class="lazyload" data-srcset="~/assets/img/home/insta-example-5.jpg" type="image/jpg" />
               <img class="w-full object-cover lazyload" data-src="~/assets/img/home/insta-example-5.jpg" alt="Insta example" />
             </picture>
           </figure>
@@ -91,8 +91,8 @@
         <a href="#" class="col-span-1 bg-gray-50">
           <figure class="picture">
             <picture>
-              <source data-srcset="~/assets/img/home/insta-example-6.jpg?webp" type="image/webp" />
-              <source data-srcset="~/assets/img/home/insta-example-6.jpg" type="image/jpg" />
+              <source class="lazyload" data-srcset="~/assets/img/home/insta-example-6.jpg?webp" type="image/webp" />
+              <source class="lazyload" data-srcset="~/assets/img/home/insta-example-6.jpg" type="image/jpg" />
               <img class="w-full object-cover lazyload" data-src="~/assets/img/home/insta-example-6.jpg" alt="Insta example" />
             </picture>
           </figure>
@@ -100,8 +100,8 @@
         <a href="#" class="col-span-1 bg-gray-50">
           <figure class="picture">
             <picture>
-              <source data-srcset="~/assets/img/home/insta-example-7.jpg?webp" type="image/webp" />
-              <source data-srcset="~/assets/img/home/insta-example-7.jpg" type="image/jpg" />
+              <source class="lazyload" data-srcset="~/assets/img/home/insta-example-7.jpg?webp" type="image/webp" />
+              <source class="lazyload" data-srcset="~/assets/img/home/insta-example-7.jpg" type="image/jpg" />
               <img class="max-h-custom w-full object-cover lazyload" data-src="~/assets/img/home/insta-example-7.jpg" alt="Insta example" />
             </picture>
           </figure>
@@ -109,8 +109,8 @@
         <a href="#" class="col-span-1 bg-gray-50">
           <figure class="picture">
             <picture>
-              <source data-srcset="~/assets/img/home/insta-example-8.jpg?webp" type="image/webp" />
-              <source data-srcset="~/assets/img/home/insta-example-8.jpg" type="image/jpg" />
+              <source class="lazyload" data-srcset="~/assets/img/home/insta-example-8.jpg?webp" type="image/webp" />
+              <source class="lazyload" data-srcset="~/assets/img/home/insta-example-8.jpg" type="image/jpg" />
               <img class="w-full object-cover lazyload" data-src="~/assets/img/home/insta-example-8.jpg" alt="Insta example" />
             </picture>
           </figure>
@@ -118,8 +118,8 @@
         <a href="#" class="col-span-1 bg-gray-50">
           <figure class="picture">
             <picture>
-              <source data-srcset="~/assets/img/home/insta-example-9.jpg?webp" type="image/webp" />
-              <source data-srcset="~/assets/img/home/insta-example-9.jpg" type="image/jpg" />
+              <source class="lazyload" data-srcset="~/assets/img/home/insta-example-9.jpg?webp" type="image/webp" />
+              <source class="lazyload" data-srcset="~/assets/img/home/insta-example-9.jpg" type="image/jpg" />
               <img class="w-full object-cover lazyload" data-src="~/assets/img/home/insta-example-9.jpg" alt="Insta example" />
             </picture>
           </figure>
