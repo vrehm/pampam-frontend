@@ -44,10 +44,10 @@
 
       <div class="mt-12 grid grid-cols-1 gap-2 sm:grid-cols-2 md:mt-14 md:grid-cols-3 overflow-hidden">
         <!-- TODO : ajouter le permanent url sur le href -->
-        <a v-for="post in posts" :key="post.id" href="#" class="col-span-1 bg-gray-50">
+        <a v-for="post in posts" :key="post.id" :href="post.permalink" target="_blank" class="col-span-1 bg-gray-50">
           <figure class="picture">
             <picture>
-              <img class="max-h-custom w-full object-cover lazyload" :data-src="post.media_url" :alt="post.caption" />
+              <img class="max-h-custom w-full object-cover lazyload" :data-src="post.media_url" :alt="post.username + ' le ' + post.timestamp + ' - ' + post.caption" />
             </picture>
           </figure>
         </a>
@@ -155,6 +155,34 @@ export default {
 
 <style>
 .max-h-custom {
-  max-height: 400px;
+  max-height: 500px;
+}
+
+/* Max height for mobile */
+@media (min-width: 640px) {
+  .max-h-custom {
+    max-height: 250px;
+  }
+}
+
+/* Max height for medium */
+@media (min-width: 768px) {
+  .max-h-custom {
+    max-height: 250px;
+  }
+}
+
+/* Max height for large */
+@media (min-width: 1024px) {
+  .max-h-custom {
+    max-height: 300px;
+  }
+}
+
+/* Max height for xl */
+@media (min-width: 1280px) {
+  .max-h-custom {
+    max-height: 400px;
+  }
 }
 </style>
