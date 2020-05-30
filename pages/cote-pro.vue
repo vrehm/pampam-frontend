@@ -5,6 +5,8 @@
     <cote-pro-decoration-section />
     <cote-pro-espace-section />
     <cote-pro-recherche-section />
+    <cote-pro-transition-texture />
+    <cote-pro-argumentaire />
   </div>
 </template>
 
@@ -14,6 +16,9 @@ import CoteProLocationSection from '~/components/CoteProLocationSection.vue'
 import CoteProDecorationSection from '~/components/CoteProDecorationSection.vue'
 import CoteProRechercheSection from '~/components/CoteProRechercheSection.vue'
 import CoteProEspaceSection from '~/components/CoteProEspaceSection.vue'
+import CoteProTransitionTexture from '~/components/CoteProTransitionTexture.vue'
+
+import CoteProArgumentaire from '~/components/CoteProArgumentaire.vue'
 
 export default {
   components: {
@@ -21,7 +26,9 @@ export default {
     CoteProLocationSection,
     CoteProDecorationSection,
     CoteProEspaceSection,
-    CoteProRechercheSection
+    CoteProRechercheSection,
+    CoteProTransitionTexture,
+    CoteProArgumentaire
   }
 }
 </script>

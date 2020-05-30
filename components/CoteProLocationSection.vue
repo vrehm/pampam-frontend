@@ -1,9 +1,9 @@
 <template>
-  <div class="lg:pb-16 bg-white overflow-hidden ">
+  <div class="lg:pb-16 overflow-hidden ">
     <div class="relative max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-screen-xl">
       <div class="relative lg:mt-12 sm:mt-16 lg:mt-24">
         <div class="flex flex-col-reverse lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-8 lg:items-center">
-          <div class="lg:col-start-2 bg-white px-6 py-8 lg:flex-shrink-1 lg:p-12">
+          <div class="lg:col-start-2 px-6 py-8 lg:flex-shrink-1 lg:p-12">
             <h4 class="text-2xl leading-8 font-extrabold text-gray-900 tracking-tight sm:text-3xl sm:leading-9">
               Vous avez besoin de louer du mobilier de manière ponctuelle?
             </h4>

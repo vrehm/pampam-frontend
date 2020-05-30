@@ -1,10 +1,10 @@
 <template>
-  <div class="lg:pb-16 bg-white overflow-hidden ">
+  <div class="lg:pb-16  overflow-hidden ">
     <div class="relative max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-screen-xl">
       <div class="relative lg:mt-12 sm:mt-16 lg:mt-24">
         <div class="flex flex-col-reverse lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-8 lg:items-center">
           <div class="col-start-1 lg:col-start-2">
-            <div class="bg-white px-6 py-8 lg:flex-shrink-1 lg:p-12">
+            <div class=" px-6 py-8 lg:flex-shrink-1 lg:p-12">
               <h3 class="text-2xl leading-8 font-extrabold text-gray-900 sm:text-3xl sm:leading-9">
                 Vous recherchez un bel espace atypique pour vos shootings photo?
               </h3>
@@ -14,7 +14,7 @@
 
               <div class="mt-8">
                 <div class="flex items-center">
-                  <h4 class="flex-shrink-0 pr-4 bg-white text-sm leading-5 tracking-wider font-semibold uppercase text-yellow-500">
+                  <h4 class="flex-shrink-0 pr-4  text-sm leading-5 tracking-wider font-semibold uppercase text-yellow-500">
                     Le showroom atelier/brocante
                   </h4>
                   <div class="flex-1 border-t-2 border-gray-200"></div>
