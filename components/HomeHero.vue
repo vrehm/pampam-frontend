@@ -53,7 +53,7 @@ export default {}
 }
 
 /* For mobile landscape orientation */
-@media only screen and (min-device-width: 320px) and (min-device-width: 767px) and (orientation: landscape) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (orientation: landscape) {
   .landscape-hero-title-custom {
     margin-bottom: 2rem;
   }
