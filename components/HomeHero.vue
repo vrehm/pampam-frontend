@@ -13,12 +13,18 @@
 </template>
 
 <script>
-export default {}
+export default {
+  data() {
+    return {
+      test: require('~/assets/img/home/hero-home2000x1500.jpg?resize').srcSet
+    }
+  }
+}
 </script>
 
 <style>
 .background-hero-custom {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5) 10%, rgba(0, 0, 0, 0.3) 90%), url('/img/home/hero-home2000x1500.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5) 10%, rgba(0, 0, 0, 0.3) 90%), url('~assets/img/home/hero-home2000x1500.jpg?size=1280');
   background-position: center, center;
   background-size: cover, cover;
   background-repeat: no-repeat, no-repeat;
@@ -32,7 +38,7 @@ export default {}
 }
 
 /* For tablet landscape orientation (create conflicts) */
-/* 
+/*
 @media only screen and (min-device-width: 768px) and (max-device-width: 1023px) and (orientation: landscape) {
   .landscape-hero-title-custom {
     margin-bottom: 2rem;
