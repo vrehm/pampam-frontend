@@ -24,7 +24,7 @@ export default {
 
 <style>
 .background-hero-custom {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5) 10%, rgba(0, 0, 0, 0.3) 90%), url('~assets/img/home/hero-home2000x1500.jpg?size=1280');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5) 10%, rgba(0, 0, 0, 0.3) 90%), url('~assets/img/home/hero-home2000x1500.jpg?resize&size=1280');
   background-position: center, center;
   background-size: cover, cover;
   background-repeat: no-repeat, no-repeat;
