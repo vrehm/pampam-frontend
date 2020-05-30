@@ -34,6 +34,7 @@ module.exports = {
                 sans: ['Inter', ...defaultTheme.fontFamily.sans]
             },
             minHeight: {
+                '300': '300px',
                 '550': '550px',
             }
         },
