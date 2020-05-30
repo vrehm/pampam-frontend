@@ -3,7 +3,7 @@
     <home-hero />
     <home-newsletter />
     <home-presentation id="who-is-pampam" />
-    <home-insta-grid id="la-boutique" />
+    <home-insta-grid id="la-boutique" :posts="posts.slice(0, 9)" />
     <home-atelier id="l-atelier" />
     <testimonials />
   </div>
@@ -25,6 +25,13 @@ export default {
     HomeInstaGrid,
     HomeAtelier,
     Testimonials
+  },
+  async asyncData({ $axios }) {
+    const {
+      defaults: { baseURL }
+    } = $axios
+    const posts = await $axios.$get(baseURL + '/instagram-posts?_sort=id:ASC')
+    return { posts }
   }
 }
 </script>

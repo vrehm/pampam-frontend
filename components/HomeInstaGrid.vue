@@ -43,7 +43,17 @@
       </div>
 
       <div class="mt-12 grid grid-cols-1 gap-2 sm:grid-cols-2 md:mt-14 md:grid-cols-3 overflow-hidden">
-        <a href="#" class="col-span-1 bg-gray-50">
+        <!-- TODO : ajouter le permanent url sur le href -->
+        <a v-for="post in posts" :key="post.id" href="#" class="col-span-1 bg-gray-50">
+          <figure class="picture">
+            <picture>
+              <img class="max-h-custom w-full object-cover lazyload" :data-src="post.media_url" :alt="post.caption" />
+            </picture>
+          </figure>
+        </a>
+
+        <!-- Legacy insta grid -->
+        <!-- <a href="#" class="col-span-1 bg-gray-50">
           <figure class="picture">
             <picture>
               <source class="lazyload" data-srcset="~/assets/img/home/insta-example-1.jpg?webp" type="image/webp" />
@@ -123,14 +133,24 @@
               <img class="w-full object-cover lazyload" data-src="~/assets/img/home/insta-example-9.jpg?sqip" alt="Insta example" />
             </picture>
           </figure>
-        </a>
+        </a> -->
       </div>
     </div>
   </div>
 </template>
 
 <script>
-export default {}
+export default {
+  props: {
+    /*
+     * Instagram posts from api.
+     */
+    posts: {
+      type: Array,
+      required: true
+    }
+  }
+}
 </script>
 
 <style>
