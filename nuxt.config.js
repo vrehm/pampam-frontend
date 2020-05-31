@@ -1,9 +1,11 @@
 /* eslint-disable prettier/prettier */
 /* stylelint-disable */
 
-if (process.env.MODE === 'development' || process.env.NODE_ENV === 'development') {
-    require('dotenv').config()
-}
+// if (process.env.MODE === 'production' || process.env.NODE_ENV === 'development') {
+//     require('dotenv').config()
+// }
+
+require('dotenv').config()
 
 export default {
     /*

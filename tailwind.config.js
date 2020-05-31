@@ -6,6 +6,7 @@
  */
 
 /* eslint-disable prettier/prettier */
+/* stylelint-disable */
 
 const defaultTheme = require('tailwindcss/defaultTheme')
 
@@ -25,6 +26,7 @@ module.exports = {
             // 'dist/**/*.js'
         ],
         options: {
+            whitelistPatterns: [/custom$/],
             whitelist: [
                 'lazyload',
                 'lazyloaded',

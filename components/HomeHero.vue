@@ -25,7 +25,7 @@ export default {}
 }
 
 /* Background cover for mobile */
-@media (min-width: 640px) {
+@screen sm {
   .background-hero-custom {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5) 10%, rgba(0, 0, 0, 0.3) 90%), url('~@/assets/img/home/hero-home2000x1500.jpg?resize&size=640');
   }
@@ -39,21 +39,21 @@ export default {}
 }
 
 /* Background cover for medium */
-@media (min-width: 768px) {
+@screen md {
   .background-hero-custom {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5) 10%, rgba(0, 0, 0, 0.3) 90%), url('~@/assets/img/home/hero-home2000x1500.jpg?resize&size=768');
   }
 }
 
 /* Background cover for large */
-@media (min-width: 1024px) {
+@screen lg {
   .background-hero-custom {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5) 10%, rgba(0, 0, 0, 0.3) 90%), url('~@/assets/img/home/hero-home2000x1500.jpg?resize&size=1024');
   }
 }
 
 /* Background cover for xl */
-@media (min-width: 1280px) {
+@screen xl {
   .background-hero-custom {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5) 10%, rgba(0, 0, 0, 0.3) 90%), url('~@/assets/img/home/hero-home2000x1500.jpg?resize&size=1280');
   }
