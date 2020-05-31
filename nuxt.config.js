@@ -1,10 +1,6 @@
 /* eslint-disable prettier/prettier */
 /* stylelint-disable */
 
-// if (process.env.MODE === 'production' || process.env.NODE_ENV === 'development') {
-//     require('dotenv').config()
-// }
-
 require('dotenv').config()
 
 export default {
@@ -81,15 +77,14 @@ export default {
         '@nuxtjs/tailwindcss',
         // Doc: https://github.com/Developmint/nuxt-webfontloader
         'nuxt-webfontloader',
-        // Doc: https://github.com/nuxt-community/dotenv-module
-        '@nuxtjs/dotenv',
         // Doc: https://github.com/stephenkr/nuxt-password-protect
         'nuxt-password-protect',
         // Doc: https://github.com/Developmint/nuxt-purgecss
         'nuxt-purgecss',
         // Doc: https://github.com/nuxt-community/svg-module
-        // Incompatible with nuxt optimized images
-        // '@nuxtjs/svg',
+        // '@nuxtjs/svg', // Incompatible with nuxt optimized images
+        // Doc: https://github.com/lovell/sharp
+        'sharp',
         // Doc: https://github.com/aceforth/nuxt-optimized-images
         '@aceforth/nuxt-optimized-images',
         // Doc: https://github.com/nuxt-community/stylelint-module
@@ -102,9 +97,11 @@ export default {
         // Doc: https://axios.nuxtjs.org/usage
         '@nuxtjs/axios',
         // Doc: https://pwa.nuxtjs.org/setup.html
-        '@nuxtjs/pwa'
+        '@nuxtjs/pwa',
         // // Doc: https://github.com/geeogi/nuxt-responsive-loader#readme
-        // 'nuxt-responsive-loader'
+        // 'nuxt-responsive-loader',
+        // Doc: https://github.com/nuxt-community/dotenv-module
+        '@nuxtjs/dotenv'
     ],
     stylelint: {
         ignorePath: '*.js'
