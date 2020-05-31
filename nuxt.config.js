@@ -1,8 +1,6 @@
 /* eslint-disable prettier/prettier */
 
-if (process.env.MODE === 'development' || process.env.NODE_ENV === 'development') {
-    require('dotenv').config()
-}
+require('dotenv').config()
 
 export default {
     /*
@@ -84,10 +82,7 @@ export default {
         // Doc: https://github.com/Developmint/nuxt-purgecss
         'nuxt-purgecss',
         // Doc: https://github.com/nuxt-community/svg-module
-        // Incompatible with nuxt optimized images
-        // '@nuxtjs/svg',
-        // Doc: https://github.com/herrstucki/responsive-loader
-        'responsive-loader',
+        // '@nuxtjs/svg', // Incompatible with nuxt optimized images
         // Doc: https://github.com/lovell/sharp
         'sharp',
         // Doc: https://github.com/aceforth/nuxt-optimized-images
