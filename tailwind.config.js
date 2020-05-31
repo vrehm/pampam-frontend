@@ -15,17 +15,23 @@ module.exports = {
             'components/**/*.vue',
             'layouts/**/*.vue',
             'pages/**/*.vue',
-            'plugins/**/*.js',
-            // Server output
-            '.nuxt/**/*.html',
-            '.nuxt/**/*.vue',
-            '.nuxt/**/*.js',
-            // SPA output
-            'dist/**/*.html',
-            'dist/**/*.js'
+            'plugins/**/*.js'
+            // // Server output
+            // '.nuxt/**/*.html',
+            // '.nuxt/**/*.vue',
+            // '.nuxt/**/*.js',
+            // // SPA output
+            // 'dist/**/*.html',
+            // 'dist/**/*.js'
         ],
         options: {
-            whitelist: ['lazyload', 'lazyloaded', 'body', 'html', 'nuxt-progress'],
+            whitelist: [
+                'lazyload',
+                'lazyloaded',
+                'body',
+                'html',
+                'nuxt-progress'
+            ]
         }
     },
     theme: {
@@ -37,7 +43,7 @@ module.exports = {
                 '300': '300px',
                 '550': '550px',
             }
-        },
+        }
     },
     variants: {},
     plugins: [require('@tailwindcss/ui')]

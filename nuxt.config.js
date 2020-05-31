@@ -1,4 +1,5 @@
 /* eslint-disable prettier/prettier */
+/* stylelint-disable */
 
 if (process.env.MODE === 'development' || process.env.NODE_ENV === 'development') {
     require('dotenv').config()
@@ -87,7 +88,9 @@ export default {
         // Incompatible with nuxt optimized images
         // '@nuxtjs/svg',
         // Doc: https://github.com/aceforth/nuxt-optimized-images
-        '@aceforth/nuxt-optimized-images'
+        '@aceforth/nuxt-optimized-images',
+        // Doc: https://github.com/nuxt-community/stylelint-module
+        '@nuxtjs/stylelint-module'
     ],
     /*
      ** Nuxt.js modules
@@ -100,6 +103,9 @@ export default {
         // // Doc: https://github.com/geeogi/nuxt-responsive-loader#readme
         // 'nuxt-responsive-loader'
     ],
+    stylelint: {
+        ignorePath: '*.js'
+    },
     optimizedImages: {
         responsive: {
             adapter: require('responsive-loader/sharp'),
@@ -170,9 +176,9 @@ export default {
     purgeCSS: {
         mode: 'postcss',
         enabled: !!(process.env.NODE_ENV === 'production'),
-        paths: ['components/**/*.vue', 'layouts/**/*.vue', 'pages/**/*.vue', 'plugins/**/*.js'],
-        styleExtensions: ['.css'],
-        whitelist: ['lazyload', 'lazyloaded', 'body', 'html', 'nuxt-progress'],
+        // paths: ['components/**/*.vue', 'layouts/**/*.vue', 'pages/**/*.vue', 'plugins/**/*.js'],
+        // styleExtensions: ['.css'],
+        // whitelist: ['lazyload', 'lazyloaded', 'body', 'html', 'nuxt-progress'],
         // extractors: () => [{
         //     extractor: class {
         //         static extract(content) {
@@ -181,8 +187,14 @@ export default {
         //     },
         //     extensions: ['html', 'vue', 'js']
         // }],
-        extractors: () => [{
-            extractor: (content) => (content || '').match(/[\w-/.:]+(?<!:)/g) || [],
+        // extractors: () => [{
+        //     extractor: (content) => (content || '').match(/[\w-/.:]+(?<!:)/g) || [],
+        //     extensions: ['html', 'vue', 'js']
+        // }]
+        extractors: [{
+            // replace original config with that required by tailwindUI
+            // extractor: content => content.match(/[A-z0-9-:\\/]+/g) || [],
+            extractor: content => content.match(/[\w-/.:]+(?<!:)/g) || [],
             extensions: ['html', 'vue', 'js']
         }]
     },
