@@ -1,4 +1,5 @@
 /* eslint-disable prettier/prettier */
+/* stylelint-disable */
 
 require('dotenv').config()
 
@@ -7,33 +8,34 @@ export default {
      ** Router configuration
      */
     router: {
-        middleware: ['password-protect'],
-        scrollBehavior: async(to, from, savedPosition) => {
-            if (savedPosition) {
-                return savedPosition
-            }
+        middleware: ['password-protect']
 
-            const findEl = (hash, x) => {
-                return document.querySelector(hash) ||
-                    new Promise((resolve, reject) => {
-                        if (x > 50) {
-                            return resolve()
-                        }
-                        setTimeout(() => { resolve(findEl(hash, ++x || 1)) }, 100)
-                    })
-            }
+        // scrollBehavior: async(to, from, savedPosition) => {
+        //     if (savedPosition) {
+        //         return savedPosition
+        //     }
 
-            if (to.hash) {
-                const el = await findEl(to.hash)
-                if ('scrollBehavior' in document.documentElement.style) {
-                    return window.scrollTo({ top: el.offsetTop, behavior: 'smooth' })
-                } else {
-                    return window.scrollTo(0, el.offsetTop)
-                }
-            }
+        //     const findEl = (hash, x) => {
+        //         return document.querySelector(hash) ||
+        //             new Promise((resolve, reject) => {
+        //                 if (x > 50) {
+        //                     return resolve()
+        //                 }
+        //                 setTimeout(() => { resolve(findEl(hash, ++x || 1)) }, 100)
+        //             })
+        //     }
 
-            return { x: 0, y: 0 }
-        }
+        //     if (to.hash) {
+        //         const el = await findEl(to.hash)
+        //         if ('scrollBehavior' in document.documentElement.style) {
+        //             return window.scrollTo({ top: el.offsetTop, behavior: 'smooth' })
+        //         } else {
+        //             return window.scrollTo(0, el.offsetTop)
+        //         }
+        //     }
+
+        //     return { x: 0, y: 0 }
+        // }
     },
     server: {
         host: process.env.MODE === 'production' ? '0.0.0.0' : 'localhost', // default: localhost
@@ -84,7 +86,9 @@ export default {
         // Doc: https://github.com/lovell/sharp
         'sharp',
         // Doc: https://github.com/aceforth/nuxt-optimized-images
-        '@aceforth/nuxt-optimized-images'
+        '@aceforth/nuxt-optimized-images',
+        // Doc: https://github.com/nuxt-community/stylelint-module
+        '@nuxtjs/stylelint-module'
     ],
     /*
      ** Nuxt.js modules
@@ -99,6 +103,9 @@ export default {
         // Doc: https://github.com/nuxt-community/dotenv-module
         '@nuxtjs/dotenv'
     ],
+    stylelint: {
+        ignorePath: '*.js'
+    },
     optimizedImages: {
         responsive: {
             adapter: require('responsive-loader/sharp'),
@@ -169,9 +176,9 @@ export default {
     purgeCSS: {
         mode: 'postcss',
         enabled: !!(process.env.NODE_ENV === 'production'),
-        paths: ['components/**/*.vue', 'layouts/**/*.vue', 'pages/**/*.vue', 'plugins/**/*.js'],
-        styleExtensions: ['.css'],
-        whitelist: ['lazyload', 'lazyloaded', 'body', 'html', 'nuxt-progress'],
+        // paths: ['components/**/*.vue', 'layouts/**/*.vue', 'pages/**/*.vue', 'plugins/**/*.js'],
+        // styleExtensions: ['.css'],
+        // whitelist: ['lazyload', 'lazyloaded', 'body', 'html', 'nuxt-progress'],
         // extractors: () => [{
         //     extractor: class {
         //         static extract(content) {
@@ -180,8 +187,14 @@ export default {
         //     },
         //     extensions: ['html', 'vue', 'js']
         // }],
-        extractors: () => [{
-            extractor: (content) => (content || '').match(/[\w-/.:]+(?<!:)/g) || [],
+        // extractors: () => [{
+        //     extractor: (content) => (content || '').match(/[\w-/.:]+(?<!:)/g) || [],
+        //     extensions: ['html', 'vue', 'js']
+        // }]
+        extractors: [{
+            // replace original config with that required by tailwindUI
+            // extractor: content => content.match(/[A-z0-9-:\\/]+/g) || [],
+            extractor: content => content.match(/[\w-/.:]+(?<!:)/g) || [],
             extensions: ['html', 'vue', 'js']
         }]
     },
