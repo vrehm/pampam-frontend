@@ -30,13 +30,13 @@
     },
     "dependencies": {
         "@nuxtjs/axios": "^5.10.3",
+        "@nuxtjs/dotenv": "^1.4.1",
         "@nuxtjs/pwa": "^3.0.0-beta.20",
         "nuxt": "^2.12.2"
     },
     "devDependencies": {
         "@aceforth/nuxt-optimized-images": "^1.0.1",
         "@fullhuman/postcss-purgecss": "^2.2.0",
-        "@nuxtjs/dotenv": "^1.4.1",
         "@nuxtjs/eslint-config": "^3.0.0",
         "@nuxtjs/eslint-module": "^2.0.0",
         "@nuxtjs/stylelint-module": "^4.0.0",

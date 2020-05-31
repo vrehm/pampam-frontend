@@ -75,8 +75,6 @@ export default {
         '@nuxtjs/tailwindcss',
         // Doc: https://github.com/Developmint/nuxt-webfontloader
         'nuxt-webfontloader',
-        // Doc: https://github.com/nuxt-community/dotenv-module
-        '@nuxtjs/dotenv',
         // Doc: https://github.com/stephenkr/nuxt-password-protect
         'nuxt-password-protect',
         // Doc: https://github.com/Developmint/nuxt-purgecss
@@ -95,9 +93,11 @@ export default {
         // Doc: https://axios.nuxtjs.org/usage
         '@nuxtjs/axios',
         // Doc: https://pwa.nuxtjs.org/setup.html
-        '@nuxtjs/pwa'
+        '@nuxtjs/pwa',
         // // Doc: https://github.com/geeogi/nuxt-responsive-loader#readme
-        // 'nuxt-responsive-loader'
+        // 'nuxt-responsive-loader',
+        // Doc: https://github.com/nuxt-community/dotenv-module
+        '@nuxtjs/dotenv'
     ],
     optimizedImages: {
         responsive: {
