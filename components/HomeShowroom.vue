@@ -32,9 +32,6 @@
             <p class="mt-2 text-base text-justify leading-6 text-gray-900">
               Mon premier amour ! Ayant débuté comme tapissière, je suis passionnée par cette matière, au travers du toucher, des couleurs, des motifs, j’adore l’incorporer un peu partout et imaginer de nouveaux prototypes d’objets en utilisant notamment des linges et étoffes anciennes.
             </p>
-            <p class="mt-2 text-base text-justify leading-6 text-gray-900">
-              Coussins, poufs, suspensions végétales ou encore toiles murales. Je travaille en séries limitées ou pièces uniques, retrouvez mes créations assignées de la mention “Made by Atelier Pam Pam” sur ma boutique Instagram et à l’atelier !
-            </p>
           </div>
         </div>
       </div>
