@@ -31,8 +31,7 @@
     "dependencies": {
         "@nuxtjs/axios": "*",
         "@nuxtjs/pwa": "^3.0.0-beta.20",
-        "nuxt": "*",
-        "sharp": "^0.25.3"
+        "nuxt": "*"
     },
     "devDependencies": {
         "@aceforth/nuxt-optimized-images": "^1.0.1",
@@ -70,6 +69,7 @@
         "nuxt-webfontloader": "*",
         "prettier": "*",
         "responsive-loader": "^1.2.0",
+        "sharp": "^0.25.3",
         "sqip-loader": "^1.0.0",
         "stylelint": "*",
         "typescript": "*",

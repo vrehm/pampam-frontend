@@ -86,6 +86,10 @@ export default {
         // Doc: https://github.com/nuxt-community/svg-module
         // Incompatible with nuxt optimized images
         // '@nuxtjs/svg',
+        // Doc: https://github.com/herrstucki/responsive-loader
+        'responsive-loader',
+        // Doc: https://github.com/lovell/sharp
+        'sharp',
         // Doc: https://github.com/aceforth/nuxt-optimized-images
         '@aceforth/nuxt-optimized-images'
     ],
