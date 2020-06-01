@@ -128,7 +128,7 @@
           </div>
 
           <div class="mt-10 -mx-4 relative lg:mt-0 col-start-2 lg:col-start-1">
-            <img class="relative mx-auto lg:rounded-sm h-64 lg:h-96 w-full object-cover lg:w-10/12" data-src="~/assets/img/cote-pro/photo-stylisme.jpg" alt="Photo du service pro de location de l'atelier Pampam" />
+            <img class="relative mx-auto lg:rounded-sm h-64 lg:h-96 w-full object-cover lg:w-10/12 lazyload" src="~/assets/img/cote-pro/photo-stylisme.jpg" alt="Photo du service pro de location de l'atelier Pampam" />
             <div class="absolute flex inset-0 items-center justify-center flex-col hvr-grow">
               <svg width="61" height="58" viewBox="0 0 61 58" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
