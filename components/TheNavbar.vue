@@ -7,7 +7,7 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6">
         <div class="flex justify-between items-center md:items-start py-6 md:space-x-10">
           <nuxt-link to="/">
-            <img class="w-24 md:w-32 lg:w-48" src="/img/logos/pampam-logo.svg" alt="Logo" />
+            <img class="w-24 md:w-32 lg:w-48" src="~/assets/img/logos/pampam-logo.svg" alt="Logo" />
           </nuxt-link>
           <div class="-mr-2 -my-2 md:hidden">
             <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-200 hover:text-gray-400 focus:outline-none focus:text-gray-400 transition duration-150 ease-in-out" @click="mobileNavOpen = !mobileNavOpen">
@@ -29,7 +29,7 @@
     <div v-else class="max-w-7xl mx-auto px-4 sm:px-6">
       <div class="flex justify-between items-center md:items-start py-6 md:space-x-10 border-b-2 border-gray-100">
         <nuxt-link to="/">
-          <img class="w-24 md:w-32 lg:w-48 absolute z-10" src="/img/logos/pampam-logo.svg" alt="Logo" />
+          <img class="w-24 md:w-32 lg:w-48 absolute z-10" src="~/assets/img/logos/pampam-logo.svg" alt="Logo" />
         </nuxt-link>
         <div class="-mr-2 -my-2 md:hidden">
           <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-200 hover:text-gray-400 focus:outline-none focus:text-gray-400 transition duration-150 ease-in-out" @click="mobileNavOpen = !mobileNavOpen">
@@ -55,7 +55,7 @@
             <div class="pt-5 pb-6 px-5 space-y-8">
               <div class="flex items-center justify-between">
                 <nuxt-link to="/">
-                  <img class="w-24" src="/img/logos/pampam-logo.svg" alt="Logo" />
+                  <img class="w-24" src="~/assets/img/logos/pampam-logo.svg" alt="Logo" />
                 </nuxt-link>
 
                 <div class="-mr-2">

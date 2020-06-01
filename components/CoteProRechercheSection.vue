@@ -4,7 +4,7 @@
       <div class="relative lg:mt-12 sm:mt-16 lg:mt-24">
         <div class="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-8 lg:items-center">
           <div class="mt-10 -mx-4 relative lg:mt-0 lg:col-start-2">
-            <img class="relative mx-auto lg:rounded-sm h-64 lg:h-96 w-full object-cover lg:w-10/12" src="/img/cote-pro/photo-epicerie.jpg" alt="Photo du service pro de décoration de l'atelier Pampam" />
+            <img class="relative mx-auto lg:rounded-sm h-64 lg:h-96 w-full object-cover lg:w-10/12" data-src="~/assets/img/cote-pro/photo-epicerie.jpg" alt="Photo du service pro de décoration de l'atelier Pampam" />
             <div class="absolute flex inset-0 items-center justify-center flex-col hvr-grow-rotate-two">
               <svg width="62" height="58" viewBox="0 0 62 58" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
