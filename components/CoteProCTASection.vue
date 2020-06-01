@@ -19,12 +19,12 @@
 
       <div class="mt-8 flex lg:flex-shrink-0 lg:mt-0 justify-center">
         <div class="inline-flex rounded-md shadow">
-          <a href="#" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-yellow-600 hover:bg-yellow-500 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
+          <a href="#" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-xs lg:text-base leading-6 font-medium rounded-md text-white bg-yellow-600 hover:bg-yellow-500 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
             Prendre un RDV tél.
           </a>
         </div>
         <div class="ml-3 inline-flex rounded-md shadow">
-          <a href="#" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-yellow-600 bg-white hover:text-yellow-500 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
+          <a href="#" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-xs lg:text-base leading-6 font-medium rounded-md text-yellow-600 bg-white hover:text-yellow-500 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
             Demander un devis
           </a>
         </div>
