@@ -1,7 +1,7 @@
 <template>
-  <div class="pb-12 lg:mb-32 -mt-32 lg:-mt-28 z-10">
-    <div class="max-w-xl mx-auto px-4 sm:px-6 lg:max-w-screen-xl lg:px-8">
-      <div class="lg:grid lg:grid-cols-3 lg:gap-8">
+  <div class="pb-12 lg:mb-32 -mt-64 lg:-mt-56 z-50">
+    <div class="relative max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-screen-xl">
+      <div class="lg:grid lg:grid-cols-3 lg:gap-8 px-6">
         <div>
           <div class="flex items-center justify-center h-20 w-20  text-white">
             <svg width="94" height="74" viewBox="0 0 94 74" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -60,7 +60,7 @@
             </svg>
           </div>
           <div class="mt-5">
-            <h5 class="text-lg leading-6 font-medium text-gray-900">Un réseau de brocs'</h5>
+            <h5 class="text-lg font-bold leading-6 font-medium text-gray-900">Un réseau de brocs'</h5>
             <p class="mt-2 text-base leading-6 text-gray-500">
               Un large réseau de brocs et de cavernes d’alibaba en tout genre, pour dénicher les meubles et objets idéaux.
             </p>
@@ -81,7 +81,7 @@
             </svg>
           </div>
           <div class="mt-5">
-            <h5 class="text-lg leading-6 font-medium text-gray-900">Un savoir-faire éprouvé</h5>
+            <h5 class="text-lg font-bold leading-6 font-medium text-gray-900">Un savoir-faire éprouvé</h5>
             <p class="mt-2 text-base leading-6 text-gray-500">
               Spécialiste pour vous conseiller et vous accompagner dans un projet global de décoration d'intérieur
             </p>
@@ -105,7 +105,7 @@
             </svg>
           </div>
           <div class="mt-5">
-            <h5 class="text-lg leading-6 font-medium text-gray-900">Une démarche Eco-responsable</h5>
+            <h5 class="text-lg font-bold leading-6 font-medium text-gray-900">Une démarche Eco-responsable</h5>
             <p class="mt-2 text-base leading-6 text-gray-500">
               Donner une dimension responsable et consciente à vos projets en favorisant l’achat de meubles d’occasion et le réemploi de matériaux.
             </p>

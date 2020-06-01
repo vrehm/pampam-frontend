@@ -1,5 +1,5 @@
 <template>
-  <div id="texture" class="bg-cover bg-center h-96 z-0 -mt-28" style="background-image: url('img/cote-pro/pattern-wall.jpg')"></div>
+  <div id="texture" class="bg-cover bg-center h-96 z-0 " style="background-image: url('img/cote-pro/pattern-wall.jpg')"></div>
 </template>
 
 <script>
