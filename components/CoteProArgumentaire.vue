@@ -1,5 +1,5 @@
 <template>
-  <div class="pb-12 -mt-32 lg:-mt-28 z-10">
+  <div class="pb-12 lg:mb-32 -mt-32 lg:-mt-28 z-10">
     <div class="max-w-xl mx-auto px-4 sm:px-6 lg:max-w-screen-xl lg:px-8">
       <div class="lg:grid lg:grid-cols-3 lg:gap-8">
         <div>
