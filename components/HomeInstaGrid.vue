@@ -159,28 +159,28 @@ export default {
 }
 
 /* Max height for mobile */
-@media (min-width: 640px) {
+@screen sm {
   .max-h-custom-insta {
     max-height: 250px;
   }
 }
 
 /* Max height for medium */
-@media (min-width: 768px) {
+@screen md {
   .max-h-custom-insta {
     max-height: 250px;
   }
 }
 
 /* Max height for large */
-@media (min-width: 1024px) {
+@screen lg {
   .max-h-custom-insta {
     max-height: 300px;
   }
 }
 
 /* Max height for xl */
-@media (min-width: 1280px) {
+@screen xl {
   .max-h-custom-insta {
     max-height: 400px;
   }
