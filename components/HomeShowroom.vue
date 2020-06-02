@@ -67,25 +67,25 @@ export default {}
   max-height: 350px;
 }
 
-@media (min-width: 640px) {
+@screen sm {
   .max-h-custom-showroom {
     max-height: 400px;
   }
 }
 
-@media (min-width: 768px) {
+@screen md {
   .max-h-custom-showroom {
     max-height: 350px;
   }
 }
 
-@media (min-width: 1024px) {
+@screen lg {
   .max-h-custom-showroom {
     max-height: 450px;
   }
 }
 
-@media (min-width: 1280px) {
+@screen xl {
   .max-h-custom-showroom {
     max-height: 500px;
   }
