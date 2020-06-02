@@ -5,6 +5,9 @@
     <cote-pro-decoration-section />
     <cote-pro-espace-section />
     <cote-pro-recherche-section />
+    <cote-pro-transition-texture />
+    <cote-pro-argumentaire />
+    <cote-pro-c-t-a-section />
   </div>
 </template>
 
@@ -12,8 +15,11 @@
 import CoteProHeroSection from '~/components/CoteProHeroSection.vue'
 import CoteProLocationSection from '~/components/CoteProLocationSection.vue'
 import CoteProDecorationSection from '~/components/CoteProDecorationSection.vue'
-import CoteProRechercheSection from '~/components/CoteProRechercheSection.vue'
 import CoteProEspaceSection from '~/components/CoteProEspaceSection.vue'
+import CoteProRechercheSection from '~/components/CoteProRechercheSection.vue'
+import CoteProTransitionTexture from '~/components/CoteProTransitionTexture.vue'
+import CoteProArgumentaire from '~/components/CoteProArgumentaire.vue'
+import CoteProCTASection from '~/components/CoteProCTASection.vue'
 
 export default {
   components: {
@@ -21,7 +27,10 @@ export default {
     CoteProLocationSection,
     CoteProDecorationSection,
     CoteProEspaceSection,
-    CoteProRechercheSection
+    CoteProRechercheSection,
+    CoteProTransitionTexture,
+    CoteProArgumentaire,
+    CoteProCTASection
   }
 }
 </script>
