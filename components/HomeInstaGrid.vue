@@ -47,7 +47,7 @@
         <a v-for="post in posts" :key="post.id" :href="post.permalink" target="_blank" class="col-span-1 bg-gray-50">
           <figure class="picture">
             <picture>
-              <img class="max-h-custom w-full object-cover lazyload" :data-src="post.media_url" :alt="post.username + ' le ' + post.timestamp + ' - ' + post.caption" />
+              <img class="max-h-custom-insta w-full object-cover lazyload" :data-src="post.media_url" :alt="post.username + ' le ' + post.timestamp + ' - ' + post.caption" />
             </picture>
           </figure>
         </a>
@@ -58,7 +58,7 @@
             <picture>
               <source class="lazyload" data-srcset="~/assets/img/home/insta-example-1.jpg?webp" type="image/webp" />
               <source class="lazyload" :data-srcset="require('~/assets/img/home/insta-example-1.jpg?resize').srcSet" type="image/jpg" />
-              <img class="max-h-custom w-full object-cover lazyload" data-src="~/assets/img/home/insta-example-1.jpg?sqip" alt="Insta example" />
+              <img class="max-h-custom-insta w-full object-cover lazyload" data-src="~/assets/img/home/insta-example-1.jpg?sqip" alt="Insta example" />
             </picture>
           </figure>
         </a>
@@ -85,7 +85,7 @@
             <picture>
               <source class="lazyload" data-srcset="~/assets/img/home/insta-example-4.jpg?webp" type="image/webp" />
               <source class="lazyload" :data-srcset="require('~/assets/img/home/insta-example-4.jpg?resize').srcSet" type="image/jpg" />
-              <img class="max-h-custom w-full object-cover lazyload" data-src="~/assets/img/home/insta-example-4.jpg?sqip" alt="Insta example" />
+              <img class="max-h-custom-insta w-full object-cover lazyload" data-src="~/assets/img/home/insta-example-4.jpg?sqip" alt="Insta example" />
             </picture>
           </figure>
         </a>
@@ -112,7 +112,7 @@
             <picture>
               <source class="lazyload" data-srcset="~/assets/img/home/insta-example-7.jpg?webp" type="image/webp" />
               <source class="lazyload" :data-srcset="require('~/assets/img/home/insta-example-7.jpg?resize').srcSet" type="image/jpg" />
-              <img class="max-h-custom w-full object-cover lazyload" data-src="~/assets/img/home/insta-example-7.jpg?sqip" alt="Insta example" />
+              <img class="max-h-custom-insta w-full object-cover lazyload" data-src="~/assets/img/home/insta-example-7.jpg?sqip" alt="Insta example" />
             </picture>
           </figure>
         </a>
@@ -154,34 +154,34 @@ export default {
 </script>
 
 <style>
-.max-h-custom {
+.max-h-custom-insta {
   max-height: 500px;
 }
 
 /* Max height for mobile */
 @screen sm {
-  .max-h-custom {
+  .max-h-custom-insta {
     max-height: 250px;
   }
 }
 
 /* Max height for medium */
 @screen md {
-  .max-h-custom {
+  .max-h-custom-insta {
     max-height: 250px;
   }
 }
 
 /* Max height for large */
 @screen lg {
-  .max-h-custom {
+  .max-h-custom-insta {
     max-height: 300px;
   }
 }
 
 /* Max height for xl */
 @screen xl {
-  .max-h-custom {
+  .max-h-custom-insta {
     max-height: 400px;
   }
 }

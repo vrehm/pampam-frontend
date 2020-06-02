@@ -1,7 +1,7 @@
 <template>
   <section class="pt-6 pb-12 sm:pb-8 md:pt-12 md:pb-20 bg-white">
     <div class="max-w-screen-xl mt-10 mx-auto px-4 sm:px-6 lg:px-8">
-      <!-- Atelier title and intro -->
+      <!-- Title and intro -->
       <div class="flex flex-col justify-center sm:flex-row sm:justify-start sm:items-end">
         <h2 class="sm:mr-0 text-center text-2xl leading-8 font-extrabold tracking-tight text-gray-900 sm:mr-3 sm:text-left sm:text-3xl sm:leading-9">
           L'Atelier
