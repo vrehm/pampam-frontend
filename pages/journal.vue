@@ -1,5 +1,16 @@
 <template>
-  <journal-hero-section />
+  <div>
+    <journal-hero-section />
+    <div class="relative  overflow-hidden">
+      <div class="relative pt-10 pb-12 sm:pb-16 md:pb-20 lg:pb-28 xl:pb-32">
+        <div class="mt-10 mx-auto max-w-screen-xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 xl:mt-28">
+          <article-card />
+          <article-card />
+          <article-card />
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- <div class="pt-16 lg:pt-32">
     <div class="container mx-auto">
       <div class="flex flex-wrap justify-start mt-4 mb-16">
@@ -28,12 +39,12 @@
 </template>
 
 <script>
-// import ArticleCard from '~/components/ArticleCard.vue'
+import ArticleCard from '~/components/ArticleCard.vue'
 import JournalHeroSection from '~/components/JournalHeroSection.vue'
 
 export default {
   components: {
-    // ArticleCard,
+    ArticleCard,
     JournalHeroSection
   },
   async asyncData({ $axios }) {

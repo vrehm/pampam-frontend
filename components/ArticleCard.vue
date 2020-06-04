@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col">
+  <!-- <div class="flex flex-col">
     <nuxt-link :to="'/articles/' + article.slug">
       <img class="w-full h-56" :src="assetsBaseUrl + article.image.url" :alt="article.title" />
       <div class="px-6 py-4">
@@ -16,15 +16,32 @@
         <article-category-pill :name="category.name" :slug="category.slug" />
       </span>
     </div>
+  </div> -->
+  <div class="">
+    <div class="px-4 py-5 sm:p-6">
+      <div class="sm:flex sm:items-start sm:justify-center">
+        <img class="relative lg:mr-12 lg:rounded-sm h-48 w-full object-cover lg:w-10/12 lazyload lg:max-w-xs" src="~/assets/img/journal/journal-placeholder.jpg" />
+        <div>
+          <h3 class="text-2xl leading-8 font-extrabold text-gray-900 tracking-tight sm:text-3xl sm:leading-9">
+            Manage subscription
+          </h3>
+          <div class="mt-2 max-w-xl text-sm leading-5 text-gray-500">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae voluptatibus corrupti atque repudiandae nam.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-import ArticleCategoryPill from '~/components/ArticleCategoryPill.vue'
+// import ArticleCategoryPill from '~/components/ArticleCategoryPill.vue'
 
 export default {
   components: {
-    ArticleCategoryPill
+    // ArticleCategoryPill
   },
   props: {
     article: {
