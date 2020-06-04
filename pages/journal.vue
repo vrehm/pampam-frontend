@@ -1,5 +1,6 @@
 <template>
-  <div class="pt-16 lg:pt-32">
+  <journal-hero-section />
+  <!-- <div class="pt-16 lg:pt-32">
     <div class="container mx-auto">
       <div class="flex flex-wrap justify-start mt-4 mb-16">
         <div class="w-full flex justify-between items-center">
@@ -23,15 +24,17 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 </template>
 
 <script>
-import ArticleCard from '~/components/ArticleCard.vue'
+// import ArticleCard from '~/components/ArticleCard.vue'
+import JournalHeroSection from '~/components/JournalHeroSection.vue'
 
 export default {
   components: {
-    ArticleCard
+    // ArticleCard,
+    JournalHeroSection
   },
   async asyncData({ $axios }) {
     const {
