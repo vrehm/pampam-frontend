@@ -1,7 +1,7 @@
 <template>
   <footer class="bg-white">
-    <div class="max-w-screen-xl mx-auto py-12 px-4 overflow-hidden sm:px-6 lg:py-16 lg:px-8">
-      <div class="md:grid md:grid-cols-3 md:gap-8">
+    <div class="w-full py-12 px-4 overflow-hidden border-t border-gray-200 sm:px-6 lg:py-16 lg:px-8">
+      <div class="max-w-screen-xl mx-auto md:grid md:grid-cols-3 md:gap-8">
         <div class="flex flex-col items-center">
           <a href="#">
             <img class="h-20 lazyload" data-src="~/assets/img/logos/pampam-logo.svg" alt="Company name" />
