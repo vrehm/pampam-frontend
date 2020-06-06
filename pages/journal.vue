@@ -8,7 +8,7 @@
             <article-card :article="article" />
           </div>
         </div>
-        <the-more-article-button v-if="articlesCount > 5" />
+        <the-more-article-button v-if="articlesCount > 5" @load-articles="fiveMoreArticles" />
       </div>
     </div>
   </div>
@@ -59,7 +59,14 @@ export default {
     const articlesCount = await $axios.$get(baseURL + '/articles/count')
     const categoriesCount = await $axios.$get(baseURL + '/categories/count')
 
-    return { articles, categories, articlesCount, categoriesCount }
+    return { articles, categories, articlesCount, categoriesCount, baseURL }
+  },
+  methods: {
+    // Shorten a string to less than maxLen characters without truncating words.
+    async fiveMoreArticles() {
+      const newArticles = await this.$axios.$get(this.baseURL + '/articles?_start=10&_limit=5')
+      this.articles.push(...newArticles)
+    }
   }
 }
 </script>
