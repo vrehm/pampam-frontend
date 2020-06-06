@@ -18,9 +18,11 @@
     </div>
   </div> -->
   <nuxt-link :to="'/articles/' + article.slug">
-    <div class="pb-16 sm:px-6 lg:px-24 lg:max-w-screen-xl">
-      <div class="flex flex-col lg:flex-row items-start justify-center">
-        <img class=" lg:mr-6 lg:rounded-sm h-48 w-full object-cover lg:w-10/12 lazyload lg:max-w-xs" :src="assetsBaseUrl + article.image.url" :alt="article.title" />
+    <div class="pb-16 sm:px-6 md:px-24 md:max-w-screen-xl">
+      <div class="flex flex-col md:flex-row items-start justify-center">
+        <div class="md:mr-6 md:rounded-sm h-48 w-full object-cover md:w-9/12 md:max-w-xs overflow-hidden">
+          <img class=" md:rounded-sm object-cover w-full h-auto lazyload" :src="assetsBaseUrl + article.image.url" :alt="article.title" />
+        </div>
         <div class="px-6 sm:py-0 py-8">
           <h3 class="text-2xl leading-8 font-extrabold text-gray-900 sm:text-3xl sm:leading-9 ">
             {{ article.title }}
