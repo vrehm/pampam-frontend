@@ -8,6 +8,7 @@
             <article-card :article="article" />
           </div>
         </div>
+        <the-more-article-button v-if="articlesCount > 5" />
       </div>
     </div>
   </div>
@@ -39,13 +40,15 @@
 </template>
 
 <script>
-import ArticleCard from '~/components/ArticleCard.vue'
 import JournalHeroSection from '~/components/JournalHeroSection.vue'
+import ArticleCard from '~/components/ArticleCard.vue'
+import TheMoreArticleButton from '~/components/TheMoreArticleButton.vue'
 
 export default {
   components: {
+    JournalHeroSection,
     ArticleCard,
-    JournalHeroSection
+    TheMoreArticleButton
   },
   async asyncData({ $axios }) {
     const {
