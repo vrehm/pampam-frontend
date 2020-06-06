@@ -1,12 +1,12 @@
 <template>
   <div>
-    <journal-hero-section />
-    <div class="relative  overflow-hidden">
+    <div class="relative overflow-hidden">
+      <journal-hero-section />
       <div class="relative pt-10 pb-12 sm:pb-16 md:pb-20 lg:pb-28 xl:pb-32">
-        <div class="mt-10 mx-auto max-w-screen-xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 xl:mt-28">
-          <article-card />
-          <article-card />
-          <article-card />
+        <div class="mt-10 mx-auto max-w-screen-xl lg:px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 xl:mt-28">
+          <div v-for="article in articles" :key="article.id" class="flex">
+            <article-card :article="articles[article.id - 1]" />
+          </div>
         </div>
       </div>
     </div>
@@ -51,9 +51,12 @@ export default {
     const {
       defaults: { baseURL }
     } = $axios
-    const articles = await $axios.$get(baseURL + '/articles?_sort=id:ASC')
+    const articles = await $axios.$get(baseURL + '/articles?_sort=id:ASC&_limit=5')
     const categories = await $axios.$get(baseURL + '/categories?_sort=id:ASC')
-    return { articles, categories }
+    const articlesCount = await $axios.$get(baseURL + '/articles/count')
+    const categoriesCount = await $axios.$get(baseURL + '/categories/count')
+
+    return { articles, categories, articlesCount, categoriesCount }
   }
 }
 </script>

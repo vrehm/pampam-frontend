@@ -18,14 +18,14 @@
     </div>
   </div> -->
   <div class="">
-    <div class="px-4 py-5 sm:p-6">
-      <div class="sm:flex sm:items-start sm:justify-center">
-        <img class="relative lg:mr-12 lg:rounded-sm h-48 w-full object-cover lg:w-10/12 lazyload lg:max-w-xs" src="~/assets/img/journal/journal-placeholder.jpg" />
-        <div>
-          <h3 class="text-2xl leading-8 font-extrabold text-gray-900 tracking-tight sm:text-3xl sm:leading-9">
+    <div class="pb-16 sm:px-6 lg:px-24 lg:max-w-screen-xl">
+      <div class="flex flex-col lg:flex-row items-start justify-center">
+        <img class=" lg:mr-6 lg:rounded-sm h-48 w-full object-cover lg:w-10/12 lazyload lg:max-w-xs" src="~/assets/img/journal/journal-placeholder.jpg" />
+        <div class="px-6 sm:py-0 py-8">
+          <h3 class="text-2xl leading-8 font-extrabold text-gray-900 sm:text-3xl sm:leading-9 ">
             Manage subscription
           </h3>
-          <div class="mt-2 max-w-xl text-sm leading-5 text-gray-500">
+          <div class="mt-6 text-base leading-6 text-gray-500">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae voluptatibus corrupti atque repudiandae nam.
             </p>
