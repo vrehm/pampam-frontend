@@ -36,7 +36,14 @@
             </div>
 
             <p class="text-sm leading-5 text-gray-500">
-              <time datetime="2020-03-16">Mar 16, 2020 </time>
+              <time
+                :datetime="article.created_at"
+                v-text="
+                  $moment(article.created_at)
+                    .locale('fr')
+                    .fromNow()
+                "
+              ></time>
             </p>
           </div>
           <nuxt-link :to="{ name: 'articles-article', params: { article: article.slug } }">

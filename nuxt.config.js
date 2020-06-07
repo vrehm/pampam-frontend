@@ -165,6 +165,14 @@ export default {
         }
     },
     /*
+     ** see https://www.npmjs.com/package/@nuxtjs/moment
+     */
+    moment: {
+        locales: ['fr'],
+        defaultLocale: 'fr',
+
+    },
+    /*
      ** Plugins to load before mounting the App
      */
     plugins: [
