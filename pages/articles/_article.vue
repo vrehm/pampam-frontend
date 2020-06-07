@@ -22,6 +22,7 @@
 import ArticleShow from '~/components/ArticleShow.vue'
 
 export default {
+  scrollToTop: true,
   components: {
     ArticleShow
   }
