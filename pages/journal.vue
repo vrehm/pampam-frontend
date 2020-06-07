@@ -6,7 +6,7 @@
         <div class="mt-10 mx-auto max-w-screen-xl lg:px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 xl:mt-28">
           <article-card v-for="article in articles" :key="article.id" :article="article" class="flex" />
         </div>
-        <the-more-article-button v-if="articlesCount > 5" @load-articles="fiveMoreArticles" />
+        <!-- <the-more-article-button v-if="articlesCount > 5" @load-articles="fiveMoreArticles" /> -->
       </div>
     </div>
   </div>
@@ -40,13 +40,13 @@
 <script>
 import JournalHeroSection from '~/components/JournalHeroSection.vue'
 import ArticleCard from '~/components/ArticleCard.vue'
-import TheMoreArticleButton from '~/components/TheMoreArticleButton.vue'
+// import TheMoreArticleButton from '~/components/TheMoreArticleButton.vue'
 
 export default {
   components: {
     JournalHeroSection,
-    ArticleCard,
-    TheMoreArticleButton
+    ArticleCard
+    // TheMoreArticleButton
   },
   // async asyncData({ $axios }) {
   //   const {
@@ -61,7 +61,8 @@ export default {
   // },
   async fetch() {
     // const articles = await fetch(`https://dev.to/api/articles?tag=nuxt&state=rising&page=${this.currentPage}`).then((res) => res.json())
-    const articles = await this.axios.get(this.baseURL + '/articles?_sort=id:ASC&_limit=5')
+    const articles = await this.$axios.$get('https://api.atelierpampam.fr/articles?_sort=id:ASC')
+
     this.articles = this.articles.concat(articles)
   },
   data() {
@@ -72,10 +73,10 @@ export default {
   },
   methods: {
     // Shorten a string to less than maxLen characters without truncating words.
-    async fiveMoreArticles() {
-      const newArticles = await this.$axios.$get(this.baseURL + '/articles?_start=10&_limit=5')
-      this.articles.push(...newArticles)
-    }
+    //   async fiveMoreArticles() {
+    //     const newArticles = await this.$axios.$get(this.baseURL + '/articles?_start=10&_limit=5')
+    //     this.articles.push(...newArticles)
+    //   }
   }
 }
 </script>
