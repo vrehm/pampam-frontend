@@ -95,7 +95,7 @@
 import VueSlickCarousel from 'vue-slick-carousel'
 import 'vue-slick-carousel/dist/vue-slick-carousel.css'
 // optional style for arrows & dots
-import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
+// import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
 import TestimonialCard from '~/components/TestimonialCard.vue'
 
 export default {
@@ -106,12 +106,14 @@ export default {
   data: () => ({
     settings: {
       lazyLoad: 'ondemand',
-      dots: true,
+      arrows: false,
+      dots: false,
       fade: true,
       infinite: true,
-      speed: 500,
+      speed: 1000,
       slidesToShow: 1,
-      slidesToScroll: 1
+      slidesToScroll: 1,
+      autoplay: true
     },
     customers: [
       {

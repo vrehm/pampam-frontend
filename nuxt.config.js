@@ -177,8 +177,18 @@ export default {
         mode: 'postcss',
         enabled: !!(process.env.NODE_ENV === 'production'),
         // paths: ['components/**/*.vue', 'layouts/**/*.vue', 'pages/**/*.vue', 'plugins/**/*.js'],
-        // styleExtensions: ['.css'],
-        // whitelist: ['lazyload', 'lazyloaded', 'body', 'html', 'nuxt-progress'],
+        styleExtensions: ['.css'],
+        whitelistPatterns: [
+            /custom$/,
+            /slick/
+        ],
+        whitelist: [
+            'lazyload',
+            'lazyloaded',
+            'body',
+            'html',
+            'nuxt-progress'
+        ],
         // extractors: () => [{
         //     extractor: class {
         //         static extract(content) {
