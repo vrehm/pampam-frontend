@@ -1,7 +1,7 @@
 <template>
   <div class="max-w-full h-full flex-1">
     <the-nav-bar :use-absolute-version="isAbsolute" />
-    <nuxt id="content" />
+    <nuxt id="content" keep-alive />
     <the-footer />
   </div>
 </template>
