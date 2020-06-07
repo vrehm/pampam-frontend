@@ -60,8 +60,11 @@ export default {
   //   return { articles, categories, articlesCount, categoriesCount, baseURL }
   // },
   async fetch() {
+    const {
+      defaults: { baseURL }
+    } = this.$axios
     // const articles = await fetch(`https://dev.to/api/articles?tag=nuxt&state=rising&page=${this.currentPage}`).then((res) => res.json())
-    const articles = await this.$axios.$get('https://api.atelierpampam.fr/articles?_sort=id:ASC')
+    const articles = await this.$axios.$get(baseURL + '/articles?_sort=id:ASC&_limit=5')
 
     this.articles = this.articles.concat(articles)
   },
