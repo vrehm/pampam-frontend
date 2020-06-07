@@ -46,6 +46,11 @@ export default {
       assetsBaseUrl: process.env.assetsBaseUrl,
       article: {}
     }
+  },
+  activated() {
+    if (this.$fetchState.timestamp <= Date.now() - 60000) {
+      this.$fetch()
+    }
   }
 }
 </script>
