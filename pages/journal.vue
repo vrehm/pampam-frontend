@@ -48,16 +48,21 @@ export default {
     ArticleCard,
     TheMoreArticleButton
   },
-  async asyncData({ $axios }) {
-    const {
-      defaults: { baseURL }
-    } = $axios
-    const articles = await $axios.$get(baseURL + '/articles?_sort=id:ASC&_limit=5')
-    const categories = await $axios.$get(baseURL + '/categories?_sort=id:ASC')
-    const articlesCount = await $axios.$get(baseURL + '/articles/count')
-    const categoriesCount = await $axios.$get(baseURL + '/categories/count')
+  // async asyncData({ $axios }) {
+  //   const {
+  //     defaults: { baseURL }
+  //   } = $axios
+  //   const articles = await $axios.$get(baseURL + '/articles?_sort=id:ASC&_limit=5')
+  //   const categories = await $axios.$get(baseURL + '/categories?_sort=id:ASC')
+  //   const articlesCount = await $axios.$get(baseURL + '/articles/count')
+  //   const categoriesCount = await $axios.$get(baseURL + '/categories/count')
 
-    return { articles, categories, articlesCount, categoriesCount, baseURL }
+  //   return { articles, categories, articlesCount, categoriesCount, baseURL }
+  // },
+  async fetch() {
+    // const articles = await fetch(`https://dev.to/api/articles?tag=nuxt&state=rising&page=${this.currentPage}`).then((res) => res.json())
+    const articles = await this.axios.get(this.baseURL + '/articles?_sort=id:ASC&_limit=5')
+    this.articles = this.articles.concat(articles)
   },
   data() {
     return {
