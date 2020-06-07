@@ -34,7 +34,9 @@
         "@nuxtjs/pwa": "^3.0.0-beta.20",
         "nuxt": "^2.12.2",
         "responsive-loader": "^1.2.0",
-        "sharp": "^0.25.3"
+        "sharp": "^0.25.3",
+        "vue-content-placeholders": "^0.2.1",
+        "vue-observe-visibility": "^0.4.6"
     },
     "devDependencies": {
         "@aceforth/nuxt-optimized-images": "^1.0.1",
