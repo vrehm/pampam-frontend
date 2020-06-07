@@ -24,11 +24,36 @@
           <img class=" md:rounded-sm object-cover w-full h-auto lazyload" :src="assetsBaseUrl + article.image.url" :alt="article.title" />
         </div>
         <div class="px-6 sm:py-0 py-8">
-          <h3 class="text-2xl leading-8 font-extrabold text-gray-900 sm:text-3xl sm:leading-9 ">
-            {{ article.title }}
-          </h3>
-          <div class="mt-6 text-base leading-6 text-gray-500">
+          <div class="flex justify-between">
+            <div class="flex">
+              <p class="text-sm leading-5 font-medium text-yellow-600">
+                <a href="#" class="hover:underline">
+                  Blog
+                </a>
+              </p>
+              <p class="text-sm leading-5 font-medium text-yellow-600 ml-3">
+                <a href="#" class="hover:underline">
+                  Déco
+                </a>
+              </p>
+            </div>
+
+            <p class="text-sm leading-5 text-gray-500">
+              <time datetime="2020-03-16">Mar 16, 2020 </time>
+            </p>
+          </div>
+          <nuxt-link :to="{ name: 'articles-article', params: { article: article.slug } }">
+            <h3 class="mt-2 text-xl leading-7 font-semibold text-gray-900">
+              {{ article.title }}
+            </h3>
+          </nuxt-link>
+          <div class="mt-3 text-base leading-6 text-gray-500">
             <p>{{ shorten(article.content, 180) }} ...</p>
+          </div>
+          <div class="mt-3">
+            <a href="#" class="text-base leading-6 font-semibold text-yellow-600 hover:text-yellow-500 transition ease-in-out duration-150">
+              Lire l'article
+            </a>
           </div>
         </div>
       </div>
