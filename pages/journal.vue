@@ -64,13 +64,13 @@ export default {
       defaults: { baseURL }
     } = this.$axios
     // const articles = await fetch(`https://dev.to/api/articles?tag=nuxt&state=rising&page=${this.currentPage}`).then((res) => res.json())
-    const articles = await this.$axios.$get(baseURL + '/articles?_sort=id:ASC&_limit=5')
+    const articles = await this.$axios.$get(baseURL + `/articles?_sort=id:ASC&_limit=${this.displayedArticles + 5}`)
 
     this.articles = this.articles.concat(articles)
   },
   data() {
     return {
-      currentPage: 1,
+      displayedArticles: 5,
       articles: []
     }
   },
@@ -82,10 +82,9 @@ export default {
     //   }
     lazyLoadArticles(isVisible) {
       if (isVisible) {
-        if (this.currentPage < 5) {
-          this.currentPage++
-          console.log('+1')
-          // this.$fetch()
+        if (this.displayedArticles < 100) {
+          this.displayedArticles++
+          this.$fetch()
         }
       }
     }
