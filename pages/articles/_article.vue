@@ -13,7 +13,7 @@
   </div> -->
   <div class="container mx-auto my-4">
     <div class="flex flex-wrap justify-center mt-4 mb-16">
-      <article-show class="max-w-screen-md" />
+      <article-show />
     </div>
   </div>
 </template>

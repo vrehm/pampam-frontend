@@ -31,6 +31,7 @@ import JournalHeroSection from '~/components/JournalHeroSection.vue'
 import ArticleCard from '~/components/ArticleCard.vue'
 
 export default {
+  scrollToTop: false,
   components: {
     JournalHeroSection,
     ArticleCard
@@ -40,7 +41,7 @@ export default {
       defaults: { baseURL }
     } = this.$axios
 
-    const articles = await this.$axios.$get(baseURL + `/articles?_start=${this.articlesToBeDisplayed - 5}&_limit=5`)
+    const articles = await this.$axios.$get(baseURL + `/articles?_start=${this.articlesToBeDisplayed - 10}&_limit=10`)
     const articlesCount = await this.$axios.$get(baseURL + `/articles/count`)
 
     this.articles = this.articles.concat(articles)
@@ -48,7 +49,7 @@ export default {
   },
   data() {
     return {
-      articlesToBeDisplayed: 5,
+      articlesToBeDisplayed: 10,
       articles: [],
       articlesAvailable: 0
     }
@@ -57,10 +58,15 @@ export default {
     lazyLoadArticles(isVisible) {
       if (isVisible) {
         if (this.articlesToBeDisplayed < this.articlesAvailable) {
-          this.articlesToBeDisplayed += 5
+          this.articlesToBeDisplayed += 10
           this.$fetch()
         }
       }
+    }
+  },
+  head() {
+    return {
+      title: "Journal de l'Atelier Pampam"
     }
   }
 }
