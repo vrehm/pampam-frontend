@@ -19,15 +19,30 @@ export default {
   components: {
     ArticleCategoryPill
   },
-  props: {
-    article: {
-      type: Object,
-      required: true
+  props: [],
+  async fetch() {
+    const {
+      defaults: { baseURL }
+    } = this.$axios
+    // const article = await fetch(`https://dev.to/api/articles/${this.$route.params.article}`).then((res) => res.json())
+    const article = await this.$axios.$get(baseURL + `/articles/${this.$route.params.id}`)
+
+    if (article.id) {
+      this.article = article
+      this.$store.commit('SET_CURRENT_ARTICLE', this.article)
+    } else {
+      // set status code on server
+      if (process.server) {
+        this.$nuxt.context.res.statusCode = 404
+      }
+      // throwing an error will set $fetchState.error
+      throw new Error('Article not found')
     }
   },
   data() {
     return {
-      assetsBaseUrl: process.env.assetsBaseUrl
+      assetsBaseUrl: process.env.assetsBaseUrl,
+      article: {}
     }
   }
 }

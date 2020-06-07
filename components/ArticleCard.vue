@@ -17,7 +17,7 @@
       </span>
     </div>
   </div> -->
-  <nuxt-link :to="{ name: 'articles-article', params: { article: article.slug } }" tag="article">
+  <nuxt-link :to="{ name: 'articles-article', params: { article: article.slug, id: article.id } }" tag="article">
     <div class="pb-16 sm:px-6 md:px-24 md:max-w-screen-xl">
       <div class="flex flex-col md:flex-row items-start justify-center">
         <div class="md:mr-6 md:rounded-sm h-48 w-full object-cover md:w-9/12 md:max-w-xs overflow-hidden">
@@ -28,10 +28,8 @@
             <div class="flex">
               <!-- Slice method limit the number of tags displayed -->
               <nuxt-link v-for="(category, index) in article.categories.slice(0, 5)" :key="category.id" :to="{ name: 'categories-category', params: { category: category.slug } }">
-                <p class="text-sm leading-5 font-medium text-yellow-600">
-                  <a href="#" class="hover:underline" :class="{ 'ml-2': index != 0 }">
-                    {{ category.name }}
-                  </a>
+                <p href="#" class="hover:underline text-sm leading-5 font-medium text-yellow-600" :class="{ 'ml-2': index != 0 }">
+                  {{ category.name }}
                 </p>
               </nuxt-link>
             </div>
@@ -47,7 +45,7 @@
               ></time>
             </p>
           </div>
-          <nuxt-link :to="{ name: 'articles-article', params: { article: article.slug } }">
+          <nuxt-link :to="{ name: 'articles-article', params: { article: article.slug, id: article.id } }">
             <h3 class="mt-2 text-xl leading-7 font-semibold text-gray-900">
               {{ article.title }}
             </h3>
