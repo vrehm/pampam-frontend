@@ -26,7 +26,8 @@
         <div class="px-6 sm:py-0 py-8">
           <div class="flex justify-between">
             <div class="flex">
-              <nuxt-link v-for="(category, index) in article.categories" :key="category.id" :to="{ name: 'categories-category', params: { category: category.slug } }">
+              <!-- Slice method limit the number of tags displayed -->
+              <nuxt-link v-for="(category, index) in article.categories.slice(0, 5)" :key="category.id" :to="{ name: 'categories-category', params: { category: category.slug } }">
                 <p class="text-sm leading-5 font-medium text-yellow-600">
                   <a href="#" class="hover:underline" :class="{ 'ml-2': index != 0 }">
                     {{ category.name }}
