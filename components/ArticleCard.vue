@@ -17,7 +17,7 @@
       </span>
     </div>
   </div> -->
-  <nuxt-link :to="'/articles/' + article.slug">
+  <nuxt-link :to="{ name: 'articles-article', params: { article: article.slug } }" tag="article">
     <div class="pb-16 sm:px-6 md:px-24 md:max-w-screen-xl">
       <div class="flex flex-col md:flex-row items-start justify-center">
         <div class="md:mr-6 md:rounded-sm h-48 w-full object-cover md:w-9/12 md:max-w-xs overflow-hidden">

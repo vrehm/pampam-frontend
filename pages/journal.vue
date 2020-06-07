@@ -4,7 +4,7 @@
       <journal-hero-section />
       <div class="relative pt-10 pb-12 sm:pb-16 md:pb-20 lg:pb-28 xl:pb-32">
         <div class="mt-10 mx-auto max-w-screen-xl lg:px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 xl:mt-28">
-          <article-card v-for="article in articles" :key="article.id" :article="article" class="flex" />
+          <article-card v-for="article in articles" :key="article.id" v-observe-visibility="i === articles.length - 1 ? lazyLoadArticles : false" :article="article" class="flex" />
         </div>
         <!-- <the-more-article-button v-if="articlesCount > 5" @load-articles="fiveMoreArticles" /> -->
       </div>
