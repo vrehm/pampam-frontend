@@ -2,7 +2,7 @@
   <section class="bg-yellow-600">
     <div class="max-w-screen-xl mx-auto pb-6 md:flex md:justify-between md:px-6 lg:px-8">
       <vue-slick-carousel class="w-full flex-1 py-12 px-4 sm:px-6 md:py-16" v-bind="settings">
-        <testimonial-card v-for="customer in customers" :key="customer.id" class="hidden sm:block flex-1 py-12 px-4 sm:px-6 md:py-16" :name="customer.name" :testimony="customer.testimony" :customer-img="customer.customerImg" />
+        <testimonial-card v-for="customer in customers" :key="customer.id" class="flex-1 py-12 px-4 sm:px-6 md:py-16" :name="customer.name" :testimony="customer.testimony" :customer-img="customer.customerImg" />
       </vue-slick-carousel>
 
       <!-- <div class="flex-1 py-12 px-4 sm:px-6 md:py-16">
@@ -110,7 +110,7 @@ export default {
       dots: false,
       fade: true,
       infinite: true,
-      speed: 1000,
+      speed: 2000,
       slidesToShow: 1,
       slidesToScroll: 1,
       autoplay: true
