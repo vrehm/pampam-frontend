@@ -37,6 +37,7 @@
         "sharp": "^0.25.3"
     },
     "devDependencies": {
+        "vue-slick-carousel": "^1.0.5",
         "@aceforth/nuxt-optimized-images": "^1.0.1",
         "@fullhuman/postcss-purgecss": "^2.2.0",
         "@nuxtjs/eslint-config": "^3.0.0",
