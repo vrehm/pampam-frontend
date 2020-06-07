@@ -9,20 +9,23 @@
         </content-placeholders>
       </template>
       <template v-else-if="$fetchState.error">
-        <p>{{ $fetchState.error }}</p>
+        <journal-inline-error-block :error="$fetchState.error" />
       </template>
       <template v-else>
         <img :src="assetsBaseUrl + article.image.url" :alt="article.title" />
-        <div class="text-gray-700 text-base break-normal my-4 leading-loose mx-auto max-w-4xl">
-          {{ article.content }}
-        </div>
+        <div class="text-gray-700 text-base break-normal my-4 leading-loose mx-auto max-w-4xl" v-html="$md.render(article.content)"></div>
       </template>
     </div>
   </div>
 </template>
 
 <script>
+import JournalInlineErrorBlock from '~/components/JournalInlineErrorBlock.vue'
+
 export default {
+  components: {
+    JournalInlineErrorBlock
+  },
   props: [],
   async fetch() {
     const {
@@ -32,6 +35,7 @@ export default {
     const article = await this.$axios.$get(baseURL + `/articles/${this.$route.params.article}`)
     if (article.id) {
       this.article = article
+      this.$store.commit('SET_CURRENT_ARTICLE', this.article)
     } else {
       // set status code on server
       if (process.server) {

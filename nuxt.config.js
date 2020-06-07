@@ -91,6 +91,7 @@ export default {
         '@nuxtjs/stylelint-module',
         // Doc: https://github.com/nuxt-community/moment-module#readme
         '@nuxtjs/moment',
+
     ],
     /*
      ** Nuxt.js modules
@@ -103,7 +104,9 @@ export default {
         // // Doc: https://github.com/geeogi/nuxt-responsive-loader#readme
         // 'nuxt-responsive-loader',
         // Doc: https://github.com/nuxt-community/dotenv-module
-        '@nuxtjs/dotenv'
+        '@nuxtjs/dotenv',
+        // https://www.npmjs.com/package/@nuxtjs/markdownit
+        '@nuxtjs/markdownit'
     ],
     stylelint: {
         ignorePath: '*.js'
@@ -172,6 +175,19 @@ export default {
         defaultLocale: 'fr',
 
     },
+    // [optional] markdownit options
+    // See https://github.com/markdown-it/markdown-it
+    markdownit: {
+        injected: true,
+        preset: 'default',
+        linkify: true,
+        breaks: true,
+        use: [
+        'markdown-it-div',
+        'markdown-it-attrs'
+        ]
+      }
+    ,
     /*
      ** Plugins to load before mounting the App
      */

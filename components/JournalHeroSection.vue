@@ -1,5 +1,5 @@
 <template>
-  <div class="relative  overflow-hidden">
+  <div class="relative overflow-hidden">
     <div class="relative py-6">
       <div class="mt-10 mx-auto max-w-screen-xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 xl:mt-28">
         <div class="text-center">
