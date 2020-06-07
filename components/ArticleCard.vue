@@ -26,16 +26,13 @@
         <div class="px-6 sm:py-0 py-8">
           <div class="flex justify-between">
             <div class="flex">
-              <p class="text-sm leading-5 font-medium text-yellow-600">
-                <a href="#" class="hover:underline">
-                  Blog
-                </a>
-              </p>
-              <p class="text-sm leading-5 font-medium text-yellow-600 ml-3">
-                <a href="#" class="hover:underline">
-                  Déco
-                </a>
-              </p>
+              <nuxt-link v-for="(category, index) in article.categories" :key="category.id" :to="{ name: 'categories-category', params: { category: category.slug } }">
+                <p class="text-sm leading-5 font-medium text-yellow-600">
+                  <a href="#" class="hover:underline" :class="{ 'ml-2': index != 0 }">
+                    {{ category.name }}
+                  </a>
+                </p>
+              </nuxt-link>
             </div>
 
             <p class="text-sm leading-5 text-gray-500">
