@@ -88,7 +88,9 @@ export default {
         // Doc: https://github.com/aceforth/nuxt-optimized-images
         '@aceforth/nuxt-optimized-images',
         // Doc: https://github.com/nuxt-community/stylelint-module
-        '@nuxtjs/stylelint-module'
+        '@nuxtjs/stylelint-module',
+        // Doc: https://github.com/nuxt-community/moment-module#readme
+        '@nuxtjs/moment',
     ],
     /*
      ** Nuxt.js modules
