@@ -24,17 +24,7 @@ module.exports = {
             // // SPA output
             // 'dist/**/*.html',
             // 'dist/**/*.js'
-        ],
-        options: {
-            whitelistPatterns: [/custom$/],
-            whitelist: [
-                'lazyload',
-                'lazyloaded',
-                'body',
-                'html',
-                'nuxt-progress'
-            ]
-        }
+        ]
     },
     theme: {
         extend: {
