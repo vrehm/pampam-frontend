@@ -6,8 +6,8 @@
         <h2 class="sm:mr-0 text-center text-2xl leading-8 font-extrabold tracking-tight text-gray-900 sm:mr-3 sm:text-left sm:text-3xl sm:leading-9">
           L'Atelier
         </h2>
-        <div class="text-center italic text-2xl leading-8 tracking-tight text-gray-200 sm:text-left sm:text-3xl sm-leaing-9">
-          illustration
+        <div class="w-14 transform -translate-y-1">
+          <span class="text-yellow-600" v-html="require('~/assets/img/illustrations/atelier-tools.svg?include')"></span>
         </div>
       </div>
 
