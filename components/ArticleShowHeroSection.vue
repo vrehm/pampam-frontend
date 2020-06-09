@@ -28,10 +28,32 @@
       </div>
     </div>
   </div> -->
-  <div>
-    <h1 class="text-2xl leading-8 font-extrabold text-gray-900 tracking-tight sm:text-3xl sm:leading-9 mb-8">
+  <div class="py-8">
+    <h1 class="text-3xl leading-9 font-extrabold text-gray-900 sm:text-4xl sm:leading-10">
       {{ article.title }}
     </h1>
+    <div class="flex-shrink-0 group block">
+      <div class="flex items-center">
+        <div>
+          <img class="inline-block h-8 w-8 rounded-full border border-yellow-500" :src="article.author.avatar.formats.small.url" :alt="article.author.avatar.alternativeText" />
+        </div>
+        <div class="ml-3">
+          <p class="text-sm leading-5 font-medium text-gray-700 group-hover:text-gray-900 ">
+            {{ article.author.full_name }}
+          </p>
+          <p class="text-xs leading-4 font-medium text-gray-500 group-hover:text-gray-700 group-focus:underline transition ease-in-out duration-150">
+            <time
+              :datetime="article.created_at"
+              v-text="
+                $moment(article.created_at)
+                  .locale('fr')
+                  .format('Do MMMM YYYY')
+              "
+            ></time>
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
 
   <!-- <div class="lg:pb-16 overflow-hidden ">

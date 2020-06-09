@@ -1,6 +1,6 @@
 <template>
   <div class="relative w-full">
-    <div class="mt-10 mx-auto max-w-2xl sm:mt-12 sm:px-6 md:mt-16  bg-gray-50">
+    <div class="mt-10 mx-auto max-w-2xl sm:mt-12 px-6 md:px-0 md:mt-16  bg-gray-50">
       <template v-if="$fetchState.pending">
         <content-placeholders rounded class="pb-8 px-6 md:px-24 md:max-w-5xl  md:px-24 mx-auto w-4/5">
           <content-placeholders-heading :img="true" />
