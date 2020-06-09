@@ -12,8 +12,10 @@
         <journal-inline-error-block :error="$fetchState.error" />
       </template>
       <template v-else>
-        <img :src="assetsBaseUrl + article.image.url" :alt="article.title" />
-        <div class="text-gray-700 text-base break-normal my-4 leading-loose mx-auto max-w-4xl" v-html="$md.render(article.content)"></div>
+        <div class="flex flex-col relative max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-screen-xl justify-center items-center">
+          <article-show-hero-section :article="article" />
+          <div class="article text-gray-700 text-base break-normal my-4 leading-loose mx-auto max-w-4xl" v-html="$md.render(article.content)"></div>
+        </div>
       </template>
     </div>
   </div>
@@ -21,10 +23,12 @@
 
 <script>
 import JournalInlineErrorBlock from '~/components/JournalInlineErrorBlock.vue'
+import ArticleShowHeroSection from '~/components/ArticleShowHeroSection.vue'
 
 export default {
   components: {
-    JournalInlineErrorBlock
+    JournalInlineErrorBlock,
+    ArticleShowHeroSection
   },
   props: [],
   async fetch() {
@@ -64,4 +68,15 @@ export default {
 }
 </script>
 
-<style></style>
+<style>
+.article img {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  max-width: 28rem;
+  width: 100%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 0.2rem;
+}
+</style>
