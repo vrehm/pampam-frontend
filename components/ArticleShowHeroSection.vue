@@ -28,12 +28,10 @@
       </div>
     </div>
   </div> -->
-  <div class="py-12 bg-gray-50 overflow-hidden md:py-20 lg:py-24">
-    <div class="relative w-10/12 max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h1 class="text-2xl leading-8 font-extrabold text-gray-900 tracking-tight sm:text-3xl sm:leading-9 mb-8">
-        {{ article.title }}
-      </h1>
-    </div>
+  <div>
+    <h1 class="text-2xl leading-8 font-extrabold text-gray-900 tracking-tight sm:text-3xl sm:leading-9 mb-8">
+      {{ article.title }}
+    </h1>
   </div>
 
   <!-- <div class="lg:pb-16 overflow-hidden ">
