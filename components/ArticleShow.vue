@@ -57,11 +57,6 @@ export default {
     if (this.$fetchState.timestamp <= Date.now() - 60000) {
       this.$fetch()
     }
-  },
-  head() {
-    return {
-      title: this.article.title
-    }
   }
 }
 </script>

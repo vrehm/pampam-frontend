@@ -106,7 +106,10 @@ export default {
         // Doc: https://github.com/nuxt-community/dotenv-module
         '@nuxtjs/dotenv',
         // https://www.npmjs.com/package/@nuxtjs/markdownit
-        '@nuxtjs/markdownit'
+        '@nuxtjs/markdownit',
+        // https://www.npmjs.com/package/vue-social-sharing
+        'vue-social-sharing/nuxt'
+
     ],
     stylelint: {
         ignorePath: '*.js'
