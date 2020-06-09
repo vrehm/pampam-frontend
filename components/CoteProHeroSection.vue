@@ -1,6 +1,6 @@
 <template>
   <!-- Header version hero section -->
-  <div class="relative lg:mb-24 ">
+  <div class="relative lg:mb-24">
     <div class="h-56 sm:h-72 lg:absolute lg:left-0 lg:h-full lg:w-1/2">
       <img class="w-full h-full object-cover lazyload" src="~/assets/img/cote-pro/dessin-pro.jpg" alt="Support team" />
     </div>
