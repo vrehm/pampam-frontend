@@ -1,44 +1,73 @@
 <template>
-  <div class="container mx-auto">
-    <div class="flex flex-wrap justify-start mt-4 mb-16">
-      <div class="w-full flex justify-between items-center">
-        <h2 class="text-4xl m-2 flex-1">{{ category.name }} index - Nuxt blog test @Bivwak!</h2>
-        <nuxt-link to="/" class="bg-transparent hover:bg-gray-500 text-gray-700 font-semibold hover:text-white py-2 px-4 border border-gray-500 hover:border-transparent rounded">
-          Back to homepage
-        </nuxt-link>
+  <div>
+    <div class="relative ">
+      <journal-hero-section />
+      <div class="relative pb-12 sm:pb-16 md:pb-20 lg:pb-28 xl:pb-32">
+        <div class="mt-10 mx-auto max-w-screen-xl lg:px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 xl:mt-28">
+          <template v-if="$fetchState.pending">
+            <div>
+              <content-placeholders v-for="p in 5" :key="p" rounded class="pb-8 px-6 md:px-24 md:max-w-5xl  md:px-24 mx-auto">
+                <content-placeholders-heading :img="true" />
+                <content-placeholders-text :lines="3" />
+              </content-placeholders>
+            </div>
+          </template>
+          <template v-else-if="$fetchState.error">
+            <p>{{ $fetchState.error.message }}</p>
+          </template>
+          <template v-else>
+            <div>
+              <article-card v-for="(article, index) in articles" :key="article.id" v-observe-visibility="index === articles.length - 1 ? lazyLoadArticles : false" :article="article" class="flex" />
+            </div>
+          </template>
+        </div>
       </div>
-
-      <!-- <div
-        v-for="category in categories"
-        :key="category.id"
-        class="w-full flex flex-wrap justify-start m-2"
-      >
-        <span class="text-2xl w-full my-2">{{ category.name }}</span> -->
-      <div v-for="article in category.articles" :key="article.id" class="flex">
-        <article-card :article="articles[article.id - 1]" class="max-w-xs rounded overflow-hidden shadow-lg m-2 flex-1" />
-      </div>
-      <!-- </div> -->
     </div>
   </div>
 </template>
 
 <script>
+import JournalHeroSection from '~/components/JournalHeroSection.vue'
 import ArticleCard from '~/components/ArticleCard.vue'
 
 export default {
+  scrollToTop: true,
   components: {
+    JournalHeroSection,
     ArticleCard
   },
-  async asyncData({ $axios, params }) {
-    const slug = params.slug
+  async fetch() {
     const {
       defaults: { baseURL }
-    } = $axios
-    const articles = await $axios.$get(baseURL + '/articles?_sort=id:ASC')
-    const categories = await $axios.$get(baseURL + '/categories?_sort=id:ASC')
-    const categoryFilter = await $axios.$get(baseURL + '/categories?slug=' + slug)
-    const category = categoryFilter[0]
-    return { articles, categories, category }
+    } = this.$axios
+
+    const articles = await this.$axios.$get(baseURL + `/articles?_start=${this.articlesToBeDisplayed - 10}&_limit=10`)
+    const articlesCount = await this.$axios.$get(baseURL + `/articles/count`)
+
+    this.articles = this.articles.concat(articles)
+    this.articlesAvailable = articlesCount
+  },
+  data() {
+    return {
+      articlesToBeDisplayed: 10,
+      articles: [],
+      articlesAvailable: 0
+    }
+  },
+  methods: {
+    lazyLoadArticles(isVisible) {
+      if (isVisible) {
+        if (this.articlesToBeDisplayed < this.articlesAvailable) {
+          this.articlesToBeDisplayed += 10
+          this.$fetch()
+        }
+      }
+    }
+  },
+  head() {
+    return {
+      title: "Journal de l'Atelier Pampam"
+    }
   }
 }
 </script>
