@@ -29,11 +29,11 @@
     </div>
   </div> -->
   <div class="py-8">
+    <h1 class="mb-3 text-3xl leading-9 font-extrabold text-gray-900 sm:text-4xl sm:leading-10">
+      {{ article.title }}
+    </h1>
     <div class="flex items-center justify-between">
       <div>
-        <h1 class="text-3xl leading-9 font-extrabold text-gray-900 sm:text-4xl sm:leading-10">
-          {{ article.title }}
-        </h1>
         <div class="flex-shrink-0 group block">
           <div class="flex items-center">
             <div>
