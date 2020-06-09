@@ -41,11 +41,18 @@
         </div>
       </div>
     </div>
+    <journal-nav-bar />
   </div>
 </template>
 
 <script>
-export default {}
+import JournalNavBar from '~/components/JournalNavBar.vue'
+
+export default {
+  components: {
+    JournalNavBar
+  }
+}
 </script>
 
 <style></style>
