@@ -10,7 +10,7 @@
             <div class="flex">
               <!-- Slice method limit the number of tags displayed -->
               <nuxt-link v-for="(category, index) in article.categories.slice(0, 5)" :key="category.id" :to="{ name: 'categories-category', params: { category: category.slug } }">
-                <p href="#" class="hover:underline text-sm leading-5 font-medium text-yellow-600" :class="{ 'ml-2': index != 0 }">
+                <p class="hover:underline text-sm leading-5 font-medium text-yellow-600" :class="{ 'ml-2': index != 0 }">
                   {{ category.name }}
                 </p>
               </nuxt-link>
@@ -37,7 +37,7 @@
           </div>
           <div class="mt-3">
             <nuxt-link :to="{ name: 'articles-article', params: { article: article.id } }">
-              <p href="#" class="text-base leading-6 font-semibold text-yellow-600 hover:text-yellow-500 transition ease-in-out duration-150">
+              <p class="text-base leading-6 font-semibold text-yellow-600 hover:text-yellow-500 transition ease-in-out duration-150">
                 Lire l'article
               </p>
             </nuxt-link>
