@@ -2,11 +2,11 @@
   <section class="pt-6 pb-12 sm:pb-8 md:pt-12 md:pb-20 bg-white">
     <div class="max-w-screen-xl mt-10 mx-auto px-4 sm:px-6 lg:px-8">
       <!-- Title and intro -->
-      <div class="flex flex-col justify-center sm:flex-row sm:justify-start sm:items-end">
-        <h2 class="sm:mr-0 text-center text-2xl leading-8 font-extrabold tracking-tight text-gray-900 sm:mr-3 sm:text-left sm:text-3xl sm:leading-9">
+      <div class="flex justify-center items-end md:justify-start">
+        <h2 class="mr-1 md:mr-3 text-center text-2xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-left sm:text-3xl sm:leading-9">
           L'Atelier
         </h2>
-        <div class="w-14 transform -translate-y-1">
+        <div class="w-10 md:w-14 transform -translate-y-1">
           <span class="text-gray-900" v-html="require('~/assets/img/illustrations/atelier-tools.svg?include')"></span>
         </div>
       </div>
@@ -17,12 +17,18 @@
       </p>
 
       <!-- Les luminaires -->
-      <div class="mt-14 md:mt-16 md:flex md:justify-center">
+      <div class="mt-10 md:mt-16 md:flex md:justify-center">
         <!-- Left block -->
+
         <div class="w-full md:w-6/12 md:pr-8">
-          <h3 class="text-xl font-extrabold leading-8 tracking-tight text-yellow-500 sm:text-2xl sm:leading-9">
-            Les luminaires
-          </h3>
+          <div class="flex justify-center items-end md:justify-start">
+            <h3 class="mr-1 lg:mr-0 text-center md:text-left text-xl sm:text-2xl font-extrabold leading-8 sm:leading-9 tracking-tight text-yellow-500">
+              Les luminaires
+            </h3>
+            <div class="w-8 lg:w-14 transform translate-y-1 lg:hidden">
+              <span class="text-yellow-500" v-html="require('~/assets/img/illustrations/atelier-luminaires.svg?include')"></span>
+            </div>
+          </div>
 
           <div class="mt-6 w-11/12 mx-auto sm:w-full">
             <p class="mt-2 text-base text-justify leading-6 text-gray-900">
@@ -46,9 +52,9 @@
             <img class="w-full rounded-md lazyload" data-src="~/assets/img/home/luminaire1-700x729.jpg" alt="portrait" />
           </div>
 
-          <div class="hidden lg:block lg:w-5/12 lg:mx-auto">
-            <div class="text-center text-xl italic leading-8 tracking-tight text-gray-200 md:text-2xl md:leading-9">
-              illustration
+          <div class="hidden lg:flex lg:justify-center lg:w-5/12 lg:mx-auto">
+            <div class="w-28 transform -translate-y-5">
+              <span class="text-gray-900" v-html="require('~/assets/img/illustrations/atelier-luminaires.svg?include')"></span>
             </div>
           </div>
         </div>
@@ -68,18 +74,23 @@
             </a>
           </div>
 
-          <div class="hidden lg:block lg:w-5/12 lg:mx-auto">
-            <div class="text-center text-xl italic leading-8 tracking-tight text-gray-200 md:text-2xl md:leading-9">
-              illustration
+          <div class="hidden lg:flex lg:justify-center lg:w-5/12 lg:mx-auto">
+            <div class="w-48 transform translate-x-8 translate-y-10">
+              <span class="text-gray-900" v-html="require('~/assets/img/illustrations/atelier-coussins.svg?include')"></span>
             </div>
           </div>
         </div>
 
         <!-- Right block -->
         <div class="order-1 md:order-2 w-full md:w-6/12 md:pl-8">
-          <h3 class="text-xl font-extrabold leading-8 tracking-tight text-yellow-500 sm:text-2xl sm:leading-9">
-            Le textile
-          </h3>
+          <div class="flex justify-center items-end md:justify-start">
+            <h3 class="mr-2 lg:mr-0 text-center md:text-left text-xl sm:text-2xl font-extrabold leading-8 sm:leading-9 tracking-tight text-yellow-500">
+              Le textile
+            </h3>
+            <div class="w-14 lg:w-14 transform translate-y-1 lg:hidden">
+              <span class="text-yellow-500" v-html="require('~/assets/img/illustrations/atelier-coussins.svg?include')"></span>
+            </div>
+          </div>
 
           <div class="mt-6 w-11/12 mx-auto sm:w-full">
             <p class="mt-2 text-base text-justify leading-6 text-gray-900">
