@@ -88,7 +88,10 @@ export default {
         // Doc: https://github.com/aceforth/nuxt-optimized-images
         '@aceforth/nuxt-optimized-images',
         // Doc: https://github.com/nuxt-community/stylelint-module
-        '@nuxtjs/stylelint-module'
+        '@nuxtjs/stylelint-module',
+        // Doc: https://github.com/nuxt-community/moment-module#readme
+        '@nuxtjs/moment',
+
     ],
     /*
      ** Nuxt.js modules
@@ -101,7 +104,12 @@ export default {
         // // Doc: https://github.com/geeogi/nuxt-responsive-loader#readme
         // 'nuxt-responsive-loader',
         // Doc: https://github.com/nuxt-community/dotenv-module
-        '@nuxtjs/dotenv'
+        '@nuxtjs/dotenv',
+        // https://www.npmjs.com/package/@nuxtjs/markdownit
+        '@nuxtjs/markdownit',
+        // https://www.npmjs.com/package/vue-social-sharing
+        'vue-social-sharing/nuxt'
+
     ],
     stylelint: {
         ignorePath: '*.js'
@@ -163,11 +171,34 @@ export default {
         }
     },
     /*
+     ** see https://www.npmjs.com/package/@nuxtjs/moment
+     */
+    moment: {
+        locales: ['fr'],
+        defaultLocale: 'fr',
+
+    },
+    // [optional] markdownit options
+    // See https://github.com/markdown-it/markdown-it
+    markdownit: {
+        injected: true,
+        preset: 'default',
+        linkify: true,
+        breaks: true,
+        use: [
+        'markdown-it-div',
+        'markdown-it-attrs'
+        ]
+      }
+    ,
+    /*
      ** Plugins to load before mounting the App
      */
     plugins: [
         { src: "~/plugins/vClickOutside", ssr: false },
-        '~/plugins/vue-lazysizes.client.js'
+        '~/plugins/vue-lazysizes.client.js',
+        '~/plugins/vue-placeholders.js',
+        '~/plugins/vue-observe-visibility.client.js'
     ],
     /*
      * See https://purgecss.com/guides/nuxt.html#nuxt-js-plugin
