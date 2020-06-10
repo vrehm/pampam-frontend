@@ -63,9 +63,7 @@ export default {
         // Doc: https://github.com/nuxt-community/stylelint-module
         '@nuxtjs/stylelint-module',
         // Doc: https://github.com/nuxt-community/moment-module#readme
-        '@nuxtjs/moment',
-        // https://www.npmjs.com/package/@nuxtjs/markdownit
-        '@nuxtjs/markdownit'
+        '@nuxtjs/moment'
     ],
     /*
      ** Nuxt.js modules
@@ -80,7 +78,9 @@ export default {
         // Doc: https://github.com/nuxt-community/dotenv-module
         '@nuxtjs/dotenv',
         // https://www.npmjs.com/package/vue-social-sharing
-        'vue-social-sharing/nuxt'
+        'vue-social-sharing/nuxt',
+        // https://www.npmjs.com/package/@nuxtjs/markdownit
+        '@nuxtjs/markdownit'
     ],
     stylelint: {
         ignorePath: '*.js'
