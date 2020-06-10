@@ -40,10 +40,10 @@
         "@nuxtjs/markdownit": "^1.2.9",
         "markdown-it-attrs": "^3.0.3",
         "markdown-it-div": "^1.1.0",
-        "@nuxtjs/moment": "^1.6.1"
+        "@nuxtjs/moment": "^1.6.1",
+        "vue-content-placeholders": "^0.2.1"
     },
     "devDependencies": {
-        "vue-content-placeholders": "^0.2.1",
         "vue-observe-visibility": "^0.4.6",
         "@aceforth/nuxt-optimized-images": "^1.0.1",
         "@fullhuman/postcss-purgecss": "^2.2.0",
