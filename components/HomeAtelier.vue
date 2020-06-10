@@ -7,7 +7,7 @@
           L'Atelier
         </h2>
         <div class="w-14 transform -translate-y-1">
-          <span class="text-yellow-600" v-html="require('~/assets/img/illustrations/atelier-tools.svg?include')"></span>
+          <span class="text-gray-900" v-html="require('~/assets/img/illustrations/atelier-tools.svg?include')"></span>
         </div>
       </div>
 
@@ -20,16 +20,11 @@
       <div class="mt-14 md:mt-16 md:flex md:justify-center">
         <!-- Left block -->
         <div class="w-full md:w-6/12 md:pr-8">
-          <div class="flex items-end w-11/12 mx-auto sm:w-full">
-            <h3 class="mr-3 text-xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-2xl sm:leading-9">
-              Les luminaires
-            </h3>
-            <div class="text-xl italic leading-8 tracking-tight text-gray-200 sm:text-2xl sm:leading-9">
-              illustration
-            </div>
-          </div>
+          <h3 class="text-xl font-extrabold leading-8 tracking-tight text-yellow-500 sm:text-2xl sm:leading-9">
+            Les luminaires
+          </h3>
 
-          <div class="mt-10 w-11/12 mx-auto sm:w-full">
+          <div class="mt-6 w-11/12 mx-auto sm:w-full">
             <p class="mt-2 text-base text-justify leading-6 text-gray-900">
               Réanimer un objet, créer une atmosphère, habiller un espace, c’est vraiment tout ce que j’aime !
             </p>
@@ -82,16 +77,11 @@
 
         <!-- Right block -->
         <div class="order-1 md:order-2 w-full md:w-6/12 md:pl-8">
-          <div class="flex items-end w-11/12 mx-auto sm:w-full">
-            <h3 class="mr-3 text-xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-2xl sm:leading-9">
-              Le textile
-            </h3>
-            <div class="text-xl italic leading-8 tracking-tight text-gray-200 sm:text-2xl sm:leading-9">
-              illustration
-            </div>
-          </div>
+          <h3 class="text-xl font-extrabold leading-8 tracking-tight text-yellow-500 sm:text-2xl sm:leading-9">
+            Le textile
+          </h3>
 
-          <div class="mt-10 w-11/12 mx-auto sm:w-full">
+          <div class="mt-6 w-11/12 mx-auto sm:w-full">
             <p class="mt-2 text-base text-justify leading-6 text-gray-900">
               Mon premier amour ! Ayant débuté comme tapissière, je suis passionnée par cette matière, au travers du toucher, des couleurs, des motifs, j’adore l’incorporer un peu partout et imaginer de nouveaux prototypes d’objets en utilisant notamment des linges et étoffes anciennes.
             </p>
