@@ -9,33 +9,6 @@ export default {
      */
     router: {
         middleware: ['password-protect']
-
-        // scrollBehavior: async(to, from, savedPosition) => {
-        //     if (savedPosition) {
-        //         return savedPosition
-        //     }
-
-        //     const findEl = (hash, x) => {
-        //         return document.querySelector(hash) ||
-        //             new Promise((resolve, reject) => {
-        //                 if (x > 50) {
-        //                     return resolve()
-        //                 }
-        //                 setTimeout(() => { resolve(findEl(hash, ++x || 1)) }, 100)
-        //             })
-        //     }
-
-        //     if (to.hash) {
-        //         const el = await findEl(to.hash)
-        //         if ('scrollBehavior' in document.documentElement.style) {
-        //             return window.scrollTo({ top: el.offsetTop, behavior: 'smooth' })
-        //         } else {
-        //             return window.scrollTo(0, el.offsetTop)
-        //         }
-        //     }
-
-        //     return { x: 0, y: 0 }
-        // }
     },
     server: {
         host: process.env.MODE === 'production' ? '0.0.0.0' : 'localhost', // default: localhost
@@ -91,7 +64,10 @@ export default {
         '@nuxtjs/stylelint-module',
         // Doc: https://github.com/nuxt-community/moment-module#readme
         '@nuxtjs/moment',
-
+        // https://www.npmjs.com/package/@nuxtjs/markdownit
+        '@nuxtjs/markdownit',
+        // https://www.npmjs.com/package/vue-social-sharing
+        'vue-social-sharing/nuxt'
     ],
     /*
      ** Nuxt.js modules
@@ -104,12 +80,7 @@ export default {
         // // Doc: https://github.com/geeogi/nuxt-responsive-loader#readme
         // 'nuxt-responsive-loader',
         // Doc: https://github.com/nuxt-community/dotenv-module
-        '@nuxtjs/dotenv',
-        // https://www.npmjs.com/package/@nuxtjs/markdownit
-        '@nuxtjs/markdownit',
-        // https://www.npmjs.com/package/vue-social-sharing
-        'vue-social-sharing/nuxt'
-
+        '@nuxtjs/dotenv'
     ],
     stylelint: {
         ignorePath: '*.js'
@@ -175,8 +146,7 @@ export default {
      */
     moment: {
         locales: ['fr'],
-        defaultLocale: 'fr',
-
+        defaultLocale: 'fr'
     },
     // [optional] markdownit options
     // See https://github.com/markdown-it/markdown-it
@@ -186,11 +156,10 @@ export default {
         linkify: true,
         breaks: true,
         use: [
-        'markdown-it-div',
-        'markdown-it-attrs'
+            'markdown-it-div',
+            'markdown-it-attrs'
         ]
-      }
-    ,
+    },
     /*
      ** Plugins to load before mounting the App
      */
