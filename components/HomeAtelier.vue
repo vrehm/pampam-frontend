@@ -1,5 +1,5 @@
 <template>
-  <section class="pt-6 md:pt-12 pb-28 sm:pb-48 md:pb-40 lg:pb-56 bg-white">
+  <section class="pt-6 md:pt-12 pb-28 sm:pb-48 md:pb-40 lg:pb-48 bg-white">
     <div class="max-w-screen-xl mt-10 mx-auto px-4 sm:px-6 lg:px-8">
       <!-- Title and intro -->
       <div class="flex justify-center items-end md:justify-start">
@@ -105,7 +105,7 @@
 
       <!-- Transition -->
       <div class="relative mt-4">
-        <div class="absolute right-0 w-10/12 md:w-7/12 lg:w-6/12 transform -translate-x-6 md:translate-x-0 xl:-translate-x-10 translate-y-4 md:translate-y-6 xl:-translate-y-10">
+        <div class="absolute right-0 w-10/12 md:w-6/12 lg:w-5/12 transform -translate-x-6 md:-translate-x-2 lg:-translate-x-20 xl:-translate-x-24 translate-y-4 md:translate-y-6 xl:-translate-y-10">
           <span class="text-gray-900" v-html="require('~/assets/img/illustrations/atelier-transition.svg?include')"></span>
         </div>
       </div>

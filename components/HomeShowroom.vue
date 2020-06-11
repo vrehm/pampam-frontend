@@ -9,7 +9,7 @@
             Le showroom
           </h2>
 
-          <div class="mt-0 md:mt-12 mx-auto md:mt-0 w-11/12 sm:w-9/12 md:w-11/12">
+          <div class="mt-2 sm:mt-6 md:mt-12 mx-auto md:mt-0 w-11/12 sm:w-9/12 md:w-11/12">
             <div class="flex justify-between">
               <div class="w-12 md:w-14 lg:w-16 xl:w-20 transform -translate-x-4 md:-translate-x-6 xl:-translate-x-20 -translate-y-3">
                 <span class="text-gray-900" v-html="require('~/assets/img/illustrations/showroom-projector-left.svg?include')"></span>

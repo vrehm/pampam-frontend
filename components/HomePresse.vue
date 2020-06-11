@@ -2,11 +2,11 @@
   <div class="bg-white">
     <div class="max-w-screen-xl mx-auto py-28 px-4 sm:px-6 lg:px-8">
       <div class="flex flex-col justify-center sm:flex-row sm:items-end">
-        <h2 class="sm:mr-0 text-center text-2xl leading-8 font-extrabold tracking-tight text-gray-900 sm:mr-3 sm:text-left sm:text-3xl sm:leading-9">
+        <h2 class="mr-0 sm:mr-4 text-center text-2xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-left sm:text-3xl sm:leading-9">
           Pam Pam dans la presse
         </h2>
-        <div class="text-center italic text-2xl leading-8 tracking-tight text-gray-200 sm:text-left sm:text-3xl sm-leaing-9">
-          illustration
+        <div class="w-10 transform -translate-y-1">
+          <span class="text-gray-900" v-html="require('~/assets/img/illustrations/presse.svg?include')"></span>
         </div>
       </div>
       <div class="flex flex-col items-center md:flex-row md:justify-around pt-14">
