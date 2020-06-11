@@ -1,20 +1,21 @@
 <template>
-  <section class="pt-6 pb-12 sm:pb-8 md:pt-12 md:pb-20 bg-white">
-    <div class="max-w-screen-lg mt-10 mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex flex-col md:flex-row md:justify-center mt-0 md:mt-16">
+  <section class="pt-6 md:pt-0 pb-12 sm:pb-8 md:pb-20 bg-white">
+    <div class="max-w-screen-lg mt-10 md:mt-0 mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:justify-center mt-0">
         <!-- Left block -->
-        <div class="flex flex-col mt-0 ml-0 sm:mt-10 md:mt-0 xl:mr-4 w-full md:w-6/12">
+        <div class="flex flex-col mt-0 sm:mt-10 md:mt-0 ml-0 xl:mr-4 w-full md:w-6/12">
+          <!-- Hidden title on desktop -->
           <h2 class="text-center text-2xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-3xl sm:leading-9 md:hidden">
             Le showroom
           </h2>
 
-          <div class="mt-12 mx-auto md:mt-0 w-11/12 sm:w-9/12 md:w-11/12">
+          <div class="mt-0 md:mt-12 mx-auto md:mt-0 w-11/12 sm:w-9/12 md:w-11/12">
             <div class="flex justify-between">
-              <div class="text-xl italic leading-8 tracking-tight text-gray-200 md:text-2xl md:leading-9">
-                illustration
+              <div class="w-12 md:w-14 lg:w-16 xl:w-20 transform -translate-x-4 md:-translate-x-6 xl:-translate-x-20 -translate-y-3">
+                <span class="text-gray-900" v-html="require('~/assets/img/illustrations/showroom-projector-left.svg?include')"></span>
               </div>
-              <div class="text-xl italic leading-8 tracking-tight text-gray-200 md:text-2xl md:leading-9">
-                illustration
+              <div class="w-12 md:w-14 lg:w-16 xl:w-20 transform translate-x-4 md:translate-x-8 lg:translate-x-12 xl:translate-x-16 -translate-y-3 xl:-translate-y-5">
+                <span class="text-gray-900" v-html="require('~/assets/img/illustrations/showroom-projector-right.svg?include')"></span>
               </div>
             </div>
           </div>
@@ -26,7 +27,7 @@
 
         <!-- Right block -->
         <div class="ml-0 xl:ml-4 w-full md:w-6/12">
-          <div class="mx-auto pt-0 md:pt-16 lg:pt-16 xl:pt-20">
+          <div class="mx-auto pt-0 md:pt-24 lg:pt-28 xl:pt-48">
             <h2 class="hidden md:block text-center text-2xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-3xl sm:leading-9">
               Le showroom
             </h2>
