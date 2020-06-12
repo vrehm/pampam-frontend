@@ -1,5 +1,5 @@
 <template>
-  <section class="pt-6 md:pt-12 pb-20 sm:pb-28 md:pb-24 lg:pb-28 xl:pb-40 bg-white">
+  <section class="pt-6 md:pt-4 lg:pt-12 pb-20 sm:pb-28 md:pb-24 lg:pb-28 xl:pb-40 bg-white">
     <div class="md:flex md:justify-center max-w-screen-xl mt-10 mx-auto px-4 sm:px-6 lg:px-8">
       <div class="w-full md:w-6/12 md:pr-4">
         <h2 class="text-center text-2xl leading-8 font-extrabold tracking-tight sm:text-3xl sm:leading-9 text-gray-900">
