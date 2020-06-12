@@ -1,5 +1,5 @@
 <template>
-  <section class="pt-6 pb-10 sm:pb-8 md:pt-12 md:pb-12 bg-white">
+  <section class="pt-6 md:pt-12 pb-20 sm:pb-28 md:pb-24 lg:pb-28 xl:pb-40 bg-white">
     <div class="md:flex md:justify-center max-w-screen-xl mt-10 mx-auto px-4 sm:px-6 lg:px-8">
       <div class="w-full md:w-6/12 md:pr-4">
         <h2 class="text-center text-2xl leading-8 font-extrabold tracking-tight sm:text-3xl sm:leading-9 text-gray-900">
@@ -25,8 +25,8 @@
       </div>
 
       <!-- Was md:border-l-2 border-dashed border-gray-900 -->
-      <div class="relative w-full md:w-6/12 md:pl-4">
-        <div class="absolute left-0">
+      <div class="relative w-full md:w-6/12 md:pl-4 overflow-hidden">
+        <div class="hidden md:block absolute left-0">
           <div class="flex flex-col">
             <div class="w-2">
               <span class="text-gray-900" v-html="require('~/assets/img/illustrations/presentation-border.svg?include')"></span>
@@ -111,6 +111,12 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
+
+    <div class="relative mt-16 sm:mt-20 lg:mt-10">
+      <div class="absolute right-0 w-7/12 sm:w-6/12 md:w-5/12">
+        <span class="text-gray-900" v-html="require('~/assets/img/illustrations/presentation-transition.svg?include')"></span>
       </div>
     </div>
   </section>
