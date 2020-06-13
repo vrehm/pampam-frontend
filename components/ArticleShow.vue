@@ -68,7 +68,7 @@
 </template>
 
 <script>
-import ArticleShowFlyingHeroSection from '@/components/ArticleShowFlyingHeroSection'
+import ArticleShowFlyingHeroSection from '~/components/ArticleShowFlyingHeroSection'
 import JournalInlineErrorBlock from '~/components/JournalInlineErrorBlock.vue'
 import ArticleShowHeroSection from '~/components/ArticleShowHeroSection.vue'
 
