@@ -13,6 +13,7 @@
       </template>
       <template v-else>
         <article-show-hero-section :article="article" />
+        <article-show-flying-hero-section :article="article" />
         <div class="article text-gray-700 text-base break-normal my-4 leading-loose mx-auto max-w-4xl" v-html="$md.render(article.content)"></div>
         <div class="flex justify-center">
           <svg class="h-10 mt-20" width="105" height="248" viewBox="0 0 105 248" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -67,13 +68,15 @@
 </template>
 
 <script>
+import ArticleShowFlyingHeroSection from '~/components/ArticleShowFlyingHeroSection'
 import JournalInlineErrorBlock from '~/components/JournalInlineErrorBlock.vue'
 import ArticleShowHeroSection from '~/components/ArticleShowHeroSection.vue'
 
 export default {
   components: {
     JournalInlineErrorBlock,
-    ArticleShowHeroSection
+    ArticleShowHeroSection,
+    ArticleShowFlyingHeroSection
   },
   props: [],
   async fetch() {
