@@ -195,7 +195,7 @@ export default {
 /* Max height for medium */
 @screen md {
   .max-h-custom-insta {
-    max-height: 250px;
+    max-height: 230px;
   }
 }
 
