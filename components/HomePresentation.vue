@@ -6,7 +6,7 @@
           Who is Pam Pam?
         </h2>
 
-        <div class="w-11/12 md:w-10/12 lg:w-9/12 xl:w-8/12 mx-auto mt-10">
+        <div class="w-11/12 sm:w-8/12 md:w-10/12 lg:w-9/12 xl:w-8/12 mx-auto mt-10">
           <img class="rounded-md lazyload" data-src="~/assets/img/home/portrait-700x804.jpg" alt="portrait" />
         </div>
 
@@ -41,7 +41,7 @@
         </div>
 
         <div class="mt-28 md:mt-0">
-          <h2 class="text-center text-2xl leading-8 font-extrabold tracking-tight sm:text-3xl sm:leading-9 text-gray-900">
+          <h2 class="text-center text-2xl leading-8 font-extrabold tracking-tight sm:text-3xl sm:leading-9 text-yellow-500">
             Mes valeurs
           </h2>
         </div>
