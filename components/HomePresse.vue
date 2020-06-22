@@ -1,6 +1,6 @@
 <template>
-  <div class="bg-white">
-    <div class="max-w-screen-xl mx-auto py-28 px-4 sm:px-6 lg:px-8">
+  <section class="relative pt-28 pb-40 sm:pb-56 xl:pb-64 bg-white">
+    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-center items-end">
         <h2 class="mr-2 sm:mr-4 text-center text-xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-left sm:text-3xl sm:leading-9">
           Pam Pam dans la presse
@@ -27,7 +27,12 @@
         </div>
       </div>
     </div>
-  </div>
+
+    <!-- Transition -->
+    <div class="absolute bottom-0 right-0 w-7/12 sm:w-6/12 md:w-5/12">
+      <span class="text-gray-900" v-html="require('~/assets/img/illustrations/transition-end.svg?include')"></span>
+    </div>
+  </section>
 </template>
 
 <script>
