@@ -1,7 +1,7 @@
 <template>
   <section class="bg-gray-100">
     <!-- md:flex md:justify-between -->
-    <div class="max-w-screen-xl mx-auto pb-6 md:px-6 lg:px-8">
+    <div class="max-w-2xl mx-auto pb-6 md:px-6 lg:px-8">
       <VueSlickCarousel v-bind="settings">
         <testimonial-card v-for="customer in customers" :key="customer.id" class="py-20" :name="customer.name" :testimony="customer.testimony" :testimony2="customer.testimony2" :customer-img="customer.customerImg" />
       </VueSlickCarousel>
@@ -122,12 +122,13 @@ export default {
       {
         name: 'Lilubelle Jh',
         testimony: 'Que du bon goût, un accueil toujours adorable et souriant et des petites merveilles en déco à des prix supra abordables !',
-        testimony2: '\nBelle continuation.',
+        testimony2: 'Belle continuation.',
         customerImg: require('~/assets/img/avatars/avatar-lilubelle256x256.jpg')
       },
       {
         name: 'Dorian Pillot',
         testimony: "Un lieu superbe et des objets riches d'histoires...",
+        testimony2: '',
         customerImg: require('~/assets/img/avatars/avatar-dorian256x256.jpg')
       },
       {

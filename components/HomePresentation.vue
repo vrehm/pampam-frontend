@@ -114,6 +114,7 @@
       </div>
     </div>
 
+    <!-- Transition -->
     <div class="relative mt-16 sm:mt-20 lg:mt-10">
       <div class="absolute right-0 w-7/12 sm:w-6/12 md:w-5/12">
         <span class="text-gray-900" v-html="require('~/assets/img/illustrations/presentation-transition.svg?include')"></span>

@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white">
+  <section class="pb-20 sm:pb-28 md:pb-24 lg:pb-28 xl:pb-48 bg-white">
     <div class="relative max-w-screen-xl mx-auto my-20 lg:my-24 px-4 sm:px-6 lg:px-8">
       <div class="absolute top-0 right-0 mr-20 sm:mr-40 md:mr-64 transform md:-translate-x-2 lg:-translate-x-24 xl:-translate-x-48 translate-y-40 sm:translate-y-16 lg:translate-y-10">
         <div class="w-10 sm:w-14 lg:w-16 xl:w-20 rotate-pam-1-custom">
@@ -155,7 +155,14 @@
         </a> -->
       </div>
     </div>
-  </div>
+
+    <!-- Transition -->
+    <div class="relative mt-16 sm:mt-20 lg:mt-10">
+      <div class="absolute left-0 w-7/12 sm:w-6/12 md:w-5/12">
+        <span class="text-gray-900" v-html="require('~/assets/img/illustrations/boutique-transition.svg?include')"></span>
+      </div>
+    </div>
+  </section>
 </template>
 
 <script>
