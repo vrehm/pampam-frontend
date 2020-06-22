@@ -1,9 +1,10 @@
 <template>
-  <section class="bg-yellow-600">
-    <div class="max-w-screen-xl mx-auto pb-6 md:flex md:justify-between md:px-6 lg:px-8">
-      <vue-slick-carousel class="w-full flex-1 py-12 px-4 sm:px-6 md:py-16" v-bind="settings">
-        <testimonial-card v-for="customer in customers" :key="customer.id" class="flex-1 py-12 px-4 sm:px-6 md:py-16" :name="customer.name" :testimony="customer.testimony" :customer-img="customer.customerImg" />
-      </vue-slick-carousel>
+  <section class="bg-gray-100">
+    <!-- md:flex md:justify-between -->
+    <div class="max-w-screen-xl mx-auto pb-6 md:px-6 lg:px-8">
+      <VueSlickCarousel v-bind="settings">
+        <testimonial-card v-for="customer in customers" :key="customer.id" class="py-20" :name="customer.name" :testimony="customer.testimony" :testimony2="customer.testimony2" :customer-img="customer.customerImg" />
+      </VueSlickCarousel>
 
       <!-- <div class="flex-1 py-12 px-4 sm:px-6 md:py-16">
           <div class="flex flex-col items-center">
@@ -110,15 +111,18 @@ export default {
       dots: false,
       fade: true,
       infinite: true,
+      initialSlide: 2,
       speed: 2000,
-      slidesToShow: 1,
+      slidesToShow: 3,
       slidesToScroll: 1,
+      swipeToSlide: true,
       autoplay: true
     },
     customers: [
       {
         name: 'Lilubelle Jh',
-        testimony: 'Que du bon goût, un accueil toujours adorable et souriant et des petites merveilles en déco à des prix supra abordables !\nBelle continuation.',
+        testimony: 'Que du bon goût, un accueil toujours adorable et souriant et des petites merveilles en déco à des prix supra abordables !',
+        testimony2: '\nBelle continuation.',
         customerImg: require('~/assets/img/avatars/avatar-lilubelle256x256.jpg')
       },
       {
@@ -128,7 +132,8 @@ export default {
       },
       {
         name: 'Leonid Von Ciesielski',
-        testimony: 'Multi merci pour cette belle personne très avenante, très conciliante et très serviable.\nJe recommande.',
+        testimony: 'Multi merci pour cette belle personne très avenante, très conciliante et très serviable.',
+        testimony2: 'Je recommande.',
         customerImg: require('~/assets/img/avatars/avatar-leonid256x256.jpg')
       }
     ]
