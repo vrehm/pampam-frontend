@@ -3,6 +3,12 @@
     <div class="max-w-lg md:max-w-screen-xl mx-auto sm:pb-6 px-8 sm:px-6 md:px-12 xl:px-8">
       <VueSlickCarousel v-bind="settings">
         <testimonial-card v-for="customer in customers" :key="customer.id" class="focus:outline-none py-20" :name="customer.name" :testimony="customer.testimony" :testimony2="customer.testimony2" :customer-img="customer.customerImg" />
+        <template #prevArrow="arrowOption">
+          <div class="custom-prev-arrow">{{ arrowOption.currentSlide }}/{{ arrowOption.slideCount }}</div>
+        </template>
+        <template #nextArrow="arrowOption">
+          <div class="custom-next-arrow">{{ arrowOption.currentSlide }}/{{ arrowOption.slideCount }}</div>
+        </template>
       </VueSlickCarousel>
     </div>
   </section>
@@ -85,4 +91,18 @@ export default {
 }
 </script>
 
-<style></style>
+<style>
+.custom-prev-arrow::before {
+  content: '\002039';
+  font-family: monospace;
+  font-size: 50px;
+  color: #acacac;
+}
+
+.custom-next-arrow::before {
+  content: '\00203A';
+  font-family: monospace;
+  font-size: 50px;
+  color: #acacac;
+}
+</style>
