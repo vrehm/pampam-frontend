@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col items-center">
+  <div class="flex flex-col items-center px-6">
     <div class="flex flex-col items-center">
       <div class="flex-shrink-0 inline-flex rounded-full border-2 border-white">
         <img class="h-20 w-20 rounded-full lazyload" :data-src="customerImg" :alt="'Photo de ' + name" />
