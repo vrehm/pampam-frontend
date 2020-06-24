@@ -187,7 +187,9 @@ export default {
             'lazyloaded',
             'body',
             'html',
-            'nuxt-progress'
+            'nuxt-progress',
+            'custom-prev-arrow',
+            'custom-next-arrow'
         ],
         // extractors: () => [{
         //     extractor: class {
