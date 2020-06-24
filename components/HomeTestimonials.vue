@@ -93,16 +93,16 @@ export default {
 
 <style>
 .custom-prev-arrow::before {
-  content: '\002039';
-  font-family: monospace;
-  font-size: 50px;
-  color: #acacac;
+  content: '\002039' !important;
+  font-family: monospace !important;
+  font-size: 50px !important;
+  color: #acacac !important;
 }
 
 .custom-next-arrow::before {
-  content: '\00203A';
-  font-family: monospace;
-  font-size: 50px;
-  color: #acacac;
+  content: '\00203A' !important;
+  font-family: monospace !important;
+  font-size: 50px !important;
+  color: #acacac !important;
 }
 </style>
