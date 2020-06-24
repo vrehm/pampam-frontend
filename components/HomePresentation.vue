@@ -1,12 +1,12 @@
 <template>
-  <section class="pt-6 pb-10 sm:pb-8 md:pt-12 md:pb-12 bg-white">
+  <section class="pt-6 md:pt-4 lg:pt-12 pb-20 sm:pb-28 md:pb-24 lg:pb-28 xl:pb-40 bg-white">
     <div class="md:flex md:justify-center max-w-screen-xl mt-10 mx-auto px-4 sm:px-6 lg:px-8">
       <div class="w-full md:w-6/12 md:pr-4">
         <h2 class="text-center text-2xl leading-8 font-extrabold tracking-tight sm:text-3xl sm:leading-9 text-gray-900">
           Who is Pam Pam?
         </h2>
 
-        <div class="w-11/12 md:w-10/12 lg:w-9/12 xl:w-8/12 mx-auto mt-10">
+        <div class="w-11/12 sm:w-8/12 md:w-10/12 lg:w-9/12 xl:w-8/12 mx-auto mt-10">
           <img class="rounded-md lazyload" data-src="~/assets/img/home/portrait-700x804.jpg" alt="portrait" />
         </div>
 
@@ -24,10 +24,24 @@
         </div>
       </div>
 
-      <!-- svg from zondicons.com -->
-      <div class="w-full md:w-6/12 md:pl-4 md:border-l-2 border-dashed border-gray-900">
+      <!-- Was md:border-l-2 border-dashed border-gray-900 -->
+      <div class="relative w-full md:w-6/12 md:pl-4 overflow-hidden">
+        <div class="hidden md:block absolute left-0">
+          <div class="flex flex-col">
+            <div class="w-2">
+              <span class="text-gray-900" v-html="require('~/assets/img/illustrations/presentation-border.svg?include')"></span>
+            </div>
+            <div class="w-2">
+              <span class="text-gray-900" v-html="require('~/assets/img/illustrations/presentation-border.svg?include')"></span>
+            </div>
+            <div class="w-2">
+              <span class="text-gray-900" v-html="require('~/assets/img/illustrations/presentation-border.svg?include')"></span>
+            </div>
+          </div>
+        </div>
+
         <div class="mt-28 md:mt-0">
-          <h2 class="text-center text-2xl leading-8 font-extrabold tracking-tight sm:text-3xl sm:leading-9 text-gray-900">
+          <h2 class="text-center text-2xl leading-8 font-extrabold tracking-tight sm:text-3xl sm:leading-9 text-yellow-500">
             Mes valeurs
           </h2>
         </div>
@@ -45,15 +59,15 @@
         <div class="w-11/12 md:w-10/12 mx-auto">
           <div class="flex mt-10">
             <div class="flex-shrink-0">
-              <div class="flex justify-center items-start w-6 h-6 text-gray-900">
-                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                  <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
-                </svg>
+              <div class="flex justify-center items-start">
+                <div class="w-10 sm:w-14 md:w-8 lg:w-10">
+                  <span class="text-gray-900" v-html="require('~/assets/img/illustrations/presentation-poetique.svg?include')"></span>
+                </div>
               </div>
             </div>
             <div class="ml-4">
               <h3 class="text-lg leading-6 font-medium text-gray-900">
-                Poétique
+                Poésie
               </h3>
               <p class="mt-2 text-base italic leading-6 text-gray-500">
                 C'est comme un peu de magie, on en a tous besoin autour de nous
@@ -63,10 +77,10 @@
 
           <div class="flex mt-10">
             <div class="flex-shrink-0">
-              <div class="flex justify-center items-start w-6 h-6 text-gray-900">
-                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                  <path d="M10 14a4 4 0 1 1 0-8 4 4 0 0 1 0 8zM9 1a1 1 0 1 1 2 0v2a1 1 0 1 1-2 0V1zm6.65 1.94a1 1 0 1 1 1.41 1.41l-1.4 1.4a1 1 0 1 1-1.41-1.41l1.4-1.4zM18.99 9a1 1 0 1 1 0 2h-1.98a1 1 0 1 1 0-2h1.98zm-1.93 6.65a1 1 0 1 1-1.41 1.41l-1.4-1.4a1 1 0 1 1 1.41-1.41l1.4 1.4zM11 18.99a1 1 0 1 1-2 0v-1.98a1 1 0 1 1 2 0v1.98zm-6.65-1.93a1 1 0 1 1-1.41-1.41l1.4-1.4a1 1 0 1 1 1.41 1.41l-1.4 1.4zM1.01 11a1 1 0 1 1 0-2h1.98a1 1 0 1 1 0 2H1.01zm1.93-6.65a1 1 0 1 1 1.41-1.41l1.4 1.4a1 1 0 1 1-1.41 1.41l-1.4-1.4z" />
-                </svg>
+              <div class="flex justify-center items-start">
+                <div class="w-10 sm:w-14 md:w-8 lg:w-10">
+                  <span class="text-gray-900" v-html="require('~/assets/img/illustrations/presentation-singuliere.svg?include')"></span>
+                </div>
               </div>
             </div>
             <div class="ml-4">
@@ -81,10 +95,10 @@
 
           <div class="flex mt-10">
             <div class="flex-shrink-0">
-              <div class="flex justify-center items-start w-6 h-6 text-gray-900">
-                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                  <path d="M10 2v16a8 8 0 1 0 0-16zm0 18a10 10 0 1 1 0-20 10 10 0 0 1 0 20z" />
-                </svg>
+              <div class="flex justify-center items-start">
+                <div class="w-10 sm:w-14 md:w-8 lg:w-10">
+                  <span class="text-gray-900" v-html="require('~/assets/img/illustrations/presentation-consciente.svg?include')"></span>
+                </div>
               </div>
             </div>
             <div class="ml-4">
@@ -97,6 +111,13 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
+
+    <!-- Transition -->
+    <div class="relative mt-16 sm:mt-20 lg:mt-10">
+      <div class="absolute right-0 w-7/12 sm:w-6/12 md:w-5/12">
+        <span class="text-gray-900" v-html="require('~/assets/img/illustrations/presentation-transition.svg?include')"></span>
       </div>
     </div>
   </section>
