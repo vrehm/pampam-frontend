@@ -11,16 +11,15 @@
         </div>
 
         <div class="w-11/12 md:w-10/12 lg:w-9/12 xl:w-8/12 mx-auto mt-10">
-          <p class="mt-2 text-base text-justify leading-6 text-gray-900">
-            “Moi, c’est Cécile. Mais vous pouvez m’appeler Pam Pam je répondrais ;).<br />
-            Quand j’étais enfant j’écoutais “Aléo 104.8” à la radio, ils passaient Piaf, les Beach Boys, Brel et puis “Lollipop” des Chordettes.(...)”
-          </p>
+          <div class="mt-2 text-base text-justify leading-6 text-gray-900" v-html="$md.render(presentation)"></div>
         </div>
 
         <div class="flex justify-center items-center mt-6">
-          <button class="px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md shadow text-white bg-gray-500 hover:bg-gray-400 focus:outline-none focus:bg-indigo-400 transition duration-150 ease-in-out">
-            Lire l'article
-          </button>
+          <nuxt-link :to="{ name: 'articles-article', params: { article: 57 } }">
+            <button class="px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md shadow text-white bg-gray-500 hover:bg-gray-400 focus:outline-none focus:bg-indigo-400 transition duration-150 ease-in-out">
+              Lire l'article
+            </button>
+          </nuxt-link>
         </div>
       </div>
 
@@ -124,7 +123,29 @@
 </template>
 
 <script>
-export default {}
+export default {
+  async fetch() {
+    const {
+      defaults: { baseURL }
+    } = this.$axios
+
+    const presentation = await this.$axios.$get(baseURL + '/articles/57')
+
+    this.presentation = '"' + this.shorten(presentation.content, 208) + '" (...)'
+  },
+  data() {
+    return {
+      presentation: ''
+    }
+  },
+  methods: {
+    // Shorten a string to less than maxLen characters without truncating words.
+    shorten(str, maxLen, separator = ' ') {
+      if (str.length <= maxLen) return str
+      return str.substr(0, str.lastIndexOf(separator, maxLen))
+    }
+  }
+}
 </script>
 
 <style></style>
