@@ -38,9 +38,9 @@
               </a>
             </li>
             <li class="mt-2">
-              <a href="#" class="text-base leading-6 text-gray-500 hover:text-gray-900">
+              <nuxt-link :to="{ name: 'articles-article', params: { article: 58 } }" class="text-base leading-6 text-gray-500 hover:text-gray-900">
                 Mentions Légales
-              </a>
+              </nuxt-link>
             </li>
           </ul>
         </div>
