@@ -15,18 +15,27 @@
             Tous les mois, recevez un billet inspirant, mes nouvelles trouvailles et des avants-premières directement dans votre boîte mail !
           </p>
         </div>
-        <div class="mt-8 sm:w-full sm:max-w-md">
-          <form class="sm:flex">
-            <input aria-label="Email address" type="email" required class="appearance-none w-full px-5 py-2 border border-transparent text-base leading-6 rounded-md text-gray-900 bg-white placeholder-gray-500 focus:outline-none focus:placeholder-gray-400 transition duration-150 ease-in-out" placeholder="Votre e-mail" />
+
+        <!-- Begin Mailchimp Signup Form -->
+        <div id="mc_embed_signup" class="mt-8 sm:w-full sm:max-w-md">
+          <form id="mc-embedded-subscribe-form" action="https://atelierpampam.us3.list-manage.com/subscribe/post?u=44312ed5753831f4a0c075ce9&amp;id=fb83edb4f1" method="post" name="mc-embedded-subscribe-form" class="validate sm:flex" target="_blank" novalidate>
+            <input id="mce-EMAIL" aria-label="Email address" type="email" required class="appearance-none w-full px-5 py-2 border border-transparent text-base leading-6 rounded-md text-gray-900 bg-white placeholder-gray-500 focus:outline-none focus:placeholder-gray-400 transition duration-150 ease-in-out" name="EMAIL" placeholder="isaure@brocanteboheme.com" />
+
+            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            <div style="position: absolute; left: -5000px;" aria-hidden="true">
+              <input type="text" name="b_44312ed5753831f4a0c075ce9_fb83edb4f1" tabindex="-1" value="" />
+            </div>
+
             <div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3 sm:flex-shrink-0">
               <!-- Was text-base leading-6 font-medium text-white -->
-              <button class="w-full flex items-center justify-center px-5 py-2 border border-transparent bg-gray-500 hover:bg-gray-400 rounded-md focus:outline-none transition duration-150 ease-in-out">
+              <button id="mc-embedded-subscribe" type="submit" name="subscribe" class="w-full flex items-center justify-center px-5 py-2 border border-transparent bg-gray-500 hover:bg-gray-400 rounded-md focus:outline-none transition duration-150 ease-in-out">
                 <div class="w-28">
                   <span class="text-gray-50" v-html="require('~/assets/img/illustrations/newsletter-button.svg?include')"></span>
                 </div>
               </button>
             </div>
           </form>
+
           <p class="mt-3 text-sm leading-5 text-gray-100">
             Nous nous soucions de la protection de vos données. Lisez notre
             <a href="#" class="text-gray-300 font-medium underline">
@@ -34,6 +43,7 @@
             </a>
           </p>
         </div>
+        <!--End mc_embed_signup-->
       </div>
     </div>
   </section>
