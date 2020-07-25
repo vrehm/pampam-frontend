@@ -45,8 +45,9 @@
             <p class="text-base text-center leading-6 text-gray-500">
               Prenez contact avec moi! Ici sur le chat, par mail ou dans la messagerie Instagram !
             </p>
-            <button onclick="$crisp.push(['do', 'chat:open'])" class="px-5 py-2 focus:outline-none transition duration-150 ease-in-out mt-3">
-              <span class="text-gray-50" v-html="require('~/assets/img/illustrations/crisp-bouton.svg?include')"></span>
+            <button onclick="$crisp.push(['do', 'chat:open'])" class="px-5 py-2 focus:outline-none transition duration-150 ease-in-out mt-3 flex items-center">
+              <div>Parler maintenant =></div>
+              <span class="ml-3 font-medium text-gray-900 hvr-grow-rotate" v-html="require('~/assets/img/illustrations/crisp-bouton.svg?include')"></span>
             </button>
           </div>
         </div>
@@ -99,7 +100,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .max-h-custom-insta {
   max-height: 500px;
 }
