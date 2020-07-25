@@ -167,7 +167,8 @@ export default {
         { src: "~/plugins/vClickOutside", ssr: false },
         '~/plugins/vue-lazysizes.client.js',
         '~/plugins/vue-placeholders.js',
-        '~/plugins/vue-observe-visibility.client.js'
+        '~/plugins/vue-observe-visibility.client.js',
+        { src: "~/plugins/crisp.js", ssr: false }
     ],
     /*
      * See https://purgecss.com/guides/nuxt.html#nuxt-js-plugin
