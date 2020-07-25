@@ -41,16 +41,13 @@
               <span class="text-gray-900" v-html="require('~/assets/img/illustrations/boutique-number-2.svg?include')"></span>
             </div>
           </div>
-          <div class="mt-5">
+          <div class="mt-5 flex flex-col items-center">
             <p class="text-base text-center leading-6 text-gray-500">
               Prenez contact avec moi! Ici sur le chat, par mail ou dans la messagerie Instagram !
-              <button onclick="$crisp.push(['do', 'chat:open'])" class="flex items-center justify-center px-5 py-2 focus:outline-none transition duration-150 ease-in-out">
-                <div class="flex w-auto">
-                  <span class="text-gray-50" v-html="require('~/assets/img/illustrations/crisp-bouton.svg?include')"></span>
-                  <span>Discutons !</span>
-                </div>
-              </button>
             </p>
+            <button onclick="$crisp.push(['do', 'chat:open'])" class="px-5 py-2 focus:outline-none transition duration-150 ease-in-out mt-3">
+              <span class="text-gray-50" v-html="require('~/assets/img/illustrations/crisp-bouton.svg?include')"></span>
+            </button>
           </div>
         </div>
 
