@@ -2,19 +2,26 @@
   <div>
     <div class="relative ">
       <journal-hero-section />
+
+      <!-- Articles list -->
       <div class="relative pb-12 sm:pb-16 md:pb-20 lg:pb-28 xl:pb-32">
         <div class="mt-10 mx-auto max-w-screen-xl lg:px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 xl:mt-28">
+          <!-- Pending state for fetch -->
           <template v-if="$fetchState.pending">
             <div>
-              <content-placeholders v-for="p in 5" :key="p" rounded class="pb-8 px-6 md:px-24 md:max-w-5xl  md:px-24 mx-auto">
+              <content-placeholders v-for="p in 5" :key="p" rounded class="pb-8 px-6 md:px-24 md:max-w-5xl mx-auto">
                 <content-placeholders-heading :img="true" />
                 <content-placeholders-text :lines="3" />
               </content-placeholders>
             </div>
           </template>
+
+          <!-- Error state for fetch -->
           <template v-else-if="$fetchState.error">
             <p>{{ $fetchState.error.message }}</p>
           </template>
+
+          <!-- Rendering articles -->
           <template v-else>
             <div>
               <article-card v-for="(article, index) in articles" :key="article.id" v-observe-visibility="index === articles.length - 1 ? lazyLoadArticles : false" :article="article" class="flex" />
