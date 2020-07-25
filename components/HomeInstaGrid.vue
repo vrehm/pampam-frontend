@@ -42,7 +42,7 @@
             </div>
           </div>
           <div class="mt-5">
-            <p ArticleShowHeroSectionShareBox.vue class="text-base text-center leading-6 text-gray-500">
+            <p class="text-base text-center leading-6 text-gray-500">
               Prenez contact avec moi! Ici sur le chat, par mail ou dans la messagerie Instagram !
               <button onclick="$crisp.push(['do', 'chat:open'])" class="px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md shadow text-white bg-gray-500 hover:bg-gray-400 focus:outline-none focus:bg-indigo-400 transition duration-150 ease-in-out">
                 [Petite icône lien chat]
