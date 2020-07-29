@@ -181,7 +181,8 @@ export default {
         styleExtensions: ['.css'],
         whitelistPatterns: [
             /custom$/,
-            /slick/
+            /slick/,
+            /vue-content/
         ],
         whitelist: [
             'lazyload',
