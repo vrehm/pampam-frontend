@@ -2,11 +2,11 @@
   <section class="pt-6 md:pt-4 lg:pt-12 pb-20 sm:pb-28 md:pb-24 lg:pb-28 xl:pb-40 bg-white">
     <div class="md:flex md:justify-center max-w-screen-xl mt-10 mx-auto px-4 sm:px-6 lg:px-8">
       <div class="w-full md:w-6/12 md:pr-4">
-        <h2 class="text-center text-2xl leading-8 font-extrabold tracking-tight sm:text-3xl sm:leading-9 text-gray-900">
-          Who is Pam Pam?
+        <h2 class="text-center font-headings text-4xl lg:text-5xl leading-8 sm:leading-9 tracking-tight text-gray-900">
+          who is Pam Pam?
         </h2>
 
-        <div class="w-11/12 sm:w-8/12 md:w-10/12 lg:w-9/12 xl:w-8/12 mx-auto mt-10">
+        <div class="w-11/12 sm:w-8/12 md:w-10/12 lg:w-9/12 xl:w-8/12 mx-auto mt-16">
           <img class="rounded-md lazyload" data-src="~/assets/img/home/portrait-700x804.jpg" alt="portrait" />
         </div>
 
@@ -23,7 +23,6 @@
         </div>
       </div>
 
-      <!-- Was md:border-l-2 border-dashed border-gray-900 -->
       <div class="relative w-full md:w-6/12 md:pl-4 overflow-hidden">
         <div class="hidden md:block absolute left-0">
           <div class="flex flex-col">
@@ -40,12 +39,12 @@
         </div>
 
         <div class="mt-28 md:mt-0">
-          <h2 class="text-center text-2xl leading-8 font-extrabold tracking-tight sm:text-3xl sm:leading-9 text-yellow-500">
+          <h2 class="text-center font-headings text-4xl lg:text-5xl leading-8 sm:leading-9 tracking-tight text-yellow-500">
             Mes valeurs
           </h2>
         </div>
 
-        <div class="w-11/12 md:w-10/12 mx-auto mt-10">
+        <div class="w-11/12 md:w-10/12 mx-auto mt-16">
           <p class="mt-2 text-base text-justify leading-6 text-gray-900">
             À l’Atelier Pam Pam, je fais la quête du beau et de la poésie au quotidien.<br />
             Choisir de s’entourer de choses qui ont du sens et qui vous procure une émotion particulière, c’est ce que j’encourage.
@@ -68,7 +67,7 @@
               <h3 class="text-lg leading-6 font-medium text-gray-900">
                 Poésie
               </h3>
-              <p class="mt-2 text-base italic leading-6 text-gray-500">
+              <p class="mt-2 font-light text-base italic leading-6">
                 C'est comme un peu de magie, on en a tous besoin autour de nous
               </p>
             </div>
@@ -86,7 +85,7 @@
               <h3 class="text-lg leading-6 font-medium text-gray-900">
                 Singularité
               </h3>
-              <p class="mt-2 text-base italic leading-6 text-gray-500">
+              <p class="mt-2 font-light text-base italic leading-6">
                 Parce que chaque lieu et chaque personne est un univers
               </p>
             </div>
@@ -104,7 +103,7 @@
               <h3 class="text-lg leading-6 font-medium text-gray-900">
                 Conscience
               </h3>
-              <p class="mt-2 text-base italic leading-6 text-gray-500">
+              <p class="mt-2 font-light text-base italic leading-6">
                 Réutiliser ce qui existe déjà et préserver notre patrimoine
               </p>
             </div>

@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-full h-full flex-1">
+  <div class="max-w-full h-full flex-1 font-blur">
     <the-nav-bar :use-absolute-version="isAbsolute" />
     <nuxt id="content" keep-alive />
     <the-footer />
@@ -25,8 +25,8 @@ export default {
 <style>
 html {
   @apply h-full;
-  font-family: 'Inter';
-  font-display: swap;
+  /* font-family: 'Inter'; */
+  /* font-display: swap; */
 }
 
 body {

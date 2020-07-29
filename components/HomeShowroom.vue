@@ -5,7 +5,7 @@
         <!-- Left block -->
         <div class="flex flex-col mt-0 sm:mt-10 md:mt-0 ml-0 xl:mr-4 w-full md:w-6/12">
           <!-- Hidden title on desktop -->
-          <h2 class="text-center text-2xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-3xl sm:leading-9 md:hidden">
+          <h2 class="text-center font-headings text-4xl leading-8 sm:leading-9 tracking-tight text-gray-900 md:hidden">
             Le showroom
           </h2>
 
@@ -35,7 +35,7 @@
         <!-- Right block -->
         <div class="ml-0 xl:ml-4 w-full md:w-6/12">
           <div class="mx-auto pt-0 md:pt-24 lg:pt-28 xl:pt-48">
-            <h2 class="hidden md:block text-center text-2xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-3xl sm:leading-9">
+            <h2 class="hidden md:block text-center font-headings text-4xl lg:text-5xl leading-9 tracking-tight text-gray-900">
               Le showroom
             </h2>
 

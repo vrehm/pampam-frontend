@@ -3,15 +3,13 @@
     <div class="max-w-screen-xl mt-10 mx-auto px-4 sm:px-6 lg:px-8">
       <!-- Title and intro -->
       <div class="flex justify-center items-end md:justify-start">
-        <h2 class="mr-1 md:mr-3 text-center text-2xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-left sm:text-3xl sm:leading-9">
-          L'Atelier
-        </h2>
-        <div class="w-10 md:w-14 transform -translate-y-1">
+        <h2 class="mr-1 md:mr-3 text-center sm:text-left font-headings text-4xl lg:text-5xl leading-8 sm:leading-9 tracking-wide text-gray-900">L<span class="font-normal">'</span>Atelier</h2>
+        <div class="w-10 md:w-12 lg:w-14 transform -translate-y-1">
           <span class="text-gray-900" v-html="require('~/assets/img/illustrations/atelier-tools.svg?include')"></span>
         </div>
       </div>
 
-      <p class="mt-6 text-base text-center italic leading-6 text-gray-900 sm:text-lg sm:text-left">
+      <p class="mt-10 text-base sm:text-lg text-center sm:text-left italic leading-6 text-gray-900">
         J’aime mélanger restauration et création. Ainsi vous trouverez à l’atelier un mélange de brocante <br class="hidden lg:inline" />
         et de créations originales essentiellement faites à partir d’éléments chinés. Ma spécialité: les luminaires !
       </p>

@@ -29,7 +29,13 @@ module.exports = {
     theme: {
         extend: {
             fontFamily: {
-                sans: ['Inter', ...defaultTheme.fontFamily.sans]
+                sans: ['Inter', ...defaultTheme.fontFamily.sans],
+                blur: ['AustralSlabBlur-Regular', ...defaultTheme.fontFamily.sans],
+                light: ['AustralSlabBlur-Light', ...defaultTheme.fontFamily.sans],
+                thin: ['AustralSlabBlur-Thin', ...defaultTheme.fontFamily.sans],
+                headings: ['Monthoers', ...defaultTheme.fontFamily.sans],
+                rough:['AustralSlabRough-Regular', ...defaultTheme.fontFamily.sans],
+                stamp: ['AustralSansStamp-Regular', ...defaultTheme.fontFamily.sans]
             },
             minHeight: {
                 '300': '300px',
