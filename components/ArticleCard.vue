@@ -33,7 +33,8 @@
             </h3>
           </nuxt-link>
           <div class="mt-3 font-light text-base leading-6 text-gray-900">
-            <p>{{ shorten(article.content, 180) }} ...</p>
+            <!-- <p>{{ shorten(article.content, 180) }} ...</p> -->
+            <div v-html="$md.render(shorten(article.content, 180))"></div>
           </div>
           <div class="mt-3">
             <nuxt-link :to="{ name: 'articles-article', params: { article: article.id } }">
