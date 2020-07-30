@@ -1,11 +1,11 @@
 <template>
-  <section class="relative pt-28 pb-40 sm:pb-56 xl:pb-64 bg-white">
+  <section class="relative pt-20 sm:pt-28 pb-40 sm:pb-56 xl:pb-64 bg-white">
     <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-center items-end">
-        <h2 class="mr-2 sm:mr-4 text-center sm:text-left font-headings text-4xl lg:text-5xl leading-8 sm:leading-9 tracking-tight text-gray-900">
+        <h2 class="mr-2 sm:mr-4 text-center sm:text-left font-headings text-3xl sm:text-4xl lg:text-5xl leading-8 sm:leading-9 tracking-tight text-gray-900">
           Pam Pam dans la presse
         </h2>
-        <div class="w-8 ml-1 md:ml-0 transform -translate-y-1 lg:translate-y-0">
+        <div class="w-6 sm:w-8 ml-1 md:ml-0 transform -translate-y-1.5 sm:-translate-y-1 lg:translate-y-0">
           <span class="text-gray-900" v-html="require('~/assets/img/illustrations/presse.svg?include')"></span>
         </div>
       </div>
