@@ -43,6 +43,7 @@ export default {
 
     const slug = this.$nuxt.context.params.category
     const category = await this.$axios.$get(baseURL + '/categories?slug=' + slug)
+    this.$store.commit('SET_CURRENT_CATEGORY', category[0])
 
     const articles = await this.$axios.$get(baseURL + `/articles?_start=${this.articlesToBeDisplayed - 10}&_limit=10` + '&categories.id=' + category[0].id)
     const articlesCount = await this.$axios.$get(baseURL + `/articles/count` + '?categories.id=' + category[0].id)
@@ -57,6 +58,19 @@ export default {
       articlesAvailable: 0
     }
   },
+  computed: {
+    selected: {
+      // getter
+      get() {
+        return this.$store.state.currentCategory
+      },
+      // setter
+      set(newValue) {
+        const category = { name: newValue }
+        this.$store.commit('SET_CURRENT_CATEGORY', category)
+      }
+    }
+  },
   methods: {
     lazyLoadArticles(isVisible) {
       if (isVisible) {
@@ -69,7 +83,22 @@ export default {
   },
   head() {
     return {
-      title: "Journal de l'Atelier Pampam"
+      title: `Catégorie ${this.selected.name} - Journal de l'Atelier Pampam`
+      // meta: [
+      //   { hid: 'description', name: 'description', content: 'Atelier Pampam - Le Journal' },
+      //   {
+      //     property: 'og:title',
+      //     content: `${this.article.title}`
+      //   },
+      //   {
+      //     property: 'og:description',
+      //     content: `${this.article.content}`
+      //   },
+      //   {
+      //     property: 'og:image',
+      //     content: this.article.image.formats.thumbnail.url
+      //   }
+      // ]
     }
   }
 }

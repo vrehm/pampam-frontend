@@ -31,6 +31,11 @@ export default {
     CoteProTransitionTexture,
     CoteProArgumentaire,
     CoteProCTASection
+  },
+  head() {
+    return {
+      title: "L'Atelier Pam Pam pour les professionnels."
+    }
   }
 }
 </script>

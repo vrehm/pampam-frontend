@@ -2,7 +2,7 @@
   <div class="mx-auto w-auto py-8">
     <div class="sm:hidden px-2">
       <h2 class="mb-3 text-sm leading-5 font-light font-medium text-gray-700 group-hover:text-gray-900">Categories</h2>
-      <select aria-label="Selected tab" class="form-select block w-full">
+      <select v-model="selected" aria-label="Selected tab" class="form-select block w-full outline-none focus:outline-none shadow-none" @change="onChange($event)">
         <nuxt-link no-prefetch :to="{ name: 'journal' }" tag="option">
           Tous
         </nuxt-link>
@@ -38,6 +38,39 @@ export default {
     return {
       categories: []
     }
+  },
+
+  //
+  computed: {
+    selected: {
+      // getter
+      get() {
+        return this.$store.state.currentCategory.name
+      },
+      // setter
+      set(newValue) {
+        const category = { name: newValue }
+        this.$store.commit('SET_CURRENT_CATEGORY', category)
+      }
+    }
+  },
+  methods: {
+    async onChange(event) {
+      const {
+        defaults: { baseURL }
+      } = this.$axios
+      const name = event.target.value
+
+      if (name === 'Tous') {
+        // const category = { name: 'Tous' }
+        // this.$store.commit('SET_CURRENT_CATEGORY', category)
+        this.$router.push('/journal/')
+      } else {
+        const category = await this.$axios.$get(baseURL + `/categories` + '?name=' + name)
+        // this.$store.commit('SET_CURRENT_CATEGORY', category[0])
+        this.$router.push('/categories/' + category[0].slug)
+      }
+    }
   }
 }
 </script>
@@ -45,5 +78,14 @@ export default {
 <style scoped>
 .nuxt-link-exact-active {
   @apply outline-none text-gray-700 bg-gray-100;
+}
+
+select,
+option,
+.nuxt-link,
+select:focus,
+option:focus,
+.nuxt-link:focus {
+  outline: 0 !important;
 }
 </style>

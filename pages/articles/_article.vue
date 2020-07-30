@@ -22,7 +22,7 @@ export default {
   },
   head() {
     return {
-      title: `${this.article.title} - Journal de l'Atelier Pampam`,
+      title: `Article ${this.article.title} - Journal de l'Atelier Pampam`,
       meta: [
         { hid: 'description', name: 'description', content: 'Atelier Pampam - Le Journal' },
         {

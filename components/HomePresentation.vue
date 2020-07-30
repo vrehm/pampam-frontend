@@ -11,7 +11,7 @@
         </div>
 
         <div class="w-11/12 md:w-10/12 lg:w-9/12 xl:w-8/12 mx-auto mt-10">
-          <div class="mt-2 text-base text-justify leading-6 text-gray-900" v-html="$md.render(presentation)"></div>
+          <div class="mt-2 text-base text-justify leading-6 text-gray-900 prose" v-html="$md.render(presentation)"></div>
         </div>
 
         <div class="flex justify-center items-center mt-6">

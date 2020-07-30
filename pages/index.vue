@@ -38,6 +38,11 @@ export default {
     } = $axios
     const posts = await $axios.$get(baseURL + '/instagram-posts?_sort=id:ASC')
     return { posts }
+  },
+  head() {
+    return {
+      title: "L'Atelier Pam Pam - Brocante poétique pour intérieurs singuliers."
+    }
   }
 }
 </script>
