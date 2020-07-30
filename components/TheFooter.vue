@@ -7,7 +7,7 @@
             <img class="h-20 lazyload" data-src="~/assets/img/logos/pampam-logo.svg" alt="Company name" />
           </nuxt-link>
 
-          <ul class="flex flex-col items-start mt-6">
+          <ul class="flex flex-col items-center mt-6">
             <li v-for="item in menuItems" :key="item.name" class="mt-2">
               <nuxt-link :to="{ path: item.path, hash: item.hash }" class="text-base leading-6 text-gray-900">
                 {{ item.name }}
