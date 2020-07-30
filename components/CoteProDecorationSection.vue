@@ -83,11 +83,11 @@
                   <span>
                     380€
                   </span>
-                  <span class="ml-1 text-sm leading-7 font-semibold text-gray-500">
+                  <span class="ml-1 font-light text-sm leading-7 font-semibold text-gray-700">
                     HT
                   </span>
                 </div>
-                <p class="leading-6 font-medium text-xs lg:text-sm text-gray-400 lg:mr-3">
+                <p class="leading-6 font-light font-medium text-xs lg:text-sm text-gray-600 lg:mr-3">
                   Prix forfaitaire
                 </p>
               </div>

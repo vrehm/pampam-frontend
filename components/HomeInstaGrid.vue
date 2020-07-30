@@ -27,7 +27,7 @@
             </div>
           </div>
           <div class="mt-5">
-            <p class="font-light text-base text-center leading-6">
+            <p class="font-light text-base text-center leading-6 text-gray-900">
               Parcourez le feed de nouveauté et leurs descriptions détaillées sur ma page instagram (cliquez sur une photo !)
             </p>
           </div>
@@ -40,7 +40,7 @@
             </div>
           </div>
           <div class="mt-5 flex flex-col items-center">
-            <p class="font-light text-base text-center leading-6">
+            <p class="font-light text-base text-center leading-6 text-gray-900">
               Prenez contact avec moi! Ici sur le chat, par mail ou dans la messagerie Instagram !
             </p>
             <button onclick="$crisp.push(['do', 'chat:open'])" class="px-5 py-2 focus:outline-none transition duration-150 ease-in-out mt-3 flex items-center">
@@ -57,7 +57,7 @@
             </div>
           </div>
           <div class="mt-5">
-            <p class="font-light text-base text-center leading-6">
+            <p class="font-light text-base text-center leading-6 text-gray-900">
               Faites vous livrer partout en France et certains pays d’Europe ! Coût sur demande.
             </p>
           </div>

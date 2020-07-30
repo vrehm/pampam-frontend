@@ -60,8 +60,8 @@
             </svg>
           </div>
           <div class="mt-5">
-            <h5 class="text-lg font-bold leading-6 font-medium text-gray-900">Un réseau de brocs'</h5>
-            <p class="mt-2 text-base leading-6 text-gray-500">
+            <h5 class="text-lg leading-6 font-bold text-gray-900">Un réseau de brocs'</h5>
+            <p class="mt-2 font-light text-base leading-6 text-gray-900">
               Un large réseau de brocs et de cavernes d’alibaba en tout genre, pour dénicher les meubles et objets idéaux.
             </p>
           </div>
@@ -81,8 +81,8 @@
             </svg>
           </div>
           <div class="mt-5">
-            <h5 class="text-lg font-bold leading-6 font-medium text-gray-900">Un savoir-faire éprouvé</h5>
-            <p class="mt-2 text-base leading-6 text-gray-500">
+            <h5 class="text-lg leading-6 font-bold text-gray-900">Un savoir-faire éprouvé</h5>
+            <p class="mt-2 font-light text-base leading-6 text-gray-900">
               Spécialiste pour vous conseiller et vous accompagner dans un projet global de décoration d'intérieur
             </p>
           </div>
@@ -105,8 +105,8 @@
             </svg>
           </div>
           <div class="mt-5">
-            <h5 class="text-lg font-bold leading-6 font-medium text-gray-900">Une démarche Eco-responsable</h5>
-            <p class="mt-2 text-base leading-6 text-gray-500">
+            <h5 class="text-lg leading-6 font-bold text-gray-900">Une démarche Eco-responsable</h5>
+            <p class="mt-2 font-light text-base leading-6 text-gray-900">
               Donner une dimension responsable et consciente à vos projets en favorisant l’achat de meubles d’occasion et le réemploi de matériaux.
             </p>
           </div>

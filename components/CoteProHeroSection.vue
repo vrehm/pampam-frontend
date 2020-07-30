@@ -18,13 +18,13 @@
         <h2 class="mt-6 text-3xl leading-9 font-extrabold text-gray-900 sm:text-4xl sm:leading-10">
           L'Atelier Pam Pam pour les professionnels.
         </h2>
-        <p class="mt-6 text-lg leading-7 text-gray-500">
+        <p class="mt-6 font-light text-lg leading-7 text-gray-900">
           Décoration, conseil, location. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore nihil ea rerum ipsa. Nostrum consectetur sequi culpa doloribus omnis, molestiae esse placeat, exercitationem magnam quod.
         </p>
         <div class="mt-8 overflow-hidden">
           <dl class="lg:-mx-8 -mt-8 flex flex-wrap">
             <div class="flex flex-col px-3 lg:px-8 pt-8 items-center">
-              <dt class="order-2 text-base leading-6 font-medium text-gray-500">
+              <dt class="order-2 font-light text-base leading-6 font-medium text-gray-700">
                 Chantiers
               </dt>
               <dd class="order-1 text-2xl leading-8 font-extrabold text-yellow-500 sm:text-3xl sm:leading-9">
@@ -32,7 +32,7 @@
               </dd>
             </div>
             <div class="flex flex-col px-3 lg:px-8 pt-8 items-center">
-              <dt class="order-2 text-base leading-6 font-medium text-gray-500">
+              <dt class="order-2 font-light text-base leading-6 font-medium text-gray-700">
                 Studio Photo
               </dt>
               <dd class="order-1 text-2xl leading-8 font-extrabold text-yellow-500 sm:text-3xl sm:leading-9">
@@ -40,7 +40,7 @@
               </dd>
             </div>
             <div class="flex items-center flex-col px-3 lg:px-8 pt-8">
-              <dt class="order-2 text-base leading-6 font-medium text-gray-500">
+              <dt class="order-2 font-light text-base leading-6 font-medium text-gray-700">
                 Meubles
               </dt>
               <dd class="order-1 text-2xl leading-8 font-extrabold text-yellow-500 sm:text-3xl sm:leading-9">

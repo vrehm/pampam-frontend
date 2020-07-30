@@ -26,7 +26,7 @@
             <h4 class="text-2xl leading-8 font-extrabold text-gray-900 tracking-tight sm:text-3xl sm:leading-9">
               Vous avez une liste définie de meubles, objets, luminaires que vous recherchez?
             </h4>
-            <p class="mt-6 text-base leading-6 text-gray-500">Missionnez moi pour vous trouver ce qu’il vous faut!</p>
+            <p class="mt-6 font-light text-base leading-6 text-gray-900">Missionnez moi pour vous trouver ce qu’il vous faut!</p>
             <p class="mt-4 ont-medium text-gray-900">
               Tarif sur devis.
             </p>

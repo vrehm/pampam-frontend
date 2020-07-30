@@ -67,7 +67,7 @@
               <h3 class="text-lg leading-6 font-medium text-gray-900">
                 Poésie
               </h3>
-              <p class="mt-2 font-light text-base italic leading-6">
+              <p class="mt-2 font-light text-base italic leading-6 text-gray-900">
                 C'est comme un peu de magie, on en a tous besoin autour de nous
               </p>
             </div>
@@ -85,7 +85,7 @@
               <h3 class="text-lg leading-6 font-medium text-gray-900">
                 Singularité
               </h3>
-              <p class="mt-2 font-light text-base italic leading-6">
+              <p class="mt-2 font-light text-base italic leading-6 text-gray-900">
                 Parce que chaque lieu et chaque personne est un univers
               </p>
             </div>
@@ -103,7 +103,7 @@
               <h3 class="text-lg leading-6 font-medium text-gray-900">
                 Conscience
               </h3>
-              <p class="mt-2 font-light text-base italic leading-6">
+              <p class="mt-2 font-light text-base italic leading-6 text-gray-900">
                 Réutiliser ce qui existe déjà et préserver notre patrimoine
               </p>
             </div>
