@@ -3,11 +3,18 @@
     <div class="w-full pt-12 lg:pt-16 pb-4 lg:py-8 px-4 sm:px-6 lg:px-8 overflow-hidden border-t border-gray-200">
       <div class="max-w-screen-xl mx-auto md:grid md:grid-cols-3 md:gap-8">
         <div class="flex flex-col items-center">
-          <a href="#">
+          <nuxt-link to="/">
             <img class="h-20 lazyload" data-src="~/assets/img/logos/pampam-logo.svg" alt="Company name" />
-          </a>
-          <ul class="flex flex-col items-center mt-6">
-            <li>
+          </nuxt-link>
+
+          <ul class="flex flex-col items-start mt-6">
+            <li v-for="item in menuItems" :key="item.name" class="mt-2">
+              <nuxt-link :to="{ path: item.path, hash: item.hash }" class="text-base leading-6 text-gray-900">
+                {{ item.name }}
+              </nuxt-link>
+            </li>
+
+            <!-- <li>
               <a href="#" class="text-base leading-6 text-gray-900">
                 Who is Pam Pam?
               </a>
@@ -31,7 +38,8 @@
               <a href="#" class="text-base leading-6 text-gray-900">
                 Journal
               </a>
-            </li>
+            </li> -->
+
             <li class="mt-2">
               <nuxt-link :to="{ name: 'articles-article', params: { article: 58 } }" class="text-base leading-6 text-gray-900">
                 Mentions Légales
@@ -97,7 +105,66 @@
 </template>
 
 <script>
-export default {}
+export default {
+  data() {
+    return {
+      menuItems: [
+        {
+          name: 'Who is Pam Pam',
+          hash: 'who-is-pampam',
+          path: '/'
+        },
+        {
+          name: 'La Boutique',
+          hash: 'la-boutique',
+          path: '/'
+        },
+        {
+          name: " L'Atelier",
+          hash: 'l-atelier',
+          path: '/'
+        },
+        {
+          name: 'Côté Pro',
+          hash: '',
+          path: '/cote-pro'
+        },
+        {
+          name: 'Journal',
+          hash: '',
+          path: '/journal'
+        }
+      ],
+      routeChange: false,
+      mobileNavOpen: false
+    }
+  },
+  watch: {
+    $route() {
+      this.routeChange = true
+      this.mobileNavOpen = false
+    }
+  },
+  beforeMount() {
+    window.addEventListener('scroll', this.handleScroll)
+    window.addEventListener('touchmove', this.handleScroll)
+  },
+  beforeDestroy() {
+    window.removeEventListener('scroll', this.handleScroll)
+    window.removeEventListener('touchmove', this.handleScroll)
+  },
+  methods: {
+    closeMobileNavbar() {
+      this.mobileNavOpen = false
+    },
+    handleScroll() {
+      // actions on scroll or touchmove events
+      if (window.scrollY > 200) {
+        this.closeMobileNavbar()
+      }
+    }
+  }
+}
 </script>
 
 <style></style>
