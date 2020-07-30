@@ -58,6 +58,19 @@ export default {
       articlesAvailable: 0
     }
   },
+  computed: {
+    selected: {
+      // getter
+      get() {
+        return this.$store.state.currentCategory
+      },
+      // setter
+      set(newValue) {
+        const category = { name: newValue }
+        this.$store.commit('SET_CURRENT_CATEGORY', category)
+      }
+    }
+  },
   methods: {
     lazyLoadArticles(isVisible) {
       if (isVisible) {
@@ -70,7 +83,22 @@ export default {
   },
   head() {
     return {
-      title: "Journal de l'Atelier Pampam"
+      title: `Catégorie ${this.selected.name} - Journal de l'Atelier Pampam`
+      // meta: [
+      //   { hid: 'description', name: 'description', content: 'Atelier Pampam - Le Journal' },
+      //   {
+      //     property: 'og:title',
+      //     content: `${this.article.title}`
+      //   },
+      //   {
+      //     property: 'og:description',
+      //     content: `${this.article.content}`
+      //   },
+      //   {
+      //     property: 'og:image',
+      //     content: this.article.image.formats.thumbnail.url
+      //   }
+      // ]
     }
   }
 }
