@@ -43,6 +43,7 @@ export default {
 
     const slug = this.$nuxt.context.params.category
     const category = await this.$axios.$get(baseURL + '/categories?slug=' + slug)
+    this.$store.commit('SET_CURRENT_CATEGORY', category[0])
 
     const articles = await this.$axios.$get(baseURL + `/articles?_start=${this.articlesToBeDisplayed - 10}&_limit=10` + '&categories.id=' + category[0].id)
     const articlesCount = await this.$axios.$get(baseURL + `/articles/count` + '?categories.id=' + category[0].id)

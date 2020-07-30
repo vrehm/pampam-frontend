@@ -40,6 +40,8 @@ module.exports = {
             }
         }
     },
-    variants: {},
+    variants: {
+        outline: ["focus"]
+    },
     plugins: [require('@tailwindcss/ui')]
 }

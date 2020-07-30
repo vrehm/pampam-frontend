@@ -47,11 +47,17 @@ export const state = () => ({
     slug: "l'atelier-pam-pam-c'est-qui-c'est-quoi",
     image: { id: 1, name: 'cecile', alternativeText: '', caption: '', width: 222, height: 227, formats: { thumbnail: { ext: '.jpeg', url: 'https://res.cloudinary.com/atelierpampam/image/upload/v1587996412/thumbnail_cecile_60ee45a8c2.jpg', hash: 'thumbnail_cecile_60ee45a8c2', mime: 'image/jpeg', size: 6.22, width: 153, height: 156, provider_metadata: { public_id: 'thumbnail_cecile_60ee45a8c2', resource_type: 'image' } } }, hash: 'cecile_60ee45a8c2', ext: '.jpeg', mime: 'image/jpeg', size: 9.9, url: 'https://res.cloudinary.com/atelierpampam/image/upload/v1587996411/cecile_60ee45a8c2.jpg', previewUrl: null, provider: 'cloudinary', provider_metadata: { public_id: 'cecile_60ee45a8c2', resource_type: 'image' }, created_at: '2020-04-27T14:06:52.846Z', updated_at: '2020-04-27T14:06:52.846Z' },
     categories: [{ id: 1, name: 'Test 1', created_at: '2020-04-29T15:33:33.359Z', updated_at: '2020-04-29T15:33:33.359Z', slug: 'test-1' }]
+  },
+  currentCategory: {
+    name: 'Tous'
   }
 })
 
 export const mutations = {
   SET_CURRENT_ARTICLE(state, article) {
     state.currentArticle = article
+  },
+  SET_CURRENT_CATEGORY(state, category) {
+    state.currentCategory = category
   }
 }
