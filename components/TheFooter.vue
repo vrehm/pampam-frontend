@@ -1,6 +1,6 @@
 <template>
   <footer class="bg-white">
-    <div class="w-full py-12 px-4 overflow-hidden border-t border-gray-200 sm:px-6 lg:py-16 lg:px-8">
+    <div class="w-full pt-12 lg:pt-16 pb-4 lg:py-8 px-4 sm:px-6 lg:px-8 overflow-hidden border-t border-gray-200">
       <div class="max-w-screen-xl mx-auto md:grid md:grid-cols-3 md:gap-8">
         <div class="flex flex-col items-center">
           <a href="#">
@@ -87,7 +87,7 @@
         </div>
       </div>
 
-      <div class="mt-12 border-t border-gray-200 pt-8">
+      <div class="mt-12 pt-6 border-t border-gray-200">
         <p class="text-center font-light text-base leading-6">
           &copy; 2020 Atelier Pam Pam
         </p>

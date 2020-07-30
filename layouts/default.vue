@@ -25,8 +25,6 @@ export default {
 <style>
 html {
   @apply h-full;
-  /* font-family: 'Inter'; */
-  /* font-display: swap; */
 }
 
 body {
