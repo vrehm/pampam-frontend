@@ -1,13 +1,13 @@
 <template>
   <div class="lg:pb-16 overflow-hidden">
     <div class="relative max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-screen-xl">
-      <div class="relative lg:mt-12 sm:mt-16 lg:mt-24">
+      <div class="relative sm:mt-16 lg:mt-24">
         <div class="flex flex-col-reverse lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-8 lg:items-center">
           <div class="lg:col-start-2 px-6 py-8 lg:flex-shrink-1 lg:p-12">
             <h4 class="text-2xl leading-8 font-extrabold text-gray-900 tracking-tight sm:text-3xl sm:leading-9">
               Vous avez besoin de louer du mobilier de manière ponctuelle?
             </h4>
-            <p class="mt-6 text-base leading-6 text-gray-500">Je propose un service de location de mobilier pour vos shooting photo, événements, tournages etc, et des installations de décors éphémères, scénographies. <br /></p>
+            <p class="mt-6 font-light text-base leading-6 text-gray-900">Je propose un service de location de mobilier pour vos shooting photo, événements, tournages etc, et des installations de décors éphémères, scénographies. <br /></p>
             <p class="mt-4 ont-medium text-gray-900">
               Tarif sur devis.
             </p>

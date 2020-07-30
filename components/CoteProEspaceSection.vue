@@ -8,7 +8,7 @@
               <h3 class="text-2xl leading-8 font-extrabold text-gray-900 sm:text-3xl sm:leading-9">
                 Vous recherchez un bel espace atypique pour vos shootings photo?
               </h3>
-              <p class="mt-6 text-base leading-6 text-gray-500">
+              <p class="mt-6 font-light text-base leading-6 text-gray-900">
                 Je loue mon showroom tout équipé.
               </p>
 
@@ -68,11 +68,11 @@
                     <span>
                       50€
                     </span>
-                    <span class="ml-1 text-sm leading-7 font-semibold text-gray-500">
+                    <span class="ml-1 font-light text-sm leading-7 font-semibold text-gray-700">
                       HT
                     </span>
                   </div>
-                  <p class="leading-6 font-medium text-center text-xs lg:text-sm text-gray-400 lg:mr-3">
+                  <p class="leading-6 font-light font-medium text-center text-xs lg:text-sm text-gray-600 lg:mr-3">
                     L'heure
                   </p>
                 </div>
@@ -81,11 +81,11 @@
                     <span>
                       150€
                     </span>
-                    <span class="ml-1 text-sm leading-7 font-semibold text-gray-500">
+                    <span class="ml-1 font-light text-sm leading-7 font-semibold text-gray-700">
                       HT
                     </span>
                   </div>
-                  <p class="leading-6 text-center font-medium text-xs lg:text-sm text-gray-400 lg:mr-3">
+                  <p class="leading-6 font-light text-center font-medium text-xs lg:text-sm text-gray-600 lg:mr-3">
                     1/2 journée (4h)
                   </p>
                 </div>
@@ -94,11 +94,11 @@
                     <span>
                       250€
                     </span>
-                    <span class="ml-1 text-sm leading-7 font-semibold text-gray-500">
+                    <span class="ml-1 font-light text-sm leading-7 font-semibold text-gray-700">
                       HT
                     </span>
                   </div>
-                  <p class="leading-6 font-medium text-center text-xs lg:text-sm text-gray-400 lg:mr-3">
+                  <p class="leading-6 font-light font-medium text-center text-xs lg:text-sm text-gray-600 lg:mr-3">
                     La journée (8h)
                   </p>
                 </div>

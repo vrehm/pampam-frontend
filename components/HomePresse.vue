@@ -1,15 +1,16 @@
 <template>
-  <section class="relative pt-28 pb-40 sm:pb-56 xl:pb-64 bg-white">
+  <section class="relative pt-20 sm:pt-28 pb-40 sm:pb-56 xl:pb-64 bg-white">
     <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-center items-end">
-        <h2 class="mr-2 sm:mr-4 text-center text-xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-left sm:text-3xl sm:leading-9">
+        <h2 class="mr-2 sm:mr-4 text-center sm:text-left font-headings text-3xl sm:text-4xl lg:text-5xl leading-8 sm:leading-9 tracking-tight text-gray-900">
           Pam Pam dans la presse
         </h2>
-        <div class="w-6 sm:w-10 transform -translate-y-1">
+        <div class="w-6 sm:w-8 ml-1 md:ml-0 transform -translate-y-1.5 sm:-translate-y-1 lg:translate-y-0">
           <span class="text-gray-900" v-html="require('~/assets/img/illustrations/presse.svg?include')"></span>
         </div>
       </div>
-      <div class="flex flex-col items-center md:flex-row md:justify-around pt-14">
+
+      <div class="flex flex-col items-center md:flex-row md:justify-around pt-20">
         <div class="flex justify-center w-3/5 md:w-1/4 lg:w-1/5">
           <a href="https://www.tiffanyoliverphotographies.com/blog-photographe-mariage-lyon/mes-brocs-ont-du-talent-photographe-puces-du-canal-a-lyon-atelier-pampam" target="_blank">
             <img class="lazyload" data-src="~/assets/img/logos/logo-tiffany-photographies.jpg" alt="Tiffany Photographies" />

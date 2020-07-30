@@ -3,3 +3,28 @@
 @import 'tailwindcss/components';
 /* purgecss end ignore */
 @import 'tailwindcss/utilities';
+
+/* imports fonts */
+@font-face {
+    font-family: 'AustralSlabBlur-Regular';
+    src: url('../fonts/austral-slab-blur-regular.woff2') format('woff2'),
+         url('../fonts/austral-slab-blur-regular.woff') format('woff');
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AustralSlabBlur-Light';
+    src: url('../fonts/austral-slab-blur-light.woff2') format('woff2'),
+         url('../fonts/austral-slab-blur-light.woff') format('woff');
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Monthoers';
+    src: url('../fonts/monthoers.woff2') format('woff2'),
+         url('../fonts/monthoers.woff') format('woff');
+    font-weight: normal;
+    font-display: swap;
+}
