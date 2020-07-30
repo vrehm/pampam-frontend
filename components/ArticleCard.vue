@@ -16,7 +16,7 @@
               </nuxt-link>
             </div>
 
-            <p class="text-sm leading-5 text-gray-500">
+            <p class="font-light text-sm leading-5 text-gray-500">
               <time
                 :datetime="article.created_at"
                 v-text="
@@ -32,7 +32,7 @@
               {{ article.title }}
             </h3>
           </nuxt-link>
-          <div class="mt-3 text-base leading-6 text-gray-500">
+          <div class="mt-3 font-light text-base leading-6 text-gray-900">
             <p>{{ shorten(article.content, 180) }} ...</p>
           </div>
           <div class="mt-3">

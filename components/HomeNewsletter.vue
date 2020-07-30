@@ -5,7 +5,7 @@
         <span class="text-gray-900" v-html="require('~/assets/img/illustrations/newsletter-transition-top.svg?include')"></span>
       </div>
     </div>
-    <div class="px-4 sm:px-6 md:px-0 lg:px-12 pt-20 sm:pt-20 md:pt-6 lg:pt-32 pb-12 sm:pt-20 md:pb-0 lg:pb-16 max-w-full md:max-w-2xl lg:max-w-4xl mx-auto">
+    <div class="px-4 sm:px-6 md:px-0 lg:px-12 pt-20 md:pt-6 lg:pt-32 pb-12 md:pb-0 lg:pb-16 max-w-full md:max-w-2xl lg:max-w-4xl mx-auto">
       <div class="flex flex-col items-center px-6 md:px-0 pt-20 sm:pt-20 md:pt-40 lg:pt-32 pb-20 sm:pb-20 md:pb-40 background-newsletter-custom rounded-sm">
         <div class="text-center xl:flex-1">
           <h2 class="mt-0 md:mt-4 text-2xl leading-8 font-extrabold tracking-tight text-white sm:text-4xl sm:leading-9">
