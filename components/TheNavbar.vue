@@ -17,7 +17,7 @@
             </button>
           </div>
           <nav class="hidden md:flex md:space-x-5 lg:space-x-10">
-            <nuxt-link v-for="item in menuItems" :key="item.name" :to="{ path: item.path, hash: item.hash }" class="md:text-sm lg:text-base leading-6 font-medium text-gray-100 hover:text-gray-300 focus:outline-none focus:text-gray-300 transition ease-in-out duration-150">
+            <nuxt-link v-for="item in menuItems" :key="item.name" :to="{ path: item.path, hash: item.hash }" class="md:text-sm lg:text-base leading-6 font-medium text-gray-100 hover:text-orange-300 focus:outline-none focus:text-orange-300 transition ease-in-out duration-150">
               {{ item.name }}
             </nuxt-link>
           </nav>
@@ -39,7 +39,7 @@
           </button>
         </div>
         <nav class="hidden md:flex md:space-x-5 lg:space-x-10">
-          <nuxt-link v-for="item in menuItems" :key="item.name" :to="{ path: item.path, hash: item.hash }" class="text-base leading-6 font-medium text-gray-900 hover:text-gray-700 transition ease-in-out duration-150">
+          <nuxt-link v-for="item in menuItems" :key="item.name" :to="{ path: item.path, hash: item.hash }" class="text-base leading-6 font-medium text-gray-900 hover:text-orange-300 transition ease-in-out duration-150">
             {{ item.name }}
           </nuxt-link>
         </nav>
