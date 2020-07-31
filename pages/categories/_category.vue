@@ -2,7 +2,7 @@
   <div>
     <div class="relative ">
       <journal-hero-section />
-      <div class="relative pb-12 sm:pb-16 md:pb-20 lg:pb-28 xl:pb-32">
+      <div class="relative pb-12 sm:pb-16 md:pb-20 lg:pb-28 xl:pb-32 bg-yellow-100">
         <div class="pt-10 mx-auto max-w-screen-xl lg:px-4 sm:pt-12 sm:px-6 md:pt-16 lg:pt-20 xl:pt-28">
           <template v-if="$fetchState.pending">
             <div>
