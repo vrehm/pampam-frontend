@@ -3,7 +3,7 @@
     <div class="relative ">
       <journal-hero-section />
       <div class="relative pb-12 sm:pb-16 md:pb-20 lg:pb-28 xl:pb-32">
-        <div class="mt-10 mx-auto max-w-screen-xl lg:px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 xl:mt-28">
+        <div class="pt-10 mx-auto max-w-screen-xl lg:px-4 sm:pt-12 sm:px-6 md:pt-16 lg:pt-20 xl:pt-28">
           <template v-if="$fetchState.pending">
             <div>
               <content-placeholders v-for="p in 5" :key="p" rounded class="pb-8 px-6 md:px-24 md:max-w-5xl mx-auto">

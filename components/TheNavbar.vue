@@ -1,5 +1,5 @@
 <template>
-  <section class="w-full bg-transparent">
+  <section class="w-full bg-yellow-100">
     <!-- desktop version -->
 
     <!-- Version with position absolute, over the background -->
