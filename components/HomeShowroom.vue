@@ -1,5 +1,5 @@
 <template>
-  <section class="pt-6 md:pt-0 pb-12 sm:pb-8 md:pb-20 bg-white">
+  <section class="pt-6 md:pt-0 pb-12 sm:pb-8 md:pb-24 lg:pb-32 bg-yellow-100">
     <div class="max-w-screen-lg mt-10 md:mt-0 mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex flex-col md:flex-row md:justify-center mt-0">
         <!-- Left block -->

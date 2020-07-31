@@ -1,5 +1,5 @@
 <template>
-  <section class="pt-12 md:pt-20 pb-28 sm:pb-48 md:pb-40 lg:pb-48 bg-white">
+  <section class="pt-12 md:pt-20 pb-28 sm:pb-48 md:pb-40 lg:pb-48 bg-yellow-100">
     <div class="max-w-screen-xl mt-10 mx-auto px-4 sm:px-6 lg:px-8">
       <!-- Title and intro -->
       <div class="flex justify-center items-end md:justify-start">
@@ -37,8 +37,9 @@
             </p>
           </div>
 
+          <!-- Hidden on mobile -->
           <div class="hidden md:flex md:justify-center md:items-center mt-6">
-            <a href="mailto:atelierpampam@gmail.com" class="px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md shadow text-white bg-gray-500 hover:bg-gray-400 focus:outline-none focus:bg-gray-400 transition duration-150 ease-in-out">
+            <a href="mailto:atelierpampam@gmail.com" class="px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md shadow text-gray-100 bg-orange-500 hover:bg-orange-300 focus:outline-none focus:bg-gray-400 transition duration-150 ease-in-out">
               Me contacter
             </a>
           </div>
@@ -66,8 +67,9 @@
             <img class="w-full rounded-md lazyload" data-src="~/assets/img/home/textile1-700x733.jpg" alt="portrait" />
           </div>
 
+          <!-- Hidden on tablet, desktop -->
           <div class="flex justify-center items-center mt-12 md:hidden">
-            <a href="mailto:atelierpampam@gmail.com" class="px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md shadow text-white bg-gray-500 hover:bg-gray-400 focus:outline-none focus:bg-gray-400 transition duration-150 ease-in-out">
+            <a href="mailto:atelierpampam@gmail.com" class="px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md shadow text-gray-100 bg-orange-500 hover:bg-orange-300 focus:outline-none focus:bg-gray-400 transition duration-150 ease-in-out">
               Me contacter
             </a>
           </div>

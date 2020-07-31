@@ -34,6 +34,39 @@ module.exports = {
                 light: ['AustralSlabBlur-Light', ...defaultTheme.fontFamily.sans],
                 headings: ['Monthoers', ...defaultTheme.fontFamily.sans]
             },
+            colors: {
+                gray: {
+                    ...defaultTheme.colors.gray,
+                    '100': '#f1f2ec',
+                    '200': '#e5e6e0',
+                    '500': '#787875',
+                    '700': '#494a43',
+                    '800': '#323329',
+                    '900': '#1a1b13',
+                },
+                green: {
+                    ...defaultTheme.colors.green,
+                    '400': '#81a074',
+                    '800': '#434219',
+                },
+                orange: {
+                    ...defaultTheme.colors.orange,
+                    '100': '#dac2b0',
+                    '200': '#d2a788',
+                    '300': '#cc8f63',
+                    '400': '#b67b50',
+                    '500': '#b87b4f',
+                    '600': '#98633c',
+                    '700': '#8e542a',
+                },
+                yellow: {
+                    ...defaultTheme.colors.yellow,
+                    // 100 & 200 are alternative grays
+                    '100': '#fdfdfd',
+                    '200': '#f2f2f2',
+                    '500': '#7c5315',
+                }
+            },
             minHeight: {
                 '300': '300px',
                 '550': '550px',
