@@ -68,7 +68,7 @@
 
               <nav class="grid row-gap-8">
                 <nuxt-link v-for="item in menuItems" :key="item.name" :to="{ path: item.path, hash: item.hash }" class="-m-3 p-3 rounded-md hover:bg-gray-50 transition ease-in-out duration-150">
-                  <div class="text-base leading-6 font-medium text-yellow-600">
+                  <div class="text-base leading-6 font-medium text-orange-400">
                     {{ item.name }}
                   </div>
                 </nuxt-link>
