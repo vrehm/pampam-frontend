@@ -83,8 +83,10 @@ export default {
     const {
       defaults: { baseURL }
     } = this.$axios
-    // const article = await fetch(`https://dev.to/api/articles/${this.$route.params.article}`).then((res) => res.json())
-    const article = await this.$axios.$get(baseURL + `/articles/${this.$route.params.article}`)
+
+    let article = await this.$axios.$get(baseURL + `/articles?slug=${this.$route.params.article}`)
+    article = article[0]
+
     if (article.id) {
       this.article = article
       this.$store.commit('SET_CURRENT_ARTICLE', this.article)

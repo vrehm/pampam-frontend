@@ -1,5 +1,5 @@
 <template>
-  <nuxt-link :to="{ name: 'articles-article', params: { article: article.id } }" tag="article">
+  <nuxt-link :to="{ name: 'articles-article', params: { article: article.slug } }" tag="article">
     <div class="pb-16 sm:px-6 md:px-24 md:max-w-screen-xl w-full bg-yellow-100">
       <div class="flex flex-col md:flex-row items-start justify-center">
         <div class="md:mr-6 md:rounded-sm h-48 w-full object-cover md:w-9/12 md:max-w-xs overflow-hidden">
@@ -27,7 +27,7 @@
               ></time>
             </p>
           </div>
-          <nuxt-link :to="{ name: 'articles-article', params: { article: article.id } }">
+          <nuxt-link :to="{ name: 'articles-article', params: { article: article.slug } }">
             <h3 class="mt-2 text-xl leading-7 font-semibold text-gray-900">
               {{ article.title }}
             </h3>
@@ -37,7 +37,7 @@
             <div v-html="$md.render(shorten(article.content, 180))"></div>
           </div>
           <div class="mt-3">
-            <nuxt-link :to="{ name: 'articles-article', params: { article: article.id } }">
+            <nuxt-link :to="{ name: 'articles-article', params: { article: article.slug } }">
               <p class="text-base leading-6 font-semibold text-orange-400 hover:text-yellow-500 transition ease-in-out duration-150">
                 Lire l'article
               </p>

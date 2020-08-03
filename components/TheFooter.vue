@@ -15,7 +15,7 @@
             </li>
 
             <li class="mt-2">
-              <nuxt-link :to="{ name: 'articles-article', params: { article: 58 } }" class="text-base leading-6 text-gray-900 hover:text-orange-300">
+              <nuxt-link :to="{ name: 'articles-article', params: { article: 'mentions-legales' } }" class="text-base leading-6 text-gray-900 hover:text-orange-300">
                 Mentions Légales
               </nuxt-link>
             </li>
