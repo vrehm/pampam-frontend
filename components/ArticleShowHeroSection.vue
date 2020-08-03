@@ -3,7 +3,7 @@
     <!-- Slice method limit the number of tags displayed -->
     <div class="flex">
       <nuxt-link v-for="(category, index) in article.categories.slice(0, 5)" :key="category.id" :to="{ name: 'categories-category', params: { category: category.slug } }">
-        <div class="mb-3 hover:underline text-sm leading-5 font-medium text-yellow-600" :class="{ 'ml-2': index != 0 }">
+        <div class="mb-3 hover:underline text-sm leading-5 font-medium text-orange-400" :class="{ 'ml-2': index != 0 }">
           {{ category.name }}
         </div>
       </nuxt-link>
@@ -16,7 +16,7 @@
         <div class="flex-shrink-0 group block">
           <div class="flex items-center">
             <div>
-              <img class="inline-block h-8 w-8 rounded-full border border-yellow-500" :src="article.author.avatar.formats.small.url" :alt="article.author.avatar.alternativeText" />
+              <img class="inline-block h-8 w-8 rounded-full border border-orange-500" :src="article.author.avatar.formats.small.url" :alt="article.author.avatar.alternativeText" />
             </div>
             <div class="ml-3">
               <p class="text-sm leading-5 font-medium text-gray-700 group-hover:text-gray-900 ">

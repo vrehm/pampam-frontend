@@ -1,5 +1,5 @@
 <template>
-  <section class="pt-6 md:pt-4 lg:pt-12 pb-20 sm:pb-28 md:pb-24 lg:pb-28 xl:pb-40 bg-white">
+  <section class="pt-6 md:pt-4 lg:pt-12 pb-20 sm:pb-28 md:pb-24 lg:pb-28 xl:pb-40 bg-yellow-100">
     <div class="md:flex md:justify-center max-w-screen-xl mt-10 mx-auto px-4 sm:px-6 lg:px-8">
       <div class="w-full md:w-6/12 md:pr-4">
         <h2 class="text-center font-headings text-4xl lg:text-5xl leading-8 sm:leading-9 tracking-tight text-gray-900">
@@ -16,7 +16,7 @@
 
         <div class="flex justify-center items-center mt-6">
           <nuxt-link :to="{ name: 'articles-article', params: { article: 57 } }">
-            <button class="px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md shadow text-white bg-gray-500 hover:bg-gray-400 focus:outline-none focus:bg-indigo-400 transition duration-150 ease-in-out">
+            <button class="px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md shadow text-gray-100 bg-orange-500 hover:bg-orange-300 focus:outline-none focus:bg-indigo-400 transition duration-150 ease-in-out">
               Lire l'article
             </button>
           </nuxt-link>
@@ -59,15 +59,15 @@
             <div class="flex-shrink-0">
               <div class="flex justify-center items-start">
                 <div class="w-10 sm:w-14 md:w-8 lg:w-10">
-                  <span class="text-gray-900" v-html="require('~/assets/img/illustrations/presentation-poetique.svg?include')"></span>
+                  <span class="text-orange-500" v-html="require('~/assets/img/illustrations/presentation-poetique.svg?include')"></span>
                 </div>
               </div>
             </div>
             <div class="ml-4">
-              <h3 class="text-lg leading-6 font-medium text-gray-900">
+              <h3 class="text-lg leading-6 font-medium text-orange-500">
                 Poésie
               </h3>
-              <p class="mt-2 font-light text-base italic leading-6 text-gray-900">
+              <p class="mt-2 font-light text-base italic leading-6 text-gray-800">
                 C'est comme un peu de magie, on en a tous besoin autour de nous
               </p>
             </div>
@@ -77,15 +77,15 @@
             <div class="flex-shrink-0">
               <div class="flex justify-center items-start">
                 <div class="w-10 sm:w-14 md:w-8 lg:w-10">
-                  <span class="text-gray-900" v-html="require('~/assets/img/illustrations/presentation-singuliere.svg?include')"></span>
+                  <span class="text-orange-500" v-html="require('~/assets/img/illustrations/presentation-singuliere.svg?include')"></span>
                 </div>
               </div>
             </div>
             <div class="ml-4">
-              <h3 class="text-lg leading-6 font-medium text-gray-900">
+              <h3 class="text-lg leading-6 font-medium text-orange-500">
                 Singularité
               </h3>
-              <p class="mt-2 font-light text-base italic leading-6 text-gray-900">
+              <p class="mt-2 font-light text-base italic leading-6 text-gray-800">
                 Parce que chaque lieu et chaque personne est un univers
               </p>
             </div>
@@ -95,15 +95,15 @@
             <div class="flex-shrink-0">
               <div class="flex justify-center items-start">
                 <div class="w-10 sm:w-14 md:w-8 lg:w-10">
-                  <span class="text-gray-900" v-html="require('~/assets/img/illustrations/presentation-consciente.svg?include')"></span>
+                  <span class="text-orange-500" v-html="require('~/assets/img/illustrations/presentation-consciente.svg?include')"></span>
                 </div>
               </div>
             </div>
             <div class="ml-4">
-              <h3 class="text-lg leading-6 font-medium text-gray-900">
+              <h3 class="text-lg leading-6 font-medium text-orange-500">
                 Conscience
               </h3>
-              <p class="mt-2 font-light text-base italic leading-6 text-gray-900">
+              <p class="mt-2 font-light text-base italic leading-6 text-gray-800">
                 Réutiliser ce qui existe déjà et préserver notre patrimoine
               </p>
             </div>

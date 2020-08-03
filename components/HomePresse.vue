@@ -1,5 +1,5 @@
 <template>
-  <section class="relative pt-20 sm:pt-28 pb-40 sm:pb-56 xl:pb-64 bg-white">
+  <section class="relative pt-20 sm:pt-28 pb-40 sm:pb-56 xl:pb-64 bg-yellow-100">
     <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-center items-end">
         <h2 class="mr-2 sm:mr-4 text-center sm:text-left font-headings text-3xl sm:text-4xl lg:text-5xl leading-8 sm:leading-9 tracking-tight text-gray-900">

@@ -27,7 +27,7 @@
               <dt class="order-2 font-light text-base leading-6 font-medium text-gray-700">
                 Chantiers
               </dt>
-              <dd class="order-1 text-2xl leading-8 font-extrabold text-yellow-500 sm:text-3xl sm:leading-9">
+              <dd class="order-1 text-2xl leading-8 font-extrabold text-orange-400 sm:text-3xl sm:leading-9">
                 +20
               </dd>
             </div>
@@ -35,7 +35,7 @@
               <dt class="order-2 font-light text-base leading-6 font-medium text-gray-700">
                 Studio Photo
               </dt>
-              <dd class="order-1 text-2xl leading-8 font-extrabold text-yellow-500 sm:text-3xl sm:leading-9">
+              <dd class="order-1 text-2xl leading-8 font-extrabold text-orange-400 sm:text-3xl sm:leading-9">
                 60m2
               </dd>
             </div>
@@ -43,7 +43,7 @@
               <dt class="order-2 font-light text-base leading-6 font-medium text-gray-700">
                 Meubles
               </dt>
-              <dd class="order-1 text-2xl leading-8 font-extrabold text-yellow-500 sm:text-3xl sm:leading-9">
+              <dd class="order-1 text-2xl leading-8 font-extrabold text-orange-400 sm:text-3xl sm:leading-9">
                 +200
               </dd>
             </div>

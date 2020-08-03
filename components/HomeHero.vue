@@ -5,7 +5,7 @@
         <h1 class="text-4xl tracking-tight leading-10 font-extrabold text-gray-100 sm:text-5xl sm:leading-tight md:text-5xl lg:text-6xl">
           Brocante poétique
           <br />
-          <span class="text-yellow-500">pour intérieurs singuliers</span>
+          <span class="text-orange-400">pour intérieurs singuliers</span>
         </h1>
       </div>
     </div>

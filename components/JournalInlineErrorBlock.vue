@@ -1,5 +1,5 @@
 <template>
-  <div class="relative overflow-hidden flex flex-col justify-center items-center">
+  <div class="relative overflow-hidden flex flex-col justify-center items-center bg-yellow-100">
     <svg id="Capa_1" enable-background="new 0 0 512.074 512.074" height="100" viewBox="0 0 512.074 512.074" width="512" xmlns="http://www.w3.org/2000/svg">
       <g>
         <path

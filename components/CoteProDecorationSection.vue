@@ -30,10 +30,10 @@
 
               <div class="mt-8">
                 <div class="flex items-center">
-                  <h4 class="flex-shrink-0 pr-4  text-sm leading-5 tracking-wider font-semibold uppercase text-yellow-500">
+                  <h4 class="flex-shrink-0 pr-4  text-sm leading-5 tracking-wider font-semibold uppercase text-orange-400">
                     3h d'immersion dans votre lieux
                   </h4>
-                  <div class="flex-1 border-t-2 border-gray-200"></div>
+                  <div class="flex-1 border-t-2 border-orange-100"></div>
                 </div>
                 <ul class="mt-8 lg:grid lg:grid-cols-2 lg:col-gap-8 lg:row-gap-5">
                   <li class="flex items-start lg:col-span-1">
@@ -87,7 +87,7 @@
                     HT
                   </span>
                 </div>
-                <p class="leading-6 font-light font-medium text-xs lg:text-sm text-gray-600 lg:mr-3">
+                <p class="leading-6 font-light font-medium text-xs lg:text-sm text-gray-900 lg:mr-3">
                   Prix forfaitaire
                 </p>
               </div>

@@ -1,6 +1,6 @@
 <template>
-  <footer class="bg-white">
-    <div class="w-full pt-12 lg:pt-16 pb-4 lg:py-8 px-4 sm:px-6 lg:px-8 overflow-hidden border-t border-gray-200">
+  <footer class="bg-yellow-200">
+    <div class="w-full pt-12 lg:pt-16 pb-4 lg:py-8 px-4 sm:px-6 lg:px-8 overflow-hidden">
       <div class="max-w-screen-xl mx-auto md:grid md:grid-cols-3 md:gap-8">
         <div class="flex flex-col items-center">
           <nuxt-link to="/">
@@ -9,39 +9,13 @@
 
           <ul class="flex flex-col items-center mt-6">
             <li v-for="item in menuItems" :key="item.name" class="mt-2">
-              <nuxt-link :to="{ path: item.path, hash: item.hash }" class="text-base leading-6 text-gray-900">
+              <nuxt-link :to="{ path: item.path, hash: item.hash }" class="text-base leading-6 text-gray-900 hover:text-orange-300">
                 {{ item.name }}
               </nuxt-link>
             </li>
 
-            <!-- <li>
-              <a href="#" class="text-base leading-6 text-gray-900">
-                Who is Pam Pam?
-              </a>
-            </li>
             <li class="mt-2">
-              <a href="#" class="text-base leading-6 text-gray-900">
-                La Boutique
-              </a>
-            </li>
-            <li class="mt-2">
-              <a href="#" class="text-base leading-6 text-gray-900">
-                L'Atelier
-              </a>
-            </li>
-            <li class="mt-2">
-              <a href="#" class="text-base leading-6 text-gray-900">
-                Côté Pro
-              </a>
-            </li>
-            <li class="mt-2">
-              <a href="#" class="text-base leading-6 text-gray-900">
-                Journal
-              </a>
-            </li> -->
-
-            <li class="mt-2">
-              <nuxt-link :to="{ name: 'articles-article', params: { article: 58 } }" class="text-base leading-6 text-gray-900">
+              <nuxt-link :to="{ name: 'articles-article', params: { article: 58 } }" class="text-base leading-6 text-gray-900 hover:text-orange-300">
                 Mentions Légales
               </nuxt-link>
             </li>
@@ -53,7 +27,7 @@
             Mon Atelier &amp; Boutique
           </p>
           <div class="flex justify-center items-center mt-6 md:mt-10">
-            <a href="https://goo.gl/maps/UrL4bsbV2YLLCYpe6" class="px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-gray-400 hover:bg-gray-300 focus:outline-none focus:bg-gray-300 transition duration-150 ease-in-out" target="_blank">
+            <a href="https://goo.gl/maps/UrL4bsbV2YLLCYpe6" class="px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-gray-100 bg-orange-500 hover:bg-orange-300 focus:outline-none focus:bg-gray-300 transition duration-150 ease-in-out" target="_blank">
               Itinéraire
             </a>
           </div>
@@ -68,7 +42,7 @@
             Tél: 06 46 17 34 02
           </p>
           <div class="flex justify-center items-center mt-6 md:mt-10">
-            <a href="mailto:atelierpampam@gmail.com" class="px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-gray-400 hover:bg-gray-300 focus:outline-none focus:bg-gray-300 transition duration-150 ease-in-out">
+            <a href="mailto:atelierpampam@gmail.com" class="px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-gray-100 bg-orange-500 hover:bg-orange-300 focus:outline-none focus:bg-gray-300 transition duration-150 ease-in-out">
               Contact e-mail
             </a>
           </div>
@@ -76,26 +50,26 @@
             <div class="flex justify-center items-center mr-4 md:mr-6 lg:mr-4">
               <a href="https://www.instagram.com/atelierpampam" class="w-10 h-10 sm:w-10 sm:h-10 md:w-8 md:h-8 lg:w-10 lg:h-10" target="_blank">
                 <span class="sr-only">Instagram</span>
-                <span class="text-gray-700" v-html="require('~/assets/img/illustrations/social-instagram.svg?include')"></span>
+                <span class="text-orange-700 hover:text-orange-500" v-html="require('~/assets/img/illustrations/social-instagram.svg?include')"></span>
               </a>
             </div>
             <div class="flex justify-center items-center mr-4 md:mr-6 lg:mr-4">
               <a href="https://www.instagram.com/atelierpampam" class="w-10 h-10 sm:w-10 sm:h-10 md:w-8 md:h-8 lg:w-10 lg:h-10" target="_blank">
                 <span class="sr-only">Facebook</span>
-                <span class="text-gray-700" v-html="require('~/assets/img/illustrations/social-facebook.svg?include')"></span>
+                <span class="text-orange-700 hover:text-orange-500" v-html="require('~/assets/img/illustrations/social-facebook.svg?include')"></span>
               </a>
             </div>
             <div class="flex justify-center items-center">
               <a href="https://www.instagram.com/atelierpampam" class="w-10 h-10 sm:w-10 sm:h-10 md:w-8 md:h-8 lg:w-10 lg:h-10" target="_blank">
                 <span class="sr-only">Pinterest</span>
-                <span class="text-gray-700" v-html="require('~/assets/img/illustrations/social-pinterest.svg?include')"></span>
+                <span class="text-orange-700 hover:text-orange-500" v-html="require('~/assets/img/illustrations/social-pinterest.svg?include')"></span>
               </a>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="mt-12 pt-6 border-t border-gray-200">
+      <div class="mt-12 pt-6 border-t border-orange-700">
         <p class="text-center font-light text-base leading-6">
           &copy; 2020 Atelier Pam Pam
         </p>
