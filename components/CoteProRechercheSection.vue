@@ -1,7 +1,7 @@
 <template>
   <div class="lg:pb-16 overflow-hidden">
     <div class="relative max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-screen-xl">
-      <div class="relative lg:mt-12 sm:mt-16 lg:mt-24">
+      <div class="relative sm:mt-16 lg:mt-24">
         <div class="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-8 lg:items-center">
           <div class="mt-10 -mx-4 relative lg:mt-0 lg:col-start-2 z-10">
             <img class="relative mx-auto lg:rounded-sm h-64 lg:h-96 w-full object-cover lg:w-10/12 lazyload" src="~/assets/img/cote-pro/photo-epicerie.jpg" alt="Photo du service de recherche d'objets" />
