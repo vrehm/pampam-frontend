@@ -16,7 +16,7 @@
         <div class="flex-shrink-0 group block">
           <div class="flex items-center">
             <div>
-              <img class="inline-block h-8 w-8 rounded-full border border-orange-500" :src="article.author.avatar.formats.small.url" :alt="article.author.avatar.alternativeText" />
+              <img class="inline-block h-8 w-8 rounded-full border border-orange-500" :src="processAvatar(article.author)" :alt="article.author.avatar.alternativeText" />
             </div>
             <div class="ml-3">
               <p class="text-sm leading-5 font-medium text-gray-700 group-hover:text-gray-900 ">
@@ -39,7 +39,7 @@
       <article-show-hero-section-share-box :article="article" />
     </div>
     <div>
-      <img class="py-8 object-cover w-full h-auto lazyload rounded-sm" :src="assetsBaseUrl + article.image.url" :alt="article.title" />
+      <img class="py-8 object-cover w-full h-auto lazyload rounded-sm" :src="processImage(article.image)" :alt="article.title" />
     </div>
   </div>
 </template>
@@ -59,6 +59,28 @@ export default {
   data() {
     return {
       assetsBaseUrl: process.env.assetsBaseUrl
+    }
+  },
+  methods: {
+    processAvatar(author) {
+      const thumbnail = author.avatar.formats.thumbnail.url
+      if (thumbnail) {
+        return this.assetsBaseUrl + thumbnail
+      } else {
+        return this.assetsBaseUrl + author.avatar.url
+      }
+    },
+    processImage(image) {
+      const breakpoints = ['large', 'medium', 'small']
+
+      for (let index = 0; index < breakpoints.length; index++) {
+        const breakpoint = breakpoints[index]
+        const test = image.formats[breakpoint]
+
+        if (test) return this.assetsBaseUrl + test.url
+      }
+
+      return this.assetsBaseUrl + image.url
     }
   }
 }
