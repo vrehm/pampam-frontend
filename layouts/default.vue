@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-full h-full flex-1 font-blur">
+  <div class="max-w-full h-full flex-1">
     <the-nav-bar :use-absolute-version="isAbsolute" />
     <nuxt id="content" keep-alive />
     <the-footer />
@@ -28,7 +28,7 @@ html {
 }
 
 body {
-  @apply h-full;
+  @apply h-full font-blur bg-yellow-100;
 }
 
 #__nuxt {

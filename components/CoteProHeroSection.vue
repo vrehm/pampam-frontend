@@ -1,10 +1,10 @@
 <template>
   <!-- Header version hero section -->
-  <div class="relative lg:mb-24">
+  <div class="relative bg-white">
     <div class="h-56 sm:h-72 lg:absolute lg:left-0 lg:h-full lg:w-1/2">
       <img class="w-full h-full object-cover lazyload" src="~/assets/img/cote-pro/dessin-pro.jpg" alt="Support team" />
     </div>
-    <div class="relative max-w-screen-xl mx-auto px-4 py-8 sm:py-12 sm:px-6 lg:py-16">
+    <div class="relative max-w-screen-xl mx-auto px-4 pt-8 pb-8 sm:pt-12 sm:pb-12 md:pt-12 md:pb-4 lg:pt-16 lg:pb-16 sm:px-6">
       <div class="max-w-2xl mx-auto lg:max-w-none lg:mr-0 lg:ml-auto lg:w-1/2 lg:pl-10">
         <!-- label  -->
         <!-- <div>

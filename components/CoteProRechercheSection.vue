@@ -1,5 +1,5 @@
 <template>
-  <div class="lg:pb-16 overflow-hidden">
+  <div class="lg:pb-16 overflow-hidden bg-white">
     <div class="relative max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-screen-xl">
       <div class="relative sm:mt-16 lg:mt-24">
         <div class="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-8 lg:items-center">

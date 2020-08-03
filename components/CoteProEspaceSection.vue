@@ -1,7 +1,7 @@
 <template>
-  <div class="lg:pb-16  overflow-hidden">
+  <div class="lg:pb-16 overflow-hidden bg-white">
     <div class="relative max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-screen-xl">
-      <div class="relative lg:mt-12 sm:mt-16 lg:mt-24">
+      <div class="relative sm:mt-16 lg:mt-24">
         <div class="flex flex-col-reverse lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-8 lg:items-center">
           <div class="col-start-1 lg:col-start-2">
             <div class=" px-6 py-8 lg:flex-shrink-1 lg:p-12">
