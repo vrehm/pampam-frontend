@@ -38,8 +38,11 @@
       </div>
       <article-show-hero-section-share-box :article="article" />
     </div>
-    <div>
-      <img class="py-8 object-cover w-full h-auto lazyload rounded-sm" :src="processImage(article.image)" :alt="article.title" />
+    <div id="article-cover-image">
+      <!-- For mobile -->
+      <img class="block sm:hidden py-8 object-cover w-full h-auto lazyload rounded-sm" :src="article.image.formats.small.url" :alt="article.title" />
+      <!-- For desktop -->
+      <img class="hidden sm:block py-8 object-cover w-full h-auto lazyload rounded-sm" :src="processImage(article.image)" :alt="article.title" />
     </div>
   </div>
 </template>
