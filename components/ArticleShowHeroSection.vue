@@ -72,12 +72,15 @@ export default {
     },
     processImage(image) {
       const breakpoints = ['large', 'medium', 'small']
+      const size = image.size
 
       for (let index = 0; index < breakpoints.length; index++) {
         const breakpoint = breakpoints[index]
         const test = image.formats[breakpoint]
 
-        if (test) return this.assetsBaseUrl + test.url
+        if (test) {
+          if (test.size >= size) return this.assetsBaseUrl + test.url
+        }
       }
 
       return this.assetsBaseUrl + image.url
