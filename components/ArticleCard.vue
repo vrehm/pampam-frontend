@@ -1,9 +1,9 @@
 <template>
-  <nuxt-link :to="{ name: 'articles-article', params: { article: article.id } }" tag="article">
+  <nuxt-link :to="{ name: 'articles-article', params: { article: article.slug } }" tag="article">
     <div class="pb-16 sm:px-6 md:px-24 md:max-w-screen-xl w-full bg-yellow-100">
       <div class="flex flex-col md:flex-row items-start justify-center">
-        <div class="md:mr-6 md:rounded-sm h-48 w-full object-cover md:w-9/12 md:max-w-xs overflow-hidden">
-          <img class=" md:rounded-sm object-cover w-full h-auto lazyload" :src="assetsBaseUrl + article.image.url" :alt="article.title" />
+        <div class="md:mr-6 md:rounded-sm md:w-9/12 md:max-w-xs">
+          <img class="md:rounded-sm h-64 w-full object-cover object-center lazyload" :src="processImage(article.image)" :alt="article.title" />
         </div>
         <div class="px-6 sm:py-0 py-8 flex-1">
           <div class="flex justify-between">
@@ -27,7 +27,7 @@
               ></time>
             </p>
           </div>
-          <nuxt-link :to="{ name: 'articles-article', params: { article: article.id } }">
+          <nuxt-link :to="{ name: 'articles-article', params: { article: article.slug } }">
             <h3 class="mt-2 text-xl leading-7 font-semibold text-gray-900">
               {{ article.title }}
             </h3>
@@ -37,7 +37,7 @@
             <div v-html="$md.render(shorten(article.content, 180))"></div>
           </div>
           <div class="mt-3">
-            <nuxt-link :to="{ name: 'articles-article', params: { article: article.id } }">
+            <nuxt-link :to="{ name: 'articles-article', params: { article: article.slug } }">
               <p class="text-base leading-6 font-semibold text-orange-400 hover:text-yellow-500 transition ease-in-out duration-150">
                 Lire l'article
               </p>
@@ -72,6 +72,18 @@ export default {
     shorten(str, maxLen, separator = ' ') {
       if (str.length <= maxLen) return str
       return str.substr(0, str.lastIndexOf(separator, maxLen))
+    },
+    processImage(image) {
+      const breakpoints = ['small', 'medium', 'large']
+
+      for (let index = 0; index < breakpoints.length; index++) {
+        const breakpoint = breakpoints[index]
+        const test = image.formats[breakpoint]
+
+        if (test) return this.assetsBaseUrl + test.url
+      }
+
+      return this.assetsBaseUrl + image.url
     }
   }
 }

@@ -1,7 +1,7 @@
 <template>
   <section class="bg-orange-400">
     <div class="max-w-lg md:max-w-screen-xl mx-auto sm:pb-6 px-8 sm:px-6 md:px-12 xl:px-8">
-      <VueSlickCarousel v-bind="settings">
+      <VueSlickCarousel v-bind="settings" @init="initHandler">
         <testimonial-card v-for="customer in customers" :key="customer.id" class="focus:outline-none py-20" :name="customer.name" :testimony="customer.testimony" :testimony2="customer.testimony2" :customer-img="customer.customerImg" />
         <template #prevArrow="arrowOption">
           <div class="custom-prev-arrow">{{ arrowOption.currentSlide }}/{{ arrowOption.slideCount }}</div>
@@ -39,16 +39,18 @@ export default {
       swipeToSlide: true,
       autoplay: true,
       focusOnSelect: true,
-      responsive: [
-        {
-          breakpoint: 740,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        }
-      ]
+      responsive: []
     },
+    responsiveSettings: [
+      {
+        breakpoint: 740,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ],
+    areResonsiveSettingsApplied: false,
     customers: [
       {
         name: 'Lilubelle Jh',
@@ -87,7 +89,18 @@ export default {
         customerImg: require('~/assets/img/avatars/avatar-leonid256x256.jpg')
       }
     ]
-  })
+  }),
+  methods: {
+    initHandler() {
+      if (this.areResonsiveSettingsApplied === false) {
+        this.applyResponsiveSettings()
+      }
+    },
+    applyResponsiveSettings() {
+      this.settings.responsive = this.responsiveSettings
+      this.areResonsiveSettingsApplied = true
+    }
+  }
 }
 </script>
 
