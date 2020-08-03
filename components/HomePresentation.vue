@@ -16,7 +16,7 @@
 
         <div class="flex justify-center items-center mt-6">
           <nuxt-link :to="{ name: 'articles-article', params: { article: 'l\'atelier-pam-pam-c\'est-qui-c\'est-quoi' } }">
-            <button class="px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md shadow text-gray-100 bg-orange-500 hover:bg-orange-300 focus:outline-none focus:bg-indigo-400 transition duration-150 ease-in-out">
+            <button class="px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md shadow text-gray-100 bg-orange-500 hover:bg-orange-300 focus:outline-none focus:bg-orange-300 transition duration-150 ease-in-out">
               Lire l'article
             </button>
           </nuxt-link>
