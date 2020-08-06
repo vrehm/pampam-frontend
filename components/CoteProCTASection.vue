@@ -18,13 +18,13 @@
       </div>
 
       <div class="mt-8 flex lg:flex-shrink-0 lg:mt-0 justify-center">
-        <div class="inline-flex rounded-md shadow">
-          <a href="https://calendly.com/atelierpampam/15min" target="_blank" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-xs lg:text-base leading-6 font-medium rounded-md text-gray-100 bg-orange-500 hover:bg-orange-300 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
+        <div class="inline-flex rounded-sm shadow">
+          <a href="https://calendly.com/atelierpampam/15min" target="_blank" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-xs lg:text-base leading-6 font-medium rounded-sm text-gray-100 bg-orange-500 hover:bg-orange-300 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
             Prendre un RDV tél.
           </a>
         </div>
-        <div class="ml-3 inline-flex rounded-md shadow">
-          <a href="https://forms.gle/W3jzG18AFh32NYef9" target="_blank" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-xs lg:text-base leading-6 font-medium rounded-md text-orange-400 bg-white hover:text-orange-200 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
+        <div class="ml-3 inline-flex rounded-sm shadow">
+          <a href="https://forms.gle/W3jzG18AFh32NYef9" target="_blank" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-xs lg:text-base leading-6 font-medium rounded-sm text-orange-400 bg-white hover:text-orange-200 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
             Demander un devis
           </a>
         </div>

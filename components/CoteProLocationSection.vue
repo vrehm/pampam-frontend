@@ -14,7 +14,7 @@
           </div>
 
           <div class="mt-10 -mx-4 relative lg:mt-0 lg:col-start-1">
-            <img class="relative mx-auto lg:rounded-sm h-64 lg:h-96 w-full object-cover lg:w-10/12 lazyload" src="~/assets/img/cote-pro/photo-location.jpg" alt="Photo du service pro de location de l'atelier Pampam" />
+            <img class="relative mx-auto h-64 lg:h-96 w-full object-cover lg:w-10/12 lazyload" src="~/assets/img/cote-pro/photo-location.jpg" alt="Photo du service pro de location de l'atelier Pampam" />
 
             <div class="absolute flex inset-0 items-center justify-center flex-col mx-auto w-full lg:w-10/12 hvr-grow">
               <svg class="h-16 lg:h-28" width="60" height="57" viewBox="0 0 60 57" fill="none" xmlns="http://www.w3.org/2000/svg">
