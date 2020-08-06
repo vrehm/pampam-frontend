@@ -22,12 +22,12 @@
 
           <div class="mx-auto w-11/12 sm:w-9/12 md:w-11/12">
             <VueSlickCarousel v-bind="settings">
-              <img class="w-full max-h-custom-showroom object-cover rounded-md lazyload" data-src="~/assets/img/home/showroom-1-700x933.jpg" alt="Photo showroom 1" />
-              <img class="w-full max-h-custom-showroom object-cover rounded-md lazyload" data-src="~/assets/img/home/showroom-2-700x855.jpg" alt="Photo showroom 2" />
-              <img class="w-full max-h-custom-showroom object-cover rounded-md lazyload" data-src="~/assets/img/home/showroom-3-700x875.jpg" alt="Photo showroom 3" />
-              <img class="w-full max-h-custom-showroom object-cover rounded-md lazyload" data-src="~/assets/img/home/showroom-4-700x875.jpg" alt="Photo showroom 4" />
-              <img class="w-full max-h-custom-showroom object-cover rounded-md lazyload" data-src="~/assets/img/home/showroom-5-700x958.jpg" alt="Photo showroom 5" />
-              <img class="w-full max-h-custom-showroom object-cover rounded-md lazyload" data-src="~/assets/img/home/showroom-6-700x928.jpg" alt="Photo showroom 6" />
+              <img class="w-full max-h-custom-showroom object-cover lazyload" data-src="~/assets/img/home/showroom-1-700x933.jpg" alt="Photo showroom 1" />
+              <img class="w-full max-h-custom-showroom object-cover lazyload" data-src="~/assets/img/home/showroom-2-700x855.jpg" alt="Photo showroom 2" />
+              <img class="w-full max-h-custom-showroom object-cover lazyload" data-src="~/assets/img/home/showroom-3-700x875.jpg" alt="Photo showroom 3" />
+              <img class="w-full max-h-custom-showroom object-cover lazyload" data-src="~/assets/img/home/showroom-4-700x875.jpg" alt="Photo showroom 4" />
+              <img class="w-full max-h-custom-showroom object-cover lazyload" data-src="~/assets/img/home/showroom-5-700x958.jpg" alt="Photo showroom 5" />
+              <img class="w-full max-h-custom-showroom object-cover lazyload" data-src="~/assets/img/home/showroom-6-700x928.jpg" alt="Photo showroom 6" />
             </VueSlickCarousel>
           </div>
         </div>

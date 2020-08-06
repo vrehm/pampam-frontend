@@ -7,7 +7,7 @@
         </h2>
 
         <div class="w-11/12 sm:w-8/12 md:w-10/12 lg:w-9/12 xl:w-8/12 mx-auto mt-16">
-          <img class="rounded-md lazyload" data-src="~/assets/img/home/portrait-700x804.jpg" alt="portrait" />
+          <img class="lazyload" data-src="~/assets/img/home/portrait-700x804.jpg" alt="portrait" />
         </div>
 
         <div class="w-11/12 md:w-10/12 lg:w-9/12 xl:w-8/12 mx-auto mt-10">
@@ -16,7 +16,7 @@
 
         <div class="flex justify-center items-center mt-6">
           <nuxt-link :to="{ name: 'articles-article', params: { article: 'l\'atelier-pam-pam-c\'est-qui-c\'est-quoi' } }">
-            <button class="px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md shadow text-gray-100 bg-orange-500 hover:bg-orange-300 focus:outline-none focus:bg-orange-300 transition duration-150 ease-in-out">
+            <button class="px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-sm shadow text-gray-100 bg-orange-500 hover:bg-orange-300 focus:outline-none focus:bg-orange-300 transition duration-150 ease-in-out">
               Lire l'article
             </button>
           </nuxt-link>
