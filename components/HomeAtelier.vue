@@ -9,7 +9,7 @@
         </div>
       </div>
 
-      <p class="mt-10 text-base sm:text-lg text-center sm:text-left italic leading-6 text-gray-900">
+      <p class="mt-10 text-base sm:text-lg text-center sm:text-left font-light leading-6 text-gray-900">
         J’aime mélanger restauration et création. Ainsi vous trouverez à l’atelier un mélange de brocante <br class="hidden lg:inline" />
         et de créations originales essentiellement faites à partir d’éléments chinés. Ma spécialité: les luminaires !
       </p>
@@ -29,10 +29,10 @@
           </div>
 
           <div class="mt-6 w-11/12 mx-auto sm:w-full">
-            <p class="mt-2 text-base text-justify leading-6 text-gray-900">
+            <p class="mt-2 text-base text-justify leading-6 text-gray-900 font-light">
               Réanimer un objet, créer une atmosphère, habiller un espace, c’est vraiment tout ce que j’aime !
             </p>
-            <p class="mt-2 text-base text-justify leading-6 text-gray-900">
+            <p class="mt-2 text-base text-justify leading-6 text-gray-900 font-light">
               Retrouvez mes créations assignées de la mention “Made by Atelier Pam Pam” sur ma boutique Instagram et à l’atelier ! Je réalise également des pièces sur mesure pour mes clients, en m’adaptant à leur envies et à leurs besoins. Prenez contact avec moi pour un devis !
             </p>
           </div>
@@ -93,10 +93,10 @@
           </div>
 
           <div class="mt-6 w-11/12 mx-auto sm:w-full">
-            <p class="mt-2 text-base text-justify leading-6 text-gray-900">
+            <p class="mt-2 text-base text-justify leading-6 text-gray-900 font-light">
               Mon premier amour ! Ayant débuté comme tapissière, je suis passionnée par cette matière, au travers du toucher, des couleurs, des motifs, j’adore l’incorporer un peu partout et imaginer de nouveaux prototypes d’objets en utilisant notamment des linges et étoffes anciennes.
             </p>
-            <p class="mt-2 text-base text-justify leading-6 text-gray-900">
+            <p class="mt-2 text-base text-justify leading-6 text-gray-900 font-light">
               Coussins, poufs, suspensions végétales ou encore toiles murales. Je travaille en séries limitées ou pièces uniques, retrouvez mes créations assignées de la mention “Made by Atelier Pam Pam” sur ma boutique Instagram et à l’atelier !
             </p>
           </div>

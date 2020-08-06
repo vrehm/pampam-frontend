@@ -41,19 +41,19 @@
 
             <div class="flex flex-col mt-8 md:mt-12">
               <div>
-                <h3 class="text-center text-xl sm:text-2xl font-extrabold leading-8 sm:leading-9 tracking-tight text-gray-900">
+                <h3 class="text-center text-xl sm:text-2xl font-extrabold leading-8 sm:leading-9 tracking-tight text-yellow-500">
                   Adresse
                 </h3>
-                <p class="mt-2 text-center text-base leading-6 text-gray-900">
+                <p class="mt-2 text-center text-base leading-6 text-gray-900 font-light">
                   18 bis Avenue Henri Barbusse<br />
                   69250 Albigny-sur -Saône
                 </p>
               </div>
               <div class="mt-6">
-                <h3 class="text-center text-xl sm:text-2xl font-extrabold leading-8 sm:leading-9 tracking-tight text-gray-900">
+                <h3 class="text-center text-xl sm:text-2xl font-extrabold leading-8 sm:leading-9 tracking-tight text-yellow-500">
                   Horaires
                 </h3>
-                <p class="mt-2 text-center text-base leading-6 text-gray-900">
+                <p class="mt-2 text-center text-base leading-6 text-gray-900 font-light">
                   Ouvert du Mardi au Samedi<br class="sm:hidden" />
                   sur rendez-vous !
                 </p>
