@@ -74,6 +74,13 @@ module.exports = {
                 '550': '550px',
             }
         }
+        // typography: (theme) => ({
+        //     default: {
+        //         css: {
+        //             fontFamily: theme('fontFamily.light'),
+        //         }
+        //     }
+        // })
     },
     variants: {
         outline: ["focus"]

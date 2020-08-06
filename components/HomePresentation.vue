@@ -11,7 +11,7 @@
         </div>
 
         <div class="w-11/12 md:w-10/12 lg:w-9/12 xl:w-8/12 mx-auto mt-10">
-          <div class="mt-2 text-base text-justify leading-6 text-gray-900 prose" v-html="$md.render(presentation)"></div>
+          <div class="mt-2 text-base text-justify leading-6 text-gray-900 prose font-light" v-html="$md.render(presentation)"></div>
         </div>
 
         <div class="flex justify-center items-center mt-6">
@@ -45,11 +45,11 @@
         </div>
 
         <div class="w-11/12 md:w-10/12 mx-auto mt-16">
-          <p class="mt-2 text-base text-justify leading-6 text-gray-900">
+          <p class="mt-2 text-base text-justify leading-6 text-gray-900 font-light">
             À l’Atelier Pam Pam, je fais la quête du beau et de la poésie au quotidien.<br />
             Choisir de s’entourer de choses qui ont du sens et qui vous procure une émotion particulière, c’est ce que j’encourage.
           </p>
-          <p class="mt-2 text-base text-justify leading-6 text-gray-900">
+          <p class="mt-2 text-base text-justify leading-6 text-gray-900 font-light">
             C’est pourquoi j’aime diffuser au delà des meubles, un art de vivre, où poésie, singularité et conscience sont les maîtres mots.
           </p>
         </div>
@@ -64,12 +64,10 @@
               </div>
             </div>
             <div class="ml-4">
-              <h3 class="text-lg leading-6 font-medium text-orange-500">
+              <!-- <h3 class="text-lg leading-6 font-medium text-orange-500">
                 Poésie
-              </h3>
-              <p class="mt-2 font-light text-base italic leading-6 text-gray-800">
-                C'est comme un peu de magie, on en a tous besoin autour de nous
-              </p>
+              </h3> -->
+              <p class="mt-2 font-light text-base leading-6 text-gray-800"><span class="leading-6 font-bold text-orange-500">Poésie.</span> C'est comme un peu de magie, on en a tous besoin autour de nous.</p>
             </div>
           </div>
 
@@ -82,12 +80,10 @@
               </div>
             </div>
             <div class="ml-4">
-              <h3 class="text-lg leading-6 font-medium text-orange-500">
+              <!-- <h3 class="text-lg leading-6 font-medium text-orange-500">
                 Singularité
-              </h3>
-              <p class="mt-2 font-light text-base italic leading-6 text-gray-800">
-                Parce que chaque lieu et chaque personne est un univers
-              </p>
+              </h3> -->
+              <p class="mt-2 font-light text-base leading-6 text-gray-800"><span class="leading-6 font-bold text-orange-500">Singularité.</span> Parce que chaque lieu et chaque personne est un univers.</p>
             </div>
           </div>
 
@@ -100,12 +96,10 @@
               </div>
             </div>
             <div class="ml-4">
-              <h3 class="text-lg leading-6 font-medium text-orange-500">
+              <!-- <h3 class="text-lg leading-6 font-medium text-orange-500">
                 Conscience
-              </h3>
-              <p class="mt-2 font-light text-base italic leading-6 text-gray-800">
-                Réutiliser ce qui existe déjà et préserver notre patrimoine
-              </p>
+              </h3> -->
+              <p class="mt-2 font-light text-base leading-6 text-gray-800"><span class="leading-6 font-bold text-orange-500">Conscience.</span> Réutiliser ce qui existe déjà et préserver notre patrimoine.</p>
             </div>
           </div>
         </div>
