@@ -16,7 +16,7 @@
 
         <div class="flex justify-center items-center mt-6">
           <nuxt-link :to="{ name: 'articles-article', params: { article: 'l\'atelier-pam-pam-c\'est-qui-c\'est-quoi' } }">
-            <button class="px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-sm shadow text-gray-100 bg-orange-500 hover:bg-orange-300 focus:outline-none focus:bg-orange-300 transition duration-150 ease-in-out">
+            <button class="text-base leading-6 underline font-semibold text-orange-600 hover:text-orange-500 transition ease-in-out duration-150">
               Lire l'article
             </button>
           </nuxt-link>
@@ -24,8 +24,8 @@
       </div>
 
       <div class="relative w-full md:w-6/12 md:pl-4 overflow-hidden">
-        <div class="hidden md:block absolute left-0">
-          <div class="flex flex-col">
+        <!-- <div class="hidden md:block absolute left-0">
+          <div class="flex flex-col justify-center">
             <div class="w-2">
               <span class="text-gray-900" v-html="require('~/assets/img/illustrations/presentation-border.svg?include')"></span>
             </div>
@@ -36,7 +36,7 @@
               <span class="text-gray-900" v-html="require('~/assets/img/illustrations/presentation-border.svg?include')"></span>
             </div>
           </div>
-        </div>
+        </div> -->
 
         <div class="mt-28 md:mt-0">
           <h2 class="text-center font-headings text-4xl lg:text-5xl leading-8 sm:leading-9 tracking-tight text-yellow-500">
