@@ -1,8 +1,8 @@
 <template>
   <section class="bg-yellow-100">
     <div class="relative">
-      <div class="absolute right-0 w-5/12 sm:w-4/12 lg:w-3/12 transform -translate-x-1 sm:-translate-x-2 md:-translate-x-6 xl:-translate-x-10 -translate-y-2 md:-translate-y-12 lg:-translate-y-6 xl:-translate-y-16">
-        <span class="text-gray-900" v-html="require('~/assets/img/illustrations/newsletter-transition-top.svg?include')"></span>
+      <div class="absolute right-0 w-5/12 sm:w-4/12 lg:w-2/12 transform -translate-x-1 sm:-translate-x-2 md:-translate-x-10 xl:-translate-x-10 -translate-y-2 md:-translate-y-12 lg:translate-y-10 xl:translate-y-10">
+        <span class="text-orange-600" v-html="require('~/assets/img/illustrations/newsletter-transition-top.svg?include')"></span>
       </div>
     </div>
     <div class="px-4 sm:px-6 md:px-0 lg:px-12 pt-20 md:pt-6 lg:pt-32 pb-12 md:pb-0 lg:pb-16 max-w-full md:max-w-2xl lg:max-w-4xl mx-auto">
@@ -11,7 +11,7 @@
           <h2 class="mt-0 md:mt-4 text-2xl leading-8 font-extrabold tracking-tight text-gray-100 sm:text-4xl sm:leading-9">
             La lettre !
           </h2>
-          <p class="mt-3 md:mt-10 md:max-w-lg lg:max-w-xl md:text-base lg:text-lg leading-6 text-gray-100">
+          <p class="mt-3 md:mt-10 md:max-w-lg lg:max-w-xl md:text-base lg:text-lg leading-6 text-gray-100 font-light">
             Tous les mois, recevez un billet inspirant, mes nouvelles trouvailles et des avants-premières directement dans votre boîte mail !
           </p>
         </div>
@@ -35,9 +35,9 @@
             </div>
           </form>
 
-          <p class="mt-3 text-sm leading-5 text-gray-100">
+          <p class="mt-3 text-sm leading-5 text-gray-100 font-thin">
             Nous nous soucions de la protection de vos données. Lisez notre
-            <a href="#" class="text-orange-200 font-medium underline">
+            <a href="#" class="text-orange-200 font-medium underline font-thin">
               Politique de confidentialité.
             </a>
           </p>
