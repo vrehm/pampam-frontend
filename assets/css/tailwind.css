@@ -22,6 +22,14 @@
 }
 
 @font-face {
+    font-family: 'AustralSlabBlur-Thin';
+    src: url('../fonts/austral-slab-blur-thin.woff2') format('woff2'),
+         url('../fonts/austral-slab-blur-thin.woff') format('woff');
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
     font-family: 'Monthoers';
     src: url('../fonts/monthoers.woff2') format('woff2'),
          url('../fonts/monthoers.woff') format('woff');

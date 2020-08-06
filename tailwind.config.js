@@ -32,6 +32,8 @@ module.exports = {
                 sans: ['Inter', ...defaultTheme.fontFamily.sans],
                 blur: ['AustralSlabBlur-Regular', ...defaultTheme.fontFamily.sans],
                 light: ['AustralSlabBlur-Light', ...defaultTheme.fontFamily.sans],
+                thin: ['AustralSlabBlur-Thin', ...defaultTheme.fontFamily.sans],
+
                 headings: ['Monthoers', ...defaultTheme.fontFamily.sans]
             },
             colors: {
