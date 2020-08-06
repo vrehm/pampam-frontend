@@ -29,7 +29,7 @@
             <div class="mt-3 rounded-sm shadow sm:mt-0 sm:ml-3 sm:flex-shrink-0">
               <button id="mc-embedded-subscribe" type="submit" name="subscribe" class="w-full flex items-center justify-center px-5 py-2 border border-transparent bg-orange-500 hover:bg-orange-300 rounded-sm focus:outline-none transition duration-150 ease-in-out">
                 <div class="w-28">
-                  <span class="text-gray-900" v-html="require('~/assets/img/illustrations/newsletter-button.svg?include')"></span>
+                  <span class="text-gray-100" v-html="require('~/assets/img/illustrations/newsletter-button.svg?include')"></span>
                 </div>
               </button>
             </div>

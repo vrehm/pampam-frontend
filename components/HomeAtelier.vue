@@ -105,8 +105,8 @@
 
       <!-- Transition -->
       <div class="relative mt-4">
-        <div class="absolute right-0 w-10/12 md:w-6/12 lg:w-5/12 transform -translate-x-6 md:-translate-x-2 lg:-translate-x-20 xl:-translate-x-24 translate-y-4 md:translate-y-6 xl:-translate-y-10">
-          <span class="text-gray-900" v-html="require('~/assets/img/illustrations/atelier-transition.svg?include')"></span>
+        <div class="absolute right-0 w-10/12 md:w-6/12 lg:w-2/12 transform -translate-x-6 md:-translate-x-2 lg:-translate-x-20 xl:-translate-x-24 translate-y-4 md:translate-y-6 xl:-translate-y-10">
+          <span class="text-yellow-500" v-html="require('~/assets/img/illustrations/atelier-transition.svg?include')"></span>
         </div>
       </div>
     </div>

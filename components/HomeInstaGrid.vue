@@ -64,11 +64,16 @@
         </div>
       </div>
 
-      <div class="mt-12 grid grid-cols-1 gap-2 sm:grid-cols-2 md:mt-32 md:grid-cols-3 overflow-hidden">
+      <div class="mt-12 grid grid-cols-1 gap-2 sm:grid-cols-2 md:mt-32 md:grid-cols-3 overflow-hidden px-36">
         <a v-for="post in posts" :key="post.id" :href="post.permalink" target="_blank" class="col-span-1 bg-gray-50">
-          <figure class="picture">
+          <figure class="picture relative">
             <picture>
               <img class="max-h-custom-insta w-full object-cover lazyload" :data-src="post.media_url" :alt="post.username + ' le ' + post.timestamp + ' - ' + post.caption" />
+              <div class="absolute bottom-2 right-2">
+                <div class="w-6 z-100">
+                  <span class="text-gray-200" v-html="require('~/assets/icons/instagram.svg?include')"></span>
+                </div>
+              </div>
             </picture>
           </figure>
         </a>
@@ -77,8 +82,8 @@
 
     <!-- Transition -->
     <div class="relative mt-16 sm:mt-20 lg:mt-10">
-      <div class="absolute left-0 w-7/12 sm:w-6/12 md:w-5/12">
-        <span class="text-gray-900" v-html="require('~/assets/img/illustrations/boutique-transition.svg?include')"></span>
+      <div class="absolute left-0 w-7/12 sm:w-6/12 md:w-2/12">
+        <span class="text-yellow-500" v-html="require('~/assets/img/illustrations/boutique-transition.svg?include')"></span>
       </div>
     </div>
   </section>
@@ -154,7 +159,7 @@ export default {
 /* Max height for xl */
 @screen xl {
   .max-h-custom-insta {
-    max-height: 400px;
+    max-height: 300px;
   }
 }
 </style>
