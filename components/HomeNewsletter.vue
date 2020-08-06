@@ -19,15 +19,15 @@
         <!-- Begin Mailchimp Signup Form -->
         <div id="mc_embed_signup" class="mt-8 sm:w-full sm:max-w-md">
           <form id="mc-embedded-subscribe-form" action="https://atelierpampam.us3.list-manage.com/subscribe/post?u=44312ed5753831f4a0c075ce9&amp;id=fb83edb4f1" method="post" name="mc-embedded-subscribe-form" class="validate sm:flex" target="_blank" novalidate>
-            <input id="mce-EMAIL" aria-label="Email address" type="email" required class="appearance-none w-full px-5 py-2 border border-transparent text-base leading-6 rounded-md text-gray-900 bg-gray-100 placeholder-orange-200 focus:outline-none focus:placeholder-orange-100 transition duration-150 ease-in-out" name="EMAIL" placeholder="isaure@brocanteboheme.com" />
+            <input id="mce-EMAIL" aria-label="Email address" type="email" required class="appearance-none w-full px-5 py-2 border border-transparent text-base leading-6 rounded-sm text-gray-900 bg-gray-100 placeholder-orange-200 focus:outline-none focus:placeholder-orange-100 transition duration-150 ease-in-out" name="EMAIL" placeholder="isaure@brocanteboheme.com" />
 
             <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
             <div style="position: absolute; left: -5000px;" aria-hidden="true">
               <input type="text" name="b_44312ed5753831f4a0c075ce9_fb83edb4f1" tabindex="-1" value="" />
             </div>
 
-            <div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3 sm:flex-shrink-0">
-              <button id="mc-embedded-subscribe" type="submit" name="subscribe" class="w-full flex items-center justify-center px-5 py-2 border border-transparent bg-orange-500 hover:bg-orange-300 rounded-md focus:outline-none transition duration-150 ease-in-out">
+            <div class="mt-3 rounded-sm shadow sm:mt-0 sm:ml-3 sm:flex-shrink-0">
+              <button id="mc-embedded-subscribe" type="submit" name="subscribe" class="w-full flex items-center justify-center px-5 py-2 border border-transparent bg-orange-500 hover:bg-orange-300 rounded-sm focus:outline-none transition duration-150 ease-in-out">
                 <div class="w-28">
                   <span class="text-gray-900" v-html="require('~/assets/img/illustrations/newsletter-button.svg?include')"></span>
                 </div>
