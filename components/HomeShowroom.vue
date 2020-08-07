@@ -1,5 +1,5 @@
 <template>
-  <section class="pt-6 md:pt-0 pb-12 sm:pb-8 md:pb-24 lg:pb-32 bg-yellow-100">
+  <section class="pt-6 md:pt-0 pb-12 sm:pb-8 md:pb-24 lg:pb-32 bg-yellow-100 relative">
     <div class="max-w-screen-lg mt-10 md:mt-0 mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex flex-col md:flex-row md:justify-center mt-0">
         <!-- Left block -->
@@ -61,6 +61,10 @@
             </div>
           </div>
         </div>
+      </div>
+      <!-- Transition -->
+      <div class="absolute bottom-0 right-0 w-7/12 sm:w-6/12 md:w-3/12">
+        <span class="text-yellow-500" v-html="require('~/assets/img/illustrations/transition-end.svg?include')"></span>
       </div>
     </div>
   </section>

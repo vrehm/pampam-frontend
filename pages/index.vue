@@ -6,8 +6,8 @@
     <home-insta-grid id="la-boutique" :posts="posts.slice(0, 9)" />
     <home-atelier id="l-atelier" />
     <home-showroom />
-    <home-testimonials />
     <home-presse />
+    <home-testimonials />
   </div>
 </template>
 

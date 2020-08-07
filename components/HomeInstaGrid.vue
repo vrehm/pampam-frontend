@@ -82,7 +82,7 @@
 
     <!-- Transition -->
     <div class="relative mt-16 sm:mt-20 lg:mt-10">
-      <div class="absolute left-0 w-7/12 sm:w-6/12 md:w-2/12">
+      <div class="absolute left-0 w-7/12 sm:w-6/12 md:w-3/12">
         <span class="text-yellow-500" v-html="require('~/assets/img/illustrations/boutique-transition.svg?include')"></span>
       </div>
     </div>
