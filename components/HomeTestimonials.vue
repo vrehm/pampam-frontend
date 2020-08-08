@@ -1,6 +1,9 @@
 <template>
   <section class="">
     <div class="max-w-lg md:max-w-screen-xl mx-auto sm:pb-6 px-8 sm:px-6 md:px-12 xl:px-8">
+      <h3 class="text-left text-xl sm:text-2xl font-extrabold  tracking-tight text-yellow-500">
+        Paroles de clients
+      </h3>
       <VueSlickCarousel v-bind="settings" @init="initHandler">
         <testimonial-card v-for="customer in customers" :key="customer.id" class="focus:outline-none py-20 font-light" :name="customer.name" :testimony="customer.testimony" :testimony2="customer.testimony2" :customer-img="customer.customerImg" :product-img="customer.productImg" :product-name="customer.productName" />
         <template #prevArrow="arrowOption">

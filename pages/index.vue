@@ -6,8 +6,7 @@
     <home-insta-grid id="la-boutique" :posts="posts.slice(0, 9)" />
     <home-atelier id="l-atelier" />
     <home-showroom />
-    <home-presse />
-    <home-testimonials />
+    <home-press-and-testimonials />
   </div>
 </template>
 
@@ -18,8 +17,7 @@ import HomePresentation from '~/components/HomePresentation.vue'
 import HomeInstaGrid from '~/components/HomeInstaGrid.vue'
 import HomeAtelier from '~/components/HomeAtelier.vue'
 import HomeShowroom from '~/components/HomeShowroom.vue'
-import HomeTestimonials from '~/components/HomeTestimonials.vue'
-import HomePresse from '~/components/HomePresse.vue'
+import HomePressAndTestimonials from '~/components/HomePressAndTestimonials.vue'
 
 export default {
   components: {
@@ -29,8 +27,7 @@ export default {
     HomeInstaGrid,
     HomeAtelier,
     HomeShowroom,
-    HomeTestimonials,
-    HomePresse
+    HomePressAndTestimonials
   },
   async asyncData({ $axios }) {
     const {
