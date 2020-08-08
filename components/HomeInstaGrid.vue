@@ -44,7 +44,7 @@
               Prenez contact avec moi! Ici sur le chat, par mail ou dans la messagerie Instagram !
             </p>
             <button onclick="$crisp.push(['do', 'chat:open'])" class="px-5 py-2 focus:outline-none transition duration-150 ease-in-out flex items-center" @mouseover="hover = true" @mouseleave="hover = false">
-              <span :class="{ 'chat-icon-grow': hover }" class="mr-3 font-medium text-orange-600 text-orange-600" v-html="require('~/assets/img/illustrations/crisp-bouton.svg?include')"></span>
+              <span :class="{ 'chat-icon-grow': hover }" class="mr-3 font-medium text-orange-600" v-html="require('~/assets/img/illustrations/crisp-bouton.svg?include')"></span>
               <div class="text-base leading-6 font-light text-orange-600 hover:text-orange-500 transition ease-in-out duration-150">Causons maintenant</div>
             </button>
           </div>
@@ -64,7 +64,7 @@
         </div>
       </div>
 
-      <div class="mt-12 grid grid-cols-1 gap-2 sm:grid-cols-2 md:mt-32 md:grid-cols-3 overflow-hidden px-36">
+      <div class="mt-12 grid grid-cols-1 gap-2 sm:grid-cols-2 md:mt-32 md:grid-cols-3 overflow-hidden xl:px-36">
         <a v-for="post in posts" :key="post.id" :href="post.permalink" target="_blank" class="col-span-1 bg-gray-50">
           <figure class="picture relative">
             <picture>

@@ -10,18 +10,18 @@
         </div>
       </div>
 
-      <div class="flex flex-col items-center md:flex-row md:justify-center lg:pt-20">
-        <div class="flex justify-center w-3/5 md:w-1/4 lg:w-32">
+      <div class="flex items-center justify-center lg:pt-20 mt-8">
+        <div class="flex justify-center w-16 lg:w-32">
           <a href="https://www.tiffanyoliverphotographies.com/blog-photographe-mariage-lyon/mes-brocs-ont-du-talent-photographe-puces-du-canal-a-lyon-atelier-pampam" target="_blank">
             <img class="lazyload" data-src="~/assets/img/logos/tiffanyoliver-logo.png" alt="Tiffany Photographies" />
           </a>
         </div>
-        <div class="flex justify-center mt-14 md:mt-0 w-3/5 md:w-1/4 lg:w-24 md:mx-16">
+        <div class="flex justify-center  w-16 lg:w-24 mx-8 md:mx-16">
           <a href="https://www.mylittlelyon.com/deco/la-brocante-qui-joue-a-cache-cache" target="_blank">
             <img class="lazyload" data-src="~/assets/img/logos/logo-my-little-lyon.png" alt="My Little Lyon" />
           </a>
         </div>
-        <div class="flex justify-center p-2 mt-14 md:mt-0 w-3/5 md:w-1/4 lg:w-32">
+        <div class="flex justify-center  w-16 lg:w-32">
           <a href="https://nouvellesrepliques.wordpress.com/2017/02/28/loch-nessbroctheatre-au-theatre-des-voraces-lyon/" target="_blank">
             <img class="lazyload" data-src="~/assets/img/logos/nouvelles-repliques-logo.png" alt="Nouvelles Répliques" />
           </a>
