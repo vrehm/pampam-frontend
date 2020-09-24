@@ -1,9 +1,37 @@
 /* eslint-disable prettier/prettier */
 /* stylelint-disable */
 
+import axios from 'axios'
+const baseURL = process.env.BACKEND_URL
 require('dotenv').config()
 
 export default {
+    target: 'static',
+    generate: {
+        routes() {
+            const articles = axios.get(baseURL + '/articles').then((res) => {
+                return res.data.map((article) => {
+                    return {
+                        route: '/articles/' + article.slug,
+                        payload: article
+                    }
+                })
+            })
+
+            const categories = axios.get(baseURL + '/categories').then((res) => {
+                return res.data.map((category) => {
+                    return {
+                        route: '/categories/' + category.slug,
+                        payload: category
+                    }
+                })
+            })
+
+            return Promise.all([articles, categories]).then((values) => {
+                return [...values[0], ...values[1]]
+            })
+        }
+    },
     /*
      ** Router configuration
      */
