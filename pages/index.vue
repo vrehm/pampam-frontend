@@ -36,7 +36,7 @@ export default {
     const {
       defaults: { baseURL }
     } = $axios
-    const posts = await $axios.$get(baseURL + '/instagram-posts?_sort=id:ASC')
+    const posts = await $axios.$get(baseURL + '/instagram-posts?_sort=timestamp:DESC')
     return { posts }
   },
   head() {
