@@ -16,8 +16,8 @@
               </svg>
             </button>
           </div>
-          <nav class="hidden md:flex md:space-x-5 lg:space-x-10">
-            <nuxt-link v-for="item in menuItems" :key="item.name" :to="{ path: item.path, hash: item.hash }" class="md:text-sm lg:text-base leading-6 font-medium text-gray-100 hover:text-orange-300 focus:outline-none focus:text-orange-300 transition ease-in-out duration-150">
+          <nav class="hidden md:flex md:space-x-5 lg:space-x-10 fixed md:right-8 lg:right-12 xl:right-64 shadow-2xl bg-white bg-opacity-25 px-1 z-50">
+            <nuxt-link v-for="item in menuItems" :key="item.name" :to="{ path: item.path, hash: item.hash }" class="md:text-sm lg:text-base leading-6 font-medium text-gray-900 hover:text-orange-300 focus:outline-none focus:text-orange-300 transition ease-in-out duration-150">
               {{ item.name }}
             </nuxt-link>
           </nav>
