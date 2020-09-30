@@ -9,7 +9,7 @@
           <nuxt-link to="/">
             <img class="w-24 md:w-32 lg:w-48" src="~/assets/img/logos/pampam-logo.svg" alt="Logo" />
           </nuxt-link>
-          <div class="-mr-2 -my-2 md:hidden">
+          <div class="-mr-2 -my-2 md:hidden fixed right-4">
             <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-200 hover:text-gray-400 focus:outline-none focus:text-gray-400 transition duration-150 ease-in-out" @click.prevent="mobileNavOpen = !mobileNavOpen">
               <svg class="h-8 w-8" stroke="currentColor" fill="none" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
