@@ -63,6 +63,8 @@ export default {
       if (scrollTop >= this.windowHeight && !this.chatEverShowed) {
         this.chatEverShowed = true
         window.$crisp.push(['do', 'chat:show'])
+        window.removeEventListener('scroll', this.handleScroll)
+        window.removeEventListener('touchmove', this.handleScroll)
       }
     }
   },
