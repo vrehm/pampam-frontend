@@ -39,6 +39,33 @@ export default {
     const posts = await $axios.$get(baseURL + '/instagram-posts?_sort=timestamp:DESC')
     return { posts }
   },
+  data() {
+    return {
+      windowHeight: 0,
+      chatEverShowed: false
+    }
+  },
+  mounted() {
+    window.$crisp.push(['do', 'chat:hide'])
+    this.windowHeight = document.documentElement.clientHeight
+  },
+  beforeMount() {
+    window.addEventListener('scroll', this.handleScroll)
+    window.addEventListener('touchmove', this.handleScroll)
+  },
+  beforeDestroy() {
+    window.removeEventListener('scroll', this.handleScroll)
+    window.removeEventListener('touchmove', this.handleScroll)
+  },
+  methods: {
+    handleScroll(el) {
+      const scrollTop = document.documentElement.scrollTop
+      if (scrollTop >= this.windowHeight && !this.chatEverShowed) {
+        this.chatEverShowed = true
+        window.$crisp.push(['do', 'chat:show'])
+      }
+    }
+  },
   head() {
     return {
       title: "L'Atelier Pam Pam - Brocante poétique pour intérieurs singuliers."
