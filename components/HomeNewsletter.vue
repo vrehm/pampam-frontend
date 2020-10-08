@@ -37,9 +37,9 @@
 
           <p class="mt-3 text-sm leading-5 text-gray-100">
             Nous nous soucions de la protection de vos données. Lisez notre
-            <a href="#" class="text-orange-200 font-medium underline">
+            <nuxt-link :to="{ name: 'articles-article', params: { article: 'mentions-legales' } }" class="text-orange-200 font-medium underline">
               Politique de confidentialité.
-            </a>
+            </nuxt-link>
           </p>
         </div>
         <!--End mc_embed_signup-->

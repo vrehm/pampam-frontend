@@ -2,7 +2,13 @@
   <div>
     <home-hero />
     <home-newsletter />
-    <home-presentation id="who-is-pampam" />
+    <home-presentation
+      id="who-is-pampam"
+      v-observe-visibility="{
+        callback: visibilityChanged,
+        once: true
+      }"
+    />
     <home-insta-grid id="la-boutique" :posts="posts.slice(0, 9)" />
     <home-atelier id="l-atelier" />
     <home-showroom />
@@ -38,6 +44,16 @@ export default {
     } = $axios
     const posts = await $axios.$get(baseURL + '/instagram-posts?_sort=timestamp:DESC')
     return { posts }
+  },
+  mounted() {
+    window.$crisp.push(['do', 'chat:hide'])
+  },
+  methods: {
+    visibilityChanged(isVisible) {
+      if (isVisible) {
+        window.$crisp.push(['do', 'chat:show'])
+      }
+    }
   },
   head() {
     return {

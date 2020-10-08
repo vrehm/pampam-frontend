@@ -38,7 +38,7 @@
       </div>
       <article-show-hero-section-share-box :article="article" />
     </div>
-    <div id="article-cover-image">
+    <div v-if="!removePicture" id="article-cover-image">
       <!-- For mobile -->
       <img class="block sm:hidden py-8 object-cover w-full h-auto lazyload rounded-sm" :src="article.image.formats.small.url" :alt="article.title" />
       <!-- For desktop -->
@@ -61,7 +61,8 @@ export default {
   },
   data() {
     return {
-      assetsBaseUrl: process.env.assetsBaseUrl
+      assetsBaseUrl: process.env.assetsBaseUrl,
+      removePicture: this.article.slug === 'mentions-legales'
     }
   },
   methods: {
