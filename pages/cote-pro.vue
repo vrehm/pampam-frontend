@@ -34,7 +34,14 @@ export default {
   },
   head() {
     return {
-      title: "L'Atelier Pam Pam pour les professionnels."
+      title: "L'Atelier Pam Pam pour les professionnels.",
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: "L'Atelier Pam Pam propose des prestations spéciales pour les pros!"
+        }
+      ]
     }
   }
 }

@@ -83,22 +83,26 @@ export default {
   },
   head() {
     return {
-      title: `Catégorie ${this.selected.name} - Journal de l'Atelier Pampam`
-      // meta: [
-      //   { hid: 'description', name: 'description', content: 'Atelier Pampam - Le Journal' },
-      //   {
-      //     property: 'og:title',
-      //     content: `${this.article.title}`
-      //   },
-      //   {
-      //     property: 'og:description',
-      //     content: `${this.article.content}`
-      //   },
-      //   {
-      //     property: 'og:image',
-      //     content: this.article.image.formats.thumbnail.url
-      //   }
-      // ]
+      title: `Catégorie ${this.selected.name} - Journal de l'Atelier Pampam`,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: `Les articles de la catégorie ${this.selected.name}`
+        }
+        // {
+        //   property: 'og:title',
+        //   content: `${this.article.title}`
+        // },
+        // {
+        //   property: 'og:description',
+        //   content: `${this.article.content}`
+        // },
+        // {
+        //   property: 'og:image',
+        //   content: this.article.image.formats.thumbnail.url
+        // }
+      ]
     }
   }
 }

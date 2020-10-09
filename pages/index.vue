@@ -54,11 +54,6 @@ export default {
         window.$crisp.push(['do', 'chat:show'])
       }
     }
-  },
-  head() {
-    return {
-      title: "L'Atelier Pam Pam - Brocante poétique pour intérieurs singuliers."
-    }
   }
 }
 </script>

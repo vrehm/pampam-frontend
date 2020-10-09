@@ -73,7 +73,14 @@ export default {
   },
   head() {
     return {
-      title: "Journal de l'Atelier Pampam"
+      title: "Journal de l'Atelier Pampam",
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: "Le journal de l'Atelier Pampam, découvrez ici mes derniers articles."
+        }
+      ]
     }
   }
 }

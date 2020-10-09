@@ -24,7 +24,11 @@ export default {
     return {
       title: `Article ${this.article.title} - Journal de l'Atelier Pampam`,
       meta: [
-        { hid: 'description', name: 'description', content: 'Atelier Pampam - Le Journal' },
+        {
+          hid: 'description',
+          name: 'description',
+          content: `${this.article.title} - blog de l'Atelier Pam Pam`
+        },
         {
           property: 'og:title',
           content: `${this.article.title}`
