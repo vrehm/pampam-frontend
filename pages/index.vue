@@ -43,7 +43,22 @@ export default {
       defaults: { baseURL }
     } = $axios
     const posts = await $axios.$get(baseURL + '/instagram-posts?_sort=timestamp:DESC')
-    return { posts }
+    const jsonld = JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'LocalBusiness',
+      '@id': 'https://atelierpampam.fr/',
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: 'Les Puces du Canal, 3 Rue Eugène Pottier',
+        addressLocality: 'Villeurbanne',
+        postalCode: '69100',
+        addressCountry: 'FR'
+      },
+      name: 'Atelier Pam Pam',
+      description: "À l'Atelier Pam Pam vous trouverez des pièces uniques, des créations d'ameublement, de luminaires, de meubles et des objets variés retravaillés.",
+      url: 'https://atelierpampam.fr/'
+    })
+    return { posts, jsonld }
   },
   mounted() {
     window.$crisp.push(['do', 'chat:hide'])
@@ -53,6 +68,12 @@ export default {
       if (isVisible) {
         window.$crisp.push(['do', 'chat:show'])
       }
+    }
+  },
+  head() {
+    return {
+      __dangerouslyDisableSanitizers: ['script'],
+      script: [{ innerHTML: this.jsonld, type: 'application/ld+json' }]
     }
   }
 }
