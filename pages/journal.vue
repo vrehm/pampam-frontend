@@ -80,6 +80,19 @@ export default {
           name: 'description',
           content: "Le journal de l'Atelier Pampam, découvrez ici mes derniers articles."
         }
+      ],
+      __dangerouslyDisableSanitizers: ['script'],
+      script: [
+        {
+          innerHTML: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'CollectionPage',
+            '@id': 'https://atelierpampam.fr/journal',
+            name: "Les articles du blog de l'Atelier Pam Pam",
+            url: 'https://atelierpampam.fr/journal'
+          }),
+          type: 'application/ld+json'
+        }
       ]
     }
   }
