@@ -102,6 +102,19 @@ export default {
         //   property: 'og:image',
         //   content: this.article.image.formats.thumbnail.url
         // }
+      ],
+      __dangerouslyDisableSanitizers: ['script'],
+      script: [
+        {
+          innerHTML: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'CollectionPage',
+            '@id': 'https://atelierpampam.fr/categories/' + this.selected.name.toLowerCase(),
+            name: 'Les articles de la catégorie ' + this.selected.name + " de l'Atelier Pam Pam",
+            url: 'https://atelierpampam.fr/categories/' + this.selected.name.toLowerCase()
+          }),
+          type: 'application/ld+json'
+        }
       ]
     }
   }
