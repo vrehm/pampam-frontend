@@ -41,6 +41,23 @@ export default {
           property: 'og:image',
           content: this.article.image.formats.thumbnail.url
         }
+      ],
+      __dangerouslyDisableSanitizers: ['script'],
+      script: [
+        {
+          innerHTML: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BlogPosting',
+            mainEntityOfPage: {
+              '@type': 'WebPage',
+              '@id': 'https://atelierpampam.fr/articles/' + this.article.slug
+            },
+            headline: this.article.title,
+            image: this.article.image.url,
+            datePublished: this.article.published_at
+          }),
+          type: 'application/ld+json'
+        }
       ]
     }
   }
