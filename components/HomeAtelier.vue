@@ -17,7 +17,6 @@
       <!-- Les luminaires -->
       <div class="mt-10 md:mt-16 md:flex md:justify-center">
         <!-- Left block -->
-
         <div class="w-full md:w-6/12 md:pr-8">
           <div class="flex justify-center items-end md:justify-start">
             <h3 class="mr-1 lg:mr-0 text-center md:text-left text-xl sm:text-2xl font-extrabold leading-8 sm:leading-9 tracking-tight text-yellow-500">
