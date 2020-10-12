@@ -1,5 +1,5 @@
 <template>
-  <div class="py-8">
+  <div class="pt-20 pb-8 md:pt-28 lg:pt-40 xl:pt-8">
     <!-- Slice method limit the number of tags displayed -->
     <div class="flex">
       <nuxt-link v-for="(category, index) in article.categories.slice(0, 5)" :key="category.id" :to="{ name: 'categories-category', params: { category: category.slug } }">
