@@ -38,7 +38,7 @@ export default {
       slidesToShow: 2,
       slidesToScroll: 2,
       initialSlide: 0,
-      speed: 1500,
+      speed: 2200,
       swipeToSlide: true,
       autoplay: true,
       focusOnSelect: true,

@@ -34,7 +34,27 @@ export default {
   },
   head() {
     return {
-      title: "L'Atelier Pam Pam pour les professionnels."
+      title: "L'Atelier Pam Pam pour les professionnels.",
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: "L'Atelier Pam Pam propose des prestations spéciales pour les pros!"
+        }
+      ],
+      __dangerouslyDisableSanitizers: ['script'],
+      script: [
+        {
+          innerHTML: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'WebPage',
+            '@id': 'https://atelierpampam.fr/cote-pro',
+            name: "Page Côté Pro de l'Atelier Pam Pam",
+            url: 'https://atelierpampam.fr/cote-pro'
+          }),
+          type: 'application/ld+json'
+        }
+      ]
     }
   }
 }

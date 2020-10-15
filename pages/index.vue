@@ -54,7 +54,27 @@ export default {
   },
   head() {
     return {
-      title: "L'Atelier Pam Pam - Brocante poétique pour intérieurs singuliers."
+      __dangerouslyDisableSanitizers: ['script'],
+      script: [
+        {
+          innerHTML: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'LocalBusiness',
+            '@id': 'https://atelierpampam.fr/',
+            address: {
+              '@type': 'PostalAddress',
+              streetAddress: 'Les Puces du Canal, 3 Rue Eugène Pottier',
+              addressLocality: 'Villeurbanne',
+              postalCode: '69100',
+              addressCountry: 'FR'
+            },
+            name: 'Atelier Pam Pam',
+            description: "À l'Atelier Pam Pam vous trouverez des pièces uniques, des créations d'ameublement, de luminaires, de meubles et des objets variés retravaillés.",
+            url: 'https://atelierpampam.fr/'
+          }),
+          type: 'application/ld+json'
+        }
+      ]
     }
   }
 }
