@@ -24,19 +24,43 @@ export default {
     return {
       title: `Article ${this.article.title} - Journal de l'Atelier Pampam`,
       meta: [
-        { hid: 'description', name: 'description', content: 'Atelier Pampam - Le Journal' }
-        // {
-        //   property: 'og:title',
-        //   content: `${this.article.title}`
-        // },
-        // {
-        //   property: 'og:description',
-        //   content: `${this.article.content}`
-        // },
-        // {
-        //   property: 'og:image',
-        //   content: this.article.image.formats.thumbnail.url
-        // }
+        {
+          hid: 'description',
+          name: 'description',
+          content: `${this.article.title} - blog de l'Atelier Pam Pam`
+        },
+        {
+          hid: 'og:title',
+          property: 'og:title',
+          content: `${this.article.title}`
+        },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content: `${this.article.content}`
+        },
+        {
+          hid: 'og:image',
+          property: 'og:image',
+          content: this.article.image.formats.thumbnail.url
+        }
+      ],
+      __dangerouslyDisableSanitizers: ['script'],
+      script: [
+        {
+          innerHTML: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BlogPosting',
+            mainEntityOfPage: {
+              '@type': 'WebPage',
+              '@id': 'https://atelierpampam.fr/articles/' + this.article.slug
+            },
+            headline: this.article.title,
+            image: this.article.image.url,
+            datePublished: this.article.published_at
+          }),
+          type: 'application/ld+json'
+        }
       ]
     }
   }

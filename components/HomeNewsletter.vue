@@ -54,10 +54,16 @@ export default {}
 
 <style>
 .background-newsletter-custom {
-  background-image: url('~@/assets/img/illustrations/newsletter-background.svg');
+  background-image: url('~@/assets/img/illustrations/newsletter-background-mobile.svg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+@screen sm {
+  .background-newsletter-custom {
+    background-image: url('~@/assets/img/illustrations/newsletter-background.svg');
+  }
 }
 
 @screen md {
