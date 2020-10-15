@@ -67,7 +67,7 @@ export default {
         name: 'Dorian Pillot',
         testimony: "Un lieu superbe et des objets riches d'histoires...",
         testimony2: '',
-        productName: 'une table',
+        productName: 'une chaise',
         customerImg: require('~/assets/img/avatars/avatar-dorian256x256.jpg'),
         productImg: require('~/assets/img/home/product-test2.jpg')
       },
