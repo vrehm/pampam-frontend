@@ -138,7 +138,6 @@ export default {
 
       switch (name) {
         case 'index':
-          this.heroVisibility = true
           this.journalHeroVisibility = false
           this.coteProHeroVisibility = false
           break
