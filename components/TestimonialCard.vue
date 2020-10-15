@@ -67,7 +67,7 @@ export default {
   },
   data() {
     return {
-      buyAlternative: ['acheté', 'chiné', 'déniché', "fait l'acquisition de"]
+      buyAlternative: ['acheté', 'chiné', 'déniché', "fait l'acquisition d'"]
     }
   }
 }

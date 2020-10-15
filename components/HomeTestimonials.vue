@@ -78,31 +78,31 @@ export default {
         productName: 'une table',
         customerImg: require('~/assets/img/avatars/avatar-leonid256x256.jpg'),
         productImg: require('~/assets/img/home/product-test1.jpg')
-      },
-      {
-        name: 'Lilubelle Jh',
-        testimony: 'Que du bon goût, un accueil toujours adorable et souriant et des petites merveilles en déco à des prix supra-abordables !',
-        testimony2: 'Belle continuation.',
-        productName: 'une table',
-        customerImg: require('~/assets/img/avatars/avatar-lilubelle256x256.jpg'),
-        productImg: require('~/assets/img/home/product-test2.jpg')
-      },
-      {
-        name: 'Dorian Pillot',
-        testimony: "Un lieu superbe et des objets riches d'histoires...",
-        testimony2: '',
-        productName: 'une table',
-        customerImg: require('~/assets/img/avatars/avatar-dorian256x256.jpg'),
-        productImg: require('~/assets/img/home/product-test2.jpg')
-      },
-      {
-        name: 'Leonid Von Ciesielski',
-        testimony: 'Multi merci pour cette belle personne très avenante, très conciliante et très serviable.',
-        testimony2: 'Je recommande.',
-        productName: 'une table',
-        customerImg: require('~/assets/img/avatars/avatar-leonid256x256.jpg'),
-        productImg: require('~/assets/img/home/product-test1.jpg')
       }
+      // {
+      //   name: 'Lilubelle Jh',
+      //   testimony: 'Que du bon goût, un accueil toujours adorable et souriant et des petites merveilles en déco à des prix supra-abordables !',
+      //   testimony2: 'Belle continuation.',
+      //   productName: 'une table',
+      //   customerImg: require('~/assets/img/avatars/avatar-lilubelle256x256.jpg'),
+      //   productImg: require('~/assets/img/home/product-test2.jpg')
+      // },
+      // {
+      //   name: 'Dorian Pillot',
+      //   testimony: "Un lieu superbe et des objets riches d'histoires...",
+      //   testimony2: '',
+      //   productName: 'une table',
+      //   customerImg: require('~/assets/img/avatars/avatar-dorian256x256.jpg'),
+      //   productImg: require('~/assets/img/home/product-test2.jpg')
+      // },
+      // {
+      //   name: 'Leonid Von Ciesielski',
+      //   testimony: 'Multi merci pour cette belle personne très avenante, très conciliante et très serviable.',
+      //   testimony2: 'Je recommande.',
+      //   productName: 'une table',
+      //   customerImg: require('~/assets/img/avatars/avatar-leonid256x256.jpg'),
+      //   productImg: require('~/assets/img/home/product-test1.jpg')
+      // }
     ]
   }),
   methods: {
