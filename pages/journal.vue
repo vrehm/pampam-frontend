@@ -1,7 +1,11 @@
 <template>
   <div>
-    <div class="relative ">
-      <journal-hero-section />
+    <div class="relative">
+      <journal-hero-section
+        v-observe-visibility="{
+          callback: journalHeroVisibilityChanged
+        }"
+      />
 
       <!-- Articles list -->
       <div class="relative pb-12 sm:pb-16 md:pb-20 lg:pb-28 xl:pb-32 bg-yellow-100">
@@ -69,6 +73,9 @@ export default {
           this.$fetch()
         }
       }
+    },
+    journalHeroVisibilityChanged(isVisible) {
+      this.$nuxt.$emit('journal-hero-invisible', isVisible)
     }
   },
   head() {

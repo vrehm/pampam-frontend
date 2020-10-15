@@ -3,11 +3,11 @@
     <!-- desktop version -->
 
     <!-- Version with position absolute, over the background -->
-    <div v-if="useAbsoluteVersion" class="absolute top-0 left-0 right-0">
+    <div v-if="useAbsoluteVersion" :class="{ 'md:bg-white md:shadow-lg': !heroVisibility }" class="md:fixed absolute z-20 top-0 left-0 right-0">
       <div class="max-w-7xl mx-auto px-4 sm:px-6">
         <div class="flex justify-between items-center md:items-start py-6 md:space-x-10">
           <nuxt-link to="/">
-            <img class="w-24 md:w-32 lg:w-48" src="~/assets/img/logos/pampam-logo.svg" alt="Logo" />
+            <img :class="{ 'w-24 md:w-32 lg:w-48': heroVisibility, 'md:fixed md:w-20': !heroVisibility }" src="~/assets/img/logos/pampam-logo.svg" alt="Logo" />
           </nuxt-link>
           <div class="-mr-2 -my-2 md:hidden">
             <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-200 hover:text-gray-400 focus:outline-none focus:text-gray-400 transition duration-150 ease-in-out" @click.prevent="mobileNavOpen = !mobileNavOpen">
@@ -17,7 +17,7 @@
             </button>
           </div>
           <nav class="hidden md:flex md:space-x-5 lg:space-x-10">
-            <nuxt-link v-for="item in menuItems" :key="item.name" :to="{ path: item.path, hash: item.hash }" class="md:text-sm lg:text-base leading-6 font-medium text-gray-100 hover:text-orange-300 focus:outline-none focus:text-orange-300 transition ease-in-out duration-150">
+            <nuxt-link v-for="item in menuItems" :key="item.name" :to="{ path: item.path, hash: item.hash }" :class="{ 'flying-menu-links': !heroVisibility, 'menu-links-transparent': heroVisibility }" class="md:text-sm lg:text-base leading-6 font-medium hover:text-orange-300 focus:outline-none focus:text-orange-300 transition ease-in-out duration-150">
               {{ item.name }}
             </nuxt-link>
           </nav>
@@ -26,10 +26,10 @@
     </div>
 
     <!-- Version with position relative -->
-    <div v-else class="max-w-7xl mx-auto px-4 sm:px-6">
-      <div class="flex justify-between items-center md:items-start py-6 md:space-x-10 border-b-2 border-gray-100">
+    <div v-else class="max-w-7xl mx-auto px-4 sm:px-6 w-full">
+      <div :class="{ 'md:bg-white': !nonHomeHeroVisibility }" class="md:fixed md:z-20 flex flex-1 md:w-1/2 justify-between items-center md:items-start py-6 md:space-x-10">
         <nuxt-link to="/">
-          <img class="w-24 md:w-32 lg:w-48 absolute z-10" src="~/assets/img/logos/pampam-logo.svg" alt="Logo" />
+          <img :class="{ 'w-24 md:w-32 lg:w-48': nonHomeHeroVisibility, 'md:fixed md:w-20': !nonHomeHeroVisibility }" src="~/assets/img/logos/pampam-logo.svg" alt="Logo" />
         </nuxt-link>
         <div class="-mr-2 -my-2 md:hidden">
           <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-200 hover:text-gray-400 focus:outline-none focus:text-gray-400 transition duration-150 ease-in-out" @click.prevent="mobileNavOpen = !mobileNavOpen">
@@ -119,13 +119,40 @@ export default {
         }
       ],
       routeChange: false,
-      mobileNavOpen: false
+      mobileNavOpen: false,
+      heroVisibility: true,
+      coteProHeroVisibility: false,
+      journalHeroVisibility: false
+    }
+  },
+  computed: {
+    nonHomeHeroVisibility() {
+      return this.coteProHeroVisibility || this.journalHeroVisibility
     }
   },
   watch: {
-    $route() {
+    $route(data) {
+      const { name } = data
       this.routeChange = true
       this.mobileNavOpen = false
+
+      switch (name) {
+        case 'index':
+          this.heroVisibility = true
+          this.journalHeroVisibility = false
+          this.coteProHeroVisibility = false
+          break
+        case 'cote-pro':
+          this.heroVisibility = false
+          this.journalHeroVisibility = false
+          this.coteProHeroVisibility = true
+          break
+        case 'journal':
+          this.heroVisibility = false
+          this.journalHeroVisibility = true
+          this.coteProHeroVisibility = false
+          break
+      }
     }
   },
   beforeMount() {
@@ -135,6 +162,17 @@ export default {
   beforeDestroy() {
     window.removeEventListener('scroll', this.handleScroll)
     window.removeEventListener('touchmove', this.handleScroll)
+  },
+  mounted() {
+    this.$nuxt.$on('home-hero-invisible', (payload) => {
+      this.heroVisibility = payload
+    })
+    this.$nuxt.$on('journal-hero-invisible', (payload) => {
+      this.journalHeroVisibility = payload
+    })
+    this.$nuxt.$on('cote-pro-hero-invisible', (payload) => {
+      this.coteProHeroVisibility = payload
+    })
   },
   methods: {
     closeMobileNavbar() {
@@ -150,4 +188,12 @@ export default {
 }
 </script>
 
-<style></style>
+<style>
+.menu-links-transparent {
+  @apply text-gray-100;
+}
+
+.flying-menu-links {
+  @apply text-gray-900;
+}
+</style>

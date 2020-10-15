@@ -1,6 +1,10 @@
 <template>
   <div>
-    <home-hero />
+    <home-hero
+      v-observe-visibility="{
+        callback: homeHeroVisibilityChanged
+      }"
+    />
     <home-newsletter />
     <home-presentation
       id="who-is-pampam"
@@ -53,6 +57,9 @@ export default {
       if (isVisible) {
         window.$crisp.push(['do', 'chat:show'])
       }
+    },
+    homeHeroVisibilityChanged(isVisible) {
+      this.$nuxt.$emit('home-hero-invisible', isVisible)
     }
   },
   head() {
