@@ -64,7 +64,7 @@
         </div>
       </div>
 
-      <div class="mt-12 grid grid-cols-1 gap-2 sm:grid-cols-2 md:mt-14 md:grid-cols-3 overflow-hidden">
+      <div class="mt-12 grid grid-cols-3 gap-2 md:mt-14 overflow-hidden">
         <a v-for="post in posts" :key="post.id" :href="post.permalink" target="_blank" class="col-span-1 bg-gray-50">
           <figure class="picture">
             <picture>
@@ -100,7 +100,7 @@ export default {
 
 <style scoped>
 .max-h-custom-insta {
-  max-height: 500px;
+  max-height: 90px;
 }
 
 .rotate-pam-1-custom {
