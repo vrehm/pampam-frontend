@@ -1,6 +1,11 @@
 <template>
   <div>
-    <cote-pro-hero-section class="lg:pt-16" />
+    <cote-pro-hero-section
+      v-observe-visibility="{
+        callback: coteProHeroVisibilityChanged
+      }"
+      class="lg:pt-16"
+    />
     <cote-pro-location-section />
     <cote-pro-decoration-section />
     <cote-pro-espace-section />
@@ -31,6 +36,11 @@ export default {
     CoteProTransitionTexture,
     CoteProArgumentaire,
     CoteProCTASection
+  },
+  methods: {
+    coteProHeroVisibilityChanged(isVisible) {
+      this.$nuxt.$emit('cote-pro-hero-invisible', isVisible)
+    }
   },
   head() {
     return {

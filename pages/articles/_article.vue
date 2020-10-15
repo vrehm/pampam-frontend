@@ -30,14 +30,17 @@ export default {
           content: `${this.article.title} - blog de l'Atelier Pam Pam`
         },
         {
+          hid: 'og:title',
           property: 'og:title',
           content: `${this.article.title}`
         },
         {
+          hid: 'og:description',
           property: 'og:description',
           content: `${this.article.content}`
         },
         {
+          hid: 'og:image',
           property: 'og:image',
           content: this.article.image.formats.thumbnail.url
         }
