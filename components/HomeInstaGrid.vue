@@ -1,6 +1,6 @@
 <template>
   <section class="pb-20 sm:pb-28 md:pb-24 lg:pb-28 xl:pb-48 bg-yellow-100">
-    <div class="relative max-w-screen-xl mx-auto pt-24 lg:pt-28 pb-20 lg:pb-24 px-4 sm:px-6 lg:px-8">
+    <div class="relative max-w-screen-xl mx-auto pt-24 lg:pt-28 pb-4 md:pb-10 lg:pb-24 px-4 sm:px-6 lg:px-8">
       <div class="absolute top-0 right-0 mt-16 md:mt-24 mr-20 sm:mr-40 md:mr-64 transform md:-translate-x-2 lg:-translate-x-24 xl:-translate-x-48 translate-y-48 sm:translate-y-20 lg:translate-y-16">
         <div class="w-10 sm:w-14 lg:w-16 xl:w-20 rotate-pam-1-custom">
           <span class="text-green-400" v-html="require('~/assets/img/illustrations/boutique-pam.svg?include')"></span>
@@ -64,7 +64,7 @@
         </div>
       </div>
 
-      <div class="mt-12 grid grid-cols-1 gap-2 sm:grid-cols-2 md:mt-14 md:grid-cols-3 overflow-hidden">
+      <div class="grid grid-cols-3 gap-2 mt-16 md:mt-14 overflow-hidden">
         <a v-for="post in posts" :key="post.id" :href="post.permalink" target="_blank" class="col-span-1 bg-gray-50">
           <figure class="picture">
             <picture>
@@ -100,7 +100,7 @@ export default {
 
 <style scoped>
 .max-h-custom-insta {
-  max-height: 500px;
+  max-height: 90px;
 }
 
 .rotate-pam-1-custom {

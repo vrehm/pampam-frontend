@@ -22,14 +22,14 @@ export default {
      ** Headers of the page
      */
     head: {
-        title: process.env.npm_package_name || '',
+        title: "L'Atelier Pam Pam - Brocante poétique pour intérieurs singuliers.",
         meta: [
             { charset: 'utf-8' },
             { name: 'viewport', content: 'width=device-width, initial-scale=1' },
             {
                 hid: 'description',
                 name: 'description',
-                content: process.env.npm_package_description || ''
+                content: "À l'Atelier Pam Pam vous trouverez des pièces uniques, des créations d'ameublement, de luminaires, de meubles et des objets variés retravaillés."
             }
         ],
         link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
@@ -82,6 +82,17 @@ export default {
         // https://www.npmjs.com/package/@nuxtjs/markdownit
         '@nuxtjs/markdownit'
     ],
+    pwa: {
+        meta: {
+            name: 'Atelier Pam Pam',
+            description: "À l'Atelier Pam Pam vous trouverez des pièces uniques, des créations d'ameublement, de luminaires, de meubles et des objets variés retravaillés.",
+            url: 'https://atelierpampam.fr/',
+            author: 'Cécile MISSOL',
+            lang: 'fr',
+            ogHost: 'https://atelierpampam.fr/',
+            ogImage: 'https://res.cloudinary.com/atelierpampam/image/upload/v1596466525/medium_f657c2c_753030d9a9.jpg'
+        }
+    },
     stylelint: {
         ignorePath: '*.js'
     },
