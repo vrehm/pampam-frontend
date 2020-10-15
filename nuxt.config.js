@@ -82,6 +82,17 @@ export default {
         // https://www.npmjs.com/package/@nuxtjs/markdownit
         '@nuxtjs/markdownit'
     ],
+    pwa: {
+        meta: {
+            name: 'Atelier Pam Pam',
+            description: "À l'Atelier Pam Pam vous trouverez des pièces uniques, des créations d'ameublement, de luminaires, de meubles et des objets variés retravaillés.",
+            url: 'https://atelierpampam.fr/',
+            author: 'Cécile MISSOL',
+            lang: 'fr',
+            ogHost: 'https://atelierpampam.fr/',
+            ogImage: 'https://res.cloudinary.com/atelierpampam/image/upload/v1596466525/medium_f657c2c_753030d9a9.jpg'
+        }
+    },
     stylelint: {
         ignorePath: '*.js'
     },
