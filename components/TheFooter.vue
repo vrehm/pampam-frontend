@@ -48,19 +48,19 @@
           </div>
           <div class="mt-8 flex items-center">
             <div class="flex justify-center items-center mr-4 md:mr-6 lg:mr-4">
-              <a href="https://www.instagram.com/atelierpampam" class="w-10 h-10 sm:w-10 sm:h-10 md:w-8 md:h-8 lg:w-10 lg:h-10" target="_blank">
+              <a href="https://instagram.com/atelierpampam" class="w-10 h-10 sm:w-10 sm:h-10 md:w-8 md:h-8 lg:w-10 lg:h-10" target="_blank">
                 <span class="sr-only">Instagram</span>
                 <span class="text-orange-700 hover:text-orange-500 transition duration-150 ease-in-out" v-html="require('~/assets/img/illustrations/social-instagram.svg?include')"></span>
               </a>
             </div>
             <div class="flex justify-center items-center mr-4 md:mr-6 lg:mr-4">
-              <a href="https://www.instagram.com/atelierpampam" class="w-10 h-10 sm:w-10 sm:h-10 md:w-8 md:h-8 lg:w-10 lg:h-10" target="_blank">
+              <a href="https://facebook.com/atelierpampam" class="w-10 h-10 sm:w-10 sm:h-10 md:w-8 md:h-8 lg:w-10 lg:h-10" target="_blank">
                 <span class="sr-only">Facebook</span>
                 <span class="text-orange-700 hover:text-orange-500 transition duration-150 ease-in-out" v-html="require('~/assets/img/illustrations/social-facebook.svg?include')"></span>
               </a>
             </div>
             <div class="flex justify-center items-center">
-              <a href="https://www.instagram.com/atelierpampam" class="w-10 h-10 sm:w-10 sm:h-10 md:w-8 md:h-8 lg:w-10 lg:h-10" target="_blank">
+              <a href="https://pinterest.com/atelierpampam" class="w-10 h-10 sm:w-10 sm:h-10 md:w-8 md:h-8 lg:w-10 lg:h-10" target="_blank">
                 <span class="sr-only">Pinterest</span>
                 <span class="text-orange-700 hover:text-orange-500 transition duration-150 ease-in-out" v-html="require('~/assets/img/illustrations/social-pinterest.svg?include')"></span>
               </a>
