@@ -73,7 +73,6 @@
         "lint-staged": "^10.2.11",
         "lqip-loader": "^2.2.0",
         "nan": "^2.14.1",
-        "nuxt-password-protect": "^1.0.6",
         "nuxt-purgecss": "^1.0.0",
         "nuxt-responsive-loader": "^2.0.1",
         "nuxt-webfontloader": "^1.1.0",
