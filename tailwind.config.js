@@ -32,6 +32,8 @@ module.exports = {
                 sans: ['Inter', ...defaultTheme.fontFamily.sans],
                 blur: ['AustralSlabBlur-Regular', ...defaultTheme.fontFamily.sans],
                 light: ['AustralSlabBlur-Light', ...defaultTheme.fontFamily.sans],
+                thin: ['AustralSlabBlur-Thin', ...defaultTheme.fontFamily.sans],
+
                 headings: ['Monthoers', ...defaultTheme.fontFamily.sans]
             },
             colors: {
@@ -72,6 +74,13 @@ module.exports = {
                 '550': '550px',
             }
         }
+        // typography: (theme) => ({
+        //     default: {
+        //         css: {
+        //             fontFamily: theme('fontFamily.light'),
+        //         }
+        //     }
+        // })
     },
     variants: {
         outline: ["focus"]

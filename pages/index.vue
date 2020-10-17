@@ -1,186 +1,90 @@
 <template>
   <div>
-    <section class="background-hero-custom h-screen flex items-start overflow-hidden min-h-300 md:min-h-550 lazyload">
-      <div class="h-auto w-full mt-40 px-4 landscape-hero-title-custom sm:mt-28 sm:px-6 xl:mt-40">
-        <div class="flex justify-between max-w-7xl mx-auto xl:px-6">
-          <nuxt-link to="/">
-            <img class="w-24 md:w-32 lg:w-48" src="~/assets/img/logos/pampam-logo.svg" alt="Logo" />
-          </nuxt-link>
-          <h1 class="text-4xl tracking-tight leading-10 font-extrabold text-gray-100 sm:text-5xl sm:leading-tight md:text-5xl lg:text-6xl">
-            Brocante poétique
-            <br />
-            <span class="text-orange-400">pour intérieurs singuliers</span>
-          </h1>
-        </div>
-
-        <!-- <div class="flex justify-center pt-40 text-2xl text-white text-center">
-          Le site internet de l'atelier PamPam débarque bientôt !
-          <br />
-          Je veux être averti(e) du lancement du site
-        </div> -->
-
-        <section class="">
-          <div class="relative">
-            <div class="absolute right-0 w-5/12 sm:w-4/12 lg:w-3/12 transform -translate-x-1 sm:-translate-x-2 md:-translate-x-6 xl:-translate-x-10 -translate-y-2 md:-translate-y-12 lg:-translate-y-6 xl:-translate-y-16">
-              <span class="text-gray-900" v-html="require('~/assets/img/illustrations/newsletter-transition-top.svg?include')"></span>
-            </div>
-          </div>
-
-          <div class="px-4 sm:px-6 md:px-0 lg:px-12 pt-20 md:pt-6 lg:pt-12 pb-12 md:pb-0 lg:pb-16 max-w-full md:max-w-2xl lg:max-w-4xl mx-auto">
-            <div class="flex flex-col items-center px-6 md:px-0 pt-20 sm:pt-20 md:pt-40 lg:pt-32 pb-20 sm:pb-20 md:pb-40 background-newsletter-custom rounded-sm">
-              <div class="text-center xl:flex-1">
-                <h2 class="mt-0 md:mt-4 text-2xl leading-8 font-extrabold tracking-tight text-gray-100 sm:text-4xl sm:leading-9">
-                  Site en construction
-                </h2>
-                <p class="mt-3 md:mt-10 md:max-w-lg lg:max-w-xl md:text-base lg:text-lg leading-6 text-gray-100">
-                  Le site internet de l'atelier PamPam débarque bientôt !
-                  <br />
-                  Je veux être averti(e) du lancement du site
-                </p>
-              </div>
-
-              <!-- Begin Mailchimp Signup Form -->
-              <div id="mc_embed_signup" class="mt-8 sm:w-full sm:max-w-md">
-                <form id="mc-embedded-subscribe-form" action="https://atelierpampam.us3.list-manage.com/subscribe/post?u=44312ed5753831f4a0c075ce9&amp;id=fb83edb4f1" method="post" name="mc-embedded-subscribe-form" class="validate sm:flex" target="_blank" novalidate>
-                  <input id="mce-EMAIL" aria-label="Email address" type="email" required class="appearance-none w-full px-5 py-2 border border-transparent text-base leading-6 rounded-md text-gray-900 bg-gray-100 placeholder-orange-200 focus:outline-none focus:placeholder-orange-100 transition duration-150 ease-in-out" name="EMAIL" placeholder="isaure@brocanteboheme.com" />
-
-                  <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                  <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                    <input type="text" name="b_44312ed5753831f4a0c075ce9_fb83edb4f1" tabindex="-1" value="" />
-                  </div>
-
-                  <div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3 sm:flex-shrink-0">
-                    <button id="mc-embedded-subscribe" type="submit" name="subscribe" class="w-full flex items-center justify-center px-5 py-2 border border-transparent bg-orange-500 hover:bg-orange-300 rounded-md focus:outline-none transition duration-150 ease-in-out">
-                      <div class="w-28">
-                        <span class="text-gray-900" v-html="require('~/assets/img/illustrations/newsletter-button.svg?include')"></span>
-                      </div>
-                    </button>
-                  </div>
-                </form>
-
-                <p class="mt-3 text-sm leading-5 text-gray-100">
-                  Nous nous soucions de la protection de vos données.
-                  <br />
-                  Nous n'utiliserons pas vos données auprès de partenaires.
-                </p>
-              </div>
-              <!--End mc_embed_signup-->
-            </div>
-          </div>
-        </section>
-
-        <div class="mt-12 flex flex-col items-center md:mt-8">
-          <p class="text-base leading-5 font-semibold tracking-wider text-white">
-            Tél: 06 46 17 34 02
-          </p>
-          <div class="flex justify-center items-center mt-6 md:mt-10">
-            <a href="mailto:atelierpampam@gmail.com" class="px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-gray-100 bg-orange-500 hover:bg-orange-300 focus:outline-none focus:bg-orange-300 transition duration-150 ease-in-out">
-              Contact e-mail
-            </a>
-          </div>
-          <div class="mt-8 flex items-center">
-            <div class="flex justify-center items-center mr-4 md:mr-6 lg:mr-4">
-              <a href="https://instagram.com/atelierpampam" class="w-10 h-10 sm:w-10 sm:h-10 md:w-8 md:h-8 lg:w-10 lg:h-10" target="_blank">
-                <span class="sr-only">Instagram</span>
-                <span class="text-orange-700 hover:text-orange-500 transition duration-150 ease-in-out" v-html="require('~/assets/img/illustrations/social-instagram.svg?include')"></span>
-              </a>
-            </div>
-            <div class="flex justify-center items-center mr-4 md:mr-6 lg:mr-4">
-              <a href="https://facebook.com/atelierpampam" class="w-10 h-10 sm:w-10 sm:h-10 md:w-8 md:h-8 lg:w-10 lg:h-10" target="_blank">
-                <span class="sr-only">Facebook</span>
-                <span class="text-orange-700 hover:text-orange-500 transition duration-150 ease-in-out" v-html="require('~/assets/img/illustrations/social-facebook.svg?include')"></span>
-              </a>
-            </div>
-            <div class="flex justify-center items-center">
-              <a href="https://pinterest.com/atelierpampam" class="w-10 h-10 sm:w-10 sm:h-10 md:w-8 md:h-8 lg:w-10 lg:h-10" target="_blank">
-                <span class="sr-only">Pinterest</span>
-                <span class="text-orange-700 hover:text-orange-500 transition duration-150 ease-in-out" v-html="require('~/assets/img/illustrations/social-pinterest.svg?include')"></span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <home-hero
+      v-observe-visibility="{
+        callback: homeHeroVisibilityChanged
+      }"
+    />
+    <home-newsletter />
+    <home-presentation
+      id="who-is-pampam"
+      v-observe-visibility="{
+        callback: visibilityChanged,
+        once: true
+      }"
+    />
+    <home-insta-grid id="la-boutique" :posts="posts.slice(0, 9)" />
+    <home-atelier id="l-atelier" />
+    <home-showroom />
+    <home-press-and-testimonials />
   </div>
 </template>
 
 <script>
+import HomeHero from '~/components/HomeHero.vue'
+import HomeNewsletter from '~/components/HomeNewsletter.vue'
+import HomePresentation from '~/components/HomePresentation.vue'
+import HomeInstaGrid from '~/components/HomeInstaGrid.vue'
+import HomeAtelier from '~/components/HomeAtelier.vue'
+import HomeShowroom from '~/components/HomeShowroom.vue'
+import HomePressAndTestimonials from '~/components/HomePressAndTestimonials.vue'
+
 export default {
-  layout: 'waiting',
+  components: {
+    HomeHero,
+    HomeNewsletter,
+    HomePresentation,
+    HomeInstaGrid,
+    HomeAtelier,
+    HomeShowroom,
+    HomePressAndTestimonials
+  },
+  async asyncData({ $axios }) {
+    const {
+      defaults: { baseURL }
+    } = $axios
+    const posts = await $axios.$get(baseURL + '/instagram-posts?_sort=timestamp:DESC')
+    return { posts }
+  },
   mounted() {
     window.$crisp.push(['do', 'chat:hide'])
+  },
+  methods: {
+    visibilityChanged(isVisible) {
+      if (isVisible) {
+        window.$crisp.push(['do', 'chat:show'])
+      }
+    },
+    homeHeroVisibilityChanged(isVisible) {
+      this.$nuxt.$emit('home-hero-invisible', isVisible)
+    }
+  },
+  head() {
+    return {
+      __dangerouslyDisableSanitizers: ['script'],
+      script: [
+        {
+          innerHTML: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'LocalBusiness',
+            '@id': 'https://atelierpampam.fr/',
+            address: {
+              '@type': 'PostalAddress',
+              streetAddress: 'Les Puces du Canal, 3 Rue Eugène Pottier',
+              addressLocality: 'Villeurbanne',
+              postalCode: '69100',
+              addressCountry: 'FR'
+            },
+            name: 'Atelier Pam Pam',
+            description: "À l'Atelier Pam Pam vous trouverez des pièces uniques, des créations d'ameublement, de luminaires, de meubles et des objets variés retravaillés.",
+            url: 'https://atelierpampam.fr/'
+          }),
+          type: 'application/ld+json'
+        }
+      ]
+    }
   }
 }
 </script>
 
-<style>
-.background-hero-custom {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5) 10%, rgba(0, 0, 0, 0.3) 90%), url('~@/assets/img/home/hero-home2000x1500.jpg?resize&size=768');
-  background-position: center, center;
-  background-size: cover, cover;
-  background-repeat: no-repeat, no-repeat;
-}
-
-/* Background cover for mobile */
-@screen sm {
-  .background-hero-custom {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5) 10%, rgba(0, 0, 0, 0.3) 90%), url('~@/assets/img/home/hero-home2000x1500.jpg?resize&size=640');
-  }
-}
-
-/* Margin for mobile landscape orientation */
-@media only screen and (max-device-width: 767px) and (orientation: landscape) {
-  .landscape-hero-title-custom {
-    margin-bottom: 2rem;
-  }
-}
-
-/* Background cover for medium */
-@screen md {
-  .background-hero-custom {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5) 10%, rgba(0, 0, 0, 0.3) 90%), url('~@/assets/img/home/hero-home2000x1500.jpg?resize&size=768');
-  }
-}
-
-/* Background cover for large */
-@screen lg {
-  .background-hero-custom {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5) 10%, rgba(0, 0, 0, 0.3) 90%), url('~@/assets/img/home/hero-home2000x1500.jpg?resize&size=1024');
-  }
-}
-
-/* Background cover for xl */
-@screen xl {
-  .background-hero-custom {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5) 10%, rgba(0, 0, 0, 0.3) 90%), url('~@/assets/img/home/hero-home2000x1500.jpg?resize&size=1280');
-  }
-}
-
-/* For tablet landscape orientation (create conflicts) */
-/*
-@media only screen and (min-device-width: 768px) and (max-device-width: 1023px) and (orientation: landscape) {
-  .landscape-hero-title-custom {
-    margin-bottom: 2rem;
-  }
-}
-*/
-
-.background-newsletter-custom {
-  background-image: url('~@/assets/img/illustrations/newsletter-background-mobile.svg');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-@screen sm {
-  .background-newsletter-custom {
-    background-image: url('~@/assets/img/illustrations/newsletter-background.svg');
-  }
-}
-
-@screen md {
-  .background-newsletter-custom {
-    background-size: contain;
-  }
-}
-</style>
+<style></style>

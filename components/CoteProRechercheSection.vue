@@ -4,7 +4,7 @@
       <div class="relative sm:mt-16 lg:mt-24">
         <div class="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-8 lg:items-center">
           <div class="mt-10 -mx-4 relative lg:mt-0 lg:col-start-2 z-10">
-            <img class="relative mx-auto lg:rounded-sm h-64 lg:h-96 w-full object-cover lg:w-10/12 lazyload" src="~/assets/img/cote-pro/photo-epicerie.jpg" alt="Photo du service de recherche d'objets" />
+            <img class="relative mx-auto h-64 lg:h-96 w-full object-cover lg:w-10/12 lazyload" src="~/assets/img/cote-pro/photo-epicerie.jpg" alt="Photo du service de recherche d'objets" />
             <div class="absolute flex inset-0 items-center justify-center flex-col mx-auto w-full lg:w-10/12 hvr-grow-rotate-two">
               <svg width="62" height="58" viewBox="0 0 62 58" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -24,7 +24,7 @@
           </div>
           <div class="lg:col-start-1 px-6 py-8 lg:flex-shrink-1 lg:p-12">
             <h4 class="text-2xl leading-8 font-extrabold text-gray-900 tracking-tight sm:text-3xl sm:leading-9">
-              Vous avez une liste définie de meubles, objets, luminaires que vous recherchez?
+              Vous avez une liste définie de meubles, objets, luminaires que vous recherchez ?
             </h4>
             <p class="mt-6 font-light text-base leading-6 text-gray-900">Missionnez moi pour vous trouver ce qu’il vous faut!</p>
             <p class="mt-4 ont-medium text-gray-900">

@@ -1,37 +1,32 @@
 <template>
-  <section class="relative pt-20 sm:pt-28 pb-40 sm:pb-56 xl:pb-64 bg-yellow-100">
-    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex justify-center items-end">
-        <h2 class="mr-2 sm:mr-4 text-center sm:text-left font-headings text-3xl sm:text-4xl lg:text-5xl leading-8 sm:leading-9 tracking-tight text-gray-900">
-          Pam Pam dans la presse
-        </h2>
-        <div class="w-6 sm:w-8 ml-1 md:ml-0 transform -translate-y-1.5 sm:-translate-y-1 lg:translate-y-0">
+  <section class="relative pt-20 sm:pt-28 lg:pt-0 sm:pb-56 lg:pb-16 mt-8">
+    <div class="max-w-screen-xl flex flex-col px-4 sm:px-8 ">
+      <div class="flex self-start justify-center items-end">
+        <h3 class=" text-xl sm:text-2xl font-extrabold leading-8 sm:leading-9 tracking-tight text-yellow-500">
+          Articles de presse
+        </h3>
+        <!-- <div class="w-6 sm:w-8 ml-1 md:ml-0 transform -translate-y-1.5 sm:-translate-y-1 lg:translate-y-0">
           <span class="text-gray-900" v-html="require('~/assets/img/illustrations/presse.svg?include')"></span>
-        </div>
+        </div> -->
       </div>
 
-      <div class="flex flex-col items-center md:flex-row md:justify-around pt-20">
-        <div class="flex justify-center w-3/5 md:w-1/4 lg:w-1/5">
+      <div class="flex items-center justify-center mt-8">
+        <div class="flex justify-center w-16 lg:w-36">
           <a href="https://www.tiffanyoliverphotographies.com/blog-photographe-mariage-lyon/mes-brocs-ont-du-talent-photographe-puces-du-canal-a-lyon-atelier-pampam" target="_blank">
-            <img class="lazyload" data-src="~/assets/img/logos/logo-tiffany-photographies.jpg" alt="Tiffany Photographies" />
+            <img class="lazyload" data-src="~/assets/img/logos/tiffanyoliver-logo.png" alt="Tiffany Photographies" />
           </a>
         </div>
-        <div class="flex justify-center mt-14 md:mt-0 w-3/5 md:w-1/4 lg:w-1/5">
+        <div class="flex justify-center  w-16 lg:w-32 mx-8 md:mx-16">
           <a href="https://www.mylittlelyon.com/deco/la-brocante-qui-joue-a-cache-cache" target="_blank">
             <img class="lazyload" data-src="~/assets/img/logos/logo-my-little-lyon.png" alt="My Little Lyon" />
           </a>
         </div>
-        <div class="flex justify-center p-2 mt-14 md:mt-0 w-3/5 md:w-1/4 lg:w-1/5">
+        <div class="flex justify-center  w-16 lg:w-36">
           <a href="https://nouvellesrepliques.wordpress.com/2017/02/28/loch-nessbroctheatre-au-theatre-des-voraces-lyon/" target="_blank">
-            <img class="lazyload" data-src="~/assets/img/logos/logo-nouvelles-repliques.jpg" alt="Nouvelles Répliques" />
+            <img class="lazyload" data-src="~/assets/img/logos/nouvelles-repliques-logo.png" alt="Nouvelles Répliques" />
           </a>
         </div>
       </div>
-    </div>
-
-    <!-- Transition -->
-    <div class="absolute bottom-0 right-0 w-7/12 sm:w-6/12 md:w-5/12">
-      <span class="text-gray-900" v-html="require('~/assets/img/illustrations/transition-end.svg?include')"></span>
     </div>
   </section>
 </template>

@@ -1,5 +1,5 @@
 <template>
-  <footer class="bg-yellow-200">
+  <footer class="bg-yellow-100">
     <div class="w-full pt-12 lg:pt-16 pb-4 lg:py-8 px-4 sm:px-6 lg:px-8 overflow-hidden">
       <div class="max-w-screen-xl mx-auto md:grid md:grid-cols-3 md:gap-8">
         <div class="flex flex-col items-center">
@@ -23,26 +23,28 @@
         </div>
 
         <div class="mt-12 flex flex-col items-center md:mt-8">
-          <p class="text-base leading-5 font-semibold tracking-wider text-gray-900">
+          <p class="text-2xl leading-5  tracking-wider text-yellow-500 font-headings">
             Mon Atelier &amp; Boutique
           </p>
-          <div class="flex justify-center items-center mt-6 md:mt-10">
-            <a href="https://goo.gl/maps/UrL4bsbV2YLLCYpe6" class="px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-gray-100 bg-orange-500 hover:bg-orange-300 focus:outline-none focus:bg-orange-300 transition duration-150 ease-in-out" target="_blank">
-              Itinéraire
-            </a>
-          </div>
-          <p class="mt-8 text-center text-gray-900 text-base leading-6">
+          <p class="mt-6 text-center text-gray-900 text-base leading-6 font-light">
             Les Puces du Canal<br />
             3 Rue Eugène Pottier, 69100 Villeurbanne
           </p>
+          <!-- <div class="flex justify-center items-center mt-6 md:mt-10">
+            <a href="https://goo.gl/maps/UrL4bsbV2YLLCYpe6" class="px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-sm text-gray-100 bg-orange-500 hover:bg-orange-300 focus:outline-none focus:bg-orange-300 transition duration-150 ease-in-out" target="_blank">
+              Itinéraire
+            </a>
+          </div> -->
+          <a href="https://goo.gl/maps/UrL4bsbV2YLLCYpe6" class="mt-6 px-5 py-2 focus:outline-none transition duration-150 ease-in-out flex items-center" @mouseover="hover = true" @mouseleave="hover = false">
+            <span :class="{ 'map-icon-grow': hover }" class="mr-3 font-medium text-yellow-500 text-yellow-500" v-html="require('~/assets/icons/map.svg?include')"></span>
+            <div class="text-base leading-6 font-light text-yellow-500 transition ease-in-out duration-150">Itinéraire</div>
+          </a>
         </div>
 
         <div class="mt-12 flex flex-col items-center md:mt-8">
-          <p class="text-base leading-5 font-semibold tracking-wider text-gray-900">
-            Tél: 06 46 17 34 02
-          </p>
+          <p class="text-base leading-5 font-semibold tracking-wider text-gray-900"><span class="font-headings text-yellow-500">Tél:</span> 06 46 17 34 02</p>
           <div class="flex justify-center items-center mt-6 md:mt-10">
-            <a href="mailto:atelierpampam@gmail.com" class="px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-gray-100 bg-orange-500 hover:bg-orange-300 focus:outline-none focus:bg-orange-300 transition duration-150 ease-in-out">
+            <a href="mailto:atelierpampam@gmail.com" class="px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-sm text-gray-100 bg-orange-500 hover:bg-orange-300 focus:outline-none focus:bg-orange-300 transition duration-150 ease-in-out">
               Contact e-mail
             </a>
           </div>
@@ -82,6 +84,7 @@
 export default {
   data() {
     return {
+      hover: false,
       menuItems: [
         {
           name: 'Who is Pam Pam',
@@ -141,4 +144,18 @@ export default {
 }
 </script>
 
-<style></style>
+<style>
+/* Icon grow & Rotate*/
+.map-icon-grow {
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transform: scale(1.1) rotate(4deg);
+  transform: scale(1.1) rotate(4deg);
+  @apply text-orange-500 transition ease-in-out duration-150;
+}
+</style>

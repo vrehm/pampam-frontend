@@ -7,16 +7,16 @@
         </h2>
 
         <div class="w-11/12 sm:w-8/12 md:w-10/12 lg:w-9/12 xl:w-8/12 mx-auto mt-16">
-          <img class="rounded-md lazyload" data-src="~/assets/img/home/portrait-700x804.jpg" alt="portrait" />
+          <img class="lazyload" data-src="~/assets/img/home/portrait-700x804.jpg" alt="portrait" />
         </div>
 
         <div class="w-11/12 md:w-10/12 lg:w-9/12 xl:w-8/12 mx-auto mt-10">
-          <div class="mt-2 text-base text-justify leading-6 text-gray-900 prose" v-html="$md.render(presentation)"></div>
+          <div class="mt-2 text-base text-justify leading-6 text-gray-900 prose font-light" v-html="$md.render(presentation)"></div>
         </div>
 
         <div class="flex justify-center items-center mt-6">
           <nuxt-link :to="{ name: 'articles-article', params: { article: 'l\'atelier-pam-pam-c\'est-qui-c\'est-quoi' } }">
-            <button class="px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md shadow text-gray-100 bg-orange-500 hover:bg-orange-300 focus:outline-none focus:bg-orange-300 transition duration-150 ease-in-out">
+            <button class="text-base leading-6 underline font-semibold text-orange-600 hover:text-orange-500 transition ease-in-out duration-150">
               Lire l'article
             </button>
           </nuxt-link>
@@ -24,8 +24,8 @@
       </div>
 
       <div class="relative w-full md:w-6/12 md:pl-4 overflow-hidden">
-        <div class="hidden md:block absolute left-0">
-          <div class="flex flex-col">
+        <!-- <div class="hidden md:block absolute left-0">
+          <div class="flex flex-col justify-center">
             <div class="w-2">
               <span class="text-gray-900" v-html="require('~/assets/img/illustrations/presentation-border.svg?include')"></span>
             </div>
@@ -36,7 +36,7 @@
               <span class="text-gray-900" v-html="require('~/assets/img/illustrations/presentation-border.svg?include')"></span>
             </div>
           </div>
-        </div>
+        </div> -->
 
         <div class="mt-28 md:mt-0">
           <h2 class="text-center font-headings text-4xl lg:text-5xl leading-8 sm:leading-9 tracking-tight text-yellow-500">
@@ -45,11 +45,11 @@
         </div>
 
         <div class="w-11/12 md:w-10/12 mx-auto mt-16">
-          <p class="mt-2 text-base text-justify leading-6 text-gray-900">
+          <p class="mt-2 text-base text-justify leading-6 text-gray-900 font-light">
             À l’Atelier Pam Pam, je fais la quête du beau et de la poésie au quotidien.<br />
             Choisir de s’entourer de choses qui ont du sens et qui vous procure une émotion particulière, c’est ce que j’encourage.
           </p>
-          <p class="mt-2 text-base text-justify leading-6 text-gray-900">
+          <p class="mt-2 text-base text-justify leading-6 text-gray-900 font-light">
             C’est pourquoi j’aime diffuser au delà des meubles, un art de vivre, où poésie, singularité et conscience sont les maîtres mots.
           </p>
         </div>
@@ -64,12 +64,10 @@
               </div>
             </div>
             <div class="ml-4">
-              <h3 class="text-lg leading-6 font-medium text-orange-500">
+              <!-- <h3 class="text-lg leading-6 font-medium text-orange-500">
                 Poésie
-              </h3>
-              <p class="mt-2 font-light text-base italic leading-6 text-gray-800">
-                C'est comme un peu de magie, on en a tous besoin autour de nous
-              </p>
+              </h3> -->
+              <p class="mt-2 font-light text-base leading-6 text-gray-800"><span class="leading-6 font-bold text-orange-500">Poésie.</span> C'est comme un peu de magie, on en a tous besoin autour de nous.</p>
             </div>
           </div>
 
@@ -82,12 +80,10 @@
               </div>
             </div>
             <div class="ml-4">
-              <h3 class="text-lg leading-6 font-medium text-orange-500">
+              <!-- <h3 class="text-lg leading-6 font-medium text-orange-500">
                 Singularité
-              </h3>
-              <p class="mt-2 font-light text-base italic leading-6 text-gray-800">
-                Parce que chaque lieu et chaque personne est un univers
-              </p>
+              </h3> -->
+              <p class="mt-2 font-light text-base leading-6 text-gray-800"><span class="leading-6 font-bold text-orange-500">Singularité.</span> Parce que chaque lieu et chaque personne est un univers.</p>
             </div>
           </div>
 
@@ -100,12 +96,10 @@
               </div>
             </div>
             <div class="ml-4">
-              <h3 class="text-lg leading-6 font-medium text-orange-500">
+              <!-- <h3 class="text-lg leading-6 font-medium text-orange-500">
                 Conscience
-              </h3>
-              <p class="mt-2 font-light text-base italic leading-6 text-gray-800">
-                Réutiliser ce qui existe déjà et préserver notre patrimoine
-              </p>
+              </h3> -->
+              <p class="mt-2 font-light text-base leading-6 text-gray-800"><span class="leading-6 font-bold text-orange-500">Conscience.</span> Réutiliser ce qui existe déjà et préserver notre patrimoine.</p>
             </div>
           </div>
         </div>
@@ -114,8 +108,8 @@
 
     <!-- Transition -->
     <div class="relative mt-16 sm:mt-20 lg:mt-10">
-      <div class="absolute right-0 w-7/12 sm:w-6/12 md:w-5/12">
-        <span class="text-gray-900" v-html="require('~/assets/img/illustrations/presentation-transition.svg?include')"></span>
+      <div class="absolute right-0 w-5/12 sm:w-5/12 md:w-2/6 xl:w-3/12 ">
+        <span class="text-orange-600" v-html="require('~/assets/img/illustrations/presentation-transition.svg?include')"></span>
       </div>
     </div>
   </section>
