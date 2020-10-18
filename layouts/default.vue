@@ -16,7 +16,7 @@ export default {
   },
   computed: {
     isAbsolute() {
-      return this.$route.name === 'index'
+      return this.$route.name === 'index' || this.$route.name === 'index-legacy'
     }
   }
 }
