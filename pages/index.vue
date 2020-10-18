@@ -2,7 +2,7 @@
   <div>
     <section class="background-hero-custom h-screen flex items-start overflow-hidden min-h-300 md:min-h-550 lazyload">
       <div class="h-auto w-full mt-10 sm:mt-20 lg:mt-10 xl:mt-10 px-4 sm:px-6 landscape-hero-title-custom">
-        <div class="hidden lg:block absolute">
+        <div class="hidden lg:block w-full lg:pl-48 xl:pl-64">
           <div class="flex flex-col items-start">
             <div>
               <nuxt-link to="/">
