@@ -1,7 +1,7 @@
 <template>
   <div>
     <section class="background-hero-custom h-screen flex items-start overflow-hidden min-h-300 md:min-h-550 lazyload">
-      <div class="h-auto w-full mt-10 sm:mt-20 lg:mt-10 xl:mt-10 px-4 sm:px-6 landscape-hero-title-custom">
+      <div class="h-auto w-full mt-10 sm:mt-20 lg:mt-10 xl:mt-10 mx-auto px-4 sm:px-6 landscape-hero-title-custom">
         <div class="hidden lg:block absolute">
           <div class="flex flex-col items-start">
             <div>
@@ -118,13 +118,6 @@ export default {
   }
 }
 
-/* Margin for mobile landscape orientation */
-@media only screen and (max-device-width: 767px) and (orientation: landscape) {
-  .landscape-hero-title-custom {
-    margin-bottom: 2rem;
-  }
-}
-
 /* Background cover for medium */
 @screen md {
   .background-hero-custom {
@@ -146,15 +139,6 @@ export default {
   }
 }
 
-/* For tablet landscape orientation (create conflicts) */
-/*
-@media only screen and (min-device-width: 768px) and (max-device-width: 1023px) and (orientation: landscape) {
-  .landscape-hero-title-custom {
-    margin-bottom: 2rem;
-  }
-}
-*/
-
 .background-newsletter-custom {
   background-image: none;
   background-position: center;
@@ -167,5 +151,10 @@ export default {
     background-image: url('~@/assets/img/illustrations/newsletter-background.svg');
     background-size: contain;
   }
+}
+
+/* Max width for high res */
+.landscape-hero-title-custom {
+  max-width: 1600px;
 }
 </style>
