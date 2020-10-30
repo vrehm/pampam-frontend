@@ -22,3 +22,4 @@ jobs:
         PUBLIC_KEY: ${{ secrets.PUBLIC_KEY }}
         HOST: ${{ secrets.SERVER_IP }}
         PROJECT: front
+        FORCE_DEPLOY: true
