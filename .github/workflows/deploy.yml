@@ -1,4 +1,4 @@
-name: Deploy dokku
+name: Deploy to dokku
 
 on:
   push:
@@ -12,14 +12,22 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+
     steps:
-    - uses: actions/checkout@v1
-    - name: Dokku deploy
-      uses: vitalyliber/dokku-github-action@v6.1
-      env:
-        PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
-        PUBLIC_KEY: ${{ secrets.PUBLIC_KEY }}
-        HOST: ${{ secrets.SERVER_IP }}
-        PROJECT: front
-        FORCE_DEPLOY: true
+      - name: Checkout 🛎
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Build app with dokku 🏗
+        uses: idoberko2/dokku-deploy-github-action@v1
+        with:
+          ssh-private-key: ${{ secrets.PRIVATE_KEY }}
+          dokku-host: ${{ secrets.SERVER_IP }}
+          app-name: 'front'
+          git-push-flags: '--force'
